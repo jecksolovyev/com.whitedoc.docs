@@ -154,6 +154,8 @@ If user decides to customize dashboard it's necessary to put content to html are
    :width: 600
    :align: center
 
+.. note:: `Custom HTML can not be more than 16 mb size`_
+
 Danger zone
 ===========
 
