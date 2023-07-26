@@ -4,6 +4,8 @@
 Application tokens
 ==================
 
+.. note:: This feature can be disabled by instance administrator.
+
 You can create authorization tokens for use with API and 3rd party integrations. To do so:
 
 1. Go to /profile?activeTab=application-tokens page
