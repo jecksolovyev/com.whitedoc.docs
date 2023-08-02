@@ -30,8 +30,6 @@ How to add file field to template
    4. Image: .png, .jpg, .jpeg
    5. Archive: .zip, .7z, .rar
 
-.. note:: List of allowed extensions will be shown in the window after file type is selected.
-
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
 .. image:: pic_file/fileStructured.png
