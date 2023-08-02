@@ -36,7 +36,7 @@ When all attributes are set, you can click Save button and field will be added. 
    :width: 600
    :align: center
 
-File filed in the envelope
+File field in the envelope
 ==========================
 
 To upload a file to the attachment field you should click on it, and select a file in opened file explorer window. You can upload only one file to one attachment field. Maximum file size and size of all uploaded files in one envelope is set on instance but typical default value is 5MB and 25MB respectively.

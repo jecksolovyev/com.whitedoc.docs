@@ -4,6 +4,8 @@ Duplicate field
 
 Duplicate is a field which allows you to create a static duplicate of other field.
 
+.. warning:: You will not be able to delete parent field of a duplicate untill the duplicate field is removed.
+
 How to add duplicate field to the document
 ==========================================
 
