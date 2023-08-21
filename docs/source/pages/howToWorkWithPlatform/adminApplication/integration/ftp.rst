@@ -2,8 +2,6 @@
 FTPS/SFTP protocols
 ===================
 
-.. toctree::
-
 Server structure
 ================
 

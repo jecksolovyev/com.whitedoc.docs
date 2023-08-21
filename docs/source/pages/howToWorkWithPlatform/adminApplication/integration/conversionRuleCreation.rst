@@ -2,8 +2,6 @@
 Conversion rule
 ===============
 
-.. toctree::
-
 Conversion rule enable convert document from customer format to whitedoc format and can make reverse conversion. For that customer should create conversion rule and depends on his selection on this page
 he can create conversion rule for incoming and outgoing documents. Also, if customer open existed conversion rule he can update, delete or clone this rule.
 
