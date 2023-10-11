@@ -1,8 +1,8 @@
 .. _scenario-management:
 
-======================
-How to manage scenario
-======================
+=======================
+How to manage scenarios
+=======================
 
 Scenario includes the following information: name, description, uuid and steps of the scenario. Steps include name, source and destination (where source and destination include template uuid and template version uuid) and conversion rule.
 
