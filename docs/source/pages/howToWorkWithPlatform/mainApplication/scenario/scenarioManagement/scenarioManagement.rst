@@ -17,7 +17,7 @@ To create scenario you have to click on button "New scenario" on the scenario li
 
 Scenario creation form presented below:
 
-.. image:: ../pic_scenario/scenario-create1.png
+.. image:: ../pic_scenario/scenario-create.png
    :width: 600
    :align: center
 
@@ -67,7 +67,7 @@ How to edit scenario?
 
 **Description of the scenario edit form below**
 
-.. image:: ../pic_scenario/scenario-edit1.png
+.. image:: ../pic_scenario/scenario-edit.png
    :width: 600
    :align: center
 
