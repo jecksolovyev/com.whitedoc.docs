@@ -126,6 +126,7 @@ On the platform presented two types of the conditions:
 1. A condition based on some fields to create different branches of the script, for example, if in the certificate of completion the amount of service is more than 1000, then give the opportunity to launch one branch of the script, if more then another
 2. Condition that creates several envelopes based on values in the source. But at the same time, if the value is "Yes", then create envelope(s) that respond to "Yes" value, and if the value is "No", then create envelope(s) that respond to "No" value
 
+
 Condition is optional and may or may not be in the request or could be null.
 
 **Additional logic**

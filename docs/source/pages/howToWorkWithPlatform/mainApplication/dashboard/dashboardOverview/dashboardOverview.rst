@@ -6,8 +6,8 @@ Dashboard overview
 
 Dashboard has two blocks for quick actions - quick send of file as copy or for sign and template creation.
 
-How to send external document using quick send functionality?
-=============================================================
+How to send document using quick send function?
+===============================================
 
 If you want to send external document (such as image, document, archive) to anyone in a quick way you can use quick send functionality. To do so:
 
@@ -24,28 +24,33 @@ If you want to send external document (such as image, document, archive) to anyo
    :align: center
 
 3. After file upload you can see all files in the list on screenshot above
-4. To continue quick send click "Next" button. You will be redirected to the envelope properties page, where you need to fill envelope details
 
 .. image:: pic_dashboardOverview/envCreationModal1.png
    :width: 400
    :align: center
 
-5. You can select EDS or E-ink signature type (some can be disabled depending on instance settings). If you also want to sing document(s) you can click on checkbox "I want to sign an envelope" to be added as one of signers
+4. You can add other roles to envelope by expanding Addition action menu
+
+.. image:: pic_dashboardOverview/additionalActions.png
+   :width: 400
+   :align: center
+
+5. After selectiong roles they will appear in quick send window
 
 .. image:: pic_dashboardOverview/envCreationModal2.png
    :width: 400
    :align: center
 
-6. To specify recipients you have to click on the input against to respective role type (Signers or Send a copy) and type recipients emails (they can be divided by enter or space buttons on keyboard)
+6. To specify participants of the flow you need to add their emails to according inputs (to separate emails press enter or space)
 
 .. image:: pic_dashboardOverview/envCreationModal3.png
    :width: 400
    :align: center
 
-7. After entering emails you will be see all contents of the email on mouse hover
+.. note:: Also yo can add yourself as signer or recipient by checking 'I want to sign or fill an envelope' checkbox.
 
-.. image:: pic_dashboardOverview/envCreationModal4.png
-   :width: 400
-   :align: center
+7. If PDF documents were uploaded, you can select EDS or e-ink type of signature. If 'Qualified signature' checkbox is checked — EDS will be used, if not — e-ink will be used
 
-8. When you will finish all required actions with envelope properties you can click "Send" button and envelope will be sent. If "I want to sign an envelope" checkbox was selected you will be automatically redirected to envelope signing modal window
+.. note:: If PDF and non-PDF documents were uploaded and e-ink was selected, signatures will be applied only to PDF documents. If only non-PDF documents were selected, EDS will be used by default.
+
+8. When you will finish all required actions with envelope properties you can click "Send" button and envelope will be sent. If "I want to sign an envelope" checkbox was selected you will be automatically redirected to envelope signing
