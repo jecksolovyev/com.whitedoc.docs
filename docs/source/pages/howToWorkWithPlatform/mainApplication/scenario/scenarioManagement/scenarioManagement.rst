@@ -47,7 +47,7 @@ How to configure particular step?
 
 1. In Scenario steps form set the name of the scenario step
 2. Fill the destination with template UUID and template version UUID of template you need    
-3. You have to enter xslt conversion rule which will create envelope after run. How to create xslt conversion rule you can find by the following link
+3. You have to enter xslt conversion rule which will create envelope after run. 
 4. You can set checkbox "Send an envelope immediately after starting a step" if you need this action
 5. Click on "Save" icon in the right top corner of the step
 
@@ -124,7 +124,8 @@ What is condition and how to use it?
 On the platform presented two types of the conditions:
 
 1. A condition based on some fields to create different branches of the script, for example, if in the certificate of completion the amount of service is more than 1000, then give the opportunity to launch one branch of the script, if more then another
-2. Condition that create several envelopes based on values in the source. But at the same time, if the value is "Yes", then create envelope(s) 1, and if the value is "No", then create envelope(s)
+2. Condition that creates several envelopes based on values in the source. But at the same time, if the value is "Yes", then create envelope(s) that respond to "Yes" value, and if the value is "No", then create envelope(s) that respond to "No" value
+
 
 Condition is optional and may or may not be in the request or could be null.
 

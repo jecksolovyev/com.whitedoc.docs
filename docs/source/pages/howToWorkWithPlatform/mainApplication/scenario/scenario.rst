@@ -19,7 +19,7 @@ To create scenario you have to open scenario page and click on button "New scena
 Scenario list and scenario concept
 ==================================
 
-1. Navigate to https://staging.whitedoc.space/scenario
+1. Navigate to /scenario
 
 .. image:: pic_scenario/scenario-list.png
    :width: 400
@@ -31,11 +31,11 @@ On this page located the following elements:
 
  2. Field to filter scenario list
 
- 3. Scenario list item. (Run scenario when click)
+ 3. Scenario list item (Run scenario when click)
 
- 4. Scenario list paginator config
+ 4. Scenario item actions menu
 
- 5. Scenario item actions menu
+ 5. Scenario access level menu
 
 How to manage scenario you can find follow the :ref:`link <scenario-management>`.
 
