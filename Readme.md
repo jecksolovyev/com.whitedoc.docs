@@ -12,7 +12,7 @@
 
 ### Linux
 
-1. Update all packages `sudo apt update && sudo apt upgrade -y`
+1. Update all packages: `sudo apt update && sudo apt upgrade -y`
 2. Install pip: `sudo apt install python3-pip`
 3. Install latest version of Setuptools: `sudo pip install -U setuptools`
 4. Install dependencies from requirements file: `sudo pip install -r requirements.txt`
