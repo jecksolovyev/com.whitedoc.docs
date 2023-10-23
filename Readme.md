@@ -12,10 +12,11 @@
 
 ### Linux
 
-1. Install pip: `sudo apt install python3-pip`
-2. Install latest version of Setuptools: `sudo pip install -U setuptools`
-3. Install dependencies from requirements file: `sudo pip install -r requirements.txt`
-4. Update Sphinx to the latest version: `sudo pip install -U sphinx`
+1. Update all packages `sudo apt update && sudo apt upgrade -y`
+2. Install pip: `sudo apt install python3-pip`
+3. Install latest version of Setuptools: `sudo pip install -U setuptools`
+4. Install dependencies from requirements file: `sudo pip install -r requirements.txt`
+5. Update Sphinx to the latest version: `sudo pip install -U sphinx`
 
 You will have everything ready after this. To build a local copy of documentation with your latest updates run next command from /docs folder: `make html`
 
