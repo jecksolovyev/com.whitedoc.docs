@@ -27,18 +27,4 @@ This method is similar to drag & drop, but works in 2 clicks instead of 1. Click
 
 .. toctree::
 
-   text/text.rst
-   number/number.rst
-   currency/currency.rst
-   dateAndTime/dateAndTime.rst
-   dictionary/dictionary.rst
-   file/file.rst
-   table/table.rst
-   signature/signature.rst
-   checkbox/checkbox.rst
-   yesNo/yesNo.rst
-   lookup/lookup.rst
    digitalSignature/eds.rst
-   duplicate/duplicate.rst
-   formula/Formula.rst
-   autonumber/autonumber.rst
