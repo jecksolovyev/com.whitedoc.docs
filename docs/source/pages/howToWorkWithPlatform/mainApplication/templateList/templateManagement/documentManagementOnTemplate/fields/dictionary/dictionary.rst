@@ -23,7 +23,7 @@ How to add dictionary field to template
 4. Role name - this is a role which will be assgined to fill this field
 5. Placeholder - this text will be shown in the input box before anything is filled in (can be left empty, field name will be used instead)
 6. Optional - this attribute specifies if this field is mandatory to fill
-7. Allow custom values - this attribute specifies if field will allow free text input besides selection from predefined dictionary values
+7. Allow custom values - this attribute specifies if field will allow free text input besides selection from predefined values
 8. Search - this attribute specifies if this field should be eligible for mailbox page search
 9. Dictionary - input for desired dictionary selection. Start typing dictionary name and available dictionaries list will appear
 10. Column name (appears after dictionary is selected) - dropdown selector of a desired column

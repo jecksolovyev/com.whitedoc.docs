@@ -22,7 +22,7 @@ How to add lookup field to template
 3. Name - this is a name of a field
 4. Placeholder - this text will be shown in the input box before anything is filled in (can be left empty, field name will be used instead)
 5. Optional - this attribute specifies if this field is mandatory to fill
-6. Allow custom values - this attribute specifies if field will allow free text input besides automatic population
+6. Allow custom values - this attribute specifies if field will allow free text input besides selection from predefined values
 
 .. note:: If dictionary has optionality or custom values attributes enabled, same attributes will also be enforced on all related lookups.
 

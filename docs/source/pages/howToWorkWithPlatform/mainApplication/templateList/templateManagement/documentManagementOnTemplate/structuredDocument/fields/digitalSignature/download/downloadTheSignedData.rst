@@ -2,27 +2,20 @@
 Download or send to print the signed data
 =========================================
 
-.. toctree::
-
----------
-
 How to download the signed data?
 ================================
 
-You can download the signature(s) of the document(s) when all participants with role "Signer" completed actions. You're able to download particular document with signatures or
-whole envelope with all documents inside and all signatures inside.
+You can download the signature(s) of the document(s) when all participants with role "Signer" completed actions. You're able to download particular document with signatures or whole envelope with all documents inside and all signatures inside. To do this, just:
 
-To do this, just :
-
-1. Check that envelope completed;
-2. Open envelope;
-3. Click on respective "download" button in the header, to download the full envelope with all signed documents:
+1. Check that envelope completed
+2. Open envelope
+3. Click on respective "download" button in the header, to download the full envelope with all signed documents
 
 .. image:: pic_download/downloadEnvelope.png
    :width: 600
    :align: center
 
-4. Or click on respective "download" button ahead document name to download particular document with all signatures:
+4. Or click on respective "download" button ahead document name to download particular document with all signatures
 
 .. image:: pic_download/downloadDocument.png
    :width: 600
@@ -33,9 +26,9 @@ As soon as you click on the document download button, archive with the documents
 
 You can also download all envelopes en masse:
 
-1. Press button "Mailbox" on the left sidebar;
-2. Choose envelopes which you want to download. You can download only completed envelopes;
-3. Press button "Download completed envelopes" for downloading;
+1. Press button "Mailbox" on the left sidebar
+2. Choose envelopes which you want to download. You can download only completed envelopes
+3. Press button "Download completed envelopes" for downloading
 
 .. image:: pic_download/downloadEnvelopeOnListingPage.png
    :width: 400
@@ -76,7 +69,7 @@ In the signing document certificate you can find information about the document,
    :width: 600
    :align: center
 
-2. Section about the signer, sign and/or stamp contains (if it's signature you will see key icon opposite table block with data and if it's stamp you will see stamp icon opposite table block with data):
+2. Section about the signer, sign and/or stamp contains (if it's signature you will see key icon opposite table block with data and if it's stamp you will see stamp icon opposite table block with data)
 
 * Owner - name of the signature owner
 * Organization - name of the organiztion to which signature belongs
@@ -90,7 +83,7 @@ In the signing document certificate you can find information about the document,
    :width: 600
    :align: center
 
-3. Explanation what is EDS and instructions how to check validity of the EDS.
+3. Explanation what is EDS and instructions how to check validity of the EDS
 
 .. image:: pic_download/FAQ.png
    :width: 600
@@ -101,13 +94,13 @@ Printable version of the document
 
 Printable version of the document you can get in two ways. First is described before and you can it download with signed data in archive. The second one is to open document to print from envelope page.
 
-1. As soon as document completed you will see icon "Print" near document.
+1. As soon as document completed you will see icon "Print" near document
 
 .. image:: pic_download/printBtn.png
    :width: 600
    :align: center
 
-2. You can click on it and document opens for print in PDF format.
+2. You can click on it and document opens for print in PDF format
 
 *Document structure is:*
 
@@ -126,11 +119,7 @@ Printable version of the document you can get in two ways. First is described be
    :align: center
 
 1. Legal name of signer
-
 2. Type of signature or stamp (Advanced or qualified)
-
 3. ITN/EDRPOU/DRFO value, according to signature data
-
 4. Data and time of the signature set
-
 5. Certificate serial number according to legal data
