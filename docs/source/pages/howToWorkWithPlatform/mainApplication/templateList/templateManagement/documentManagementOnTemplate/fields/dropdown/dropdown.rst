@@ -23,10 +23,11 @@ How to add dropdown field to the document
 4. Role name - this is a role which will be assgined to fill this field
 5. Placeholder - this text will be shown in the input box before anything is filled in (can be left empty, field name will be used instead)
 6. Optional - this attribute specifies if this field is mandatory to fill
-7. Allow custom values - this attribute specifies if field will allow free text input besides selection from predefined values
-8. Search - this attribute specifies if this field should be eligible for mailbox page search
-9. Option 1, 2, etc. - option available for selection. Can be deleted with 'X' button. Note that at least 1 option is mandatory and options can not be blank (min 1 max 50 characters per option)
-10. Add option - allows to add new options. 100 options max are allowed per field 
+7. Multiselect - this attribute specifies if multiple values can be selected (can not be enabled together with Allow custom value attribute)
+8. Allow custom values - this attribute specifies if field will allow free text input besides selection from predefined values (can not be enabled together with Multiselect attribute)
+9. Search - this attribute specifies if this field should be eligible for mailbox page search
+10. Option 1, 2, etc. - option available for selection. Can be deleted with 'X' button. Note that at least 1 option is mandatory and options can not be blank (min 1 max 50 characters per option)
+11. Add option - allows to add new options. 100 options max are allowed per field 
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
