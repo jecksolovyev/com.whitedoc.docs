@@ -2,10 +2,12 @@
 Autonumber field
 ================
 
-Autonumber field allows you to create static box which will indicate a number of envelope created from this template. It will increment by one with every new envelope automatically. It can be added to structured and PDF documents.
+This field allows you to create an automatic counter of envelopes created from a template.
 
-How to add autonumber field to template
-=======================================
+.. hint:: This field can be added to structured and PDF documents.
+
+How to add autonumber field to the document
+===========================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
@@ -15,7 +17,7 @@ How to add autonumber field to template
 
 2. Field creation form will appear, where you should set field attributes
 
-.. image:: pic_autonumber/autonumberModal.png
+.. image:: pic_autonumber/autonumberCreate.png
    :width: 600
    :align: center
 
@@ -24,6 +26,6 @@ How to add autonumber field to template
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
-.. image:: pic_autonumber/autonumberProperties.png
+.. image:: pic_autonumber/autonumberEdit.png
    :width: 600
    :align: center

@@ -2,10 +2,12 @@
 Number field
 ============
 
-Number field allows you to create dynamic input box which will be filled by participants of the envelope processing flow. It can be added to structured and PDF documents.
+This field allows you to create dynamic input box which will be filled by participants of the envelope processing flow.
 
-How to add number field to template
-===================================
+.. hint:: This field can be added to structured and PDF documents.
+
+How to add number field to the document
+=======================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
@@ -15,7 +17,7 @@ How to add number field to template
 
 2. Field creation form will appear, where you should set field attributes
 
-.. image:: pic_number/numberModal.png
+.. image:: pic_number/numberCreate.png
    :width: 600
    :align: center
 
@@ -40,6 +42,6 @@ How to add number field to template
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
-.. image:: pic_number/numberProperties.png
+.. image:: pic_number/numberEdit.png
    :width: 600
    :align: center

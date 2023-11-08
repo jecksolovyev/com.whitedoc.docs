@@ -2,7 +2,9 @@
 Dropdown field
 ==============
 
-Dropdown is a field which allows you to create a selection from several predefined values. You can customize default option values. Minimum of 1 option is required, up to 100 options per dropdown are allowed. It looks like a dropdown menu in the envelope. After selection it will change to regular text of selected value.
+This field allows you to create a selection from several predefined values. You can customize default option values. Minimum of 1 option is required, up to 100 options per dropdown are allowed. It looks like a dropdown menu in the envelope. After selection it will change to regular text of selected value.
+
+.. hint:: This field can be added to structured and PDF documents.
 
 How to add dropdown field to the document
 =========================================
@@ -15,7 +17,7 @@ How to add dropdown field to the document
 
 2. Field creation form will appear, where you should set field attributes
 
-.. image:: pic_dropdown/dropdownModal.png
+.. image:: pic_dropdown/dropdownCreate.png
    :width: 600
    :align: center
 
@@ -31,6 +33,6 @@ How to add dropdown field to the document
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
-.. image:: pic_dropdown/dropdownProperties.png
+.. image:: pic_dropdown/dropdownEdit.png
    :width: 600
    :align: center
