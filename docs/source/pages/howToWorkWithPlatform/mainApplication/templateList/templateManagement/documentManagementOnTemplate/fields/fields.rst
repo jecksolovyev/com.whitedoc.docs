@@ -42,6 +42,6 @@ This method is similar to drag & drop, but works in 2 clicks instead of 1. Click
    duplicate/duplicate.rst
    formula/Formula.rst
    autonumber/autonumber.rst
-   eds/eds.rst
+   qes/qes.rst
    pades/pades.rst
    signature/signature.rst

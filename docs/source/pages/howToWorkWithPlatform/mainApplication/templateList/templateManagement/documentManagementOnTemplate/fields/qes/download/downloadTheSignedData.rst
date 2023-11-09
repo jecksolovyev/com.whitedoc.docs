@@ -80,7 +80,7 @@ In the signing document certificate you can find information about the document,
    :width: 600
    :align: center
 
-3. Explanation what is EDS and instructions how to check validity of the EDS
+3. Explanation what is QES and instructions how to check validity of the QES
 
 .. image:: pic_download/FAQ.png
    :width: 600

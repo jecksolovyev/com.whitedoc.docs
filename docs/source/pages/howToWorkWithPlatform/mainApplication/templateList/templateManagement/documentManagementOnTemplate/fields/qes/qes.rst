@@ -1,23 +1,23 @@
 =========
-EDS field
+QES field
 =========
 
-This field allows you to place an EDS signature on the document.
+This field allows you to place an QES signature on the document.
 
 .. hint:: This field can be added to any type of the document.
 
-How to add EDS field to the document
+How to add QES field to the document
 ====================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
-.. image:: pic_eds/edsIcon.png
+.. image:: pic_qes/qesIcon.png
    :width: 600
    :align: center
 
 2. Field creation form will appear, where you should set field attributes
 
-.. image:: pic_eds/edsCreate.png
+.. image:: pic_qes/qesCreate.png
    :width: 600
    :align: center
 
@@ -32,7 +32,7 @@ How to add EDS field to the document
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
-.. image:: pic_eds/edsEdit.png
+.. image:: pic_qes/qesEdit.png
    :width: 600
    :align: center
 

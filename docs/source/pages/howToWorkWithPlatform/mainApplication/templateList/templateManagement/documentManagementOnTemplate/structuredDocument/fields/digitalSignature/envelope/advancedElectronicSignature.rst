@@ -16,6 +16,6 @@ Reading advanced electronic signature
 
 4. As soon as you enter valid data you will see the information related to key with which you want to sign the document
 
-.. image:: pic_digitalSignature/readedEds.png
+.. image:: pic_digitalSignature/readedQes.png
    :width: 400
    :align: center

@@ -2,7 +2,7 @@
 Electronic mass signing of envelopes
 ====================================
 
-You are able to sign as mane envelopes which conatain EDS inside as you need. How to do this you can read below. Also, you can read how to add a EDS to the document in :ref:`the previous section<Electronic signature on template>`.
+You are able to sign as many envelopes conataining QES inside as you need. How to do this you can read below. Also, you can read how to add a QES to the document in :ref:`the previous section<Electronic signature on template>`.
 
 How to sign several envelopes at once
 =====================================
@@ -11,7 +11,7 @@ To mass sign the envelopes you have to do the following:
 
 1. Press button "Mailbox" on the left sidebar
 2. Choose envelopes which you want to sign
-3. Find icon "key". Hover your mouse over the icon and you will see tooltip "Sign envelopes with EDS". Press this button
+3. Find icon "key". Hover your mouse over the icon and you will see tooltip "Sign envelopes with QES". Press this button
 
 .. image:: pic_listingPage/chooseEnvelopes.png
    :width: 400

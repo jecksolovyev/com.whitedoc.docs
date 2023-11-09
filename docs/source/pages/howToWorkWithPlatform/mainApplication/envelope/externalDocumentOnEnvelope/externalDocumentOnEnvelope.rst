@@ -29,9 +29,9 @@ Electronic digital signature and e-ink signatures can be used to sign external d
 
 .. note:: Electronic ink signatures can be applied only to .pdf format external documents. Plsease note that if you will add e-ink signature to external document in the template, only .pdf files will be accepted for this documents in following envelopes.
 
-Process of signing external documents with EDS has one difference from signing internal document. When signing external document electronic digital signature is applied only to .pdf file version (not to .xml file). Signature interface is same as for structured documents.
+Process of signing external documents with QES has one difference from signing internal document. When signing external document electronic digital signature is applied only to .pdf file version (not to .xml file). Signature interface is same as for structured documents.
 
-.. image:: pic_externalDocument/ExternalDocumentEDS.png
+.. image:: pic_externalDocument/ExternalDocumentQES.png
    :width: 600
    :align: center
 
