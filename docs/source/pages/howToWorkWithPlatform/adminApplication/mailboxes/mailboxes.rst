@@ -2,112 +2,53 @@
 Mailboxes
 =========
 
-.. toctree::
+Mailboxes page is a part of admin panel interface. This page allows to:
 
-   delete_mailbox_behaviour.rst
+1. Create, manage and delete mailboxes
+2. Create, manage and delete mailbox groups
 
----------
-
-Mailboxes page is a part of admin panel interface. This page allows:
-
-1. Manage existing mailboxes
-2. Create new mailboxes
-3. Remove users from mailboxes
-4. Delete mailboxes
-
-.. image:: pic_mailboxes/mailboxesMainView.png
+.. image:: pic_mailboxes/mailboxesTab.png
    :width: 600
    :align: center
 
-Add new mailbox
-===============
+Mailboxes tab
+=============
 
-1. Click on the button "Add new mailbox"
+**How to create a mailbox**
 
-.. image:: pic_mailboxes/mailboxesAddNewMailbox.png
+1. Click on the button "Create mailbox"
+2. Enter new mailbox name in the opened window
+
+.. image:: pic_mailboxes/mailboxesTabCreateModal.png
    :width: 600
    :align: center
 
-2. Modal window of the mailbox creation opens. Enter a name of the mailbox
+3. Click on the "Create" button (it will become enabled after name is entered)
 
-.. image:: pic_mailboxes/mailboxesEnterMailboxName.png
-   :width: 600
-   :align: center
+**How to generate a report by mailbox**
 
-3. Click on the button "Create" (it will become enablled after name is entered)
+1. Select all necessary records
+2. Click on button with document icon ("Generate report")
+3. After click you will see the message that report will be send to you email after generation
+4. Open email you got
+5. Click on button "Download"
 
-.. image:: pic_mailboxes/mailboxesCreateMailbox.png
-   :width: 600
-   :align: center
+**How to check users assigned to mailbox**
 
-4. After successful mailbox creation you will see message in the right corner of the page and mailbox will show in the list of mailboxes
+To see the list of users which have access to the mailbox click on the link with number in the column "Users". After this action you will be redirected to the Users page with filter predefined by mailbox.
 
-.. image:: pic_mailboxes/mailboxesSuccessfulCreation.png
-   :width: 600
-   :align: center
-
-Generate a report by mailbox
-============================
-
-If you want to get xlsx file with report by mailboxes you have to do the following:
-
-1. Open platform
-2. Got to Admin Panel
-3. Open tab 'Mailboxes' and select all necessary records
-4. Click on button with document icon (button called "Generate report")
-5. After click you will see the message that report will be send to you email after generation
-6. Follow to email address
-7. Open email you got
-8. Click on button "Download"
-
-Now you can open the file on your computer
-
-Check users assigned to mailbox
-===============================
-
-To see the list of users which have access to the mailbox click on the link with number in the column "Users". After this action you will be redirected to the page page with perdefined filter by Mailbox.
-
-Mailbox edit
-============
+**How to edit a mailbox**
 
 Edition interface allows update name of the mailbox, add and remove aliases to the mailbox, copy the mailboxs UUID, unassign all users with access to the mailbox and delete mailbox. To open mailbox edit form click on the settings icon.
 
-.. image:: pic_mailboxes/mailboxesOpenEditionForm.png
+.. image:: pic_mailboxes/mailboxesTabEditButton.png
    :width: 600
    :align: center
 
-============
-Settings tab
-============
+Mailbox settings page
+=====================
 
-Edit mailbox name
-=================
-
-Name field has length validation:
-
-1. Min value - 1 symbol
-2. Max value - 255 symbols
-
-To edit name just focus the name change it and click on "Save changes" button.
-
-.. image:: pic_mailboxes/mailboxesNameUpdate.png
-   :width: 600
-   :align: center
-
-After successful edition of the mailbox the notification message will show at the right corner of the page.
-
-.. image:: pic_mailboxes/mailboxesChangesSaved.png
-   :width: 600
-   :align: center
-
-You can hide visibility of your mailbox for system members.To do this, activate the toggle: "Hide name/aliases from other accounts". When the toggle is active mailbox name or alias can be found only by users who have access to this account.
-
-.. image:: pic_mailboxes/mailboxesHideAliases.png
-   :width: 600
-   :align: center
-
-Copy mailbox UUID
-=================
+**How to copy mailbox UUID**
 
 To copy the mailbox UUID click on the copying icon. After successful copying the notification message will be shown at the right corener of the page.
 
@@ -115,8 +56,30 @@ To copy the mailbox UUID click on the copying icon. After successful copying the
    :width: 600
    :align: center
 
-Alias management
-================
+**How to edit mailbox name**
+
+1. Name field has length validation: 1 - 255 symbols
+2. To edit name just focus the name change it and click on "Save changes" button
+
+.. image:: pic_mailboxes/mailboxesNameUpdate.png
+   :width: 600
+   :align: center
+
+3. After successful edition of the mailbox the notification message will show at the right corner of the page
+
+.. image:: pic_mailboxes/mailboxesChangesSaved.png
+   :width: 600
+   :align: center
+
+**How to edit mailbox name visibility**
+
+You can hide visibility of your mailbox for system members.To do this, activate the toggle: "Hide name/aliases from other accounts". When the toggle is active mailbox name or alias can be found only by users who have access to this account.
+
+.. image:: pic_mailboxes/mailboxesHideAliases.png
+   :width: 600
+   :align: center
+
+**How to manage mailbox aliases**
 
 Two identical aliases can not be added to one mailbox.
 
@@ -152,14 +115,13 @@ To add alias(es) to the mailbox:
    :width: 600
    :align: center
 
-Envelope forwarding configuration
-=================================
+**How to configure envelope forwarding**
+
+In this section you can configure automatic forwarding of all incoming envelopes.
 
 .. image:: pic_mailboxes/mailboxesForwarding.png
    :width: 600
    :align: center
-
-In this section you can configure automatic forwarding of all incoming envelopes. To do so:
 
 1. Select a target mailbox which will be a delegate of yours
 2. Select effective from date - it will specify a start date of the forwarding period (can be left empty to start period immediately)
@@ -169,7 +131,6 @@ In this section you can configure automatic forwarding of all incoming envelopes
 
 Forwarding is configured now. If you wish to disable it at some point later, you can disable "Active forwarding" toggle and click on "Save changes" button.
 
-=============
 Dashboard tab
 =============
 
@@ -189,9 +150,8 @@ If you want to customize dashboard it's necessary to put content to html area, s
    :width: 600
    :align: center
 
-.. note:: `Custom HTML can not be more than 16 mb size`_
+.. note:: Custom HTML can not be more than 16 mb size.
 
-===============
 Danger zone tab
 ===============
 
@@ -205,19 +165,55 @@ To remove all users from mailbox or delete mailbox switch to "Danger Zone" tab b
    :width: 600
    :align: center
 
-Remove users from mailbox
-=========================
+**How to remove users from mailbox**
 
 1. To remove all users from mailbox (remove all permissions to the particular mailbox from the all users who has it except the user who do the action) click on the button "Deactivate"
 2. Confirm the decision and users will be unassigned
 
-Delete mailbox
-==============
+**How to delete mailbox**
 
-1. To delete mailbox click on "Delete" button
+1. Click on "Delete" button
 2. Enter the mailbox in upper case to the field in the modal window which opens after click on "Delete" button
 3. Confirm the decision and mailbox will be deleted
 
 .. note:: `Behaviour of mailbox after deletion <delete_mailbox_behaviour.html>`_
 
-.. include:: delete_mailbox_behaviour.rst
+==========
+Groups tab
+==========
+
+.. image:: pic_mailboxes/groupsTab.png
+   :width: 600
+   :align: center
+
+**How to create a mailbox group**
+
+1. Click on "Create group" button. Group creation form will appear
+
+.. image:: pic_mailboxes/groupsTabCreate.png
+   :width: 600
+   :align: center
+
+2. Fill group name (1 character min, 64 characters max)
+3. Add mailboxes from Add mailbox search box
+4. Added mailboxes can be searched and removed
+5. Click on Create button when all details are filled
+
+Group will be created and you will be returned to groups list.
+
+**How to edit a mailbox group**
+
+1. Click on "Settings" button (gear icon) in group row. Group properties form will appear
+
+.. image:: pic_mailboxes/groupsTabEdit.png
+   :width: 600
+   :align: center
+
+2. Update any group details which are needed to be updated
+3. Click on "Save" button to save group details changes
+4. Click on "Cancel" button to revert group details changes
+5. Click on "Delete" button to delete group
+
+.. note:: You can also delete group from groups list by "Delete" button (Trash bin icon) in group row. Here are more details on :ref:`deleted mailbox behavior`.
+
+You will be returned to groups list after taken action.

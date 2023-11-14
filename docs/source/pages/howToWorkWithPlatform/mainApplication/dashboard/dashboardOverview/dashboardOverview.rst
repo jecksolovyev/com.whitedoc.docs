@@ -49,8 +49,8 @@ If you want to send external document (such as image, document, archive) to anyo
 
 .. note:: Also yo can add yourself as signer or recipient by checking 'I want to sign or fill an envelope' checkbox.
 
-7. If PDF documents were uploaded, you can select EDS or e-ink type of signature. If 'Qualified signature' checkbox is checked — EDS will be used, if not — e-ink will be used
+7. If PDF documents were uploaded, you can select QES or e-ink type of signature. If 'Qualified signature' checkbox is checked — QES will be used, if not — e-ink will be used
 
-.. note:: If PDF and non-PDF documents were uploaded and e-ink was selected, signatures will be applied only to PDF documents. If only non-PDF documents were selected, EDS will be used by default.
+.. note:: If PDF and non-PDF documents were uploaded and e-ink was selected, signatures will be applied only to PDF documents. If only non-PDF documents were selected, QES will be used by default.
 
 8. When you will finish all required actions with envelope properties you can click "Send" button and envelope will be sent. If "I want to sign an envelope" checkbox was selected you will be automatically redirected to envelope signing

@@ -2,10 +2,12 @@
 Dictionary field
 ================
 
-Dictionary field allows you to create dropdown selector of records from dictionary (table), e.g. list of employees (First name, last name, age, address).
+This field allows you to create dropdown selector of records from dictionary (table), e.g. list of employees (First name, last name, age, address).
 
-How to add dictionary field to template
-=======================================
+.. hint:: This field can be added to structured and PDF documents.
+
+How to add dictionary field to the document
+===========================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
@@ -15,7 +17,7 @@ How to add dictionary field to template
 
 2. Field creation form will appear, where you should set field attributes
 
-.. image:: pic_dictionary/dictionaryModal.png
+.. image:: pic_dictionary/dictionaryCreate.png
    :width: 600
    :align: center
 
@@ -23,7 +25,7 @@ How to add dictionary field to template
 4. Role name - this is a role which will be assgined to fill this field
 5. Placeholder - this text will be shown in the input box before anything is filled in (can be left empty, field name will be used instead)
 6. Optional - this attribute specifies if this field is mandatory to fill
-7. Allow custom values - this attribute specifies if field will allow free text input besides selection from predefined dictionary values
+7. Allow custom values - this attribute specifies if field will allow free text input besides selection from predefined values
 8. Search - this attribute specifies if this field should be eligible for mailbox page search
 9. Dictionary - input for desired dictionary selection. Start typing dictionary name and available dictionaries list will appear
 10. Column name (appears after dictionary is selected) - dropdown selector of a desired column
@@ -44,6 +46,6 @@ How to add dictionary field to template
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
-.. image:: pic_dictionary/dictionaryProperties.png
+.. image:: pic_dictionary/dictionaryEdit.png
    :width: 600
    :align: center

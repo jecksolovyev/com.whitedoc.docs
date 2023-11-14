@@ -1,8 +1,8 @@
 =========================
-Sign document(s) with EDS
+Sign document(s) with QES
 =========================
 
-You can sign document if document has signature field inside assigned to the particular user. Using this endpoint you can sign document(s) with EDS.
+You can sign document if document has signature field inside assigned to the particular user. Using this endpoint you can sign document(s) with QES.
 
 Request
 =======

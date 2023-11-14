@@ -31,14 +31,17 @@ This method is similar to drag & drop, but works in 2 clicks instead of 1. Click
    number/number.rst
    currency/currency.rst
    dateAndTime/dateAndTime.rst
-   dictionary/dictionary.rst
-   file/file.rst
-   table/table.rst
-   signature/signature.rst
+   dropdown/dropdown.rst
+   radioButton/radioButton.rst
+   aB/aB.rst
    checkbox/checkbox.rst
-   yesNo/yesNo.rst
+   file/file.rst
+   dictionary/dictionary.rst
    lookup/lookup.rst
-   eds/eds.rst
+   table/table.rst
    duplicate/duplicate.rst
    formula/Formula.rst
    autonumber/autonumber.rst
+   qes/qes.rst
+   pades/pades.rst
+   signature/signature.rst
