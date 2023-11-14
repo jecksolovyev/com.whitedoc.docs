@@ -14,6 +14,7 @@ Reading advanced electronic signature
    :width: 400
    :align: center
 
+
 4. As soon as you enter valid data you will see the information related to key with which you want to sign the document
 
 .. image:: pic_digitalSignature/readedQes.png

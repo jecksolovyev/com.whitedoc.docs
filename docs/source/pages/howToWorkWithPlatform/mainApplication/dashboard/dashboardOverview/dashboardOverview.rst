@@ -35,7 +35,7 @@ If you want to send external document (such as image, document, archive) to anyo
    :width: 400
    :align: center
 
-5. After selectiong roles they will appear in quick send window
+5. After selection roles they will appear in quick send window
 
 .. image:: pic_dashboardOverview/envCreationModal2.png
    :width: 400
@@ -53,4 +53,10 @@ If you want to send external document (such as image, document, archive) to anyo
 
 .. note:: If PDF and non-PDF documents were uploaded and e-ink was selected, signatures will be applied only to PDF documents. If only non-PDF documents were selected, QES will be used by default.
 
-8. When you will finish all required actions with envelope properties you can click "Send" button and envelope will be sent. If "I want to sign an envelope" checkbox was selected you will be automatically redirected to envelope signing
+8. When you will finish all required actions with envelope properties you can click "Next" button and envelope editor preview will be opened where you can add fields to Recipient and Signer roles. If "I want to sign an envelope" checkbox was selected you will be able to assign fields also for Sender role.
+
+.. note:: You can add following fields on quick-editor preview: Text, Number, Currency, Date and time, Dropdown, A/B, Checkbox, Dictionary, Lookup, Duplicate, Formula, QES, PAdES and Signature
+
+9. As soon as all Recipient roles and Sender role (in case of set in up "I want to..." checkbox) has at least for one field you can click on Send button in the header
+
+.. note:: Some fields assigned to sender can be filled in on the form of field assignment, such as Text, Number, Currency, Date and time and Signature. The rest of the fields could be added without value and new role for Sender will be created, which can be completed by filling in the fields after envelope send action.

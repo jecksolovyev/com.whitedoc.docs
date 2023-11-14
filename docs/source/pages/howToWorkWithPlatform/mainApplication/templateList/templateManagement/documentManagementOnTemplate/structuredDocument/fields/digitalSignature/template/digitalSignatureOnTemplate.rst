@@ -36,7 +36,8 @@ As soon as you did the steps above you can add document and add the field "QES" 
 Which actions we can do with signature roles?
 =============================================
 
-Signer flow is similar to the Assignee flow. You can make similar actions with Signer flow as with Assignee flow except set a role as a copy. So, you can do the following:
+Signer flow is similar to the Assignee flow. You can make similar actions with Signer flow as with Assignee flow except set a role as a copy.
+So, you can do the following:
 
 1. Add or remove role from the flow
 2. Add default mailbox as a role
