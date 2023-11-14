@@ -1,5 +1,8 @@
-Delete mailbox behaviour
-========================
+.. _deleted mailbox behavior:
+
+=======================
+Delete mailbox behavior
+=======================
 
 1. Deleted mailbox can't be restored
 2. Mailbox will disappear from mailbox list at admin panel on mailbox page
@@ -8,4 +11,3 @@ Delete mailbox behaviour
 .. image:: pic_mailboxes/disabledProfileView.png
    :width: 600
    :align: center
-

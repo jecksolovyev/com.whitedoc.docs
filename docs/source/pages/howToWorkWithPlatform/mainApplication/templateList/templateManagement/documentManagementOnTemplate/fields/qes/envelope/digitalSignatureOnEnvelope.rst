@@ -4,8 +4,6 @@
 Electronic signature on envelope
 ================================
 
-.. toctree::
-
 On the envelope you can set electronic signature and stamp to the document if needed. You can add electronic signature using key with your electronic signature. You sign the two documents type: pdf (human readable format) and xml (structured data of the document). You can download the signature and signed documents.
 
 How to sign the document

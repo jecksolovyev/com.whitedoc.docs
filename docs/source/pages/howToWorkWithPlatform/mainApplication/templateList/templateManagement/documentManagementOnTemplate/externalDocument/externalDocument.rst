@@ -7,7 +7,7 @@ External Document
 What is external document?
 ==========================
 
-It is a field which allows to create a form for upload of an external file of various formats in the envelope created from template. It can be signed with an EDS or e-ink signature later by envelope processing flow participants.
+It is a field which allows to create a form for upload of an external file of various formats in the envelope created from template. It can be signed with an QES or e-ink signature later by envelope processing flow participants.
 
 How to add an external document to template?
 ============================================
@@ -40,7 +40,7 @@ How to add an external document to template?
 * Image - .png, .jpg, .jpeg, .tiff, .tif
 * Archive - .zip, .7z, .rar
 
-6. You also can add EDS and e-ink fields to such document
+6. You also can add QES and e-ink fields to such document
 
 How to clone external document?
 ===============================

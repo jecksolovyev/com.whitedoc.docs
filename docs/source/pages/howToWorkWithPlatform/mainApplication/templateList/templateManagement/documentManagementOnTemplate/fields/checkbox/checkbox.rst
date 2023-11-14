@@ -2,7 +2,9 @@
 Checkbox field
 ==============
 
-Checkbox is a field which allows you to create a dynamic checkbox. It can be checked or left unchecked by participants of the envelope processing flow.
+This field allows you to create a dynamic checkbox. It can be checked or left unchecked by participants of the envelope processing flow.
+
+.. hint:: This field can be added to structured and PDF documents.
 
 How to add checkbox field to the document
 =========================================
@@ -15,7 +17,7 @@ How to add checkbox field to the document
 
 2. Field creation form will appear, where you should set field attributes
 
-.. image:: pic_checkbox/checkboxModal.png
+.. image:: pic_checkbox/checkboxCreate.png
    :width: 600
    :align: center
 
@@ -26,6 +28,6 @@ How to add checkbox field to the document
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
-.. image:: pic_checkbox/checkboxProperties.png
+.. image:: pic_checkbox/checkboxEdit.png
    :width: 600
    :align: center

@@ -2,7 +2,9 @@
 A/B field
 =========
 
-A/B is a field which allows you to create a selection from two predefined values. You can customize default "A" and "B" options. It looks like a button with two options. After selection it will change to regular text of selected value.
+This field allows you to create a selection from two predefined values. You can customize default "A" and "B" options. It looks like a button with two options. After selection it will change to regular text of selected value.
+
+.. hint:: This field can be added to structured and PDF documents.
 
 How to add A/B field to the document
 ====================================
@@ -15,7 +17,7 @@ How to add A/B field to the document
 
 2. Field creation form will appear, where you should set field attributes
 
-.. image:: pic_aB/aBModal.png
+.. image:: pic_aB/aBCreate.png
    :width: 600
    :align: center
 
@@ -26,6 +28,6 @@ How to add A/B field to the document
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
-.. image:: pic_aB/aBProperties.png
+.. image:: pic_aB/aBEdit.png
    :width: 600
    :align: center

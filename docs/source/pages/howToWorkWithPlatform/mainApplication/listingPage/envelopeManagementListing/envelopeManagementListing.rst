@@ -8,7 +8,7 @@ Envelope management on listing page includes following functionality:
 
 1. Labels assignment to envelope(s)
 
-2. Signing envelope(s) with EDS (electronic digital signature)
+2. Signing envelope(s) with QES (electronic digital signature)
 
 3. Archiving and unarchiving envelope(s)
 

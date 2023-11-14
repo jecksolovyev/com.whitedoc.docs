@@ -35,7 +35,7 @@ Assignee is a role which has to fill in fields in envelope or sign document elec
 Signer role
 ===========
 
-EDS signer role is a role which has to sign document with Advanced or Qualified electronic signature. Signer role has to have at least one EDS field in at least one document of the template. EDS signer role can't have two EDS fields for one document. Order of the Signer role in the flow should be greater than order of assignee.
+QES signer role is a role which has to sign document with Advanced or Qualified electronic signature. Signer role has to have at least one QES field in at least one document of the template. QES signer role can't have two QES fields for one document. Order of the Signer role in the flow should be greater than order of assignee.
 
 Approver role
 =============
@@ -53,9 +53,9 @@ AUTO flow
 
 In AUTO flow system configure processing flow by the following rules:
 
-1. Assignee is added after Sender or last Assignee (if Assignee has been already added to the flow) and before EDS Signer
-2. EDS signer is added after Assignee (if Assignee has been already added to the flow) and before first CC (if CC has been already added to the flow). EDS Signer is added after Sender if Assignee role was not added
-3. CC is added after last EDS Signer (if EDS Signer has been already added to the flow) or after last Assignee (if Assignee has been already added to the flow and EDS Singer was not added), or after Sender if no role except Sender was added
+1. Assignee is added after Sender or last Assignee (if Assignee has been already added to the flow) and before QES Signer
+2. QES signer is added after Assignee (if Assignee has been already added to the flow) and before first CC (if CC has been already added to the flow). QES Signer is added after Sender if Assignee role was not added
+3. CC is added after last QES Signer (if QES Signer has been already added to the flow) or after last Assignee (if Assignee has been already added to the flow and QES Singer was not added), or after Sender if no role except Sender was added
 
 MANUAL flow
 ===========
@@ -64,8 +64,8 @@ Logic of addition roles to the flow similar to AUTO flow, but user can change th
 
 Some restrictions of the role places in the flow:
 
-1. Assignee cannot have order in the flow higher than first EDS Signer
-2. EDS signer cannot have order lower than last Assignee
+1. Assignee cannot have order in the flow higher than first QES Signer
+2. QES signer cannot have order lower than last Assignee
 3. Copy can have any order in the flow but not less than 1
 
 .. warning:: If you have an external documets with e-ink signatures in your template you will have to place document uploader roles before roles which are signing these documents in MANUAL mode.
@@ -81,8 +81,8 @@ It is a flow similar to Consistent flow where you can create multiple roles with
 
 Some restrictions of the role places in the flow:
 
-1. Assignee cannot have order in the flow higher than first EDS Signer
-2. EDS signer cannot have order lower than last Assignee
+1. Assignee cannot have order in the flow higher than first QES Signer
+2. QES signer cannot have order lower than last Assignee
 3. Copy can have any order in the flow but not less than 1
 
 .. warning:: If you have an external documets with e-ink signatures in your template you will have to place document uploader roles before roles which are signing these documents in MANUAL mode.

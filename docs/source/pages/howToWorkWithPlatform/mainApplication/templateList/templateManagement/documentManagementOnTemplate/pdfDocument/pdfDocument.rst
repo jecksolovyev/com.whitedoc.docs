@@ -7,7 +7,7 @@ PDF Document
 What is PDF document?
 =====================
 
-It is a field which allows to upload an external PDF document directly on template level. Also it can be left empty to be uploaded later by the participants of envelope processing flow. It also can be signed with an EDS or e-ink signature by envelope flow participants. If such document was uploaded on template level, dynamic fields can be placed on it similar to structured document.
+It is a field which allows to upload an external PDF document directly on template level. Also it can be left empty to be uploaded later by the participants of envelope processing flow. It also can be signed with an QES or e-ink signature by envelope flow participants. If such document was uploaded on template level, dynamic fields can be placed on it similar to structured document.
 
 How to add a PDF document to template?
 ======================================
@@ -34,7 +34,7 @@ How to add a PDF document to template?
 5. Click on "PDF document" button. After this file explorer will open for you to select PDF file
 6. You can select a file and it will be uploaded or you can close file explorer and document will be left empty for envelope processing participants to upload
 7. In the template editor you can edit document properties, such as role and optionality (only if no file was uploaded)
-8. You also can add EDS and e-ink fields to such document
+8. You also can add QES and e-ink fields to such document
 
 How to clone PDF document?
 ==========================

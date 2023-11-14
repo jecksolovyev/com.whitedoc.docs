@@ -2,10 +2,12 @@
 Text field
 ==========
 
-Text field allows you to create dynamic input box which will be filled by participants of the envelope processing flow. It can be added to structured and PDF documents.
+This field allows you to create dynamic input box which will be filled by participants of the envelope processing flow.
 
-How to add text field to template
-=================================
+.. hint:: This field can be added to structured and PDF documents.
+
+How to add text field to the document
+=====================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
@@ -15,7 +17,7 @@ How to add text field to template
 
 2. Field creation form will appear, where you should set field attributes
 
-.. image:: pic_text/textModal.png
+.. image:: pic_text/textCreate.png
    :width: 600
    :align: center
 
@@ -33,6 +35,6 @@ How to add text field to template
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
-.. image:: pic_text/textProperties.png
+.. image:: pic_text/textEdit.png
    :width: 600
    :align: center

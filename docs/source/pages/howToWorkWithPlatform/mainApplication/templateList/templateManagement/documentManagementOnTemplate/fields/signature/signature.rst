@@ -2,10 +2,12 @@
 Signature field
 ===============
 
-Signature field allows user to place e-ink signature on a document. It can be added to structured and PDF documents.
+This field allows you to place an e-ink signature on the document.
 
-How to add signature field to template
-======================================
+.. hint:: This field can be added to structured and PDF documents. If added to external document, it will be converted to PDF automatically.
+
+How to add signature field to the document
+==========================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
@@ -15,7 +17,7 @@ How to add signature field to template
 
 2. Field creation form will appear, where you should set field attributes
 
-.. image:: pic_signature/signatureModal.png
+.. image:: pic_signature/signatureCreate.png
    :width: 600
    :align: center
 
@@ -25,12 +27,12 @@ How to add signature field to template
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
-.. image:: pic_signature/signatureProperties.png
+.. image:: pic_signature/signatureEdit.png
    :width: 600
    :align: center
 
-Filling signature field
-=======================
+How to fill a signature field in the envelope
+=============================================
 
 1. Open envelope where signature field is located
 2. Click on signature field

@@ -31,7 +31,7 @@ To add signature role to the template follow the instructions:
 2. Fill the required field "Role" with role details (f.e.: name of the role)
 3. Confirm addition
 
-As soon as you did the steps above you can add document and add the field "EDS" to the document.
+As soon as you did the steps above you can add document and add the field "QES" to the document.
 
 Which actions we can do with signature roles?
 =============================================
@@ -47,7 +47,7 @@ You can add as many signers as you need but we support only 30 recipients in the
 Electronic signature addition to the document
 =============================================
 
-To use the electronic signature on the document you have to add signer role. You may add only one electronic signature for one role on the one document. You can add EDS field to any document in envelope. To do this:
+To use the electronic signature on the document you have to add signer role. You may add only one electronic signature for one role on the one document. You can add QES field to any document in envelope. To do this:
 
 1. Drag and drop the field to the document
 2. Set unique field name

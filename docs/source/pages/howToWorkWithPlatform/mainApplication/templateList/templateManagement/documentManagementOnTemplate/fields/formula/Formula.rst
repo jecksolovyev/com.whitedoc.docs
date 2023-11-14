@@ -2,7 +2,9 @@
 Formula field
 =============
 
-Formula field allows you to create static box which will show results of calculations where other dynamic fields (and static values) can be used as arguments. It can be added to structured and PDF documents.
+This field allows you to create static box which will show results of calculations where other dynamic fields (and static values) can be used as arguments.
+
+.. hint:: This field can be added to structured and PDF documents.
 
 Following operations are available for any argument fields in the document:
 
@@ -22,8 +24,8 @@ Next fields can be used as arguments in formulas: Number, Currency, Dictionary, 
 
 .. note:: If you use Dictionary, Lookup or their`s Duplicates, values will be parsed as numbers. All symbols except numbers and last period will be ignored in calculations. If there are several periods, only last one will be considered as decimal place separator, rest will ignored. This means that if you will pass "Abc@/.1.1.1" and "Abc@/.1.1.1" as arguments into SUM formula, it will return "22.2" as a result.
 
-How to add formula field to template
-====================================
+How to add formula field to the document
+========================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
@@ -33,7 +35,7 @@ How to add formula field to template
 
 2. Field creation form will appear, where you should set field attributes
 
-.. image:: pic_formula/formulaModal.png
+.. image:: pic_formula/formulaCreate.png
    :width: 600
    :align: center
 
@@ -57,6 +59,6 @@ How to add formula field to template
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
-.. image:: pic_formula/formulaProperties.png
+.. image:: pic_formula/formulaEdit.png
    :width: 600
    :align: center

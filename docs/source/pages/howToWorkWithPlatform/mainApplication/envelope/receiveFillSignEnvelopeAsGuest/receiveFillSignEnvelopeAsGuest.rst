@@ -23,7 +23,7 @@ How to process envelope if user is not registered?
 
 4. Modal window with request to accept Terms and Condition and Privacy Policy will display and to process envelope customer has to accept it
 
-5. Next step is envelope processing according to role in the flow. Assignee has to fill in fields assigned to him. Signer need to sign documents with EDS signature. Approver has to approve or cancel approval if needed. CC just receive copy and no need to do anything.
+5. Next step is envelope processing according to role in the flow. Assignee has to fill in fields assigned to him. Signer need to sign documents with QES signature. Approver has to approve or cancel approval if needed. CC just receive copy and no need to do anything.
 
 6. As soon as role did all actions related to role responsibility button "Send" will appear (exception is role CC).
 
