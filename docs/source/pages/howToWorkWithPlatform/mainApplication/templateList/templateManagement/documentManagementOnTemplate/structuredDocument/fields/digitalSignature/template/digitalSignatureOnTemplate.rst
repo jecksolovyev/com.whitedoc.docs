@@ -39,9 +39,9 @@ Which actions we can do with signature roles?
 Signer flow is similar to the Assignee flow. You can make similar actions with Signer flow as with Assignee flow except set a role as a copy.
 So, you can do the following:
 
-1. Add or remove role from the flow;
-2. Add default mailbox as a role;
-3. Set the order of the signers. You can set order or left it as default and all signers receive the document at the same time.
+1. Add or remove role from the flow
+2. Add default mailbox as a role
+3. Set the order of the signers. You can set order or left it as default and all signers receive the document at the same time
 
 You can add as many signers as you need but we support only 30 recipients in the flow, including the assignee roles.
 
