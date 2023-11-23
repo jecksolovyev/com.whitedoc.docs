@@ -1,3 +1,5 @@
+.. _signatures:
+
 ==========
 Signatures
 ==========
