@@ -25,6 +25,8 @@ Mailboxes tab
 
 3. Click on the "Create" button (it will become enabled after name is entered)
 
+.. note:: You can generate report by mailboxes and bulk edit goups assigned to maiboxes on this page. To do so select mailboxes with checkboxes. After selection buttons will appear in table header, which allow to generate report or edit groups.
+
 **How to generate a report by mailbox**
 
 1. Select all necessary records
