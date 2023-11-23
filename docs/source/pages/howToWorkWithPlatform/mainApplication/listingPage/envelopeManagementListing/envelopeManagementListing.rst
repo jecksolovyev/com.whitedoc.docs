@@ -8,17 +8,46 @@ Envelope management on listing page includes following functionality:
 
 1. Labels assignment to envelope(s)
 
-2. Signing envelope(s) with QES (electronic digital signature)
+2. :ref:`Signing envelope(s) with QES and Signature<Signing envelope(s) with QES and Signature>`
 
-3. Archiving and unarchiving envelope(s)
+3. Envelope deletion functionality
 
-4. Downloading completed envelope(s)
+4. Archiving and unarchiving envelope(s)
 
-5. Chaining envelope(s)
+5. Downloading completed envelope(s)
 
-6. :ref:`Sending envelope(s) to approval<How to send several envelopes for approve>`
+6. Sharing envelope(s)
 
-7. :ref:`Cancelling envelope(s)<How to cancel several envelopes>`
+7. Chaining envelope(s)
+
+8. :ref:`Sending envelope(s) to approval<How to send several envelopes for approve>`
+
+9. :ref:`Cancelling envelope(s)<How to cancel several envelopes>`
+
+10. Envelope report generation
+
+11. Envelope notification resend
+
+Signing envelope(s) with QES and Signature
+==========================================
+
+Customer is able to select one or several envelopes and sign them with specific signing method if selected envelopes contain signature fields.
+
+To do this select envelope(s) and select specific signing type you want (signature type selector available in signing modal window).
+ - If you select any type of QES signature please follow the instruction in the signing with QES topic :ref:`QES topic <signatures>`.
+ - If you select Signature type of signing you need to do the following:
+
+1. Draw signature or select text variant of the signature if you don't have saved yet. Or keep saved signature.
+2. Follow to third step of the signing modal window to sign all documents you need
+3. When signing process completed you will see positive or negative results of signing process
+
+.. note:: If some validation occurred with signing of document you'll be notified with toaster message in right top corner of the page and in tooltip on red alert icon against failed envelopes
+
+Validation which can occur:
+1. Active role is different from Assignee
+2. Envelope contains fields except Signature fields for active role
+3. Envelope contains signature without coordinates (signature the place of which define Signer instead of template creator)
+4. Signature placed in uncompleted dynamic table field (table field the owner of which has not define quantity of rows yet)
     
 How to send several envelopes for approve
 =========================================
