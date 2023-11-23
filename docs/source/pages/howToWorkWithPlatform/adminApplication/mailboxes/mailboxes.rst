@@ -28,10 +28,12 @@ Mailboxes tab
 **How to generate a report by mailbox**
 
 1. Select all necessary records
-2. Click on button with document icon ("Generate report")
+2. Click on "Generate report" button in table header
 3. After click you will see the message that report will be send to you email after generation
 4. Open email you got
 5. Click on button "Download"
+
+.. note:: You also can edit groups assigned to mailboxes in bulk. To do so click on "Add mailboxes to group" button in table header.
 
 **How to check users assigned to mailbox**
 
