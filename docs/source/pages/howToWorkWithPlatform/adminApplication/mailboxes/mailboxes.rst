@@ -25,7 +25,6 @@ Mailboxes tab
 
 3. Click on the "Create" button (it will become enabled after name is entered)
 
-
 **How to generate a report by mailbox**
 
 1. Select all necessary records
