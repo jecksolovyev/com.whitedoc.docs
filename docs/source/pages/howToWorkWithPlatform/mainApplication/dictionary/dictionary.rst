@@ -31,7 +31,7 @@ Creating a dictionary
 
 4. New dictionary - default name of a dictionary. You can change it as needed (128 characters max)
 5. Description - default description of a dictionary. You can change it as needed (256 characters max)
-6. Allow filtered access - this attribute specifies if access to this dictionary will be filtered or full. If disabled - all records from a column will be available for choise in the envelope with dictionary field. If enabled - only values form matching rows will be returned. Values from other columns are used for row matching
+6. Allow filtered access - this attribute specifies if access to this dictionary will be filtered or full. If disabled - all records from a column will be available for choice in the envelope with dictionary field. If enabled - only values form matching rows will be returned. Values from other columns are used for row matching
 7. Access level (mailbox by default) - specifies which mailboxes will have access to the dictionary
 
 *Mailbox* - dictionary is visible to current mailbox only. In envelopes with this dictionary field records from this dictionary will be available to current mailbox only. Roles with other mailboxes will not be able to select data from this dictionary field.
