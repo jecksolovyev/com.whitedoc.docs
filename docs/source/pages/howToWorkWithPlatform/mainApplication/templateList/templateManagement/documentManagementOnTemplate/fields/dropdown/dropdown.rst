@@ -2,7 +2,7 @@
 Dropdown field
 ==============
 
-This field allows you to create a selection from several predefined values. You can customize default option values. Minimum of 1 option is required, up to 100 options per dropdown are allowed. It looks like a dropdown menu in the envelope. After selection it will change to regular text of selected value.
+This field allows you to create a dropdown menu selector from several predefined values. You can customize default option values. Minimum of 1 option is required, up to 100 options per dropdown are allowed. It looks like a dropdown menu in the envelope. After selection it will change to regular text of selected value.
 
 .. hint:: This field can be added to structured and PDF documents.
 

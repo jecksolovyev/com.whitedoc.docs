@@ -32,7 +32,7 @@ This method is similar to drag & drop, but works in 2 clicks instead of 1. Click
    currency/currency.rst
    dateAndTime/dateAndTime.rst
    dropdown/dropdown.rst
-   radioButton/radioButton.rst
+   choice/choice.rst
    aB/aB.rst
    checkbox/checkbox.rst
    file/file.rst

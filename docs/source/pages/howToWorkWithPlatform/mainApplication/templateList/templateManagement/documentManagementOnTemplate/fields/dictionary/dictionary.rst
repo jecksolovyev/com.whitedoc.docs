@@ -2,7 +2,7 @@
 Dictionary field
 ================
 
-This field allows you to create dropdown selector of records from dictionary (table), e.g. list of employees (First name, last name, age, address).
+This field allows you to create dropdown menu selector of records from dictionary (table), e.g. list of employees (First name, last name, age, address).
 
 .. hint:: This field can be added to structured and PDF documents.
 
