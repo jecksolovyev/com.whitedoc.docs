@@ -1,5 +1,5 @@
 ============
-Choise field
+Choice field
 ============
 
 This field allows you to create radio button selector from several predefined values.
