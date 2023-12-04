@@ -2,15 +2,13 @@
 Server Configuration Properties
 ===============================
 
-.. toctree::
-
-Global Properties
+Global properties
 =================
 
 | **app.name** - The name of the platform
 | **app.theme** - The UI theme of the platform (Red or Blue)
 
-User Properties (app.user)
+User properties (app.user)
 ==========================
 
 | **validation-code-hours-lifetime** - The life time of the validation code in email
@@ -20,7 +18,7 @@ User Properties (app.user)
 | **profile-phone-default-region** - Default phone region (UA,FR,GB)
 | **email-validation-code-length** - The number of characters for validation code in e-mail
 
-Locale Properties (app.locales)
+Locale properties (app.locales)
 ===============================
 | **supported** - The list of supported locales (en, ru, uk)
 | **defaultLocale** - The default locale of the platform (for invitations)
@@ -28,7 +26,7 @@ Locale Properties (app.locales)
 | **defaultAsLanguage** - The default locale will be taken as language in browser (geolocation and language of browser don't matter then)
 | **timezone** - The default time zone of the platform (for user creation, dates in email and pdf)
 
-Password Policy (app.user.password-policy)
+Password policy (app.user.password-policy)
 ==========================================
 
 | **min-length** - Enforce minimum password length
@@ -46,7 +44,7 @@ Password Policy (app.user.password-policy)
 | **prevent-reuse-months** - Do not allow reuse of passwords during period of months
 | **prevent-reuse-count** - Do not allow reuse of a recent number of passwords
 
-Session Policy (app.user.session-policy)
+Session policy (app.user.session-policy)
 ========================================
 
 | **session-hours** - Keep session during idle period

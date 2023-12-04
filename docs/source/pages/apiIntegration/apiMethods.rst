@@ -159,6 +159,8 @@ User/Profile endpoints
      - ``/api/v1/account/{accountUuid}/user``
      - `Account admin can delete many corporate users at once. In case of exception, no user will be deleted. <newtab::openapi/authApi.html#operation/deleteCorporateUsersUsingDELETE>`__
 
+**Content list**
+
 .. toctree::
 
    methods/authorization.rst

@@ -4,8 +4,6 @@
 Links inside document
 =====================
 
-.. toctree::
-
 You can create hyperlinks inside your structured documents. To do so follow next steps:
 
 1. Put a cursor inside the document where you want to add it and click Link button

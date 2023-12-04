@@ -1,6 +1,8 @@
 ===================
-Template Management
+Template management
 ===================
+
+**Content list**
 
 .. toctree::
 

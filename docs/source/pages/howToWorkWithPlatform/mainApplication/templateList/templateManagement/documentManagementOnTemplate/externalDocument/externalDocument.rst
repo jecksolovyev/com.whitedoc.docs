@@ -1,16 +1,14 @@
 =================
-External Document
+External document
 =================
 
-.. toctree::
-
-What is external document?
-==========================
+What is an external document
+============================
 
 It is a field which allows to create a form for upload of an external file of various formats in the envelope created from template. It can be signed with an QES or e-ink signature later by envelope processing flow participants.
 
-How to add an external document to template?
-============================================
+How to add an external document to template
+===========================================
 
 1. Navigate to ../template/list?s=mailbox or press the button "Templates" on the left sidebar
 
@@ -42,14 +40,14 @@ How to add an external document to template?
 
 6. You also can add QES and e-ink fields to such document
 
-How to clone external document?
-===============================
+How to clone an external document
+=================================
 
 1. Click "More" button in the right upper corner of the document
 2. Click "Clone" button in the menu
 
-How to delete external document?
-================================
+How to delete an external document
+==================================
 
 1. Click "More" button in the right upper corner of the document
 2. Click "Delete" button in the menu

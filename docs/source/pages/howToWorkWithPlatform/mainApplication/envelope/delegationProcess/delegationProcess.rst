@@ -6,8 +6,6 @@ Envelope delegation process
 
 Envelope delegation is a process which allows to delegate all actions assigned to recepient mailbox in the envelope processing flow to other mailbox. In other words it can be called envelope forwarding.
 
-.. toctree::
-
 How to send envelope for delegation
 ===================================
 
@@ -19,7 +17,7 @@ How to send envelope for delegation
 
 .. note:: This button will only appear for mailboxes with delegation permission.
 
-2. In the mailbox field of opened window find and select desired delegate mailbox by name, uuid or alias (or enter email address) and click Confirm
+2. In the mailbox field of opened window find and select desired delegate mailbox by name, UUID or alias (or enter email address) and click Confirm
 
 .. image:: delegation_pic/delegationModal.png
    :width: 600
@@ -47,7 +45,7 @@ It is possible to enable automatic incoming envelopes delegation for selected ma
 
 .. note:: This section will only appear for mailboxes with delegation permission.
 
-2. In mailbox field find and select desired delegate mailbox by name, uuid or alias (or enter email address). It will become a delegate for all incoming envelopes of your mailbox
+2. In mailbox field find and select desired delegate mailbox by name, UUID or alias (or enter email address). It will become a delegate for all incoming envelopes of your mailbox
 3. You can specify Effective until date. If selected, forwarding will be automatically disabled day after selected. For example if 18.04.23 is selected, automatic delegation should turn off 19.04.23 at 00:00 (up to 2 hours delay is possible)
 4. Make sure to enable Active forwarding toggle if you want to enable delegation to selected mailbox
 

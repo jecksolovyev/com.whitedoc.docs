@@ -25,8 +25,6 @@ This section describes all functionality of document editor. Document editor pag
 15. **Right side bar menu** allows to add :ref:`dynamic fields <fields>`, configure template details and template flow. Menu opens by click or opened by default for screen resolution bigger than 1920p
 16. **Document editor area** where you can add text, images, tables and dynamic fields
 
----------------------------------
-
 **Content list**
 
 .. toctree::

@@ -2,35 +2,9 @@
 Access level
 ============
 
-.. toctree::
+You can configure access level to the such entities on platform as templates, dictionaries and scenarion scenario. There are four access levels available:
 
-You can configure access level of the entities on platform, such as template, dictionary, scenario.
-There are four access levels available:
-
-1. mailbox
-
-2. account
-
-3. public
-
-4. official
-
-Mailbox access level
-====================
-
-This level of access to entity means that all users who has access to particular mailbox will have access to the entity and can edit this particular entity. And no one else can watch this entity.
-
-Account access level
-====================
-
-Account access level means that all users who has access to any of mailbox of the particular account have access to the entity but can't edit this entity. Only mailbox created the entity can edit it. And no one else can watch this entity.
-
-Public access level
-===================
-
-Public access level means that any user who is using platform can have access to the entity. Any user can watch, use but can't edit entity.
-
-Official access level
-=====================
-
-Official access level similar to public one, except one difference that official access can set official account which can be one for platform.
+1. Mailbox - only mailboxes which were granted access exclusively have access to such entity
+2. Account - all mailboxes within account have access to such entity
+3. Public - all mailboxes on the platform have access to such entity via search
+4. Official - all mailboxes on the platform have access to such entity in "Official" folder

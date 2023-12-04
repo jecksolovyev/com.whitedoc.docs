@@ -2,6 +2,8 @@
 How to work with platform
 =========================
 
+**Content list**
+
 .. toctree::
 
    deviceAndScreensForWork/deviceAndScreensForWork.rst
@@ -9,4 +11,3 @@ How to work with platform
    notificationSystem/notification.rst
    mainApplication/mainApplication.rst
    adminApplication/adminApplication.rst
-

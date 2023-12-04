@@ -2,20 +2,12 @@
 Users
 =====
 
-.. toctree::
-
-   usersInviteExternal.rst
-   usersInviteInternal.rst
-   usersDomainUsers.rst
-   manageUsers/manageUsers.rst
-   filterSearchUsers/filterSearchUsers.rst
-
 Invite users to Account/Mailbox by email
 ========================================
 
-Registered user can invite in Account/Mailbox any users if he has necessary permissions . If user accept your invite he will get special permissions which you provide him when send invite. By email you're able to invite registered users and users who has not already registered at the platform. To invite new users in your Account/Mailboxes follow by next steps:
+Registered user can invite in Account/Mailbox any users if he has necessary permissions. If user accept your invite he will get special permissions which you provide him when send invite. By email you're able to invite registered users and users who has not already registered at the platform. To invite new users in your Account/Mailboxes follow by next steps:
 
-1. Navigate to platform_address/admin/users/
+1. Navigate to https://platform_address_here/admin/users/
 
 .. image:: pic_users/users_1.png
    :width: 600
@@ -68,7 +60,7 @@ Create one user
 
 As administrator of account you can create users with verified and activated domain. It can be used if you working in company and you have to create corporate users. How to add, verify and activate domain you can find by link :ref:`domains configuration <domains-configuration>`. To create corporate user you have to do the following:
 
-1. Navigate to https://staging.whitedoc.space/admin/users with administratore access
+1. Navigate to https://platform_address_here/admin/users with administratore access
 2. Click on "Create user" button
 
 .. image:: pic_users/usersPage.png
@@ -87,10 +79,8 @@ As administrator of account you can create users with verified and activated dom
 
 .. _howToAuth:
 
-How to authorized as corporate user?
-====================================
-
-As soon as administrator of the account created users they get email with instructions.
+How to authorized as a corporate user
+=====================================
 
 1. Open email "You are registered on the electronic document management platform"
 
@@ -118,10 +108,8 @@ Create any quantity of users
 
 As administrator of account you can create users with verified and activated domain. It can be used if you working in company and you have to create corporate users. How to add, verify and activate domain you can find by link :ref:`domains configuration <domains-configuration>`. To create more than one user you can click on "Create" button in header and select respective option "Create users". Modal window appeares and you will be able to download the example of the file for massive user creation. You can open the file using any tool which support .xlsx format. Also, you have to save the file in this particular format, so don't change extention.
 
-What is the content of the file?
-================================
-
-File contains defferent qunatity of sheets and it depends on quantity of Mailboxes in the particular account.
+What is included in the report
+==============================
 
 .. image:: pic_users/tabs.png
    :width: 400
@@ -165,11 +153,8 @@ File contains defferent qunatity of sheets and it depends on quantity of Mailbox
 
 As soon as you fill the file with data you need you can upload the file and create users. All users get emails and have to follow the instructions as described in the :ref:`How to authorized as corporate user? <howToAuth>`.
 
-
-How to generate report by users?
-================================
-
-.. toctree::
+How to generate a report by users
+=================================
 
 1. Open platform
 2. Got to Admin Panel
@@ -180,4 +165,12 @@ How to generate report by users?
 7. Open email you got
 8. Click on button "Download"
 
-Now you can open the file on your computer.
+**Content list**
+
+.. toctree::
+
+   usersInviteExternal.rst
+   usersInviteInternal.rst
+   usersDomainUsers.rst
+   manageUsers/manageUsers.rst
+   filterSearchUsers/filterSearchUsers.rst

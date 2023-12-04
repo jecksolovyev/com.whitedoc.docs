@@ -3,10 +3,7 @@
 SSO configuration
 =================
 
-.. toctree::
-
-You can set authorization via SSO for your corporate users. To do this, you need to create a domain and verify it on the platform.
-Next, you need to create an ISP SSO and connect it to the domain.
+You can set authorization via SSO for your corporate users. To do this, you need to create a domain and verify it on the platform. Next, you need to create an ISP SSO and connect it to the domain.
 
 How to add SSO?
 ===============

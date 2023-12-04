@@ -23,7 +23,7 @@ How to add choice field to the document
 
 3. Name - this is a name of a value available for selection from a group (Group name)
 4. Role name - this is a role which will be assgined to fill this field
-5. Group name - this is a name of a group of values which has some options (Names) available for selection
+5. Group name - this is a name of a group of values which has some options (Names) available for selection (3 characters min, 40 max)
 6. Search - this attribute specifies if this field should be eligible for mailbox page search
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.

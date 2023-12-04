@@ -2,6 +2,8 @@
 Admin panel
 ===========
 
+**Content list**
+
 .. toctree::
 
    adminAccountSettings/adminAccountSettings.rst
@@ -11,4 +13,3 @@ Admin panel
    billing/billing.rst
    integration/integration.rst
    permissionsList/permissionsList.rst
-

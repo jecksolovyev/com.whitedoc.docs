@@ -1,12 +1,6 @@
 ==================
-Template Structure
+Template structure
 ==================
-
-.. toctree::
-
-   templateStaticElements.rst
-   templateFields.rst
-
 
 .. code:: json
 
@@ -103,3 +97,10 @@ Template consists of two blocks:
 .. csv-table::
   :file: templateStructureData.csv
   :widths:  10, 10
+
+**Content list**
+
+.. toctree::
+
+   templateStaticElements.rst
+   templateFields.rst

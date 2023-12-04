@@ -2,8 +2,6 @@
 Create callback
 ===============
 
-.. toctree::
-
 +---------------+--------------------------------------------------------------+
 |   **URL**     |                                                              |
 +---------------+--------------------------------------------------------------+
@@ -122,5 +120,3 @@ In response you get 201 status code (in case of successful callback creation) an
     "successCode": 200,
     "authType": "BASIC"
   }
-
-

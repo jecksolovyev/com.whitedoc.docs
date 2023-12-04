@@ -1,8 +1,6 @@
 ===================
 Envelope management
 ===================
-
-.. toctree::
     
 You can view and manage your envelopes on Mailbox page. Also you can create new envelope from this page by clicking New envelope button near your profile icon in the upper-right corner
 
