@@ -11,6 +11,8 @@ This document identifies types of errors. Each error code has common error type 
 
 Localized error codes you can find below:
 
+**Content list**
+
 .. toctree::
 
    errorCodesEs.rst

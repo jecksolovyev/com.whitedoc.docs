@@ -2,7 +2,7 @@ Argument ,Format,Description
 access,string,"Template access level, can be: 
 mailbox - available only for mailbox where created; 
 account – available for all mailbox account where created; 
-Public – available for all system by uuid;"
+Public – available for all system by UUID;"
 archive,boolean,Archivetrue – template was deleted and unavailable;  archive:false – template not deleted and available
 categories,Int(10),Digit corresponds to the category ID where template located
 createdAt,string,Template created date

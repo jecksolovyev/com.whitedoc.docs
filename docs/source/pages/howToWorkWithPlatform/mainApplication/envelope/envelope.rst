@@ -2,6 +2,10 @@
 Envelope
 ========
 
+Envelope is entity with documents (structured, external and PDF) with automatic or manual processing flow. Envelope is a tool that allows EDI process.
+
+**Content list**
+
 .. toctree::
 
     envelopeCreation/envelopeCreation.rst
@@ -17,5 +21,3 @@ Envelope
     sendEnvelopeAsGuest/sendEnvelopeAsGuest.rst
     receiveFillSignEnvelopeAsGuest/receiveFillSignEnvelopeAsGuest.rst
     envelopeCallback/envelopeCallback.rst
-
-Envelope is one or more documents (structured and external) with automatic or manual processing flow. Envelope is a tool that allows EDI process.

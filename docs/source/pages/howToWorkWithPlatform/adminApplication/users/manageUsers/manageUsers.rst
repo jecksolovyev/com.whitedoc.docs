@@ -1,7 +1,5 @@
-====================================
-How to manage already invited users?
-====================================
+==================
+Invites management
+==================
 
-.. toctree::
-
-There is should be more information...
+Description coming soon.

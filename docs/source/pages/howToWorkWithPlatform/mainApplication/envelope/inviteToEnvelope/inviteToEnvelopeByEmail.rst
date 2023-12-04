@@ -2,8 +2,6 @@
 Invitation to the envelope by email
 ===================================
 
-.. toctree::
-
 It's possible to invite participant of the envelope flow by email. Participants which invited by email have to follow the envelope invitation link from email.
 
 Invite participant to envelope by email from the draft page

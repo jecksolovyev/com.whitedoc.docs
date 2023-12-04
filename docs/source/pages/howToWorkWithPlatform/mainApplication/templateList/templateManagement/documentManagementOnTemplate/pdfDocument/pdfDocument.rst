@@ -1,16 +1,14 @@
 ============
-PDF Document
+PDF document
 ============
 
-.. toctree::
-
-What is PDF document?
-=====================
+What is a PDF document
+======================
 
 It is a field which allows to upload an external PDF document directly on template level. Also it can be left empty to be uploaded later by the participants of envelope processing flow. It also can be signed with an QES or e-ink signature by envelope flow participants. If such document was uploaded on template level, dynamic fields can be placed on it similar to structured document.
 
-How to add a PDF document to template?
-======================================
+How to add a PDF document to template
+=====================================
 
 1. Navigate to ../template/list?s=mailbox or press the button "Templates" on the left sidebar
 
@@ -36,14 +34,14 @@ How to add a PDF document to template?
 7. In the template editor you can edit document properties, such as role and optionality (only if no file was uploaded)
 8. You also can add QES and e-ink fields to such document
 
-How to clone PDF document?
-==========================
+How to clone a PDF document
+===========================
 
 1. Click "More" button in the right upper corner of the document
 2. Click "Clone" button in the menu
 
-How to delete PDF document?
-===========================
+How to delete a PDF document
+============================
 
 1. Click "More" button in the right upper corner of the document
 2. Click "Delete" button in the menu

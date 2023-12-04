@@ -2,8 +2,6 @@
 List callbacks
 ==============
 
-.. toctree::
-
 +---------------+--------------------------------------------------------------+
 |   **URL**     |                                                              |
 +---------------+--------------------------------------------------------------+
@@ -51,4 +49,3 @@ In response you get 200 status code (in case of successful callback list retriev
         "authType": "BASIC"
     }
   ]
-

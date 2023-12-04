@@ -2,6 +2,8 @@
 API
 ===
 
+**Content list**
+
 .. toctree::
 
    apiMethods.rst

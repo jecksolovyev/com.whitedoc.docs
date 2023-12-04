@@ -53,10 +53,10 @@ sendEnvelopeDto
 	}
 
 **RESPONSE**
-Response returns envelope uuid:
+Response returns envelope UUID:
 
 .. code-block:: JSON
 
     {"uuid":"89499ba2-287d-404c-87b0-342dc5b01b6a"}
 
-You can check envelope status by this uuid.
+You can check envelope status by this UUID.

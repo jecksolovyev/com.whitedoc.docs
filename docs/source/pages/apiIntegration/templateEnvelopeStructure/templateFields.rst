@@ -47,18 +47,18 @@ Template dynamic fields
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
  - "allow-custom-value" - allow choose custom value if not exists in dictionary
- - dictionaryUuid - dictionary uuid for dict|strict-dict subtypes, optional, required for dict|strict-dict
- - columnUuid - uuid of dictionary column, which value should be taken as text value
+ - dictionaryUuid - dictionary UUID for dict|strict-dict subtypes, optional, required for dict|strict-dict
+ - columnUuid - UUID of dictionary column, which value should be taken as text value
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |**Lookup field**                                                                                                                                               |
 +===============================================================================================================================================================+
-|`<lookup name="name" relatedTo="dictionary field name" documentId="uuid of document" columnUuid="uuid of dictionary column" placeholder="text when not set" />`|
+|`<lookup name="name" relatedTo="dictionary field name" documentId="UUID of document" columnUuid="UUID of dictionary column" placeholder="text when not set" />`|
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
  - relatedTo - name of dictionary to which lookup will be connected
  - documentId - document id from which we take dictionary field
- - columnUuid - uuid of dictionary column, which value should be taken as text value
+ - columnUuid - UUID of dictionary column, which value should be taken as text value
 
 +------------------------------------------------------------------------------------+
 |**Signature field**                                                                 |

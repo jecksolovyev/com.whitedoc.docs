@@ -1,8 +1,6 @@
 =================
-SSO Configuration
+SSO configuration
 =================
-
-.. toctree::
 
 SSO Properties (app.sso)
 ========================
@@ -14,7 +12,7 @@ SSO Properties (app.sso)
 | **phone-number-prop-name** - Mapper field name for "Phone Number" ('phoneNumber' by default)
 
 SSO SAML2 Configuration (app.sso.saml)
-========================================================
+======================================
 
 | **entity-id** - ID of the Service Provider (should be {whitedoc_backend_url}/saml/metadata)
 | **idp-metadata** - URL to Identity Provider metadata or Path to metadata file
@@ -29,7 +27,7 @@ SSO SAML2 Configuration (app.sso.saml)
 | APP_SSO_FIRST-NAME-PROP-NAME=givenname
 
 How to set up IdP SSO
-========================================================
+=====================
 
 * Create new SAML application on IdP
 * Set ACS URL {whitedoc_backend_url}/saml/SSO

@@ -1,15 +1,13 @@
 .. _scenario-management:
 
-======================
-How to manage scenario
+=======================
+How to manage scenarios
 ======================
 
 Scenario includes the following information: name, description, UUID, scenario access and steps of the scenario. Steps include name, source and destination (where source and destination include template UUID and template version UUID) and conversion rule.
 
-.. toctree::
-
-How to create scenario?
-=======================
+How to create a scenario
+========================
 
 To create scenario you have to click on button "New scenario" on the scenario list. And after that fill in required details.
 
@@ -42,20 +40,18 @@ Scenario creation form presented below:
 
 **3 - Scenario step add button**  
 
-How to configure particular step?
-=================================
+How to configure a scenario step
+================================
 
 1. In Scenario steps form set the name of the scenario step
-2. Fill the destination with template UUID and template version UUID of template you need    
-3. You have to enter xslt conversion rule which will create envelope after run. 
+2. Fill the destination with template UUID and template version UUID of template you need
+3. You have to enter xslt conversion rule which will create envelope after run
 4. You can set checkbox "Send an envelope immediately after starting a step" if you need this action
 5. Click on "Save" icon in the right top corner of the step
 
 .. note:: The latest template version UUID automatically applies in the field after template UUID entered
 
-To create second, third and the rest of the following steps you have to click on "+ Add new step" button near "Scenario steps" title. 
-After that new form will appear, but you will need to fill new field "source" and may check "condition". 
-Source it's two field with template UUID and template version UUID of the previous step of the scenario.
+To create second, third and the rest of the following steps you have to click on "+ Add new step" button near "Scenario steps" title. After that new form will appear, but you will need to fill new field "source" and may check "condition". Source it's two field with template UUID and template version UUID of the previous step of the scenario.
 
 How to edit scenario?
 =====================
@@ -73,7 +69,7 @@ How to edit scenario?
 
 | 1. Source and destination UUIDs
 | 2. Condition for step
-| 3. Condition xslt field (if condition step is checked). (required)
+| 3. Condition xslt field (if condition step is checked) (required)
 | 4. Step form action buttons
 |     4.1 Save step button. (if edit step mode, disabled if step form invalid)
 |     4.2 Delete step button. (first step cannot delete)
@@ -83,23 +79,23 @@ How to edit scenario?
 |     5.2 Clone scenario button
 |     5.3 Save scenario button
 
-How to edit scenario step?
-==========================
+How to edit a scenario step
+===========================
 
 If you need edit scenario step you have to click on "edit" button (pencil icon) on the scenario step you have to edit, add changes and click on "Save" button in the top right corner of the edited scenario step. After that click on "Save" scenario button.
 
-How to clone scenario?
-======================
+How to clone a scenario
+=======================
 
 1. Open scenario list
 2. Click on three dots in the right corner of the scenario you need to edit
 3. Click on "Clone" option from the list
 4. If scenario cloned successfully you will get respective message and will see cloned scenario in the list
 
-You can also clone a scenario using the "Clone" button inside the edit form for a specific scenario.
+.. note:: You can also clone a scenario using the "Clone" button inside the edit form for a specific scenario.
 
-How to delete scenario?
-=======================
+How to delete a scenario
+========================
 
 1. Open scenario list
 2. Click on three dots in the right corner of the scenario you need to edit
@@ -108,8 +104,8 @@ How to delete scenario?
 
 You can also delete a scenario using the "Delete" button inside the edit form for a specific scenario.
 
-What is option send envelope immediately after step run?
-=========================================================
+What is option send envelope immediately after step run
+=======================================================
 
 If you want to send envelope after step run, mark the respective checkbox.
 
@@ -118,8 +114,8 @@ If you want to send envelope after step run, mark the respective checkbox.
 If you any required data is missed on the step (at the conversion rule) you will get an error while saving scenario.
 
 
-What is condition and how to use it?
-====================================
+What is condition and how to use it
+===================================
 
 On the platform presented two types of the conditions:
 

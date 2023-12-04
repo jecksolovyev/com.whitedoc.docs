@@ -4,8 +4,6 @@
 Password policy
 ===============
 
-.. toctree::
-
 You're able to configure password and session policy for all users with verified domains in your account. You can make it more strict than default system configuration.
 To do that follow next instructions.
 

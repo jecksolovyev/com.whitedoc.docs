@@ -4,27 +4,25 @@
 External links configuration
 ============================
 
-.. toctree::
-
 External links configuration allows manage list of links to external resources, which may be useful for mailbox users.
 
 
-How to add external link?
-=========================
+How to add an external link
+===========================
 
-1. To add external link follow to the respective tab on the Account settings menu called "External links".
+1. To add external link follow to the respective tab on the Account settings menu called "External links"
 
 .. image:: assets/goToExternalLinks.png
    :width: 600
    :align: center
 
-2. Click on the button "Add link" in header.
+2. Click on the button "Add link" in header
 
 .. image:: assets/addLink.png
    :width: 600
    :align: center
 
-3. Enter link name, url and access level: account-wide or mailbox-specific. If you choose account access level for link all users who have access to mailboxes from this account will watch the link. If you set as access level specific mailbox only users who have access to this mailbox will watch link.
+3. Enter link name, url and access level: account-wide or mailbox-specific. If you choose account access level for link all users who have access to mailboxes from this account will watch the link. If you set as access level specific mailbox only users who have access to this mailbox will watch link
 
 .. image:: assets/addLinkModal.png
    :width: 600
@@ -36,11 +34,10 @@ How to add external link?
    :width: 600
    :align: center
 
+How to modify a link
+====================
 
-How to modify link?
-===================
-
-1. To modify link press edit icon in the links list:
+1. To modify link press edit icon in the links list
 
 .. image:: assets/editLink.png
    :width: 600
@@ -52,8 +49,8 @@ How to modify link?
    :width: 600
    :align: center
 
-How to change links order?
-==========================
+How to change links order
+=========================
 
 1. Click on the "order" icon on the left in links list
 
@@ -70,10 +67,8 @@ How to change links order?
 All links display according to the order set but if any of "official" link presented on platform they will be shown first.
 
 
-Link deletion
-=============
-
-If you need to delete link you can do this in two steps.
+How to delete a link
+====================
 
 1. Click on "bin" icon ahead link you want to delete
 

@@ -1,8 +1,6 @@
 =================
 Envelope creation
 =================
-
-.. toctree::
     
 There are several ways to create an envelope:
 

@@ -2,8 +2,6 @@
 Notification system
 ===================
 
-.. toctree::
-
 Notifications system using for provide customers information about different activities in accounts/mailboxes where customers has access:
 
 * New envelope
@@ -63,17 +61,4 @@ and by two criteria:
 * by e-mail
 * in the system
 
-By default, all notifications are turned on.
-
-You can uncheck the box next to any type of notification and they will not be sent to you by e-mail or will not arrive in the system (bell in the upper right corner).
-
-
-
-
-
-
-
-
-
-
-
+By default, all notifications are turned on. You can uncheck the box next to any type of notification and they will not be sent to you by e-mail or will not arrive in the system (bell in the upper right corner).

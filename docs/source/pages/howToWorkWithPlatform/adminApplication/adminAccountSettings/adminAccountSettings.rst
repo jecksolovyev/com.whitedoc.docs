@@ -2,24 +2,11 @@
 Admin Settings
 ==============
 
-.. toctree::
-   
-   domains/domains.rst
-   ssoSettings/ssoSettings.rst
-   external-links/external-links.rst
-   password-policy/password-policy.rst
-   cloudSignature/cloudSignature.rst
+Account Settings - is a list of account properties that helps to identify and manage account. Data from account used for creating mailboxes and billing. From account settings you can easily :ref:`configure domains <domains-configuration>`, add :ref:`external links <external-links-configuration>` for mailboxes, configure :ref:`password policy <password-policy>` for domain users and delete account.
 
-
-Account Settings - is a list of account properties that helps to identify and manage account. Data from account used
-for creating mailboxes and billing. From account settings you can easily :ref:`configure domains <domains-configuration>`,
-add :ref:`external links <external-links-configuration>` for mailboxes, configure :ref:`password policy <password-policy>` for domain users
-and delete account.
-
-
-Copy Account uuid
+Copy account UUID
 =================
-1. Navigate to https://staging.whitedoc.space/admin/account-settings
+1. Navigate to https://platform_address_here/admin/account-settings
 
 .. image:: assets/personal-account.png
    :width: 600
@@ -36,7 +23,6 @@ Copy Account uuid
 .. image:: assets/account-uuid-copy-success.png
    :width: 600
    :align: center
-
 
 Edit personal account
 =====================
@@ -78,7 +64,6 @@ Ability for account and platform upload logos/photos
 User can add logo for their account and change logo platform
 
 1. Go to admin panel
-
 2. User  view "Account icon settings" and "Platform logotype settings"
 
 .. image:: pic_admin/Screenshot_8.png
@@ -92,13 +77,12 @@ User can add logo for their account and change logo platform
    :align: center
 
 4. User can save image, if click "Save" button
-
 5. You can return default  logo, when user click "Set default" button. In this case logo will consist on two first letters account name and logo platform will consist logo WhiteDoc
 
 Edit company account
 ====================
 
-1. Navigate to https://staging.whitedoc.space/admin/account-settings
+1. Navigate to https://platform_address_here/admin/account-settings
 
 .. image:: assets/company-account.png
    :width: 600
@@ -144,7 +128,7 @@ Edit company account
 Going back
 ==========
 
-1. Navigate to https://staging.whitedoc.space/admin/account-settings
+1. Navigate to https://platform_address_here/admin/account-settings
 
 .. image:: assets/company-account.png
    :width: 600
@@ -160,7 +144,7 @@ Going back
 Delete account
 ==============
 
-1. Navigate to https://staging.whitedoc.space/admin/account-settings
+1. Navigate to https://platform_address_here/admin/account-settings
 
 .. image:: assets/account-delete-form.png
    :width: 600
@@ -203,3 +187,12 @@ Delete account
    :width: 600
    :align: center
 
+**Content list**
+
+.. toctree::
+   
+   domains/domains.rst
+   ssoSettings/ssoSettings.rst
+   external-links/external-links.rst
+   password-policy/password-policy.rst
+   cloudSignature/cloudSignature.rst
