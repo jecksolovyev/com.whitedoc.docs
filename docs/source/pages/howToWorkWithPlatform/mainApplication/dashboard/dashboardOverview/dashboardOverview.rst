@@ -17,7 +17,7 @@ If you want to send external document (such as image, document, archive) to anyo
    :width: 400
    :align: center
 
-2. After click on "Upload document" button modal window will open. Here you can upload file for quick send (5MB per file max and 25MB total max)
+2. After click on "Upload document" button modal window will open. Here you can upload file for quick send (50 documents maximum, 5MB per file max and 25MB total max)
 
 .. image:: pic_dashboardOverview/dragAndDropModal.png
    :width: 400
