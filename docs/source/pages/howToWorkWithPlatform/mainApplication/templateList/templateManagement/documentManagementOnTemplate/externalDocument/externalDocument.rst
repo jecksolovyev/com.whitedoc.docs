@@ -29,7 +29,7 @@ How to add an external document to template
    :align: center
 
 4. Click on the "Add new document" button on the left side (menu with it can be collapsed depending on your monitor resolution, just expand it by clicking "Documents" icon)
-5. Click on "External" button. After this document will appear under default first structured document (assigned to Sender by default)
+5. Click on "External" button. After this document will appear under default first structured document (assigned to Sender by default). You can add 50 external documents maximum in one template.
 6. In the template editor you can edit document properties, such as role, optionality or allowed file extensions:
 
 * All - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .png, .jpg, .jpeg, .tiff, .tif, .zip, .7z, .rar
