@@ -10,7 +10,7 @@
 4. Install dependencies from requirements file: `pip install -r requirements.txt`
 5. Update Sphinx to the latest version: `pip install -U sphinx`
 
-### Linux
+### Linux, MacOS
 
 1. Update all packages: `sudo apt update && sudo apt upgrade -y`
 2. Install pip: `sudo apt install python3-pip`
