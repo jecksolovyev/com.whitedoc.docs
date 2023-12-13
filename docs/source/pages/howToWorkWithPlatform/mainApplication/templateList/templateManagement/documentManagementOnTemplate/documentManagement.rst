@@ -2,7 +2,7 @@
 Document management
 ===================
 
-This section describes all functionality of document editor. Please note that amount of documents per envelope is limited to 50 by default system configuration. Document editor page contain the following data:
+This section describes all functionality of document editor. Document editor page contain the following data:
 
 .. image:: pic_documentManagement/documentEditor.png
    :width: 1440

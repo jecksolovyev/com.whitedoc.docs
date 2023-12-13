@@ -5,34 +5,28 @@ PDF document
 What is a PDF document
 ======================
 
-It is a field which allows to upload an external PDF document directly on template level. Also it can be left empty to be uploaded later by the participants of envelope processing flow. It also can be signed with an QES or e-ink signature by envelope flow participants. If such document was uploaded on template level, dynamic fields can be placed on it similar to structured document.
+It is a PDF file upload form in the template. Also it can be left empty in template to be uploaded later by the participants of envelope processing flow. It can be signed with QES/PAdES or simple electronic signatures by envelope processing flow participants. If such document was uploaded on template level, dynamic fields can be placed on it or imported from the PDF file similar to structured document.
+
+.. note:: Please note that maximum amount of PDF and external documents together per envelope is limited to 50 by default system configuration.
 
 How to add a PDF document to template
 =====================================
 
-1. Navigate to ../template/list?s=mailbox or press the button "Templates" on the left sidebar
+1. Click on the "Add new document" button on the left side (menu with it can be collapsed depending on your monitor resolution, just expand it by clicking "Documents" icon)
 
-.. image:: pic_pdfDocument/templatesSidebarButton.png
+.. image:: pic_pdfDocument/newDocument.png
    :width: 600
    :align: center
 
-2. Click on the "New Template" button
+2. Click on "PDF document" button. After this file explorer will open for you to select PDF file
 
-.. image:: pic_pdfDocument/newTemplateButtonTemplates.png
+.. image:: pic_pdfDocument/pdf.png
    :width: 600
    :align: center
 
-3. Alternatively, you can click "Create template" or "New From Blanc" button on the dashboard
-
-.. image:: pic_pdfDocument/newTemplateButtonDashboard.png
-   :width: 600
-   :align: center
-
-4. Click on the "Add new document" button on the left side (menu with it can be collapsed depending on your monitor resolution, just expand it by clicking "Documents" icon)
-5. Click on "PDF document" button. After this file explorer will open for you to select PDF file
-6. You can select a file and it will be uploaded or you can close file explorer and document will be left empty for envelope processing participants to upload
-7. In the template editor you can edit document properties, such as role and optionality (only if no file was uploaded)
-8. You also can add QES and e-ink fields to such document
+3. You can select a file and it will be uploaded or you can close file explorer and document will be left empty for envelope processing participants to upload (assigned to Sender by default)
+4. In the template editor you can edit document properties, such as role and optionality (only if no file was uploaded)
+5. You also can add QES/PAdES and Signature fields to such document
 
 How to clone a PDF document
 ===========================
