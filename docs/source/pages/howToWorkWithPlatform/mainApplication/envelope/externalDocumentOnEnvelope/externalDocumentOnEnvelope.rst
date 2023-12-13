@@ -49,12 +49,3 @@ How to add an e-ink signature to external document
    :align: center
 
 3. When this is done you can finish filling all mandatory fields and send the envelope - all signatures will be visible on it
-
-How to add a stamps to external document
-========================================
-
-Note that you can add stamps to the external document in the same way as a e-ink signature. Text stamp can be edited to contain any needed text (up to 140 symbols).
-
-.. image:: pic_externalDocument/ExternalDocumentStamps.png
-   :width: 600
-   :align: center
