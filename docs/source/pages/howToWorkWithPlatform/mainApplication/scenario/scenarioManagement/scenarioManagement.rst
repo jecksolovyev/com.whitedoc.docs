@@ -277,8 +277,8 @@ OR
     <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <xsl:template match="/">
             ...
-			<xsl:variable name="att1Uuid" select="envelope/documents/document/field[@name='Файл 1']/@attachmentUuid"/>
-            <field name="Файл 1" attachmentUuid="{$att1Uuid}"></field>
+			<xsl:variable name="att1Uuid" select="envelope/documents/document/field[@name='b70d61fa-4805-4e7b-9561-aa1f4f5c653f']/@attachmentUuid"/>
+            <field name="File 1" attachmentUuid="{$att1Uuid}"></field>
             ...
         </xsl:template>
     </xsl:stylesheet>
