@@ -222,7 +222,7 @@ Attachment re-use
 
 You can re-use attachments uploaded on previous step of scenario. To do that you need to get attachment UUID from source envelope and set it in respective attachment in target envelope.
 
-.. note:: You can not use one attachment with same UUID more than one time in the envelope
+.. note:: You can not use one attachment with same UUID more than one time in the envelope. Attachment re-use functionality allowed only for envelopes created through scenario functionality
 
 **Source envelope**
 
