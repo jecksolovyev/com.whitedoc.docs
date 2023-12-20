@@ -8,7 +8,7 @@ This section describes all functionality of document editor. Document editor pag
    :width: 1440
    :align: center
 
-1. **Documents management menu** allows to view, create, reorder and delete documents inside the template
+1. **Documents management menu** allows to view, create, reorder and delete documents inside template
 2. **Document zoom functionality** allows to zoom documents inside template. Allowed options: Fit, 50%, 75%, 100%, 125%, 150%, 200%
 3. **Text heading** allows to set the text heading inside document (paragraph, cell). Allowed options: Paragraph, Header H1, Header H2, Header H3, Header H4
 4. **Text font** allows to set text font inside document (paragraph, cell). Allowed options: Arial, Calibri, Courier New, Gergia, Roboto, Tahoma, Times New Roman, Verdana
@@ -24,8 +24,6 @@ This section describes all functionality of document editor. Document editor pag
 14. **Document options** allows to open context menu with document options. Allowed options: Clone, Delete, Page size, Page orientation
 15. **Right side bar menu** allows to add :ref:`dynamic fields <fields>`, configure template details and template flow. Menu opens by click or opened by default for screen resolution bigger than 1920p
 16. **Document editor area** where you can add text, images, tables and dynamic fields
-
----------------------------------
 
 **Content list**
 

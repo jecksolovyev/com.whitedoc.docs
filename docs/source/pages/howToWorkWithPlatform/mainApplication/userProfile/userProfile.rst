@@ -155,8 +155,6 @@ After User profile deletion all Accounts with role "Account owner" will be delet
 
 .. note:: `Behaviour of data after deleting a user profile <delete_userProfile_behaviour.html>`_
 
----------------------------------
-
 **Content list**
 
 .. toctree::

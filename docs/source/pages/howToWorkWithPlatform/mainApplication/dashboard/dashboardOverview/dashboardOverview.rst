@@ -17,7 +17,7 @@ If you want to send external document (such as image, document, archive) to anyo
    :width: 400
    :align: center
 
-2. After click on "Upload document" button modal window will open. Here you can upload file for quick send (5MB per file max and 25MB total max)
+2. After click on "Upload document" button modal window will open. Here you can upload file for quick send (50 documents maximum, 5MB per file max and 25MB total max)
 
 .. image:: pic_dashboardOverview/dragAndDropModal.png
    :width: 400
@@ -53,10 +53,16 @@ If you want to send external document (such as image, document, archive) to anyo
 
 .. note:: If PDF and non-PDF documents were uploaded and e-ink was selected, signatures will be applied only to PDF documents. If only non-PDF documents were selected, QES will be used by default.
 
-8. When you will finish all required actions with envelope properties you can click "Next" button and envelope editor preview will be opened where you can add fields to Recipient and Signer roles. If "I want to sign an envelope" checkbox was selected you will be able to assign fields also for Sender role.
+8. When you will finish all required actions with envelope properties you can click "Next" button and envelope editor preview will be opened where you can add fields to Recipient and Signer roles. If "I want to sign an envelope" checkbox was selected you will be able to assign fields also for Sender role. Please note that for Sender role you should set fields value right on the editor. This applies to fields such as Text, Number, Currency, Date and time, Dictionary, Lookup and Signature.
 
-.. note:: You can add following fields on quick-editor preview: Text, Number, Currency, Date and time, Dropdown, A/B, Checkbox, Dictionary, Lookup, Duplicate, Formula, QES, PAdES and Signature
+.. image:: pic_ddashboardOverviewSenderFile.png
+   :width: 500
+   :align: center
 
-9. As soon as all Recipient roles and Sender role (in case of set in up "I want to..." checkbox) has at least for one field you can click on Send button in the header
+9. The rest of the fields, such as Dropdown, Choice, A/B, Checkbox, Duplicate, Formula, QES and PAdES could be added without value and new role for Sender will be created, which can be completed by filling in the fields after envelope send action.
 
-.. note:: Some fields assigned to sender can be filled in on the form of field assignment, such as Text, Number, Currency, Date and time and Signature. The rest of the fields could be added without value and new role for Sender will be created, which can be completed by filling in the fields after envelope send action.
+.. image:: pic_dashboardOverviewSenderFileNoValue.png
+   :width: 500
+   :align: center
+
+10. As soon as all Recipient roles and Sender role (in case of set in up "I want to..." checkbox) has at least for one field you can click on Send button in the header

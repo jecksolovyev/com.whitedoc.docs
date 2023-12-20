@@ -1,5 +1,8 @@
-Welcome to platform's documentation!
-====================================
+======================================
+Welcome to platform documentation page
+======================================
+
+**Content list**
 
 .. toctree::
 

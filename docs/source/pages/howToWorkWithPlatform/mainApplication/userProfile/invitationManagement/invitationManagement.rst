@@ -2,6 +2,4 @@
 Invitation managment
 ====================
 
-.. toctree::
-
-There is should be description...
+Description coming soon.

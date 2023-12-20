@@ -2,6 +2,8 @@
 Template
 ========
 
+**Content list**
+
 .. toctree::
 
    templateManagement/templateManagement.rst

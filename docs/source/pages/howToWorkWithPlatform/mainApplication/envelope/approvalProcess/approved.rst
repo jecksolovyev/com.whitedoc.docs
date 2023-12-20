@@ -4,11 +4,8 @@
 Envelope approval process
 =========================
 
-.. toctree::
-
-
-How to send envelope for approval
-=================================
+How to send an envelope for approval
+====================================
 
 1. User can send envelope for approval in the "Waiting" status or a draft envelope. To do this open envelope in "Waiting" status, in the upper right corner of the envelope header click on Approval button
 
@@ -23,7 +20,7 @@ How to send envelope for approval
    :align: center
 
 3. In order to create a new route, click on the Create button
-4. In the name field, write the name of the route. In the input "Аpprover" and "Mailbox" (you can search mailbox by name or uuid) enter details of the approver and click on Add button. You can create unlimited quantity of approvers. You can delete approver by clicking on Cancel button
+4. In the name field, write the name of the route. In the input "Аpprover" and "Mailbox" (you can search mailbox by name or UUID) enter details of the approver and click on Add button. You can create unlimited quantity of approvers. You can delete approver by clicking on Cancel button
 
 .. warning:: You can't set approver mailbox to mailbox that's takes part in envelope processing or duplicate mailbox from approval flow.
 
@@ -31,7 +28,7 @@ How to send envelope for approval
    :width: 600
    :align: center
 
-5. User can specify access to route. Access can be granted to specific users from your account, or you can grant access to all account users.
+5. User can specify access to route. Access can be granted to specific users from your account, or you can grant access to all account users
 
 .. image:: pic_approval/Screenshot_04.png
    :width: 600

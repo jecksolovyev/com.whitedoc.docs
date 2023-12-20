@@ -1,14 +1,10 @@
 .. _templateAccessLevel:
 
 ===============
-Template Access
+Template access
 ===============
 
-.. toctree::
-
-User can specify access level of the template when creating or editing it.
-
-There are four types of access on the platform:
+User can specify access level of the template when creating or editing it. There are four types of access on the platform:
 
 - access for your mailbox only
 - access for selected mailboxes (Selected mailboxes)
@@ -17,51 +13,51 @@ There are four types of access on the platform:
 
 .. note:: Public templates can be made accessible to users not registered on the platform via direct link. To generate this link first you need to make sure that such template includes only public dictionaries (or no dictionaries at all). Also such templates should have subject field filled and all participants of the flow should have specified mailbox adresses in the flow configuration tab. When this is done, click on the template menu button in upper right corner of template on template list and click "Get link". Menu with sharing link will open where you can copy this link, generate new one to revoke access by previous link or remove access by link completely. Account on the platform will be created automatically for anyone who will create an envelope using such link.
 
-How to modify template access level
+How to edit a template access level
 ===================================
 
-In order to set access level of template you need to go to "Template" tab and click on "Template Access".
+1. In order to set access level of template you need to go to "Template" tab and click on "Template access"
 
-.. image:: picTemplateAccess/TemplateAccess_1.png
+.. image:: picTemplateAccess/templateAccess1.png
    :width: 400
    :align: center
 
-You can grant access to specific mailboxes. After selecting this option you will need to click on edit button.
+2. You can grant access to specific mailboxes. After selecting this option you will need to click on edit button
 
-.. image:: picTemplateAccess/TemplateAccess_2.png
+.. image:: picTemplateAccess/templateAccess2.png
    :width: 400
    :align: center
 
-In the modal window you can enter mailbox name, mailbox uuid, alias, or contact name.
+3. In the modal window you can enter mailbox name, mailbox UUID, alias, or contact name
 
-.. image:: picTemplateAccess/TemplateAccess_3.png
+.. image:: picTemplateAccess/templateAccess3.png
    :width: 400
    :align: center
 
-When mailbox is added click "Save".
+4. When mailbox is added click "Save"
 
-.. image:: picTemplateAccess/TemplateAccess_4.png
+.. image:: picTemplateAccess/templateAccess4.png
    :width: 400
    :align: center
 
-Save сhanges.
+5. Save сhanges
 
-.. image:: picTemplateAccess/TemplateAccess_5.png
+.. image:: picTemplateAccess/templateAccess5.png
    :width: 400
    :align: center
 
-After saving the template it will be available for mailboxes specified by you in the folder "Shared with me".
+6. After saving the template it will be available for mailboxes specified by you in the folder "Shared with me"
 
-.. image:: picTemplateAccess/TemplateAccess_6.png
+.. image:: picTemplateAccess/templateAccess6.png
    :width: 400
    :align: center
    
 Additional sharing access configurations
 ========================================
 
-At the bottom of the template tab of envelope menu you can find "Do not send files by email" attribute.
+At the bottom of the template tab of envelope menu you can find "Do not send files by email" attribute
 
-.. image:: picTemplateAccess/TemplateAccess_7.png
+.. image:: picTemplateAccess/templateAccess7.png
    :width: 400
    :align: center
    

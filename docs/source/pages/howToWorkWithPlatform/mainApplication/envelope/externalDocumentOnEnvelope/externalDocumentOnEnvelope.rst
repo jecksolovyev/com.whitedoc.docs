@@ -2,10 +2,8 @@
 External Document
 =================
 
-.. toctree::
-
-How to upload the external document?
-====================================
+How to upload an external document
+==================================
 
 1. Click on the upload zone
 
@@ -25,7 +23,7 @@ How to upload the external document?
 External document signing process
 =================================
 
-Electronic digital signature and e-ink signatures can be used to sign external documents. According signatures should be added to the documents on the template
+Electronic digital signature and e-ink signatures can be used to sign external documents. According signatures should be added to the documents on the template.
 
 .. note:: Electronic ink signatures can be applied only to .pdf format external documents. Plsease note that if you will add e-ink signature to external document in the template, only .pdf files will be accepted for this documents in following envelopes.
 
@@ -35,8 +33,8 @@ Process of signing external documents with QES has one difference from signing i
    :width: 600
    :align: center
 
-How to add e-ink signature to external document?
-================================================
+How to add an e-ink signature to external document
+==================================================
 
 1. To add e-ink signature to the external document click on the signature field
 
@@ -51,12 +49,3 @@ How to add e-ink signature to external document?
    :align: center
 
 3. When this is done you can finish filling all mandatory fields and send the envelope - all signatures will be visible on it
-
-How to add stamps to external document?
-=======================================
-
-Note that you can add stamps to the external document in the same way as a e-ink signature. Text stamp can be edited to contain any needed text (up to 140 symbols).
-
-.. image:: pic_externalDocument/ExternalDocumentStamps.png
-   :width: 600
-   :align: center

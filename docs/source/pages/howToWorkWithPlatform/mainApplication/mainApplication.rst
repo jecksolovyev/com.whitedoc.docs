@@ -2,6 +2,8 @@
 Main application
 ================
 
+**Content list**
+
 .. toctree::
 
    contacts/contacts.rst

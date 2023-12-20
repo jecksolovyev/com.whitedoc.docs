@@ -2,10 +2,7 @@
 External links
 ==============
 
-.. toctree::
-
 External links are list of links to external resources, which may be useful for mailbox users.
-
 
 Where to find external links?
 =============================

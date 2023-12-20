@@ -2,8 +2,6 @@
 Comments
 ========
 
-.. toctree::
-
 How to toggle comments section
 ==============================
 

@@ -2,8 +2,6 @@
 Common API error codes
 ======================
 
-.. toctree::
-
 400 - Bad request (if request data is invalid and doesn’t correspond to API documentation. Also can contain detailed issue description).
 401 - Unauthorized (if auth token is invalid, incorrect or expired).
 402 - Payment Required (if billing deny some functionality because of no payment or tariff restriction).

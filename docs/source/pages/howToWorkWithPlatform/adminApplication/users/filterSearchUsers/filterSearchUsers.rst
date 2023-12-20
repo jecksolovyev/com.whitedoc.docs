@@ -1,7 +1,5 @@
-========================================
-How to find or filter users on the list?
-========================================
+=======================================
+How to find or filter users in the list
+=======================================
 
-.. toctree::
-
-There is should be more information...
+Description coming soon.

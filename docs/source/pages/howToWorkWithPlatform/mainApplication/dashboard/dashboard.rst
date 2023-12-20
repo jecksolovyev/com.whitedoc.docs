@@ -2,6 +2,8 @@
 Dashboard
 =========
 
+**Content list**
+
 .. toctree::
 
     dashboardOverview/dashboardOverview.rst

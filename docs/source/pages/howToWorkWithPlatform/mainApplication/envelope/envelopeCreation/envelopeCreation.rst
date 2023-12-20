@@ -1,8 +1,6 @@
 =================
 Envelope creation
 =================
-
-.. toctree::
     
 There are several ways to create an envelope:
 
@@ -38,10 +36,12 @@ There are several ways to create an envelope:
    :width: 400
    :align: center
 
-Envelope draft will be opened
+7. Envelope draft will be opened
 
 .. image:: picEnvelopeCreation/envelopeFlow.png
    :width: 400
    :align: center
 
 From this page you will have to fill all roles that take part in envelope processing flow (unless they are predifined on the template level). Note that you can enable "I am assignee/approver/signer" attribute to predefine your own mailbox for specified role. After all mandatory fields will be filled you can send envelope to the next participant of the flow.
+
+.. note:: You can also save an envelope draft with some values filled in to send it later. You can do so by clicking "Save draft" button (not available for quick-send). After draft is saved, it will be automatically re-saved after any changes are made. Saving process is indicated by save icon near "Save draft" button. Same auto-save feature is also used in envelopes in "Waiting for you" status.

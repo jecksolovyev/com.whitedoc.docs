@@ -6,8 +6,8 @@ This field allows you to place an QES signature on the document.
 
 .. hint:: This field can be added to any type of the document.
 
-How to add QES field to the document
-====================================
+How to add a QES field to the document
+======================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
@@ -35,6 +35,8 @@ When all attributes are set, you can click Save button and field will be added. 
 .. image:: pic_qes/qesEdit.png
    :width: 600
    :align: center
+
+**Content list**
 
 .. toctree::
 

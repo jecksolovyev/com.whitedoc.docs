@@ -156,7 +156,7 @@ Status code: 200 OK
      - application/json
    * - mailboxUuid
      - {uuid}
-   * - uuid
+   * - UUID
      - {uuid}
 
 In response you will get full envelope and template.

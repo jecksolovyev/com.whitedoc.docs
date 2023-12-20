@@ -2,42 +2,47 @@
 Envelope management on mailbox
 ==============================
 
-.. toctree::
-
 Envelope management on listing page includes following functionality:
 
 1. Labels assignment to envelope(s)
+2. :ref:`Signing envelope(s) with QES and Signature<Signing envelope(s) with QES and Signature>`
+3. Envelope deletion functionality
+4. Archiving and unarchiving envelope(s)
+5. Downloading completed envelope(s)
+6. Sharing envelope(s)
+7. Chaining envelope(s)
+8. :ref:`Sending envelope(s) to approval<How to send several envelopes for approve>`
+9. :ref:`Cancelling envelope(s)<How to cancel several envelopes>`
+10. Envelope report generation
+11. Envelope notification resend
 
-2. Signing envelope(s) with QES (electronic digital signature)
+Signing envelope(s) with QES and Signature
+==========================================
 
-3. Archiving and unarchiving envelope(s)
+You can select one or several envelopes and sign them with specific signing method if selected envelopes contain signature fields. To do this select envelope(s) and select specific signing type you want (signature type selector available in signing modal window).
 
-4. Downloading completed envelope(s)
+ - If you select any type of QES signature please follow the instruction in the signing with QES topic :ref:`QES topic <signatures>`.
+ - If you select Signature type of signing you need to do the following:
 
-5. Chaining envelope(s)
+1. Draw signature or select text variant of the signature if you don't have saved yet. Or keep saved signature
+2. Follow to third step of the signing modal window to sign all documents you need
+3. When signing process completed you will see positive or negative results of signing process
 
-6. :ref:`Sending envelope(s) to approval<How to send several envelopes for approve>`
+.. note:: If some validation occurred with signing of document you'll be notified with toaster message in right top corner of the page and in tooltip on red alert icon against failed envelopes
 
-7. :ref:`Cancelling envelope(s)<How to cancel several envelopes>`
+Validation which can occur:
+
+1. Active role is different from Assignee
+2. Envelope contains fields except Signature fields for active role
+3. Envelope contains signature without coordinates (signature the place of which define Signer instead of template creator)
+4. Signature placed in uncompleted dynamic table field (table field the owner of which has not define quantity of rows yet)
     
 How to send several envelopes for approve
 =========================================
 
-Customer is able to send envelope or envelopes for approve from the envelope list page. To do this customer has to
-select respective envelope or envelopes in status Draft or Waiting for you, click on the "Approve" icon in the header of
-the table and select flow or create new one as described in :ref:`topic <send-for-approval>`.
-
-After successful approval request customer will see modal window with results of the approval request.
+You can send envelope or envelopes for approve from the envelope list page. To do this you should select respective envelope or envelopes in status Draft or Waiting for you, click on the "Approve" icon in the header of the table and select flow or create new one as described in :ref:`topic <send-for-approval>`. After successful approval request customer will see modal window with results of the approval request.
 
 How to cancel several envelopes
 ===============================
 
-Customer is able to cancel envelope or envelopes from the envelope list page. To do this customer has to
-select respective envelope or envelopes in statuses Pending (if customer was initiator of the envelope) or Waiting for you,
-click on the "Cancel envelopes" icon (looks like the circle with x) in the header of the table and in the modal window
-enter the comment if needed and confirm action.
-
-After successful cancel action all selected envelopes change status to CANCELLED.
-
-If customer selects envelopes in different status from allowed, error message will be displayed for customer after confirmation of
-cancel action.
+Customer is able to cancel envelope or envelopes from the envelope list page. To do this customer has to select respective envelope or envelopes in statuses Pending (if customer was initiator of the envelope) or Waiting for you, click on the "Cancel envelopes" icon (looks like the circle with x) in the header of the table and in the modal window enter the comment if needed and confirm action. After successful cancel action all selected envelopes change status to CANCELLED.If customer selects envelopes in different status from allowed, error message will be displayed for customer after confirmation of cancel action.

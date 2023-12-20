@@ -4,14 +4,10 @@
 Static tables inside document
 =============================
 
-Static table is a table with constant quantity of columns and rows on envelope, but within template you're able to
-change it's quantity. Static tables may include text, fields, tables, images inside the cell. Also each cell can be
-formatted as you want.
+Static table is a table with constant quantity of columns and rows on envelope, but within template you're able to change it's quantity. Static tables may include text, fields, tables, images inside the cell. Also each cell can be formatted as you want.
 
-How to add static table to document?
-====================================
-
-To add static table to document you can use top menu of the editor panel.
+How to create static a static table
+===================================
 
 1. Click on table option in menu
 
@@ -41,14 +37,9 @@ What can you do with tables?
    :align: center
 
 * You can change column width. To do that hover on cell border, click and hold pointer and drag border in the side you need to expand column
-
 * You can change style inside cell. Select data or click in the cell and select any style option
-
 * You can add columns, add rows, hide/show borders and apply vertical align for cell. How to do that described in :ref:`table context menu <tableContextMenu>`
-
 * You can select several cells to manage them
-
----------------------------------
 
 **Content list**
 

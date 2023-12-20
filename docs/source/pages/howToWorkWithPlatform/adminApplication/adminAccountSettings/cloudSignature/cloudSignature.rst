@@ -1,20 +1,14 @@
 ===============
-Cloud Signature
+Cloud signature
 ===============
 
-.. toctree::
-
-Cloud signature is one of the many ways to sign document with Qualified Electronic Signature. And on this page will be described how to configure
-cloud signature for your corporate account.
+Cloud signature is one of the many ways to sign document with Qualified Electronic Signature. And on this page will be described how to configure cloud signature for your corporate account.
 
 
 How to create configuration
 ===========================
 
-Owner or user who has respective permissions to corporate account can configure Cloud signature for all corporate users and
-users with verified corporate domains can use Cloud signature.
-
-The short instruction here: Go to Admin panel, select Account Settings. On Account Settings page, select Cloud Signature tab.
+Owner or user who has respective permissions to corporate account can configure Cloud signature for all corporate users and users with verified corporate domains can use Cloud signature. The short instruction here: Go to Admin panel, select Account Settings. On Account Settings page, select Cloud Signature tab.
 
 .. image:: pic/Screenshot_5.png
    :width: 600
