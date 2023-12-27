@@ -60,7 +60,7 @@ Envelopes can be moved to 'Trash' folder by selecting them and clicking on 'To t
 
 .. note:: Only envelopes in Completed, Expired and Cancelled statuses or Drafts can be deleted.
 
-.. warning:: Envelopes will be automatically erased from our servers in 30 days (by default, configured by system administrator), if all processing flow participants will move them to trash. Please note that if envelope has deleted mailbox in it`s processing flow which hasn`t moved it to trash before being deleted, such envelope will never be erased completely and remain in trash folder for remaining flow participants indefinetly.
+.. warning:: Envelopes will be automatically erased from our servers in 30 days (by default, configured by system administrator) if all processing flow participants move them to trash. Please note that if envelope has deleted mailbox in it`s processing flow which hasn`t moved it to trash before being deleted, such envelope will never be erased completely and remain in trash folder for remaining flow participants indefinetly.
 
 Later such envelopes can be restored from 'Trash' folder by 'Restore envelopes' button.
 
