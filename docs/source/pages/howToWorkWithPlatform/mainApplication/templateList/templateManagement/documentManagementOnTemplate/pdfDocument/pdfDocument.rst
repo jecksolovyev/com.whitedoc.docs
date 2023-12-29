@@ -5,7 +5,7 @@ PDF document
 What is a PDF document
 ======================
 
-It is a PDF file upload form in the template. Also it can be left empty in template to be uploaded later by the participants of envelope processing flow. It can be signed with QES/PAdES or simple electronic signatures by envelope processing flow participants. If such document was uploaded on template level, dynamic fields can be placed on it or imported from the PDF file similar to structured document.
+It is a PDF file upload form in the template. Also it can be left empty in template to be uploaded later by the participants of envelope processing flow. It can be signed with QES/PAdES or simple electronic signatures by envelope processing flow participants. If such document was uploaded on template level or sent via quick-send, dynamic fields can be imported from original PDF file or added manually.
 
 .. note:: Please note that maximum amount of PDF and external documents together per envelope is limited to 50 by default system configuration.
 
@@ -39,3 +39,20 @@ How to delete a PDF document
 
 1. Click "More" button in the right upper corner of the document
 2. Click "Delete" button in the menu
+
+PDF fields import
+=================
+
+Embedded PDF fields can be converted to WhiteDoc dynamic fields. Please see conversion map below:
+
+- Text => Text field
+- Date => Text field
+- Checkbox => Checkbox field
+- Radio button => Choice field
+- Dropdown menu => Menu field
+- Listbox => Menu field
+- Signature => PAdES field (only if such field type is enabled by system administrator, otherwise it will be ignored)
+- Picture => currently is not supported, fields will be ignored
+- Barcode => currently is not supported, fields will be ignored
+
+.. note:: All imported fields except Choice inherit theirs optional/required attribute status from original PDF file.
