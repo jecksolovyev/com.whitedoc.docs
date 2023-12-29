@@ -56,3 +56,11 @@ Embedded PDF fields can be converted to WhiteDoc dynamic fields. Please see conv
 - Barcode => currently is not supported, fields will be ignored
 
 .. note:: All imported fields except Choice inherit theirs optional/required attribute status from original PDF file.
+
+Depending on PDF file contents and encryption there are several upload options (only applicable options will be available for each file):
+
+1. If file is encrypted, encryption and can be preserved. In this case existing fields will be converted to WhiteDoc fields, but only new QES fields will be available for creation in such document
+2. Existing data and signatures can be preserved. In this case only QES and PAdES fields will be available for creation in such document
+3. All fields can be converted to WhiteDoc fields without preserving of encryption. In this case any new fields can also be added to the document. Please note that new role will be created for every PAdES signature if there are any
+4. Document can be kept in "as is" state. In this case all existing fields will be disabled and not converted in WhiteDoc format. New fields can be added to the 
+5. All existing fields and signatures can be removed from the document. In this case any new fields can be added to the document
