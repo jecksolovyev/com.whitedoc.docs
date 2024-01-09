@@ -230,27 +230,27 @@ Imagine that source envelope looks like example below
 
 .. code:: xml
 
-<envelope templateUuid="bd6c94c9-715f-4611-bcb0-cc4114cff83d" templateVersion="bd6c94c9-715f-4611-bcb0-cc4114cff83d">
-	<info>
-		<subject>envelope subject</subject>
-		<message/>
-		<forwarding delegation="true" sharing="true"/>
-	</info>
-	<flow>
-		<roles>
-			<role id="e1bcbffa-aed6-4022-baef-40dee2da8cef" mailboxUuid="8dcde243-a918-444a-ac7d-44ac88554769"/>
-			<role id="bc749581-1685-4650-8e91-f2c7187d7223" mailboxUuid="8dcde243-a918-444a-ac7d-44ac88554769"/>
-		</roles>
-	</flow>
-    <documents>
-		<document id="aa620e04-852b-4ae4-85d4-833f5fdfc79f">
-			<field name="File 1" attachmentUuid="5c03bf5e-b2f3-44bb-b313-eb432830189d">zipFileName.zip</field>
-		</document>
-		<document id="fc246044-bfa5-4224-8329-7656280ac45c">
-			<field name="b70d61fa-4805-4e7b-9561-aa1f4f5c653f" attachmentUuid="e3760a4e-4c7b-4323-aa7b-60a4351ba8ef">pdfFileName.pdf</field>
-		</document>
-	</documents>
-</envelope>
+    <envelope templateUuid="bd6c94c9-715f-4611-bcb0-cc4114cff83d" templateVersion="bd6c94c9-715f-4611-bcb0-cc4114cff83d">
+	    <info>
+		    <subject>envelope subject</subject>
+		    <message/>
+		    <forwarding delegation="true" sharing="true"/>
+	    </info>
+	    <flow>
+		    <roles>
+			    <role id="e1bcbffa-aed6-4022-baef-40dee2da8cef" mailboxUuid="8dcde243-a918-444a-ac7d-44ac88554769"/>
+			    <role id="bc749581-1685-4650-8e91-f2c7187d7223" mailboxUuid="8dcde243-a918-444a-ac7d-44ac88554769"/>
+		    </roles>
+	    </flow>
+        <documents>
+		    <document id="aa620e04-852b-4ae4-85d4-833f5fdfc79f">
+			    <field name="File 1" attachmentUuid="5c03bf5e-b2f3-44bb-b313-eb432830189d">zipFileName.zip</field>
+		    </document>
+		    <document id="fc246044-bfa5-4224-8329-7656280ac45c">
+			    <field name="b70d61fa-4805-4e7b-9561-aa1f4f5c653f" attachmentUuid="e3760a4e-4c7b-4323-aa7b-60a4351ba8ef">pdfFileName.pdf</field>
+		    </document>
+	    </documents>
+    </envelope>
 
 **Target conversion rule example**
 
