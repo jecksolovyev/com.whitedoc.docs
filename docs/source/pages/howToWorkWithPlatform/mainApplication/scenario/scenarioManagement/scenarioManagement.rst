@@ -283,7 +283,6 @@ OR
         </xsl:template>
     </xsl:stylesheet>
 
-
 .. _run-scenario-from-integration:
 
 Run scenario from integration
