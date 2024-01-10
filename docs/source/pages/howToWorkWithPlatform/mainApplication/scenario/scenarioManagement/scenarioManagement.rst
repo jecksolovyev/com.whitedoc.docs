@@ -284,7 +284,7 @@ OR
     </xsl:stylesheet>
 
 
-.. run-scenario-from-integration:
+.. _run-scenario-from-integration:
 
 Run scenario from integration
 =============================
