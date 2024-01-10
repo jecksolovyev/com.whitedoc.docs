@@ -307,3 +307,16 @@ Defined scenario UUID should be inside <envelope> tag as attribute scenarioUuid=
     </xsl:stylesheet>
 
 .. note:: You may run scenario from any step you want through integration. System automatically define first step which match template and version and create envelope using data you've provided in integration rule.
+
+Scenario configuration of chaining envelope will be ignored by default if customers create envelope with defined scenario inside integration rule. But customer is able to define chain UUID inside <envelope> tag as attribute chainUuid="uuidOfChain". If user wants to chain all created envelopes though integration it could be static UUID which should be defined once in integration rule, but if customer wants to chain envelopes which created for each file pulled though integration separately it should be defined dynamically.
+
+.. code:: xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:template match="/">
+            <envelope templateUuid="19089ab8-a828-4447-9129-44b1da1cbc9d" templateVersion="f2e1a1c5-15ac-4bfb-bf31-f1ddba652b89" scenarioUuid="e17db760-580a-4192-bc96-a91683123bea" chainUuid="e17db760-580a-4192-bc96-a91683123ben">
+	            ...
+            </envelope>
+        </xsl:template>
+    </xsl:stylesheet>
