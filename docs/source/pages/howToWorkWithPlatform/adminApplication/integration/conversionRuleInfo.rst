@@ -593,3 +593,9 @@ Conversion rule example for incoming documents
             </xsl:choose>
         </xsl:template>
     </xsl:stylesheet>
+
+
+Scenario run through integration
+================================
+
+Customer is able to run scenario through integration, to get more details follow the :ref:`link <run-scenario-from-integration>`
