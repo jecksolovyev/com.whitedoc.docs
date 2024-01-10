@@ -282,3 +282,28 @@ OR
             ...
         </xsl:template>
     </xsl:stylesheet>
+
+
+.. run-scenario-from-integration:
+
+Run scenario from integration
+=============================
+
+Customer is able to run specific scenario through integration functionality. As soon as customer creates scenario, it possible to run through integration, to do that customer should define scenario UUID inside envelope XML in integration rule.
+
+.. note:: Integration data has highest priority and will replace all scenario data if it's defined in integration rule
+
+Defined scenario UUID should be inside <envelope> tag as attribute scenarioUuid="uuidOfScenario"
+
+.. code:: xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:template match="/">
+            <envelope templateUuid="19089ab8-a828-4447-9129-44b1da1cbc9d" templateVersion="f2e1a1c5-15ac-4bfb-bf31-f1ddba652b89" scenarioUuid="e17db760-580a-4192-bc96-a91683123bea">
+	            ...
+            </envelope>
+        </xsl:template>
+    </xsl:stylesheet>
+
+.. note:: You may run scenario from any step you want through integration. System automatically define first step which match template and version and create envelope using data you've provided in integration rule.
