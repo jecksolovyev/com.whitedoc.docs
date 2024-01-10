@@ -1,13 +1,13 @@
-===========
+=========MNGV
 Callbacks
-===========
+=========
 
 Envelope callback is functionality which allows to receive notification to respective URL in case of envelope appearance in mailbox and according to configured filters. You can set up callbacks for mailbox in order to receive envelope notifications outside of our platform. This is done via API. 
 How to configure callbacks you can see here - :ref:`Envelope callbacks <envelopeCallback>`
 The administrative panel allows you to view and partially manage callbacks.
 
 Manage callbacks
-========================================
+================
 
 1. Navigate to https://platform_address_here/admin/callbacks
 
@@ -35,7 +35,7 @@ Manage callbacks
    :align: center
 
 Check callbacks
-========================================
+===============
 
 1. Open the Settings button for the selected callback
 
@@ -73,7 +73,7 @@ Check callbacks
    :align: center  
 
 Delete callbacks
-========================================
+================
 
 1. Open the Delete button for the selected callback
 
