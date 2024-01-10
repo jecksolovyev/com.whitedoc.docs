@@ -288,7 +288,7 @@ OR
 Run scenario from integration
 =============================
 
-Customer is able to run specific scenario through integration functionality. As soon as customer creates scenario, it possible to run through integration, to do that customer should define scenario UUID inside envelope XML in integration rule.
+You are able to run specific scenario through integration functionality. As soon as you create scenario, it possible to run through integration, to do that you should define scenario UUID inside envelope XML in integration rule.
 
 .. note:: Integration data has highest priority and will replace all scenario data if it's defined in integration rule
 
@@ -307,7 +307,7 @@ Defined scenario UUID should be inside <envelope> tag as attribute scenarioUuid=
 
 .. note:: You may run scenario from any step you want through integration. System automatically define first step which match template and version and create envelope using data you've provided in integration rule.
 
-Scenario configuration of chaining envelope will be ignored by default if customers create envelope with defined scenario inside integration rule. But customer is able to define chain UUID inside <envelope> tag as attribute chainUuid="uuidOfChain". If user wants to chain all created envelopes though integration it could be static UUID which should be defined once in integration rule, but if customer wants to chain envelopes which created for each file pulled though integration separately it should be defined dynamically.
+Scenario configuration of chaining envelope will be ignored by default if you create envelope with defined scenario inside integration rule. But you are able to define chain UUID inside <envelope> tag as attribute chainUuid="uuidOfChain". If you want to chain all created envelopes though integration it should be static UUID which should be defined once in integration rule, but if you want to chain envelopes which created for each file pulled though integration separately it should be defined dynamically.
 
 .. code:: xml
 
