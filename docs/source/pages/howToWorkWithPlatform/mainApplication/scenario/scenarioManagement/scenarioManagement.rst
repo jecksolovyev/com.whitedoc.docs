@@ -2,7 +2,7 @@
 
 =======================
 How to manage scenarios
-======================
+=======================
 
 Scenario includes the following information: name, description, UUID, scenario access and steps of the scenario. Steps include name, source and destination (where source and destination include template UUID and template version UUID) and conversion rule.
 
@@ -216,3 +216,106 @@ And it can be used in following way:
         <xsl:value-of select="envelope/documents/document[@id='document_id']/fieldgroup[@name='table_name']/
             fieldset[@index=$row_index]/field[@name='field_name']/@value"/>
     </field>
+
+Attachment re-use
+=================
+
+You can re-use attachments uploaded on previous step of scenario. To do that you need to get attachment UUID from source envelope and set it in respective attachment in target envelope.
+
+.. note:: You can not use one attachment with same UUID more than one time in the envelope. Attachment re-use functionality allowed only for envelopes created through scenario functionality
+
+**Source envelope**
+
+Imagine that source envelope looks like example below
+
+.. code:: xml
+
+    <envelope templateUuid="bd6c94c9-715f-4611-bcb0-cc4114cff83d" templateVersion="bd6c94c9-715f-4611-bcb0-cc4114cff83d">
+	    <info>
+		    <subject>envelope subject</subject>
+		    <message/>
+		    <forwarding delegation="true" sharing="true"/>
+	    </info>
+	    <flow>
+		    <roles>
+			    <role id="e1bcbffa-aed6-4022-baef-40dee2da8cef" mailboxUuid="8dcde243-a918-444a-ac7d-44ac88554769"/>
+			    <role id="bc749581-1685-4650-8e91-f2c7187d7223" mailboxUuid="8dcde243-a918-444a-ac7d-44ac88554769"/>
+		    </roles>
+	    </flow>
+        <documents>
+		    <document id="aa620e04-852b-4ae4-85d4-833f5fdfc79f">
+			    <field name="File 1" attachmentUuid="5c03bf5e-b2f3-44bb-b313-eb432830189d">zipFileName.zip</field>
+		    </document>
+		    <document id="fc246044-bfa5-4224-8329-7656280ac45c">
+			    <field name="b70d61fa-4805-4e7b-9561-aa1f4f5c653f" attachmentUuid="e3760a4e-4c7b-4323-aa7b-60a4351ba8ef">pdfFileName.pdf</field>
+		    </document>
+	    </documents>
+    </envelope>
+
+**Target conversion rule example**
+
+To re-use envelope attachments from source you can use one of the following constructions below
+
+.. code:: xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:template match="/">
+            ...
+            <field name="File 1">
+                <xsl:attribute name="attachmentUuid" select="envelope/documents/document/field[@name='b70d61fa-4805-4e7b-9561-aa1f4f5c653f']/@attachmentUuid"/>
+            </field>
+            ...
+        </xsl:template>
+    </xsl:stylesheet>
+
+OR
+
+.. code:: xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:template match="/">
+            ...
+			<xsl:variable name="att1Uuid" select="envelope/documents/document/field[@name='b70d61fa-4805-4e7b-9561-aa1f4f5c653f']/@attachmentUuid"/>
+            <field name="File 1" attachmentUuid="{$att1Uuid}"></field>
+            ...
+        </xsl:template>
+    </xsl:stylesheet>
+
+.. _run-scenario-from-integration:
+
+Run scenario from integration
+=============================
+
+You are able to run specific scenario through integration functionality. As soon as you create scenario, it possible to run through integration, to do that you should define scenario UUID inside envelope XML in integration rule.
+
+.. note:: Integration data has highest priority and will replace all scenario data if it's defined in integration rule
+
+Defined scenario UUID should be inside <envelope> tag as attribute scenarioUuid="uuidOfScenario"
+
+.. code:: xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:template match="/">
+            <envelope templateUuid="19089ab8-a828-4447-9129-44b1da1cbc9d" templateVersion="f2e1a1c5-15ac-4bfb-bf31-f1ddba652b89" scenarioUuid="e17db760-580a-4192-bc96-a91683123bea">
+	            ...
+            </envelope>
+        </xsl:template>
+    </xsl:stylesheet>
+
+.. note:: You may run scenario from any step you want through integration. System automatically define first step which match template and version and create envelope using data you've provided in integration rule.
+
+Scenario configuration of chaining envelopes will be ignored by default if you create envelope with defined scenario inside integration rule. But you are able to define chain UUID inside <envelope> tag as attribute chainUuid="uuidOfChain". If you want to chain all created envelopes though integration it should be static UUID which should be defined once in integration rule, but if you want to chain envelopes created for each file pulled though integration separately it should be defined dynamically.
+
+.. code:: xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+        <xsl:template match="/">
+            <envelope templateUuid="19089ab8-a828-4447-9129-44b1da1cbc9d" templateVersion="f2e1a1c5-15ac-4bfb-bf31-f1ddba652b89" scenarioUuid="e17db760-580a-4192-bc96-a91683123bea" chainUuid="e17db760-580a-4192-bc96-a91683123ben">
+	            ...
+            </envelope>
+        </xsl:template>
+    </xsl:stylesheet>
