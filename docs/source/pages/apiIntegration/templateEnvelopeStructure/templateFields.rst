@@ -10,6 +10,7 @@ Template dynamic fields
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Text field may have following attributes:
+
 - type - define if this field is text type, mandatory attribute
 - name - string, length from 1 up to 128 symbols, restricted symbols &, ", <, >, field name used to fill in on envelope, unique for document, mandatory attribute
 - placeholder - field placeholder displayable on template and envelope, length from 0 up to 1024 symbols, if empty on envelope will be displayed field name, optional attribute
@@ -27,6 +28,7 @@ Text field may have following attributes:
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Number field may have following attributes:
+
 - type - define if this field is number type, mandatory attribute
 - name - string, length from 1 up to 128 symbols, restricted symbols &, ", <, >, field name used to fill in on envelope, unique for document, mandatory attribute
 - placeholder - field placeholder displayable on template and envelope, length from 0 up to 1024 symbols, if empty on envelope will be displayed field name, optional attribute
@@ -46,6 +48,7 @@ Number field may have following attributes:
 +------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Currency field may have following attributes:
+
 - type - define if this field is money type, mandatory attribute
 - name - string, length from 1 up to 128 symbols, restricted symbols &, ", <, >, field name used to fill in on envelope, unique for document, mandatory attribute
 - placeholder - field placeholder displayable on template and envelope, length from 0 up to 1024 symbols, if empty on envelope will be displayed field name, optional attribute
@@ -65,6 +68,7 @@ Currency field may have following attributes:
 +--------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Date and time field may have following attributes:
+
 - type - define if this field is datetime type, mandatory attribute
 - name - string, length from 1 up to 128 symbols, restricted symbols &, ", <, >, field name used to fill in on envelope, unique for document, mandatory attribute
 - placeholder - field placeholder displayable on template and envelope, length from 0 up to 1024 symbols, if empty on envelope will be displayed field name, optional attribute
@@ -76,6 +80,7 @@ Date and time field may have following attributes:
 - max - integer, allowed values range from -9999 to 9999, define maximal offset of date which can be selected on envelope (from envelope initiation date), default value empty, optional attribute
 
 **format**: IS8601, accept both:
+
 - 2019-12-31T23:59:59+02:00
 - 2019-12-31T23:59:59Z
 
@@ -86,6 +91,7 @@ Date and time field may have following attributes:
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Dropdown field may have following attributes and values:
+
 - type - define if this field is dropdown type, mandatory attribute
 - name - string, length from 1 up to 128 symbols, restricted symbols &, ", <, >, field name used to fill in on envelope, unique for document, mandatory attribute
 - placeholder - field placeholder displayable on template and envelope, length from 0 up to 1024 symbols, if empty on envelope will be displayed field name, optional attribute
@@ -96,6 +102,7 @@ Dropdown field may have following attributes and values:
 - search - boolean, defines if field is searchable on envelope search or not, if not set default value false, optional attribute
 
 field options (max quantity of options 100):
+
 - <option> value - string, min quantity 1 symbols and max quantity 50 symbols, mandatory value
 
 +---------------------------------------------------------------------------------+
@@ -105,6 +112,7 @@ field options (max quantity of options 100):
 +---------------------------------------------------------------------------------+
 
 Choice (Radio button) field may have following attributes:
+
 - type - define if this field is radio type, mandatory attribute
 - name - string, length from 1 up to 128 symbols, restricted symbols &, ", <, >, field name used for fill in on envelope, unique for document, mandatory attribute
 - value - string, length from 1 up to 128 symbols, restricted symbols &, ", <, >, field value used for fill in value on envelope, unique for group name, mandatory attribute
@@ -120,6 +128,7 @@ For one group may be created not limited quantity of choices but on envelope onl
 +------------------------------------------------------------------------------------+
 
 A/B field may have following attributes:
+
 - type - define if this field is yesno type, mandatory attribute
 - name - string, length from 1 up to 128 symbols, restricted symbols &, ", <, >, field name used to fill in on envelope, unique for document, mandatory attribute
 - roleId - id of the role who should fill field on envelope, mandatory attribute
@@ -133,6 +142,7 @@ A/B field may have following attributes:
 +----------------------------------------------------------------------------------------+
 
 Checkbox field may have following attributes:
+
 - type - define if this field is checkbox type, mandatory attribute
 - name - string, length from 1 up to 128 symbols, restricted symbols &, ", <, >, field name used to fill in on envelope, unique for document, mandatory attribute
 - roleId - id of the role who should fill field on envelope, mandatory attribute
@@ -146,6 +156,7 @@ Checkbox field may have following attributes:
 +---------------------------------------------------------------------------------------------------------------------------+
 
 File field may have following attributes:
+
 - type - define if this field is attachment type, mandatory attribute
 - name - string, length from 1 up to 128 symbols, restricted symbols &, ", <, >, field name used to fill in on envelope, unique for document, mandatory attribute
 - roleId - id of the role who should fill field on envelope, mandatory attribute
@@ -169,6 +180,7 @@ Supported document types:
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Dictionary field may have following attributes:
+
 - type - define if this field is select-dictionary type, mandatory attribute
 - name - string, length from 1 up to 128 symbols, restricted symbols &, ", <, >, field name used to fill in on envelope, unique for document, mandatory attribute
 - placeholder - field placeholder displayable on template and envelope, length from 0 up to 1024 symbols, if empty on envelope will be displayed field name, optional attribute
@@ -183,11 +195,13 @@ Dictionary field may have following attributes:
 **Dictionary filter query example**:
 
 \"{"dictionaryColumnUUID":{"documentId":"Id","fieldName":"string"}}\"
+
 - dictionaryColumnUUID - UUID of dictionary column, column UUID by which dictionary values will be filtered
 - documentId - id, document id where field by which value data in envelope will be filtered
 - fieldName - string, name of the field by which value data in envelope will be filtered
 
 \"{"dictionaryColumnUUID":{"roleId":"Id"}}\"
+
 - dictionaryColumnUUID - UUID of dictionary column, column UUID by which dictionary values will be filtered
 - roleId - id, id of the role by which value data in envelope will be filtered
 
@@ -198,6 +212,7 @@ Dictionary field may have following attributes:
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Lookup field may have following attributes:
+
 - name - string, length from 1 up to 128 symbols, restricted symbols &, ", <, >, field name used to fill in on envelope, unique for document, mandatory attribute
 - placeholder - field placeholder displayable on template and envelope, length from 0 up to 1024 symbols, if empty on envelope will be displayed field name, optional attribute
 - optional - boolean, defines if field to be filled in optionally or not on envelope, if not set default value false, optional attribute
@@ -214,6 +229,7 @@ Lookup field may have following attributes:
 +----------------------------------------------------------------------------------------------------------+
 
 Dynamic table field may have following attributes:
+
 - class - define if it's dynamic table table-stripped
 - name - string, length from 1 up to 128 symbols, restricted symbols &, ", <, >, field name used to fill in on envelope, unique for document, mandatory attribute
 - roleId - id of the role who should fill field on envelope, mandatory attribute
@@ -307,6 +323,7 @@ Example 2: formula SUM({field1}) next to dynamic table where
 +---------------------------------------------------------------------------------------+
 
 Autonumber is read-only field with the value incrementally generated on each new envelope draft with current template version UUID. Autonumber field may have following attributes:
+
 - type - define if this field is autonumber type, mandatory attribute
 - name - string, length from 1 up to 128 symbols, restricted symbols &, ", <, >, field name used to fill in on envelope, unique for document, mandatory attribute
 - roleId - id of the role who should fill field on envelope, mandatory attribute
