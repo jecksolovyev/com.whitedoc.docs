@@ -8,13 +8,13 @@ expire,Envelope expiration date – through how many days the envelope will be e
 document id,Document identifier
 title,Document name
 ,*Body*
-,"This block contains static data(text, tables) and `dynamic fields <../fields/templateFields.html>`__"
+,"This block contains static data(text, tables) and `dynamic fields <../templateEnvelopeStructure/templateFields.html>`__"
 ,**External document Info**
 document type,"Type of document, this attribute provided only for external document. Can be  <type=\\""singleAttachment\\”>"
 document id,Document identifier
 title,Document name
 ,*Body*
-,This block by default contain `attachment field  <../fields/templateFields.html>`__
+,This block by default contain `attachment field  <../templateEnvelopeStructure/templateFields.html>`__
 ,**Signatures**
 name,Signature name
 role id,Role identifier
