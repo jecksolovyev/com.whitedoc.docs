@@ -313,11 +313,11 @@ Autonumber is read-only field with the value incrementally generated on each new
 - prefix - string, length from 0 up to 15 symbols, static data which will be used before incremental variable of auto numbering, option attribute
 - search - boolean, defines if field is searchable on envelope search or not, if not set default value false, optional attribute
 
-+------------------------------------------------------------------------------------+
-|**Signature field**                                                                 |
-+====================================================================================+
++-------------------------------------------------------------------------+
+|**Signature field**                                                      |
++=========================================================================+
 |`<field type="einksign" name="string" placeholder="string" roleId="id"/>`|
-+------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------+
 
 Field value size limited up to 10kb. Field value - base64 encoded png image, size up to 300x300. Signature field may have following attributes:
 
