@@ -32,6 +32,11 @@ Envelope data block below contains all fields which can be added to document bod
 			    <field name="Lookup 1">two 2</field>
 			    <field name="Checkbox 1">1</field>
 			    <field name="Dropdown 1">2</field>
+                // If dropdown contains option multiselect
+                <field name="Dropdown 2">
+                    <value>1</value>
+                    <value>2</value>
+                </field>
 			    <field name="1234">Choice 1</field>
 			    <fieldgroup name="Table 1">
 				    <fieldset index="0">
@@ -60,11 +65,12 @@ How to fill each single field
 
 - name - string, name of the field you want to fill
 - value - the value of the field, all validation restrictions configurable on template, mandatory if field doesn't have optional attribute
+- several values as additional tags inside field tag
 
 +--------------------------------------------------+
 |**Duplicate, Lookup and Autonumber fields**       |
 +==================================================+
-|``                                                |
+|                                                  |
 +--------------------------------------------------+
 
 You may not to send these types of fields if template contains it. It's automatically filled in fields.
@@ -109,7 +115,7 @@ You may not to send these types of fields if template contains it. It's automati
 +------------------------------------+
 |**Table field**                     |
 +====================================+
-|``                                  |
+|                                    |
 +------------------------------------+
 
 .. code::
