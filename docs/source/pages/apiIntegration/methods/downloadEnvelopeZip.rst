@@ -26,12 +26,12 @@ Everyone who has access to envelope can download it. You can download a full env
    * - zipStructureName
      - The name of pre-saved zip structure in the template
 
-Query parameters for ZIP contents configureation
-================================================
+Query parameters for ZIP contents configuration
+===============================================
 
 Depending on a query parameters you can configure what will be included in the archive:
 
-1. Send a request without query parameters — downloads full envelope (all documents contained in the envelope such as audit trail, folder with original documents for each document, printable versions, signatures, processing/signing certificates)
+1. Send a request without query parameters — downloads full envelope (all documents which contain envelope such as audit trail, folder for each document with original documents, printable versions, signatures, processing/signing certificates)
 2. Send a request with documentId in query parameters — downloads an archive of a specific document (all documents related to a certain document in the envelope defined by documentId such as original documents, printable versions, signatures, processing/signing certificates and envelope audit trail)
 3. Send a request with excludeFiles in query parameters — downloads an archive excluding specified files (if send excludeFiles=c — processing/signing certificates will be excluded from the archive; if send excludeFiles=p — printable version of the documents will be excluded from the archive; if send excludeFiles=a — audit trail will be excluded from the archive)
 
@@ -44,7 +44,7 @@ ZIP content depending on the document state
 
 Depending on the document state you will receive different ZIP content
 
-1. If not all dynamic fields (such as text, number, currency, date and time, dropdown, choice, a/b, checkbox, file, dictionary, lookup, dynamic table, duplicate, formula, autonumber, signature) are filled in inside the document — you will only get audit trail in the archive, because platform is not able to generate files while document is not completed
+1. If not all dynamic fields (such as text, number, currency, date and time, dropdown, choice, a/b, checkbox, file, dictionary, lookup, dynamic table, duplicate, formula, autonumber, signature) are filled in the document — you will only get audit trail in the archive, because platform is not able to generate files while document is not completed
 2. If the document is completed and all dynamic fields are filled (described above) — you will get a ZIP with original documents, printable versions and processing/signing certificates
 3. If the document is completed, all dynamic fields are filled (described above), and at least one QES is applied to the document — you will get a ZIP with original documents, printable versions, signatures which are already set, and processing/signing certificates
 
