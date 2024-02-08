@@ -2,7 +2,7 @@
 Download envelope documents archive
 ===================================
 
-Everyone who has access to envelope can download it. You can download full envelope or specific document from this envelope with following request:
+Everyone who has access to envelope can download it. You can download a full envelope or specific document from it with following request:
 
 .. list-table::
    :widths: 10 90
@@ -26,27 +26,26 @@ Everyone who has access to envelope can download it. You can download full envel
    * - zipStructureName
      - The name of pre-saved zip structure in the template
 
-ZIP content depending on query params
-=====================================
+Query parameters for ZIP contents configuration
+===============================================
 
-Depending on query parameter you can control what will be included in archive:
+Depending on a query parameters you can configure what will be included in the archive:
 
-1. Send request without query parameter - download full envelope (all documents which contain envelope such as audit trail, folder for each document with original documents, printable versions, signatures, processing/signing certificates)
-2. Send request with documentId in query parameter - download archive for specific document (all documents related to document defined as documentId such original documents, printable versions, signatures, processing/signing certificates and envelope Audit trail)
-3. Send request with excludeFiles in query parameter - download archive excluding specified files (if send excludeFiles=c than processing/signing certificates will be excluded from archive, if send excludeFiles=p than printable version of documents will be excluded from archive, if send excludeFiles=a than Audit trail will be excluded from archive)
+1. Send a request without query parameters — downloads full envelope (all documents which contain envelope such as audit trail, folder for each document with original documents, printable versions, signatures, processing/signing certificates)
+2. Send a request with documentId in query parameters — downloads an archive of a specific document (all documents related to a certain document in the envelope defined by documentId such as original documents, printable versions, signatures, processing/signing certificates and envelope audit trail)
+3. Send a request with excludeFiles in query parameters — downloads an archive excluding specified files (if send excludeFiles=c — processing/signing certificates will be excluded from the archive; if send excludeFiles=p — printable version of the documents will be excluded from the archive; if send excludeFiles=a — audit trail will be excluded from the archive)
 
-.. note:: you can combine mask of excludeFiles, excludeFiles=cp will exclude processing/signing certificates and printable version of documents
+.. note:: You can combine mask of excludeFiles, excludeFiles=cp will exclude processing/signing certificates and printable version of documents.
 
-Zip archive with documents will be sent in response.
+ZIP archive with documents will be returned in response.
 
-ZIP content depending on document state
-=======================================
+ZIP content depending on the document state
+===========================================
 
-Depending on document state you will receive different ZIP content
+Depending on the document state you will receive different ZIP content
 
-1. If not all dynamic fields (such as text, number, currency, date and time, dropdown, choice, a/b, checkbox, file, dictionary, lookup, dynamic table, duplicate, formula, autonumber, signature) are not filled in inside the document you will get only Audit trail in archive because platform is not able to make files until document not completed
-2. If document completed and all dynamic fields filled in (described above) you will be able to get ZIP with original documents, printable versions, processing/signing certificates
-3. If document completed, all dynamic fields filled in (described above) and at least one QES applied to the document you will be able to get ZIP with original documents, printable versions, signature or signatures which already set, processing/signing certificates
+1. If not all dynamic fields (such as text, number, currency, date and time, dropdown, choice, a/b, checkbox, file, dictionary, lookup, dynamic table, duplicate, formula, autonumber, signature) are filled in the document — you will only get audit trail in the archive, because platform is not able to generate files while document is not completed
+2. If the document is completed and all dynamic fields are filled (described above) — you will get a ZIP with original documents, printable versions and processing/signing certificates
+3. If the document is completed, all dynamic fields are filled (described above), and at least one QES is applied to the document — you will get a ZIP with original documents, printable versions, signatures which are already set, and processing/signing certificates
 
-.. note:: ZIP content would be dynamically change according to processing flow and documents state, so in different phase of envelope processing flow you may get different content in ZIP even if send same request
-
+.. note:: ZIP content will change dynamically according to the processing flow step and documents state, so in different phases of envelope processing flow you may get different content in a ZIP with a same request.
