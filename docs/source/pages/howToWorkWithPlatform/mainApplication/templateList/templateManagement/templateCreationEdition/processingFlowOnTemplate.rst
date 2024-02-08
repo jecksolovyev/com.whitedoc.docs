@@ -20,7 +20,7 @@ Role configuration interface for AUTO flow contain the following information:
    :align: center
 
 1. Role order — order of the role in the list (available only if "Set ordering process" toggle is enabled)
-2. Role name — name which will be displayed to the user in the template and envelopes. It is a mandatory field
+2. Role name — a name that will be displayed to the user in the template and envelopes. It is a mandatory field and limited to 60 symbols max
 3. Role mailbox — mailbox of the role to which envelope will be sent. If set on template level, it's impossible to change it on envelope level later
 
 .. note:: You can specify exact mailbox or restrict mailbox selection to contacts only on envelope level in this field. Also names of every role including Sender can be changed to any text value up to 40 characters max.
@@ -46,7 +46,6 @@ CC role
 =======
 
 CC role just receive copy of envelope and can't edit fields in the document. CC role can be set at any place of the processing flow, but not earlier than Sender.
-
 
 AUTO flow
 =========
