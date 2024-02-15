@@ -8,5 +8,5 @@ Welcome to platform documentation page
 
    pages/howToWorkWithPlatform/howToWorkWithPlatform.rst
    pages/apiIntegration/apiIntegration.rst
-   pages/errorCodes/errorCodesEn.rst
+   pages/errorCodes/errorCodes.rst
    pages/configuration/server.rst
