@@ -2,7 +2,7 @@
 Download envelope documents archive
 ===================================
 
-Everyone who has access to envelope can download it. You can download full envelope or specific document from this envelope with following request:
+Everyone who has access to envelope can download it. You can download a full envelope or specific document from it with following request:
 
 .. list-table::
    :widths: 10 90
@@ -11,23 +11,41 @@ Everyone who has access to envelope can download it. You can download full envel
      - POST
    * - URL
      - ``/api/v1/envelope/{envelopeUuid}/zip``
-   * - Authorization
+   * - Authorization * (required)
      - Bearer {token}
    * - content-type
      - application/json
-   * - mailboxUuid
+   * - mailboxUuid * (required)
      - {uuid}
-   * - envelopeUuid
+   * - envelopeUuid * (required)
      - {uuid}
    * - documentId
-     - {uuid},{uuid}
-   * - onlyPrimaryFiles
-     - boolean
+     - {uuid}
+   * - excludeFiles
+     - Mask to exclude some files. c - for signature/processing Certificate, p - for Printable version, a - for Audit trail
+   * - zipStructureName
+     - The name of pre-saved zip structure in the template
 
-Depending on query parameter you can control what will be included in archive:
+Query parameters for ZIP contents configuration
+===============================================
 
-1. Send request without query parameter - download full envelope (all documents which contain envelope)
-2. Send request with documentID in query parameter - download only document which specified in query parameter
-3. Send request with onlyPrimaryFiles in query parameter - download only primary files in archive (pdf and xml documents and signatures for internal document and original document and signatures for external document)
+Depending on a query parameters you can configure what will be included in the archive:
 
-Zip archive with documents will be sent in response.
+1. Send a request without query parameters — downloads full envelope (all documents which contain envelope such as audit trail, folder for each document with original documents, printable versions, signatures, processing/signing certificates)
+2. Send a request with documentId in query parameters — downloads an archive of a specific document (all documents related to a certain document in the envelope defined by documentId such as original documents, printable versions, signatures, processing/signing certificates and envelope audit trail)
+3. Send a request with excludeFiles in query parameters — downloads an archive excluding specified files (if send excludeFiles=c — processing/signing certificates will be excluded from the archive; if send excludeFiles=p — printable version of the documents will be excluded from the archive; if send excludeFiles=a — audit trail will be excluded from the archive)
+
+.. note:: You can combine mask of excludeFiles, excludeFiles=cp will exclude processing/signing certificates and printable version of documents.
+
+ZIP archive with documents will be returned in response.
+
+ZIP content depending on the document state
+===========================================
+
+Depending on the document state you will receive different ZIP content
+
+1. If not all dynamic fields (such as text, number, currency, date and time, dropdown, choice, a/b, checkbox, file, dictionary, lookup, dynamic table, duplicate, formula, autonumber, signature) are filled in the document — you will only get audit trail in the archive, because platform is not able to generate files while document is not completed
+2. If the document is completed and all dynamic fields are filled (described above) — you will get a ZIP with original documents, printable versions and processing/signing certificates
+3. If the document is completed, all dynamic fields are filled (described above), and at least one QES is applied to the document — you will get a ZIP with original documents, printable versions, signatures which are already set, and processing/signing certificates
+
+.. note:: ZIP content will change dynamically according to the processing flow step and documents state, so in different phases of envelope processing flow you may get different content in a ZIP with a same request.
