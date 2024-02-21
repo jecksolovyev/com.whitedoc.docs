@@ -59,7 +59,7 @@ If you want to send external document (such as image, document, archive) to anyo
    :width: 500
    :align: center
 
-9. If "I want to sign an envelope" checkbox was selected you will be able to assign fields also for Sender role. Please note that for Sender role you should set fields value right on the editor. This applies to fields such as Text, Number, Currency, Date and time, Dropdown, Choice, Checkbox, Dictionary, Lookup, Duplicate and Signature.
+9. If "I want to sign an envelope" checkbox was selected you will be able to assign fields also for Sender role. Please note that for Sender role you should set fields value right on the editor. Applies to fields such as Text, Number, Currency, Date and time, Dropdown, Choice, Checkbox, Dictionary, Lookup, Duplicate and Signature.
 
 .. image:: pic_dashboardOverview/senderFile.png
    :width: 500
@@ -73,6 +73,20 @@ If you want to send external document (such as image, document, archive) to anyo
 
 11. As soon as all Recipient roles and Sender role (in case of setting in up "I want to..." checkbox) have at least one field you can click on the Send button in the header
 
+How to fill fields by Sender role on Quick-send editor?
+=======================================================
+
+If user selected "I want to sign an envelope" option on quick-send he is able to add fields assigned to Sender and fill them. List of fields can be added and filled in by Sender Text, Number, Currency, Date and time, Dropdown, Choice, Checkbox, Dictionary, Lookup, Duplicate and Signature.
+
+There are two ways how to fill data in fields
+
+1. Fill data inside field properties. This option available for all fields from the list above.
+
+2. Fill data by double click on the field. This option available for following fields: Text, Number, Currency, Date and time, Choice, Checkbox.
+
+- By double click on Text, Number, Currency fields edit mode of field activates and user is able to enter data in the fields
+- By double click on Date and time field datepicker with calendar will be opened and leads user to select date he needs.
+- By double click on Choice option or Checkbox particular option will be marked as selected.
 
 How to import embedded PDF fields?
 ==================================
