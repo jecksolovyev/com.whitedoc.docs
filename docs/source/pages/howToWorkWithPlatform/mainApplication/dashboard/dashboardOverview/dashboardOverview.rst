@@ -59,7 +59,7 @@ If you want to send external document (such as image, document, archive) to anyo
    :width: 500
    :align: center
 
-9. If "I want to sign an envelope" checkbox was selected you will be able to assign fields also for Sender role. Please note that for Sender role you should set fields value right on the editor. Applies to fields such as Text, Number, Currency, Date and time, Dropdown, Choice, Checkbox, Dictionary, Lookup, Duplicate and Signature.
+9. If "I want to sign an envelope" checkbox was selected you will be able to assign fields also for Sender role. Please note that for Sender role you should set fields value right on the editor. Applies to fields such as Text, Number, Currency, Date and time, Dropdown, Choice, Checkbox, Dictionary, Lookup, Duplicate, Signature and QR/barcode.
 
 .. image:: pic_dashboardOverview/senderFile.png
    :width: 500
@@ -82,11 +82,12 @@ There are two ways how to fill data in fields
 
 1. Fill data inside field properties. This option available for all fields from the list above.
 
-2. Fill data by double click on the field. This option available for following fields: Text, Number, Currency, Date and time, Choice, Checkbox.
+2. Fill data by double click on the field. This option available for following fields: Text, Number, Currency, Date and time, Choice, Checkbox and QR/barcode.
 
-- By double click on Text, Number, Currency fields edit mode of field activates and user is able to enter data in the fields
-- By double click on Date and time field datepicker with calendar will be opened and leads user to select date he needs.
-- By double click on Choice option or Checkbox particular option will be marked as selected.
+- By double-clicking on the Text, Number or Currency fields, edit mode of the field will activate and user is able to enter data in the fields
+- By double-clicking on the Date and time field, date picker with calendar will be opened which allows user to select a date
+- By double-clicking on the Choice option or Checkbox, a particular option will be marked as selected.
+- By double-clicking on the empty QR/barcode, modal window with data input will be opened.
 
 How to import embedded PDF fields?
 ==================================
