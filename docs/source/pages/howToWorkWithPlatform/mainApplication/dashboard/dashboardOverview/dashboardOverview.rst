@@ -87,7 +87,7 @@ There are two ways how to fill data in fields
 - By double-clicking on the Text, Number or Currency fields, edit mode of the field will activate and user is able to enter data in the fields
 - By double-clicking on the Date and time field, date picker with calendar will be opened which allows user to select a date
 - By double-clicking on the Choice option or Checkbox, a particular option will be marked as selected.
-- By double-clicking on the empty QR/barcode, modal window with data input will be opened.
+- By double-clicking on the QR/barcode (if data code content is selected), a modal window with data input will be opened.
 
 How to import embedded PDF fields?
 ==================================
