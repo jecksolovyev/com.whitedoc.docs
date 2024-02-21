@@ -26,7 +26,7 @@ How to add a QES field to the document
 5. Placeholder - this text will be shown in the input box before anything is filled in (can be left empty, field name will be used instead)
 6. Qualified - this attribute specifies if signature will be qualified
 7. Required stamp - this attribute specifies if stamp will be required for signing
-8. TIN (becomes enabled if there are other fields in the template) - this attribute restricts signing process for everyone except a person with TIN code specified in field selected below
+8. TIN (becomes editable if there are other fields in the template) - this attribute restricts signing process for everyone except a person with TIN code specified in field selected below
 9. Document (appears if TIN is enabled) - document where TIN field is placed
 10. TIN field (appears if TIN is enabled) - field which will be used for TIN check
 

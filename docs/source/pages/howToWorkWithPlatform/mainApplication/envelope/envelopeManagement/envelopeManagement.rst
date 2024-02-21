@@ -48,7 +48,7 @@ Envelopes can be moved to Archive folder by selecting them and clicking on 'Arch
 
 Later such envelopes can be unarchived from 'Archived' folder by 'Unarchive' button.
 
-.. image:: picEnvelopeManagement/ununarchivezip.png
+.. image:: picEnvelopeManagement/unArchive.png
    :width: 400
    :align: center
 

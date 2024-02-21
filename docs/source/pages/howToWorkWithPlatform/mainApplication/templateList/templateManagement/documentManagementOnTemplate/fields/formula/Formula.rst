@@ -42,7 +42,7 @@ How to add formula field to the document
 3. Name - this is a name of a field
 4. Placeholder - this text will be shown in the input box before anything is filled in (can be left empty, field name will be used instead)
 5. Operation - type of operation which will be performed with arguments
-6. Argument (1, 2 and so on, will appear after operation is selected) - arguments which will be used for calculation. They are parsed in strict order from first to last. If you will click on argument input, dropdown selector with available fields will appear. Static values can be typed in directly as well.
+6. Argument (1, 2 and so on, appears after operation is selected) - arguments which will be used for calculation. They are parsed in strict order from first to last. If you will click on argument input, dropdown selector with available fields will appear. Static values can be typed in directly as well.
 
 .. note:: You can add more then 2 default arguments by clicking "+ add argument" link
 
@@ -55,7 +55,7 @@ How to add formula field to the document
 
 .. note:: Numbers in envelope view will be formatted according to standard of a region which is selected on User profile page. You can see formatting example under region selector on that page. Numbers in printable versions of the documents will always be formatted according to platform region standard.
 
-10. Increase decimal places - if enabled, zeroes will be added to fill all empty decimal places of field value
+10. Show decimal zeroes - if enabled, zeroes will be added to fill all empty decimal places of field value
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 

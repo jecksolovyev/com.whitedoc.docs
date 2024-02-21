@@ -13,7 +13,7 @@ If you want to send external document (such as image, document, archive) to anyo
 
 1. Open dashboard and click on button "Upload document" in quick send block
 
-.. image:: pic_dashboardOverview/dashboardOverview.png
+.. image:: pic_dashboardOverview/overview.png
    :width: 400
    :align: center
 
@@ -55,19 +55,19 @@ If you want to send external document (such as image, document, archive) to anyo
 
 8. When you will finish all required actions with envelope properties you can click "Next" button and envelope editor preview will be opened where you can add fields to Recipient and Signer roles. 
 
-.. image:: pic_dashboardOverviewQuickeditor.png
+.. image:: pic_dashboardOverview/quickEditor.png
    :width: 500
    :align: center
 
 9. If "I want to sign an envelope" checkbox was selected you will be able to assign fields also for Sender role. Please note that for Sender role you should set fields value right on the editor. This applies to fields such as Text, Number, Currency, Date and time, Dropdown, Choice, Checkbox, Dictionary, Lookup, Duplicate and Signature.
 
-.. image:: pic_dashboardOverviewSenderFile.png
+.. image:: pic_dashboardOverview/senderFile.png
    :width: 500
    :align: center
 
 10. The rest of the fields, such as A/B, Formula, QES and PAdES could be added without value and new role for Sender will be created, which can be completed by filling in the fields after envelope send action.
 
-.. image:: pic_dashboardOverviewSenderFileNoValue.png
+.. image:: pic_dashboardOverview/senderFileNoValue.png
    :width: 500
    :align: center
 
@@ -75,11 +75,11 @@ If you want to send external document (such as image, document, archive) to anyo
 
 
 How to import embedded PDF fields?
-===============================================
+==================================
 
 1. If your uploaded PDF documents have embedded fields they can be converted to WhiteDoc dynamic fields. In this case, you will see a modal window where you should select one of the actions for each document with such fields.
 
-.. image:: pic_dashboardOverviewEmbeddedModal.png
+.. image:: pic_dashboardOverview/embeddedModal.png
    :width: 500
    :align: center
 
@@ -96,7 +96,7 @@ How to import embedded PDF fields?
 
 3. You can assign fields to Recipients if they have been added to the appropriate field, or to Sender if the "I want to sign or fill the envelope" checkbox has been selected.
 
-.. image:: pic_dashboardOverviewEmbeddedActionOptions.png
+.. image:: pic_dashboardOverview/embeddedActionOptions.png
    :width: 500
    :align: center
 
