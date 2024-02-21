@@ -59,7 +59,7 @@ If you want to send external document (such as image, document, archive) to anyo
    :width: 500
    :align: center
 
-9. If "I want to sign an envelope" checkbox was selected you will be able to assign fields also for Sender role. Please note that for Sender role you should set fields value right on the editor. Applies to fields such as Text, Number, Currency, Date and time, Dropdown, Choice, Checkbox, Dictionary, Lookup, Duplicate, Signature and QR/barcode.
+9. If "I want to sign an envelope" checkbox was selected you will be able to assign fields also for Sender role. Please note that for Sender role you should set fields value right on the editor. Applies to fields such as Text, Number, Currency, Date and time, Dropdown, Choice, Checkbox, Dictionary, Lookup, Duplicate, Formula, Signature and QR/barcode.
 
 .. image:: pic_dashboardOverview/senderFile.png
    :width: 500
@@ -76,7 +76,7 @@ If you want to send external document (such as image, document, archive) to anyo
 How to fill fields by Sender role on Quick-send editor?
 =======================================================
 
-If user selected "I want to sign an envelope" option on quick-send he is able to add fields assigned to Sender and fill them. List of fields can be added and filled in by Sender Text, Number, Currency, Date and time, Dropdown, Choice, Checkbox, Dictionary, Lookup, Duplicate and Signature.
+If user selected "I want to sign an envelope" option on quick-send he is able to add fields assigned to Sender and fill them. List of fields can be added and filled in by Sender Text, Number, Currency, Date and time, Dropdown, Choice, Checkbox, Dictionary, Lookup, Duplicate, Formula, Signature and QR/barcode.
 
 There are two ways how to fill data in fields
 
