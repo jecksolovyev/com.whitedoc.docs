@@ -30,7 +30,7 @@ How to add number field to the document
 
 .. note:: Numbers in envelope view will be formatted according to standard of a region which is selected on User profile page. You can see formatting example under region selector on that page. Numbers in printable versions of the documents will always be formatted according to platform region standard.
 
-9. Increase decimal places - if enabled, zeroes will be added to fill all empty decimal places of field value
+9. Show decimal zeroes (becomes editable if precision is set) - if enabled, zeroes will be added to fill all empty decimal places of field value
 10. Precision - number of decimal places allowed in field (no limit is applied if left empty)
 
 .. note:: If value inside the field has more decimal places then allowed by precision attribute, all extra places will be trimmed. No rounding will be applied. E.g. if original value is 1.99 it will be changed to 1.9 if precision is set to 1 and will be changed to 1 if precision is set to 0.

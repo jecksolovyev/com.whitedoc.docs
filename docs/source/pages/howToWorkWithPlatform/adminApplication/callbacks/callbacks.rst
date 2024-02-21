@@ -11,13 +11,13 @@ Manage callbacks
 
 1. Navigate to https://platform_address_here/admin/callbacks
 
-.. image:: pic_users/callbacks.png
+.. image:: pic_callbacks/callbacks.png
    :width: 600
    :align: center
 
 2. In the drop-down list, select the mailbox whose callbacks you want to display.
 
-.. image:: pic_users/callbacksChooseMailbox.png
+.. image:: pic_callbacks/callbacksChooseMailbox.png
    :width: 600
    :align: center
 
@@ -30,7 +30,7 @@ Manage callbacks
 - filter (4) - list of specified filters for a specific callback
 - actions buttons (5) - settings and delete
 
-.. image:: pic_users/callbacksColumns.png
+.. image:: pic_callbacks/callbacksColumns.png
    :width: 600
    :align: center
 
@@ -39,19 +39,19 @@ Check callbacks
 
 1. Open the Settings button for the selected callback
 
-.. image:: pic_users/callbacksSettings.png
+.. image:: pic_callbacks/callbacksSettings.png
    :width: 600
    :align: center
 
 2. Check callback modal window will be open. Here you can add valid envelope UUID and check callback using the button of the same name.
 
-.. image:: pic_users/callbacksCheck.png
+.. image:: pic_callbacks/callbacksCheck.png
    :width: 600
    :align: center
 
 3. In case if the specified envelope UUID matches the configured filters a corresponding message and an active button "Send a callback" will appear
 
-.. image:: pic_users/callbacksFilterMatch.png
+.. image:: pic_callbacks/callbacksFilterMatch.png
    :width: 600
    :align: center   
 
@@ -60,7 +60,7 @@ Check callbacks
 - responce code
 - responce body
 
-.. image:: pic_users/callbacksSend.png
+.. image:: pic_callbacks/callbacksSend.png
    :width: 600
    :align: center 
 
@@ -68,7 +68,7 @@ Check callbacks
 
 5. In case if the specified envelope UUID doesn't match the configured filters a message listing mismatches will be displayed. After that you can just follow back to previous step and enter another envelope UUID or cancel action.
 
-.. image:: pic_users/callbacksFilterNotMatch.png
+.. image:: pic_callbacks/callbacksFilterNotMatch.png
    :width: 600
    :align: center  
 
@@ -77,18 +77,18 @@ Delete callbacks
 
 1. Open the Delete button for the selected callback
 
-.. image:: pic_users/callbacksDelete.png
+.. image:: pic_callbacks/callbacksDelete.png
    :width: 600
    :align: center
 
 2. Delete callback modal window will be opened where you can choose Delete or Cancel action
 
-.. image:: pic_users/callbacksDeleteOrCancel.png
+.. image:: pic_callbacks/callbacksDeleteOrCancel.png
    :width: 600
    :align: center
 
 3. In case you want to delete callback click Delete button and succesful message will be displayed
 
-.. image:: pic_users/callbacksDeleted.png
+.. image:: pic_callbacks/callbacksDeleted.png
    :width: 600
    :align: center 
