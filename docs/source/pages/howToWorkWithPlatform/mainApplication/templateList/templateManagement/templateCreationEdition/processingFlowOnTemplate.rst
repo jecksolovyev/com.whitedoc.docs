@@ -23,7 +23,15 @@ Role configuration interface for AUTO flow contain the following information:
 2. Role name — a name that will be displayed to the user in the template and envelopes. It is a mandatory field and limited to 60 symbols max
 3. Role mailbox — mailbox of the role to which envelope will be sent. If set on template level, it's impossible to change it on envelope level later
 
-.. note:: You can specify exact mailbox or restrict mailbox selection to contacts only on envelope level in this field. Also names of every role including Sender can be changed to any text value up to 40 characters max.
+.. note::
+   You can specify one of the following options as mailbox:
+
+      1. Specific mailbox. Search is possible by mailbox name, alias or UUID. On envelope level it would be impossible to change
+      2. Option "Let sender set". Sender will define mailbox or email of recipient on envelope level
+      3. Option "Let sender set from contacts". Mailboxes from contacts only will be available on envelope level in this field
+      4. Specific role name in current envelope processing flow. This implies that the current role will inherit the mailbox or email specified in the parent role (inherited role). It is possible to search for a role by its name. However, it is prohibited to inherit a role that is already inheriting another role
+
+    Also names of every role including Sender can be changed to any text value up to 60 characters max.
 
 4. Role type — type of role and according to the type user will be obligated to make some actions in envelope. There are 4 types of roles available:
 
@@ -67,7 +75,7 @@ Some restrictions of the role places in the flow:
 2. QES signer cannot have order lower than last Assignee
 3. Copy can have any order in the flow but not less than 1
 
-.. warning:: If you have an external documets with e-ink signatures in your template you will have to place document uploader roles before roles which are signing these documents in MANUAL mode.
+.. warning:: If you have an external documents with e-ink signatures in your template you will have to place document uploader roles before roles which are signing these documents in MANUAL mode.
 
 Serial-parallel flow
 ====================
@@ -84,4 +92,4 @@ Some restrictions of the role places in the flow:
 2. QES signer cannot have order lower than last Assignee
 3. Copy can have any order in the flow but not less than 1
 
-.. warning:: If you have an external documets with e-ink signatures in your template you will have to place document uploader roles before roles which are signing these documents in MANUAL mode.
+.. warning:: If you have an external documents with e-ink signatures in your template you will have to place document uploader roles before roles which are signing these documents in MANUAL mode.
