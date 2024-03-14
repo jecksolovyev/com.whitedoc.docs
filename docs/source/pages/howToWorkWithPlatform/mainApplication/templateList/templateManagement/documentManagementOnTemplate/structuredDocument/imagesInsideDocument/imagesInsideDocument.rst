@@ -56,5 +56,5 @@ Image size restrictions
 
 According to the document structure we have next restrictions:
 
-1. Max allowed image size is 5 MB
-2. Max allowed image resolution is 1024 × 768
+1. Max allowed image size is 5 MB.
+2. Max allowed image resolution is 1024 × 768.
