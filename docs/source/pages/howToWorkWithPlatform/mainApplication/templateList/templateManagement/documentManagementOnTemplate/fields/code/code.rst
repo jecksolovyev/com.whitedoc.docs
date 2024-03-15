@@ -29,8 +29,10 @@ How to add QR/barcode field to the document
 .. note:: Most of 1D code types (barcodes) support limited amount and types of characters. Envelope URL code content is not available for such code types.
 
 7. Width - this attribute specifies the code width in pixels (automatically populated with default width of selected code type)
-8. Height - this attribute specifies the code height in pixels (automatically populated with default height of selected code type)
-9. Optional (becomes editable if data code content is selected) - this attribute specifies if this field is mandatory to fill
+
+.. note:: You can select unit of measure for code width - millimeters or percentage of document width.
+
+8. Optional (becomes editable if data code content is selected) - this attribute specifies if this field is mandatory to fill
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
