@@ -34,6 +34,9 @@ On template configuration page you can set some template properties, such as tem
    :align: center
 
 1. Version info - appears after template is saved. Here you can find UUIDs of template, it's current version and owner mailbox
+
+.. note:: Template version is updated in case when any changes are made to the template document contents or flow details. New version is created only after first envelope is created from the updated template.
+
 2. Template path - this property allows you to configure template storing location across your mailboxes
 3. Template name and description - these fields are mandatory to save a template
 4. Template Access - property which allows you to set access level of the template according to your needs. You can read more about this functionality :ref:`here <templateAccessLevel>`
