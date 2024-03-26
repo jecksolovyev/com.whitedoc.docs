@@ -424,7 +424,7 @@
 80003,Integration not found for mailbox {0},Integration configuration was not found for entered mailbox UUID
 80004,Name pattern generates empty filename,We cannot generate a file name
 80005,templateUuid does not match versionUuid,Template UUID does not match template version UUID. Please compare template and version UUIDs
-80006,Protocol {0} not supported,"Entered protocol has not supported yet. Supported protocols: FTPS, FTPS, AS2, SOAP"
+80006,Protocol {0} not supported,"Entered protocol has not supported yet. Supported protocols: SFTP, AS2, AS4"
 80007,Matching pattern source is required,Matching pattern source is required in this request
 80008,Template UUID is required,Template UUID is required in this request
 80009,Version UUID is required,Template version UUID is required in this request
