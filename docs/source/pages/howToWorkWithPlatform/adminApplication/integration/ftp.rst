@@ -5,10 +5,10 @@ SFTP protocol
 Folders structure
 =================
 
-- cinbox/ - incoming document folder, with special settings
-- coutbox/ - incoming document folder, with special settings
+- cinbox/ - incoming documents folder, with special settings
+- coutbox/ - outgoing documents folder, with special settings
 - error/ - unprocessable documents folder
-- inbox/ - incoming document folder
+- inbox/ - incoming documents folder
 - outbox/ - outgoing documents folder
 
 Connection properties

@@ -30,14 +30,14 @@ In the third field customer can provide email address where will be send all not
 Connection details (3)
 ======================
 
-#. For SFTP protocol all data except in connection details (3) block is automatically generated. Password is generated after Save button clicked. Credential from this block should be used for connection to the FTP server. Each parameter can be copied by clicking on copy button. New password can be created by Reset button.
+#. For SFTP protocol all data except password in connection details (3) block is automatically generated. Password is generated after Save button clicked. Credential from this block should be used for connection to the FTP server. Each parameter can be copied by clicking on copy button. New password can be created by Reset button.
 #. For AS2 protocol only Self URL and Self certificate will be generated automatically, the rest of credentials should be filled in manually.
 
 Default rules (4)
 =================
 
-#. Get incoming envelope from website and put a copy to the remote server
-#. Get incoming envelope from website and send notification email
+#. Get incoming envelope on the platorm and put a copy to the remote server
+#. Get incoming envelope on the platorm and send notification email
 #. Autoreject incoming envelopes
 
 If incoming documents don't match with any created conversion rules, default rules will be applied to incoming documents. It can be selected from 3 predefined options. If third rule is selected, reject reason can be specified and all incoming documents will be rejected with this reason.
@@ -45,4 +45,4 @@ If incoming documents don't match with any created conversion rules, default rul
 Conversion rules list (5)
 =========================
 
-Conversion rule list is empty be default. To create a new rule click on the "Add new rule" button, to open rule creation form. All new rules will be shown on this list. User can enable or disable each rules from this list. Existing rules can be updated, cloned and deleted. It is done in a rule properties form which is opened by clicking on the rule name. To save changes click on the Save (7) button.
+Conversion rule list is empty by default. To create a new rule click on the "Add new rule" button, to open rule creation form. All new rules will be shown on this list. User can enable or disable each rules from this list. Existing rules can be updated, cloned and deleted. It is done in a rule properties form which is opened by clicking on the rule name. To save changes click on the Save (7) button.
