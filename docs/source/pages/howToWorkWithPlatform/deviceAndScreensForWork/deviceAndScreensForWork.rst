@@ -4,17 +4,17 @@ Supported devices, browsers and screen resolutions
 
 The platform can operate as a browser application on the following devices: PC, tablet, or mobile phone.
 
-During initialization or when changing the screen resolution, the system verifies whether the user's current screen resolution is suitable for continued seamless operation. It also checks the OS and browser versions.
+During initialization or screen resolution change the system verifies whether the user's current screen resolution is suitable for continued seamless operation. It also checks the OS and browser versions.
 We recommend having one of the following screen resolutions and one of the following versions of OS and browser for the proper functioning of the platform.
 
 Supported screens resolution
 ============================
 
-1. Desktop - minWidth = 1440,
+1. Desktop - minWidth = 1440
 2. Tablet - minWidth = 756, maxWidth = 1439
-3. Mobile - minWidth = 320, maxWidth = 755,
+3. Mobile - minWidth = 320, maxWidth = 755
 
-If a user employs a screen resolution unsuitable for service operation, they will encounter a notification providing instructions for next steps.
+..note:: A notification screen with instructions is presented on unsupported screen resolutions.
 
 Supported OS and browser versions
 =================================
