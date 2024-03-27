@@ -6,8 +6,7 @@ Integrations can be enabled on  `integration page </admin/integrations/list>`_ w
 
 .. note:: If this toggle is disabled conection to the remote server will not be possible.
 
-On this page customer can turned integration for all mailboxes in same account one by one. When customer open this page
-and he has mailbox all field will be pre-filled(except: "Notify by email")
+On this page customer can turned integration for all mailboxes in same account one by one. When customer open this page and he has mailbox all field will be pre-filled (except: "Notify by email").
 
 .. image:: pic_integrationPage/integrationPage_1.png
    :width: 1000
