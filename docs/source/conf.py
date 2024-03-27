@@ -19,11 +19,11 @@ import sphinx_bootstrap_theme
 # -- Project information -----------------------------------------------------
 
 project = 'WhiteDoc'
-copyright = '2023, DocStudio'
+copyright = '2024, DocStudio'
 author = 'DocStudio'
 
 # The full version, including alpha/beta/rc tags
-release = '95'
+release = '103'
 
 # -- General configuration ---------------------------------------------------
 
