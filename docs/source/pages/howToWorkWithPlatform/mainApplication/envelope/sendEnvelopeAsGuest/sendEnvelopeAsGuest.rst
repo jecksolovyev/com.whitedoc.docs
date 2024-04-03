@@ -137,7 +137,7 @@ Fill in all required fields (button "Edit" changes to "Send")
    :width: 400
    :align: center
 
-.. note:: If you are already logged in on another browser tab and have "Default mailbox"" enabled, the configured mailbox will be automatically used and the envelope will be sent after this step. 
+.. note:: If you are already logged in on another browser tab and have "Default mailbox" enabled, the configured mailbox will be automatically used and the envelope will be sent after this step. 
 
 6. If you do not have "Default mailbox" enabled, you will be prompted to choose one of your mailboxes for each role or apply mailbox to all your roles in envelope.
 
