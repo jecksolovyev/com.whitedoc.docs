@@ -1,15 +1,15 @@
 ===================================
-Send envelope without authorisation
+Send envelope without authorization
 ===================================
 
-User is able to send envelope without authorisation. To use this functionality user has to do get special link (create link as authorised user or receive link from somebody).
+User is able to send envelope without authorization. To use this functionality user has to do get special link (create link as authorized user or receive link from somebody).
 
-Flow of the initiation envelope without authorisation
+Flow of the initiation envelope without authorization
 =====================================================
 
 There are 2 ways to create a flow in the envelope template to generate a link for filling out the envelope:
 * Specifying a particular mailbox for the role
-* Using functionality - same as
+* Using functionality - "Same as"
 
 1 way - Specifying a particular mailbox for the role.
 
@@ -20,11 +20,11 @@ There are 2 ways to create a flow in the envelope template to generate a link fo
    :align: center
 
 2. Generate special link, which unathorised users can use
-3. Follow the link without authorisation
+3. Follow the link without authorization
 4. Fill in all required fields assigned to sender role
 5. Send envelope and follow the instructions
 
-2 way - Same as functionality.
+2 way - "Same as" functionality.
 
 This functionality allows configuring the flow without specifying particular mailboxes for roles in which actions should be performed by the same mailbox, including the Sender. 
 This allows a specific user, after initiating the envelope, to complete actions for all of his roles in a single step.
@@ -38,7 +38,7 @@ A role can inherit any other role in the flow, except for the one that already i
    :align: center
 
 3. Generate special link, which unathorised users can use
-4. Follow the link without authorisation
+4. Follow the link without authorization
 5. Fill in all required fields assigned to the sender role and roles that inherit the sender role.
 6. Send the envelope and follow the instructions
 
@@ -46,7 +46,7 @@ How to create share template link?
 ==================================
 
 1. Create a template
-2. Fill in envelope subject and fill in all roles in the flow with mailboxes or use Same as functionality
+2. Fill in envelope subject and fill in all roles in the flow with mailboxes or use "Same as" functionality
 3. Set template access level to public
 
 .. note:: If template uses dictionary access level of each dictionary used in template should be public or official access level.
@@ -71,12 +71,12 @@ How to create share template link?
 
 You are able to revoke current link and code, just click on "Revoke link" button. This action removes possibility to create envelopes using shared template link and code. Also you are able to create new template shared link and code by click on "Generate new link". Link and code are unique every time and revoked ones can not be recovered.
 
-How to send envelope without authorisation (for guests)?
+How to send envelope without authorization (for guests)?
 ========================================================
 
-To send envelope without authorisation user has to have template shared link or embedded iframe.
+To send envelope without authorization user has to have template shared link or embedded iframe.
 
-1. Follow the template shared link (or to the iframe).  The user observes limited functionality within the envelope.
+1. Follow the template shared link (or to the iframe). The user observes limited functionality within the envelope.
 2. Only fields assigned to the sender role can be filled. If the recipient's roles are the same as the sender, the user can simultaneously see recipient's fields as active for completion.
 Fill in all required fields (button "Edit" changes to "Send")
 
@@ -111,10 +111,10 @@ If there are no roles in the flow that inherit from the current one, then the en
    :width: 400
    :align: center
 
-How to send envelope without authorisation (for registered users)?
+How to send envelope without authorization (for registered users)?
 ==================================================================
 
-To send envelope without authorisation user has to have template shared link or embedded iframe.
+To send envelope without authorization user has to have template shared link or embedded iframe.
 
 1. Follow the template shared link (or to the iframe).  The user observes limited functionality within the envelope.
 2. Only fields assigned to the sender role can be filled. If the recipient's roles are the same as the sender, the user can simultaneously see recipient's fields as active for completion.
@@ -137,9 +137,9 @@ Fill in all required fields (button "Edit" changes to "Send")
    :width: 400
    :align: center
 
-.. note:: If you are already logged in on another browser tab and have autodeposit mailbox enabled, the configured mailbox will be automatically used and the envelope will be sent after this step. 
+.. note:: If you are already logged in on another browser tab and have "Default mailbox"" enabled, the configured mailbox will be automatically used and the envelope will be sent after this step. 
 
-6. If you do not have autodeposit mailbox enabled, you will be prompted to choose one of your mailboxes for each role or apply mailbox to all your roles in envelope.
+6. If you do not have "Default mailbox" enabled, you will be prompted to choose one of your mailboxes for each role or apply mailbox to all your roles in envelope.
 
 .. image:: pic_sendEnvelopeAsGuest/chooseMailbox.png
    :width: 400

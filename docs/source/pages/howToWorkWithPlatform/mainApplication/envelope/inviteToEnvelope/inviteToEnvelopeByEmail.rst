@@ -8,8 +8,8 @@ Invite participant to envelope by email from the draft page
 ===========================================================
 
 * Open draft of the envelope without predefined processing flow and participant there. 
-You can also use a draft created based on the template where the "Same as" function was used during the flow setup.
-This means that the flow is configured in such a way that one role can inherit another, allowing the same user to perform actions for two/three, etc., roles in a single step on the envelope.
+
+.. note:: You can also use a draft created based on the template where the "Same as" function was used during the flow setup. This means that the flow is configured in such a way that one role can inherit another, allowing the same user to perform actions for two/three, etc., roles in a single step on the envelope.
 
 .. image:: pic_inviteToEnvelopeByEmail/draftSameAsFlow.png
    :width: 400
@@ -44,20 +44,20 @@ We're able to invite to an envelope such as customers of the platform and non-re
 * If you leave the email address at the input at the processing flow, participant will be invited by email
 * If you select the mailbox from the drop-down list at the processing flow, participant will get envelope as usual
 
-Auto Deposit Function
+"Default mailbox" function
 =====================
 
-The envelope sent via email can be automatically assigned to a mailbox with the Auto Deposit function.
+The envelope sent via email can be automatically assigned to a mailbox with the "Default mailbox" function.
 
-* Open 'User Profile'
-* Select proper mailbox in 'Auto Deposit Mailbox'
+* Open "User Profile"
+* Select proper mailbox in "Default mailbox"
 * All envelopes will go to this mailbox automatically without invitations
-* By default 'Auto Deposit Mailbox' is set to user's personal mailbox
+* The user's personal mailbox is set to "Default Mailbox" by default 
 
-.. note:: The user has the option to select an auto-deposit mailbox in the invitation email under the mailbox selection menu.
+.. note:: The user has the option to select an default mailbox in the invitation email under the mailbox selection menu.
 
 
-How to accept invitation and send envelope without authorisation (for guests)?
+How to accept invitation and send envelope without authorization (for guests)?
 ==============================================================================
 
 1. To accept the invitation to the envelope, the user must follow the link sent to their email address. You have received a new envelope message will be displayed. 
@@ -82,7 +82,7 @@ Fill in all required fields (button "Edit" changes to "Send")
    :width: 400
    :align: center
 
-6. Perform the necessary actions depending on the role funcrionality and then complete (send) the envelope. 
+6. Perform the necessary actions depending on the role functionality and then complete (send) the envelope. 
 If there are no roles in the flow that inherit from the current one, then the envelope will be sent further along the flow and success page will be displayed.
 
 .. image:: pic_inviteToEnvelopeByEmail/inviteSuccessPage.png
@@ -90,7 +90,7 @@ If there are no roles in the flow that inherit from the current one, then the en
    :align: center
 
 
-How to accept invitation and send envelope without authorisation for registered users?
+How to accept invitation and send envelope without authorization for registered users?
 ======================================================================================
 
 1. To accept the invitation to the envelope, the user can follow the link sent to their email address. 
@@ -100,9 +100,9 @@ Enter valid credentials and sign in. Authorization through third-party services 
    :width: 400
    :align: center
 
-.. note:: If you enable autodeposit mailbox, the configured mailbox will be automatically used and the envelope will be sent after this step. 
+.. note:: If you enable "Default mailbox", the configured mailbox will be automatically used and the envelope will be sent after this step. 
 
-2. If you do not have autodeposit mailbox enabled, you will be prompted to choose one of your mailboxes for each role.
+2. If you do not have "Default mailbox" enabled, you will be prompted to choose one of your mailboxes for each role.
 
 .. image:: pic_inviteToEnvelopeByEmail/inviteChooseMailbox.png
    :width: 400
