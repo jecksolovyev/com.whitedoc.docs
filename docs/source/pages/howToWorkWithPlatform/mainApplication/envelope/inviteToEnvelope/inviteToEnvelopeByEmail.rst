@@ -45,7 +45,7 @@ We're able to invite to an envelope such as customers of the platform and non-re
 * If you select the mailbox from the drop-down list at the processing flow, participant will get envelope as usual
 
 "Default mailbox" function
-=====================
+==========================
 
 The envelope sent via email can be automatically assigned to a mailbox with the "Default mailbox" function.
 
