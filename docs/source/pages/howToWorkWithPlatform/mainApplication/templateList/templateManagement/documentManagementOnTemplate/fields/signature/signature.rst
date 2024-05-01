@@ -72,4 +72,4 @@ How to fill a signature field in the envelope
    :width: 600
    :align: center
 
-8. Signature can be changed by clicking on the picture of your signature and repeating steps 3, 4 and 5.
+8. Signature can be changed by clicking on the picture of your signature and repeating steps 3, 4 and 6.
