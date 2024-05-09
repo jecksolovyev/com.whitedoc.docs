@@ -24,7 +24,7 @@ How to process a received envelope without registration?
 Envelope sending without authorization
 ======================================
 
-Envelopes can also be sent without authorization. This is done via an envelope initiation link created by a registered user.
+Envelopes can also be sent without authorization. This is done via an envelope initiation link created by an authorized user.
 
 How to generate an envelope initiation link?
 ============================================
