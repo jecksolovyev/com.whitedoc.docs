@@ -45,7 +45,7 @@ How to generate an envelope initiation link?
 
 5. Set template access level to Public
 
-.. note:: If the template uses a dictionary, the access level of each dictionary used in the template should be public or official access level.
+.. note:: If the template is using a dictionary, the access level of each dictionary used in the template should be Public or Official.
 
 6. Save template
 7. Follow the template list
