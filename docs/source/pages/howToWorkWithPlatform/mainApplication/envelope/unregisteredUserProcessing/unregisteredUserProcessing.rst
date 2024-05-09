@@ -90,7 +90,7 @@ How to send an envelope without registration?
    :width: 600
    :align: center
 
-6. Enter the code received in the email and press the "Send" button
+6. Enter the code received in the email and click the "Send" button
 7. If the next role in the flow inherits the current one, the envelope with the functionality of the next role (Approver/Signer) will be displayed
 
 .. image:: pic_unregisteredUserProcessing/sameAsRoles.png
