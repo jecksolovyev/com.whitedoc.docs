@@ -48,7 +48,7 @@ How to generate an envelope initiation link?
 .. note:: If the template is using a dictionary, the access level of each dictionary used in the template should be Public or Official.
 
 6. Save template
-7. Follow the template list
+7. Follow to the template list
 8. Open the template action menu and click on "Get link"
 
 .. image:: pic_unregisteredUserProcessing/getLinkOption.png
