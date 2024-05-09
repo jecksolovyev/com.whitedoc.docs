@@ -49,7 +49,7 @@ How to generate an envelope initiation link?
 
 6. Save template
 7. Follow to the template list
-8. Open the template action menu and click on "Get link"
+8. Open the template action menu and click "Get link"
 
 .. image:: pic_unregisteredUserProcessing/getLinkOption.png
    :width: 600
