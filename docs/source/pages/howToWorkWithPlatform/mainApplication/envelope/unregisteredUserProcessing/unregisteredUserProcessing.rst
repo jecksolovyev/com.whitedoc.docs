@@ -77,7 +77,7 @@ How to send an envelope without registration?
    :width: 600
    :align: center
 
-3. Click on the "Send" button
+3. Click the "Send" button
 4. Enter your email (the user with this email shouldn't be registered or active)
 
 .. image:: pic_unregisteredUserProcessing/enterEmail.png
