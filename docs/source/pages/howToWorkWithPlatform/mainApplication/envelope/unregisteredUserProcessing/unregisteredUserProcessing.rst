@@ -2,7 +2,7 @@
 Envelope processing without authorization
 =========================================
 
-Our platform allows users to process envelopes without registration and perform quick envelope processing actions without needing to register immediately.
+Our platform allows users to perform quick envelope processing actions without needing to register immediately.
 
 How to process a received envelope without registration?
 ========================================================
@@ -37,7 +37,7 @@ How to generate an envelope initiation link?
    :width: 600
    :align: center
 
-4. Note that you also can specify anu roles with the "Same as" feature instead of using a mailbox or email address
+4. Note that you also can specify any roles with the "Same as" feature instead of using a mailbox or email address
 
 .. image:: pic_unregisteredUserProcessing/flowSameAs.png
    :width: 600
