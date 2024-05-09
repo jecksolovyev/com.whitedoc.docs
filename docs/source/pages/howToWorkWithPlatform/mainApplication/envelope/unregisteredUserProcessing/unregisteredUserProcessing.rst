@@ -115,7 +115,7 @@ How to send an envelope without authorization as a registered user?
    :width: 600
    :align: center
 
-3. Click on the "Send" button
+3. Click the "Send" button
 4. Enter your email (the user with this email should be registered and active)
 
 .. image:: pic_unregisteredUserProcessing/enterEmail.png
