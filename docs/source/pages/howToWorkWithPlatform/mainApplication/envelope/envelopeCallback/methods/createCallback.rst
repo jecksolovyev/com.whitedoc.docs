@@ -53,7 +53,7 @@ Request body parameters described below:
 +----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 | label                            | Filter envelopes by label which assigned to envelope                                                                                                   |
 +----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-| status                           | Filter envelopes by status. Allowed statuses for callbacks are WAITING, COMPLETED, CANCELLED, EXPIRED                                                  |
+| status                           | Filter envelopes by status. Allowed statuses for callbacks are WAITING, COMPLETED, CANCELLED, EXPIRED (case insensitive)                                              |
 +----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 | subject                          | Filter envelopes by respective subject of envelope. Filter works according to the contain rule.                                                        |
 |                                  | It means if we apply filter by subject "agreement" all envelopes with word "agreement" will be added                                                   |
@@ -72,7 +72,7 @@ Request body parameters described below:
 +----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 | sender                           | Filter envelopes by envelope sender. Allowed values are senders UUIDs                                                                                  |
 +----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-| scope                            | Filter envelopes by direction of the email. Allowed values inbox and outbox                                                                            |
+| scope                            | Filter envelopes by direction of the email. Allowed values inbox and outbox (case insensitive)                                                                      |
 +----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 | url :red:`*`                     | Parameter defines URL where callback will be sent                                                                                                      |
 +----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
