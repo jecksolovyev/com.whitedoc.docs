@@ -97,7 +97,7 @@ How to send an envelope without registration?
    :width: 600
    :align: center
 
-.. note:: If you do not complete all the subsequent inherited roles, you will receive an email reminder with a link to complete your envelope processing steps. Authorized users also receive the same notification if they do not finish all consequent role actions. It is important to note that all registered users with access to the mailbox will receive this notification.
+.. note:: If you do not complete all the subsequent inherited roles, you will receive an email reminder with a link to complete your envelope processing steps an hour after completing the first role. Authorized users also receive the same notification if they do not finish all consequent role actions. It is important to note that all registered users with access to the mailbox will receive this notification.
 
 8. Perform all necessary actions depending on the role and send the envelope. If there are no roles in the flow that inherit the current one, the envelope will be sent to the next flow participant, and the success page will be displayed
 
@@ -143,7 +143,7 @@ How to send an envelope without authorization as a registered user?
    :width: 600
    :align: center
 
-.. note:: If you do not complete all the subsequent inherited roles, you will receive an email reminder with a link to complete your envelope processing steps. Authorized users also receive the same notification if they do not finish all consequent role actions. It is important to note that all registered users with access to the mailbox will receive this notification.
+.. note:: If you do not complete all the subsequent inherited roles, you will receive an email reminder with a link to complete your envelope processing steps an hour after completing the first role. Authorized users also receive the same notification if they do not finish all consequent role actions. It is important to note that all registered users with access to the mailbox will receive this notification.
 
 9. Perform all necessary actions depending on the role and send the envelope. If there are no roles in the flow that inherit the current one, the envelope will be sent to the next flow participant, and the success page will be displayed
 
