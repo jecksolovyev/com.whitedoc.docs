@@ -60,7 +60,7 @@ How to fill a signature field in the envelope
 6. Click "Sign" to insert your signature to the field (can't be empty) and you will see your signature in the document.
 7. Under the signature, you will see its details, depending on whether the "Show signature details" toggle was enabled or not on the template. 
 
-.. note:: If toggle was enabled - there will be displayed signature hash and 'Signed by [instance name]' and reserved space for date and mailbox or email address of the signer (it will appear on the document after sending the envelope). If toggle was disabled there will be just signature hash and 'Signed by [instance name]'. 
+.. note:: If toggle was enabled - there will be displayed signature hash and 'Signed by [instance name]' and reserved space for date and email address of the signer (it will appear on the document after sending the envelope). If toggle was disabled there will be just signature hash and 'Signed by [instance name]'. 
 
 .. image:: pic_signature/signatureEnvelope.png
    :width: 600
