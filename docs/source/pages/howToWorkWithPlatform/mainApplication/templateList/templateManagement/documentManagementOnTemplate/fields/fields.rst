@@ -40,7 +40,7 @@ This method is similar to drag & drop, but works in 2 clicks instead of 1. Click
    file/file.rst
    table/table.rst
    duplicate/duplicate.rst
-   formula/formula.rst
+   formula1/formula1.rst
    code/code.rst
    autonumber/autonumber.rst
    qes/qes.rst
