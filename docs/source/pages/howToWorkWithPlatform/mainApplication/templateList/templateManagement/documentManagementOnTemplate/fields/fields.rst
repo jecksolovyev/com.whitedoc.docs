@@ -41,7 +41,7 @@ This method is similar to drag & drop, but works in 2 clicks instead of 1. Click
    table/table.rst
    duplicate/duplicate.rst
    formula/formula.rst
-   code/code.rst
+   qrBarCode/qrBarCode.rst
    autonumber/autonumber.rst
    qes/qes.rst
    pades/pades.rst

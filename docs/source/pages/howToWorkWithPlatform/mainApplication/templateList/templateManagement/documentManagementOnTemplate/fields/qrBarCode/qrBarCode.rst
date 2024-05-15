@@ -11,13 +11,13 @@ How to add QR/barcode field to the document
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
-.. image:: pic_code/codeIcon.png
+.. image:: pic_qrBarCode/qrBarCodeIcon.png
    :width: 600
    :align: center
 
 2. Field creation form will appear, where you should set field attributes
 
-.. image:: pic_code/codeCreate.png
+.. image:: pic_qrBarCode/qrBarCodeCreate.png
    :width: 600
    :align: center
 
@@ -36,6 +36,6 @@ How to add QR/barcode field to the document
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
-.. image:: pic_code/codeEdit.png
+.. image:: pic_qrBarCode/qrBarCodeEdit.png
    :width: 600
    :align: center
