@@ -16,10 +16,9 @@ Localized error codes you can find below:
 .. toctree::
 
    errorCodesEn.rst
+   errorCodesUk.rst
    errorCodesEs.rst
    errorCodesEt.rst
    errorCodesFr.rst
    errorCodesLt.rst
    errorCodesLv.rst
-   errorCodesUk.rst
-   errorCodesRu.rst
