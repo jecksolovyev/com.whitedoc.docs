@@ -133,6 +133,8 @@ In this section you can configure automatic forwarding of all incoming envelopes
 
 Forwarding is configured now. If you wish to disable it at some point later, you can disable "Active forwarding" toggle and click on "Save changes" button.
 
+.. _customDashboard:
+
 Dashboard tab
 =============
 

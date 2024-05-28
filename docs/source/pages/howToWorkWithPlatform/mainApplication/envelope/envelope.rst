@@ -2,7 +2,7 @@
 Envelope
 ========
 
-Envelope is entity with documents (structured, external and PDF) with automatic or manual processing flow. Envelope is a tool that allows EDI process.
+Envelope is an entity containing documents (structured, external and PDF) with automatic or manual processing flow. Envelope is a tool that allows EDI process.
 
 **Content list**
 
@@ -13,11 +13,10 @@ Envelope is entity with documents (structured, external and PDF) with automatic 
     inviteToEnvelope/inviteToEnvelopeByEmail.rst
     resendEnvelopeInvite/resendEnvelopeInvite.rst
     acceptInvitationToEnvelope/acceptInvitationToEnvelope.rst
+    unregisteredUserProcessing/unregisteredUserProcessing.rst
     externalDocumentOnEnvelope/externalDocumentOnEnvelope.rst
     comments/comments.rst
     envelopeSignatures/envelopeSignatures.rst
     approvalProcess/approved.rst
     delegationProcess/delegationProcess.rst
-    sendEnvelopeAsGuest/sendEnvelopeAsGuest.rst
-    receiveFillSignEnvelopeAsGuest/receiveFillSignEnvelopeAsGuest.rst
     envelopeCallback/envelopeCallback.rst

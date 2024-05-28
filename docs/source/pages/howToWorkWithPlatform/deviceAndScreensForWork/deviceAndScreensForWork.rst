@@ -1,42 +1,41 @@
-===============================================
-Devices and screen sizes for work with platform
-===============================================
+==================================================
+Supported devices, browsers and screen resolutions
+==================================================
 
-**For convenient work with the service, the user must have one of 3 types of supporting devices:**
+The platform can operate as a browser application on the following devices: PC, tablet, or mobile phone.
 
-1. Desktop computer.
-2. Tablet.
-3. Mobile phone.
+During initialization or screen resolution change the system verifies whether the user's current screen resolution is suitable for continued seamless operation. It also checks the OS and browser versions.
+We recommend having one of the following screen resolutions and one of the following versions of OS and browser for the proper functioning of the platform.
 
-At the stage of initialization or / changing the screen resolution, the system checks whether the current screen resolution
-of the user is acceptable for further convenient work.
+Supported screens resolution
+============================
 
-==================
-Screen size limits
-==================
+1. Desktop - minWidth = 1440
+2. Tablet - minWidth = 756, maxWidth = 1439
+3. Mobile - minWidth = 320, maxWidth = 755
 
-**1. Desktop**
+..note:: A notification screen with instructions is presented on unsupported screen resolutions.
 
-   minWidth = 1440,
+Supported OS and browser versions
+=================================
 
-**2. Tablet**
+We cannot specify a particular version, but we will consistently support the latest versions of operating systems and browsers as per the list below
 
-    minWidth = 756,
-    maxWidth = 1439
+1. latest 2 Chrome major version
+2. latest 1 Firefox major version
+3. latest 2 Edge major versions
+4. latest 2 Safari major versions
+5. latest 2 iOS major versions
+6. latest 2 Opera major versions
+7. latest 2 OperaMini major versions
+8. Firefox ESR
 
-**3. Mobile**
+.. note:: we're not supporting IE 11 (Internet Explorer)
 
-    minWidth = 320,
-    maxWidth = 755,
-
-If the user uses a screen resolution that is not suitable for working with the service, he will see a dummy notification
-with instructions on what to do next.
-
-=============
 User messages
 =============
 
-**1. If the user is using a desktop computer, they will be prompted to:**
+1. If the user is using a desktop computer, they will be prompted to:
 
  "Oops... Screen resolution you use is too small to work comfortable.
  Please, expand your browser window on full screen and decrease page scale:
@@ -48,7 +47,7 @@ User messages
    :width: 600
    :align: center
 
-**2. If the user is using a mobile or tablet device, they will be prompted to change it orientation to album or portrait:**
+2. If the user is using a mobile or tablet device, they will be prompted to change it orientation to album or portrait:
 
 .. image:: ./pic_deviceAndScreensForWork/mobileLandscapeMsg.png
    :width: 600

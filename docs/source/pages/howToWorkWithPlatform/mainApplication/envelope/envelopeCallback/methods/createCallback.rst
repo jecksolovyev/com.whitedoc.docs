@@ -1,3 +1,5 @@
+.. include:: ../../../../../../special.rst
+
 ===============
 Create callback
 ===============
@@ -46,51 +48,52 @@ Create callback
 
 Request body parameters described below:
 
-+-----------------+------------------------------------------------------------------------------------------------------+
-| filter          | Is an object with filter data according to which callbacks will be triggered                         |
-+-----------------+------------------------------------------------------------------------------------------------------+
-| label           | Filter envelopes by label which assigned to envelope                                                 |
-+-----------------+------------------------------------------------------------------------------------------------------+
-| status          | Filter envelopes by status. Allowed statuses for callbacks are WAITING, COMPLETED, CANCELLED, EXPIRED|
-+-----------------+------------------------------------------------------------------------------------------------------+
-| subject         | Filter envelopes by respective subject of envelope. Filter works according to the contain rule.      |
-|                 | It means if we apply filter by subject "agreement" all envelopes with word "agreement" will be added |
-|                 | to callback queue and callback will be sent.                                                         |
-+-----------------+------------------------------------------------------------------------------------------------------+
-| receiveDateFrom | Filter envelopes by receive date FROM specified date and time                                        |
-+-----------------+------------------------------------------------------------------------------------------------------+
-| receiveDateTo   | Filter envelopes by receive date TO specified date and time                                          |
-+-----------------+------------------------------------------------------------------------------------------------------+
-| expireDateFrom  | Filter envelopes by envelope expire date FROM specified date and time                                |
-+-----------------+------------------------------------------------------------------------------------------------------+
-| expireDateTo    | Filter envelopes by envelope expire date TO specified date and time                                  |
-+-----------------+------------------------------------------------------------------------------------------------------+
-| template        | Filter envelopes specific template (template from which envelope created).                           |
-|                 | Allowed values are template UUIDs                                                                    |
-+-----------------+------------------------------------------------------------------------------------------------------+
-| sender          | Filter envelopes by envelope sender. Allowed values are senders UUIDs                                |
-+-----------------+------------------------------------------------------------------------------------------------------+
-| scope           | Filter envelopes by direction of the email. Allowed values inbox and outbox                          |
-+-----------------+------------------------------------------------------------------------------------------------------+
-| url             | Parameter defines URL where callback will be sent                                                    |
-+-----------------+------------------------------------------------------------------------------------------------------+
-| retries         | Parameter defines quantity of callback send retires. Retries could be applied if URL unreachable     |
-|                 | or successCode received from URL is different from expected. Allowed values from 0 to 10.            |
-|                 | If 0 value set in callback it means that system tires to send callback once and will not retry       |
-+-----------------+------------------------------------------------------------------------------------------------------+
-| timeout         | Parameter defines timeout in milliseconds which system wait for response with successCode.           |
-|                 | If timeout reached retries procedure starts (if configured). Allowed values from 100 to 60000        |
-+-----------------+------------------------------------------------------------------------------------------------------+
-| successCode     | Parameter defines status code which system wait for successfully sent callback. If status code       |
-|                 | received from URL is different from required retries procedure will be initiated (if configured)     |
-+-----------------+------------------------------------------------------------------------------------------------------+
-| login           | Parameter defines login of the Basic auth                                                            |
-|                 | (If URL is reachable only with Basic auth this parameter has to be defined)                          |
-+-----------------+------------------------------------------------------------------------------------------------------+
-| password        | Parameter defines password of the Basic auth                                                         |
-|                 | (If URL is reachable only with Basic auth this parameter has to be defined)                          |
-+-----------------+------------------------------------------------------------------------------------------------------+
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| filter :red:`*`                  | Is an object with filter data according to which callbacks will be triggered. :red:`Can be empty if you don't want to use any filters`                 |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| label                            | Filter envelopes by label which assigned to envelope                                                                                                   |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| status                           | Filter envelopes by status. Allowed statuses for callbacks are WAITING, COMPLETED, CANCELLED, EXPIRED (case insensitive)                                              |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| subject                          | Filter envelopes by respective subject of envelope. Filter works according to the contain rule.                                                        |
+|                                  | It means if we apply filter by subject "agreement" all envelopes with word "agreement" will be added                                                   |
+|                                  | to callback queue and callback will be sent.                                                                                                           |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| receiveDateFrom                  | Filter envelopes by receive date FROM specified date and time                                                                                          |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| receiveDateTo                    | Filter envelopes by receive date TO specified date and time                                                                                            |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| expireDateFrom                   | Filter envelopes by envelope expire date FROM specified date and time                                                                                  |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| expireDateTo                     | Filter envelopes by envelope expire date TO specified date and time                                                                                    |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| template                         | Filter envelopes specific template (template from which envelope created).                                                                             |
+|                                  | Allowed values are template UUIDs                                                                                                                      |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| sender                           | Filter envelopes by envelope sender. Allowed values are senders UUIDs                                                                                  |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| scope                            | Filter envelopes by direction of the email. Allowed values inbox and outbox (case insensitive)                                                                      |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| url :red:`*`                     | Parameter defines URL where callback will be sent                                                                                                      |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| retries :red:`*`                 | Parameter defines quantity of callback send retires. Retries could be applied if URL unreachable                                                       |
+|                                  | or successCode received from URL is different from expected. Allowed values from 0 to 10.                                                              |
+|                                  | If 0 value set in callback it means that system tires to send callback once and will not retry                                                         |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| timeout :red:`*`                 | Parameter defines timeout in milliseconds which system wait for response with successCode.                                                             |
+|                                  | If timeout reached retries procedure starts (if configured). Allowed values from 100 to 60000                                                          |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| successCode                      | Parameter defines status code which system wait for successfully sent callback. If status code received from URL is different from                     |
+|                                  | required retries procedure will be initiated (if configured). (:red:`If do not sent default value (Status code: 200) will be applied`)                 |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| login                            | Parameter defines login of the Basic auth                                                                                                              |
+|                                  | (:red:`If URL is reachable only with Basic auth this parameter has to be defined`)                                                                     |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| password                         | Parameter defines password of the Basic auth                                                                                                           |
+|                                  | (:red:`If URL is reachable only with Basic auth this parameter has to be defined`)                                                                     |
++----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+:red:`*` - defines attribute as required
 
 **RESPONSE**
 
