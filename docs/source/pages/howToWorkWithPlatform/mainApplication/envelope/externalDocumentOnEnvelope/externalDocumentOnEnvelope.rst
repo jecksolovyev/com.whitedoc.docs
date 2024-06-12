@@ -20,6 +20,30 @@ How to upload an external document
 
 4. To send envelope you should fill all other mandatory fields and upload all external documents assigned to your role
 
+How to upload an external document with embedded fields
+=======================================================
+
+1. Click on the upload zone
+
+.. image:: pic_externalDocument/ExternalDocument.png
+   :width: 600
+   :align: center
+
+2. Select a file
+3. Depending on the type of built-in fields you will see a modal window with different options:
+
+- Keep signatures and fields = Preserve editable fields embedded in the document in read-only state, signature, and/or encryption.
+- Keep editable fields data = Preserve editable fields embedded in the document in read-only state, remove signature and/or encryption.
+- Remove editable fields = Remove embedded signatures, encryption, editable fields in the document.
+
+.. image:: pic_externalDocument/ExternalDocumentEmbeddedModal.png
+   :width: 600
+   :align: center
+
+.. note:: If the external document contains E-ink signature the option "Keep signatures and fields" will be unavailable. In this case, it is impossible to retain built-in signatures.
+
+4. Depending on the selected option, the PDF document will be rendered, and you can continue working with the envelope in the usual manner.
+
 External document signing process
 =================================
 

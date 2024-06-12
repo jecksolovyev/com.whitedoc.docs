@@ -28,20 +28,22 @@ How to add a PDF document to template
 4. In the template editor you can edit document properties, such as role and optionality (only if no file was uploaded)
 5. You also can add QES/PAdES and Signature fields to such document
 
-How to clone a PDF document
-===========================
+How to add a PDF document with embedded fields
+==============================================
 
-1. Click "More" button in the right upper corner of the document
-2. Click "Clone" button in the menu
+If PDF document contains embedded fields, you will be prompted to choose how to handle these fields upon uploading.
 
-How to delete a PDF document
-============================
+.. image:: pic_pdfDocument/EmbeddedModalOptions.png
+   :width: 600
+   :align: center
 
-1. Click "More" button in the right upper corner of the document
-2. Click "Delete" button in the menu
+Depending on PDF file contents and encryption there are several upload options (only applicable options will be available for each file):
 
-PDF fields import
-=================
+- Keep signatures and fields = Only QES/PAdES fields will be allowed to create in the document.
+- Keep encrypted, assign fields to = Keep file encrypted. Creating fields in it will be restricted, except QES.
+- Assign fields to = Convert dynamic fields embedded in the document into WhiteDoc fields (if existing).
+- Keep editable fields data = Preserve editable fields embedded in the document in read-only state, remove signature and/or encryption. In this case all existing fields will be disabled and not converted in WhiteDoc format. New fields can be added to the document.
+- Remove editable fields = Remove embedded signatures, encryption, editable fields in the document. In this case any new fields can be added to the document.
 
 Embedded PDF fields can be converted to WhiteDoc dynamic fields. Please see conversion map below:
 
@@ -57,10 +59,15 @@ Embedded PDF fields can be converted to WhiteDoc dynamic fields. Please see conv
 
 .. note:: All imported fields except Choice inherit theirs optional/required attribute status from original PDF file.
 
-Depending on PDF file contents and encryption there are several upload options (only applicable options will be available for each file):
+How to clone a PDF document
+===========================
 
-1. If file is encrypted, encryption and can be preserved. In this case existing fields will be converted to WhiteDoc fields, but only new QES fields will be available for creation in such document
-2. Existing data and signatures can be preserved. In this case only QES and PAdES fields will be available for creation in such document
-3. All fields can be converted to WhiteDoc fields without preserving of encryption. In this case any new fields can also be added to the document. Please note that new role will be created for every PAdES signature if there are any
-4. Document can be kept in "as is" state. In this case all existing fields will be disabled and not converted in WhiteDoc format. New fields can be added to the 
-5. All existing fields and signatures can be removed from the document. In this case any new fields can be added to the document
+1. Click "More" button in the right upper corner of the document
+2. Click "Clone" button in the menu
+
+How to delete a PDF document
+============================
+
+1. Click "More" button in the right upper corner of the document
+2. Click "Delete" button in the menu
+

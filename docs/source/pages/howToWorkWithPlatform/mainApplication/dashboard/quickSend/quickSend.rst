@@ -91,12 +91,11 @@ How to import embedded PDF fields?
 
 2. Depending on the type of built-in fields you will see different options:
 
-- Keep signature = Only QES/PAdES fields will be allowed to create in the document.
-- Keep already existing data = Keep already existing data. Only QES/PAdES fields will be allowed to create in the document.
-- Keep encrypted, assign fields to = Keep file encrypted. Creating new fields in it will be restricted, only new QES fields will be available for creation. Existing fields can be assigned a selectable role.
-- Assign fields to = Convert dynamic fields embedded in the document into WhiteDoc fields (if existing) and assign them to a selectable role . Any new fields can be added to the document.
-- Keep fields data = Preserve dynamic fields embedded in the document in read-only state. Any new fields can be added to the document.
-- Remove fields = Remove dynamic fields embedded in the document. Any new fields can be added to the document.
+- Keep signatures and fields = Only QES/PAdES fields will be allowed to create in the document.
+- Keep encrypted, assign fields to = Keep file encrypted. Creating fields in it will be restricted, except QES.
+- Assign fields to = Convert dynamic fields embedded in the document into WhiteDoc fields (if existing).
+- Keep editable fields data = Preserve editable fields embedded in the document in read-only state, remove signature and/or encryption. In this case all existing fields will be disabled and not converted in WhiteDoc format. New fields can be added to the document.
+- Remove editable fields = Remove embedded signatures, encryption, editable fields in the document. In this case any new fields can be added to the document.
 
 .. note:: If the document contains more signatures than recipients Assign fields option will not be available.
 
@@ -119,3 +118,9 @@ How to import embedded PDF fields?
 - Barcode => currently is not supported, fields will be ignored
 
 .. note:: All imported fields inherit optional/required attribute status from the original PDF.
+
+5. If you are uploading multiple PDF documents with embedded fields, you will need to choose how to handle the fields for each document individually. You can do this by switching between the documents in the left part of the window.
+
+.. image:: pic_quickSend/EmbeddedActionOptionsMultiple.png
+   :width: 600
+   :align: center
