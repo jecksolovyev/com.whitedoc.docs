@@ -152,7 +152,7 @@ How to add an SSO provider?
    :width: 600
    :align: center
 
-2. Go to the domains page. Chose active domain, click on the "Manage SSO setting" button near it. Window will open
+2. Go to the :ref:`domains tab <domains>`. Chose active domain, click on the "Manage SSO setting" button near it. Window will open
 
 .. image:: pic_accountSettings/ssoProvidersDomain.png
    :width: 600
