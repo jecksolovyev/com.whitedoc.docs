@@ -2,7 +2,7 @@
 Settings
 ========
 
-Settings is a page with account properties that help to identify and manage the account. Data from account is used for mailboxes cration and billing. From account settings you can easily :ref:`configure domains <domains-configuration>`, add :ref:`external links <external-links-configuration>` for mailboxes, configure :ref:`password policy <password-policy>` for domain users and delete account.
+Settings is a page with account properties that help to identify and manage the account. Data from account is used for mailboxes creation and billing. From account settings you can easily :ref:`configure domains <domains-configuration>`, add :ref:`external links <external-links-configuration>` for mailboxes, configure :ref:`password policy <password-policy>` for domain users and delete account.
 
 .. image:: pic_accountSettings/settings.png
    :width: 600
@@ -56,12 +56,12 @@ How to upload an account and platform images?
    :width: 600
    :align: center
 
-2. Click the respective "Upload" button  and choose the image any images (click the info icon to view image requirements)
+2. Click the respective "Upload" button and choose the image (click the info icon to view image requirements)
 3. Click the "Save" button
 4. Default logo can be restored by the "Set default" button. In this case account logo will consist on two first letters of the account name, and WhiteDoc logo is used for platform logo
 
-Hoiw to delete an account?
-==========================
+How to delete an account?
+=========================
 
 1. Click the "Delete" button
 2. Modal window will appear
@@ -79,7 +79,7 @@ Hoiw to delete an account?
 Domains
 =======
 
-This page allows to manage, verify and activate domains. Domains are necessary for corporate users cration.
+This page allows to manage, verify and activate domains. Domains are necessary for corporate users creation.
 
 .. image:: pic_accountSettings/domains.png
    :width: 600
