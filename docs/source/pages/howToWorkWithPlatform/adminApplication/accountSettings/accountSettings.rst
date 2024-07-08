@@ -4,7 +4,7 @@
 Settings
 ========
 
-Settings is a page with account properties that help to identify and manage the account. Data from account is used for mailboxes creation and billing. From account settings you can easily, :ref:`manage your accounts <accountSettings>` :ref:`configure domains <domains>`, :ref:`manage SSO providers <ssoProviders>`, :ref:`create external links <externalLinks>`, :ref:`configure password policy <password-policy>`.
+Settings is a page with account properties that help to identify and manage the account. Data from account is used for mailboxes creation and billing. From here you can :ref:`manage your accounts <accountSettings>`, :ref:`configure domains <domains>`, :ref:`add SSO providers <ssoProviders>`, :ref:`create external links <externalLinks>`, :ref:`configure password policy <passwordPolicy>`, and :ref:`manage cloud signatures <cloudSignature>`.
 
 .. image:: pic_accountSettings/settings.png
    :width: 600
@@ -162,7 +162,7 @@ How to add an SSO provider?
 4. After SSO is connected to the domain, your corporate users will be able to log in via SSO
 5. Corporate user enters your corporate domain and fills out an authorization page, as a result of which he will be successfully authorized or receive a message that he needs to register via SSO.
 
-.. _external-links:
+.. _externalLinks:
 
 ==============
 External links
@@ -188,7 +188,7 @@ How to add an external link?
 4. You can edit and delete links by clicking the "Edit and "Delete" buttons
 5. Drag the links by the "Reorder" icon to update links order
 
-.. _password-policy:
+.. _passwordPolicy:
 
 ===============
 Password policy
@@ -240,7 +240,7 @@ How to make session policy more strict?
 6. The list of allowed IPs. The list of IP addresses from which users are able to log in on platform
 7. The list of blocked IPs. The list of IP addresses from which users aren't able to log in on platform
 
-.. _cloud-signature:
+.. _cloudSignature:
 
 ===============
 Cloud signature
