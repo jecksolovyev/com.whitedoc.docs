@@ -1,8 +1,10 @@
+.. _accountSettings:
+
 ========
 Settings
 ========
 
-Settings is a page with account properties that help to identify and manage the account. Data from account is used for mailboxes creation and billing. From account settings you can easily :ref:`configure domains <domains-configuration>`, add :ref:`external links <external-links-configuration>` for mailboxes, configure :ref:`password policy <password-policy>` for domain users and delete account.
+Settings is a page with account properties that help to identify and manage the account. Data from account is used for mailboxes creation and billing. From account settings you can easily, :ref:`manage your accounts <accountSettings>` :ref:`configure domains <domains>`, :ref:`manage SSO providers <ssoProviders>`, :ref:`create external links <externalLinks>`, :ref:`configure password policy <password-policy>`.
 
 .. image:: pic_accountSettings/settings.png
    :width: 600
@@ -73,7 +75,7 @@ How to delete an account?
 3. Type your user email in uppercase in the email input
 4. Click the "Confirm" button
 
-.. _domains-configuration:
+.. _domains:
 
 =======
 Domains
@@ -129,6 +131,8 @@ How to delete a domain?
    :width: 600
    :align: center
 
+.. _ssoProviders:
+
 =============
 SSO providers
 =============
@@ -158,7 +162,7 @@ How to add an SSO provider?
 4. After SSO is connected to the domain, your corporate users will be able to log in via SSO
 5. Corporate user enters your corporate domain and fills out an authorization page, as a result of which he will be successfully authorized or receive a message that he needs to register via SSO.
 
-.. _external-links-configuration:
+.. _external-links:
 
 ==============
 External links
@@ -235,6 +239,8 @@ How to make session policy more strict?
 5. Lock time after multiple login attempts. Option which is responsible for period of time on which user will be locked. To make it set value "max-attempts-timeout-minutes" bigger than in configuration
 6. The list of allowed IPs. The list of IP addresses from which users are able to log in on platform
 7. The list of blocked IPs. The list of IP addresses from which users aren't able to log in on platform
+
+.. _cloud-signature:
 
 ===============
 Cloud signature
