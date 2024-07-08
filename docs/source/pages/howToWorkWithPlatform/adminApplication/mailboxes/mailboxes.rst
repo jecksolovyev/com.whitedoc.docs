@@ -182,6 +182,8 @@ To remove all users from mailbox or delete mailbox switch to "Danger Zone" tab b
 
 .. note:: `Behaviour of mailbox after deletion <delete_mailbox_behaviour.html>`_
 
+.. _mailboxesGroup:
+
 ==========
 Groups tab
 ==========

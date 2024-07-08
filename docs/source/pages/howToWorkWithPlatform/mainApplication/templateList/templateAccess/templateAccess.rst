@@ -13,8 +13,8 @@ User can specify access level of the template when creating or editing it. There
 
 .. note:: Public templates can be made accessible to users not registered on the platform via direct link. To generate this link first you need to make sure that such template includes only public dictionaries (or no dictionaries at all). Also such templates should have subject field filled and all participants of the flow should have specified mailbox adresses in the flow configuration tab. When this is done, click on the template menu button in upper right corner of template on template list and click "Get link". Menu with sharing link will open where you can copy this link, generate new one to revoke access by previous link or remove access by link completely. Account on the platform will be created automatically for anyone who will create an envelope using such link.
 
-How to edit a template access level
-===================================
+How to share template with mailbox or mailboxes group
+=====================================================
 
 1. In order to set access level of template you need to go to "Template" tab and click on "Template access"
 
@@ -22,19 +22,31 @@ How to edit a template access level
    :width: 400
    :align: center
 
-2. You can grant access to specific mailboxes. After selecting this option you will need to click on edit button
+2. You can grant access to specific mailboxes or mailboxes groups. To choose this option you need to click on edit button
 
 .. image:: picTemplateAccess/templateAccess2.png
    :width: 400
    :align: center
 
-3. In the modal window you can enter mailbox name, mailbox UUID, alias, or contact name
+3. In the modal window you can enter mailbox name, mailbox UUID, alias, contact name, mailboxes group name or group UUID.
+
+.. note:: Search results are displaying in the following order: 1. Groups and 2. Mailboxes. In Search results displays max 10 Groups and 10 Mailboxes. If expected results are not displaying you need to do more precise query.
+
+.. note:: Mailboxes in the search results display with white background and respective icon to indicate if mailbox is related to your account or contact.
+
+.. note:: Groups are displaying with light blue background and respective group icon
 
 .. image:: picTemplateAccess/templateAccess3.png
    :width: 400
    :align: center
 
-4. When mailbox is added click "Save"
+4. When mailbox or group is added you'll observe chips list with groups and mailboxes. To save share configuration click "Save" as soon as you add required mailboxes and group.
+
+.. note:: Order of the chips in the Mailboxes and groups input is the following: 1. Groups and 2. Mailboxes
+
+.. note:: Mailboxes chips are displaying with grey background
+
+.. note:: Groups chips are displaying with light blue background
 
 .. image:: picTemplateAccess/templateAccess4.png
    :width: 400
@@ -46,7 +58,7 @@ How to edit a template access level
    :width: 400
    :align: center
 
-6. After saving the template it will be available for mailboxes specified by you in the folder "Shared with me"
+6. After saving the template it will be available for mailboxes and for mailboxes included into the groups specified by you in the folder "Shared with me"
 
 .. image:: picTemplateAccess/templateAccess6.png
    :width: 400
