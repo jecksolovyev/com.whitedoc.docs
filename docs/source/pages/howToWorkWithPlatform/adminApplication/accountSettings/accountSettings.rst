@@ -85,8 +85,8 @@ This page allows to manage, verify and activate domains. Domains are necessary f
    :width: 600
    :align: center
 
-How to add domain?
-==================
+How to add a domain?
+====================
 
 1. Click the "Add domain" button
 2. Enter the name of a domain that you own and confirm your action
@@ -117,8 +117,8 @@ How to activate a domain?
 1. Click on the "Activate" button near an inactive domain
 2. Domain is active
 
-How to delete a domain deletion
-===============================
+How to delete a domain?
+=======================
 
 1. Click the "Delete" buttoin near a domain
 2. Confirm you action
