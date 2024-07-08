@@ -246,7 +246,6 @@ Cloud signature is one of the many ways to sign document with Qualified Electron
    :width: 600
    :align: center
 
-
 How to add a cloud signature?
 =============================
 
