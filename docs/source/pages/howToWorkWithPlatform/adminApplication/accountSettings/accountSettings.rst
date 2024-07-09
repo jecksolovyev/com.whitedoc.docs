@@ -1,8 +1,10 @@
+.. _accountSettings:
+
 ========
 Settings
 ========
 
-Settings is a page with account properties that help to identify and manage the account. Data from account is used for mailboxes creation and billing. From account settings you can easily :ref:`configure domains <domains-configuration>`, add :ref:`external links <external-links-configuration>` for mailboxes, configure :ref:`password policy <password-policy>` for domain users and delete account.
+Settings is a page with account properties that help to identify and manage the account. Data from account is used for mailboxes creation and billing. From here you can :ref:`manage your accounts <accountSettings>`, :ref:`configure domains <domains>`, :ref:`add SSO providers <ssoProviders>`, :ref:`create external links <externalLinks>`, :ref:`configure password policy <passwordPolicy>`, and :ref:`manage cloud signatures <cloudSignature>`.
 
 .. image:: pic_accountSettings/settings.png
    :width: 600
@@ -73,7 +75,7 @@ How to delete an account?
 3. Type your user email in uppercase in the email input
 4. Click the "Confirm" button
 
-.. _domains-configuration:
+.. _domains:
 
 =======
 Domains
@@ -85,8 +87,8 @@ This page allows to manage, verify and activate domains. Domains are necessary f
    :width: 600
    :align: center
 
-How to add domain?
-==================
+How to add a domain?
+====================
 
 1. Click the "Add domain" button
 2. Enter the name of a domain that you own and confirm your action
@@ -117,8 +119,8 @@ How to activate a domain?
 1. Click on the "Activate" button near an inactive domain
 2. Domain is active
 
-How to delete a domain deletion
-===============================
+How to delete a domain?
+=======================
 
 1. Click the "Delete" buttoin near a domain
 2. Confirm you action
@@ -128,6 +130,8 @@ How to delete a domain deletion
 .. image:: pic_accountSettings/domainsDelete.png
    :width: 600
    :align: center
+
+.. _ssoProviders:
 
 =============
 SSO providers
@@ -148,7 +152,7 @@ How to add an SSO provider?
    :width: 600
    :align: center
 
-2. Go to the domains page. Chose active domain, click on the "Manage SSO setting" button near it. Window will open
+2. Go to the :ref:`domains tab <domains>`. Chose active domain and click the "Manage SSO setting" button near it. Window will open
 
 .. image:: pic_accountSettings/ssoProvidersDomain.png
    :width: 600
@@ -158,7 +162,7 @@ How to add an SSO provider?
 4. After SSO is connected to the domain, your corporate users will be able to log in via SSO
 5. Corporate user enters your corporate domain and fills out an authorization page, as a result of which he will be successfully authorized or receive a message that he needs to register via SSO.
 
-.. _external-links-configuration:
+.. _externalLinks:
 
 ==============
 External links
@@ -184,7 +188,7 @@ How to add an external link?
 4. You can edit and delete links by clicking the "Edit and "Delete" buttons
 5. Drag the links by the "Reorder" icon to update links order
 
-.. _password-policy:
+.. _passwordPolicy:
 
 ===============
 Password policy
@@ -235,6 +239,8 @@ How to make session policy more strict?
 5. Lock time after multiple login attempts. Option which is responsible for period of time on which user will be locked. To make it set value "max-attempts-timeout-minutes" bigger than in configuration
 6. The list of allowed IPs. The list of IP addresses from which users are able to log in on platform
 7. The list of blocked IPs. The list of IP addresses from which users aren't able to log in on platform
+
+.. _cloudSignature:
 
 ===============
 Cloud signature

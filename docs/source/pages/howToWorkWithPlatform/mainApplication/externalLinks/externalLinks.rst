@@ -7,15 +7,15 @@ External links are list of links to external resources, which may be useful for 
 Where to find external links?
 =============================
 
-If at least one external link added as official, account or specifically for mailbox (how to add external link you can find :ref:`here <external-links-configuration>`) the special icon will appear in the header of the platform.
+If at least one external link added as official, account or specifically for mailbox (how to add external link you can find :ref:`here <externalLinks>`) the special icon will appear in the header of the platform.
 
-.. image:: pic_header/externalLinksBtn.png
+.. image:: pic_externalLinks/externalLinksBtn.png
    :width: 600
    :align: center
 
 You can click on it and menu with links for external resources will be opened.
 
-.. image:: pic_header/externalLinksMenu.png
+.. image:: pic_externalLinks/externalLinksMenu.png
    :width: 600
    :align: center
 
