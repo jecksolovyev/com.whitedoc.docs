@@ -1,3 +1,5 @@
+.. _textFieldTemplate:
+
 ==========
 Text field
 ==========
