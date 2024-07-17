@@ -53,12 +53,12 @@ To add permissions to mailbox you can in the same way as to account. The main di
 
 .. note:: `Behaviour of invite external user <usersInviteExternal.html>`_
 
-.. _create-users:
+.. _createUsers:
 
 Create one user
 ===============
 
-As administrator of account you can create users with verified and activated domain. It can be used if you working in company and you have to create corporate users. How to add, verify and activate domain you can find by link :ref:`domains configuration <domains-configuration>`. To create corporate user you have to do the following:
+As administrator of account you can create users with verified and activated domain. It can be used if you working in company and you have to create corporate users. How to add, verify and activate domain you can find by link :ref:`domains configuration <domains>`. To create corporate user you have to do the following:
 
 1. Navigate to https://platform_address_here/admin/users with administratore access
 2. Click on "Create user" button
@@ -74,7 +74,7 @@ As administrator of account you can create users with verified and activated dom
    :align: center
 
 4. Click on "Create" button
-5. After this steps user will be created and for admin opens user permissions configuration page. How to add specific permissions to the mailbox and/or account you can find :ref:`Add permissions to account` and :ref:`Add permissions to mailbox`
+5. After this steps user will be created and for admin opens user permissions configuration page. How to add specific permissions to the mailbox and/or account you can find :ref:`Add permissions to account <accountPermissions>` and :ref:`Add permissions to mailbox <mailboxPermissions>`
 6. As soon as permissions defined, click on "Save button" in the header of the page and user permissions will be applied
 
 .. _howToAuth:
@@ -106,7 +106,7 @@ How to authorized as a corporate user
 Create any quantity of users
 ============================
 
-As administrator of account you can create users with verified and activated domain. It can be used if you working in company and you have to create corporate users. How to add, verify and activate domain you can find by link :ref:`domains configuration <domains-configuration>`. To create more than one user you can click on "Create" button in header and select respective option "Create users". Modal window appeares and you will be able to download the example of the file for massive user creation. You can open the file using any tool which support .xlsx format. Also, you have to save the file in this particular format, so don't change extention.
+As administrator of account you can create users with verified and activated domain. It can be used if you working in company and you have to create corporate users. How to add, verify and activate domain you can find by link :ref:`domains configuration <domains>`. To create more than one user you can click on "Create" button in header and select respective option "Create users". Modal window appeares and you will be able to download the example of the file for massive user creation. You can open the file using any tool which support .xlsx format. Also, you have to save the file in this particular format, so don't change extention.
 
 What is included in the report
 ==============================

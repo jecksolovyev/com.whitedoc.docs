@@ -7,6 +7,8 @@ Permission is an entity which grants access to certain functionality. Here you c
 * Account permissions cover admin panel functionality.
 * Mailbox permissions cover main application functionality.
 
+.. _accountPermissions:
+
 Account permissions
 ===================
 
@@ -77,6 +79,8 @@ Account permissions
    * - accountView
      - 10130
      - Allows to view account settings page
+
+.. _mailboxPermissions:
 
 Mailbox permissions
 ===================

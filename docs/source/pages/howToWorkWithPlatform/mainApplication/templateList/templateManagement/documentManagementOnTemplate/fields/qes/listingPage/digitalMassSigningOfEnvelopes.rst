@@ -2,7 +2,7 @@
 Electronic mass signing of envelopes
 ====================================
 
-You are able to sign as mane envelopes which conatain QES inside as you need. How to do this you can read below. Also, you can read how to add a QES to the document in :ref:`the previous section<Electronic signature on template>`.
+You are able to sign as mane envelopes which conatain QES inside as you need. How to do this you can read below.
 
 How to sign several envelopes at once
 =====================================
@@ -19,7 +19,7 @@ To mass sign the envelopes you have to do the following:
 
 As soon as you click on it, the modal window opens.
 
-4. The first two steps are similar with signing of the single document. How to do this you can read in the topic :ref:`Electronic signature on envelope<Electronic signature on envelope>`
+4. The first two steps are similar with signing of the single document. How to do this you can read :ref:`here <electronicSignature>`
 5. In the third step you will see a list of envelopes that will be signed. You can click on any envelope to watch the content. Envelope opens in new window
 
 .. image:: pic_listingPage/theListOfTheDocuments.png

@@ -40,7 +40,7 @@ Create/add new domain, if it is enabled for adding: domain should be resolvable 
 
 **Request example:**
 
-.. code-block:: JSON
+.. code-block:: json
 
     [
         {
@@ -51,7 +51,7 @@ Create/add new domain, if it is enabled for adding: domain should be resolvable 
 
 **Response example:**
 
-.. code-block:: JSON
+.. code-block:: json
 
     {
         "uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -92,7 +92,7 @@ Request domain verification
 
 **Request example:**
 
-.. code-block:: JSON
+.. code-block:: json
 
     [
         {
@@ -103,7 +103,7 @@ Request domain verification
 
 **Response example:**
 
-.. code-block:: JSON
+.. code-block:: json
 
     {
         "uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -150,7 +150,7 @@ Confirm account domain verification info and method. After that domain will be a
 
 If domain verification confirmed domain you will get response code **200** and domain info.
 
-.. code-block:: JSON
+.. code-block:: json
 
     {
         "uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -196,7 +196,7 @@ Activate account domain
 
 If domain activated domain status will be `ACTIVE` in response.
 
-.. code-block:: JSON
+.. code-block:: json
 
     {
         "uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -242,7 +242,7 @@ Activate account domain
 
 If domain deactivated domain status will be `INACTIVE` in response.
 
-.. code-block:: JSON
+.. code-block:: json
 
     {
         "uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -289,7 +289,7 @@ Only unverified domains can be checked.
 
 Response will be returned only if domain was unverified and verification not yet expired. Domains, which became verified, will have INACTIVE status.
 
-.. code-block:: JSON
+.. code-block:: json
 
     {
         "uuid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -371,7 +371,7 @@ Create/add new domain, if it is enabled for adding: domain should be resolvable 
 
 **Response example:**
 
-.. code-block:: JSON
+.. code-block:: json
 
     {
       "data": [

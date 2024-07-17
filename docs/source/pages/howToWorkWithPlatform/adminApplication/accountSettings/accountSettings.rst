@@ -1,10 +1,10 @@
 .. _accountSettings:
 
-========
-Settings
-========
+============
+Settings tab
+============
 
-Settings is a page with account properties that help to identify and manage the account. Data from account is used for mailboxes creation and billing. From here you can :ref:`manage your accounts <accountSettings>`, :ref:`configure domains <domains>`, :ref:`add SSO providers <ssoProviders>`, :ref:`create external links <externalLinks>`, :ref:`configure password policy <passwordPolicy>`, and :ref:`manage cloud signatures <cloudSignature>`.
+Settings is a page with account properties that help to identify and manage the account. Data from account is used for mailboxes creation and billing. From here you can :ref:`manage your accounts <accountSettings>`, :ref:`configure domains <domains>`, :ref:`add SSO providers <ssoProviders>`, :ref:`create external links <externalLinks>`, :ref:`configure password policy <passwordPolicyConfig>`, and :ref:`manage cloud signatures <cloudSignature>`.
 
 .. image:: pic_accountSettings/settings.png
    :width: 600
@@ -77,9 +77,9 @@ How to delete an account?
 
 .. _domains:
 
-=======
-Domains
-=======
+===========
+Domains tab
+===========
 
 This page allows to manage, verify and activate domains. Domains are necessary for corporate users creation.
 
@@ -133,9 +133,9 @@ How to delete a domain?
 
 .. _ssoProviders:
 
-=============
-SSO providers
-=============
+=================
+SSO providers tab
+=================
 
 You can set authorization via SSO for your corporate users. To do this, you need to create a domain and verify it on the platform. Next, you need to create an ISP SSO and connect it to the domain.
 
@@ -164,9 +164,9 @@ How to add an SSO provider?
 
 .. _externalLinks:
 
-==============
-External links
-==============
+==================
+External links tab
+==================
 
 This page allow to manage list of the links to the external resources.
 
@@ -188,13 +188,13 @@ How to add an external link?
 4. You can edit and delete links by clicking the "Edit and "Delete" buttons
 5. Drag the links by the "Reorder" icon to update links order
 
-.. _passwordPolicy:
+.. _passwordPolicyConfig:
 
-===============
-Password policy
-===============
+===================
+Password policy tab
+===================
 
-You're able to configure password and session policy for all users with verified domains in your account. You can make it more strict than default system configuration. To do that follow next instructions.
+You're able to configure password and session policy for all users with verified domains in your account. You can make it more strict than default system configuration. To do that follow next instructions. More info on password policy can be found :ref:`here <passwordPolicy>`.
 
 .. image:: pic_accountSettings/passwordPolicy.png
    :width: 600
@@ -219,7 +219,7 @@ There are a lot of password policy and session policy options:
 3. Require uppercase letters. It means that password should contain at least N uppercase letters where N is value "uppercase" in configuration. To make it stricter use value bigger or equal as in configuration. But don't use quantity of symbols bigger than maximum available length of password
 4. Require lowercase letters. It means that password should contain at least N lowercase letters where N is value "lowercase" in configuration. To make it stricter use value bigger or equal as in configuration. But don't use quantity of symbols bigger than maximum available length of password
 5. Require numeric value. It means that password should contain at least N numeric symbols where N is value "digit" in configuration. To make it stricter use value bigger or equal as in configuration. But don`t use quantity of symbols bigger than maximum available length of password
-6. Require at least one special character ! @ # $ % ^ & * ( ) _ + - = [] {} |. It means that password should contain at least N special characters where N is value "special-symbol" in configuration. To make it stricter use value bigger or equal as in configuration. But don't use quantity of symbols bigger than maximum available length of password
+6. Require at least one special character. It means that password should contain at least N special characters where N is value "special-symbol" in configuration. To make it stricter use value bigger or equal as in configuration. But don't use quantity of symbols bigger than maximum available length of password
 7. Do not allow repeat. It means that password shouldn't contain repeated symbols. So if in configuration is "Don't allow repeat" value 3, you can't use three repeated characters ("111", "aaa" or etc.). To make this option stricter use lower or equal value "repeat-character" as in configuration
 8. Allow whitespace in password. This option allows or disallows to use whitespaces in password
 9. Do not allow the use of forbidden passwords. This option allows or disallows to use forbidden passwords
@@ -242,9 +242,9 @@ How to make session policy more strict?
 
 .. _cloudSignature:
 
-===============
-Cloud signature
-===============
+===================
+Cloud signature tab
+===================
 
 Cloud signature is one of the many ways to sign document with Qualified Electronic Signature. And on this page will be described how to configure cloud signature for your corporate account.
 

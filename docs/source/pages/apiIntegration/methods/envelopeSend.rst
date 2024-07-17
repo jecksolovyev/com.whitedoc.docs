@@ -23,7 +23,7 @@ For create and send envelope customer should know based on what template will be
 sendEnvelopeDto
 ===============
 
-.. code-block:: JSON
+.. code-block:: json
 
     {
 	"data":"<envelope>
@@ -55,7 +55,7 @@ sendEnvelopeDto
 **RESPONSE**
 Response returns envelope UUID:
 
-.. code-block:: JSON
+.. code-block:: json
 
     {"uuid":"89499ba2-287d-404c-87b0-342dc5b01b6a"}
 

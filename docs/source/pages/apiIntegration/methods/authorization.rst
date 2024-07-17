@@ -18,7 +18,7 @@ Authorization token should return in response (expires in 12 hours).
 
 **Response example (JSON):**
 
-.. code:: json
+.. code-block:: json
 
   {"token":"b16b61fc-4706-4c90-a57d-fe0cd0dcd2f0"}
 

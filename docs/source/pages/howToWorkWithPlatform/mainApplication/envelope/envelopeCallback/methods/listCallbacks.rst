@@ -25,7 +25,7 @@ In response you get 200 status code (in case of successful callback list retriev
 
 **Response example (JSON):**
 
-.. code:: json
+.. code-block:: json
 
   [
     {

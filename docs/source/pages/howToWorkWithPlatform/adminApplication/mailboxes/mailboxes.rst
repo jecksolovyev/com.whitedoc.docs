@@ -182,6 +182,20 @@ To remove all users from mailbox or delete mailbox switch to "Danger Zone" tab b
 
 .. note:: `Behaviour of mailbox after deletion <delete_mailbox_behaviour.html>`_
 
+.. _mailboxDelete:
+
+=======================
+Delete mailbox behavior
+=======================
+
+1. Deleted mailbox can't be restored
+2. Mailbox will disappear from mailbox list at admin panel on mailbox page
+3. If user tries to use deleted mailbox he will receive error 410 and will be redirected to first mailbox to which he has access. If user has no access to any of mailboxes he will be redirected to user profile page and all functionality will be blocked except profile and admin pages (if there is access to any account)
+
+.. image:: pic_mailboxes/disabledProfileView.png
+   :width: 600
+   :align: center
+
 .. _mailboxesGroup:
 
 ==========
@@ -220,6 +234,6 @@ Group will be created and you will be returned to groups list.
 4. Click on "Cancel" button to revert group details changes
 5. Click on "Delete" button to delete group
 
-.. note:: You can also delete group from groups list by "Delete" button (Trash bin icon) in group row. Here are more details on :ref:`deleted mailbox behavior`.
-
-You will be returned to groups list after taken action.
+.. note:: You can also delete a mailbox from groups list by "Delete" button (Trash bin icon) in group row.
+   
+6. You will be returned to groups list after taken action

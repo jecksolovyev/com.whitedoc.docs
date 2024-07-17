@@ -1,4 +1,4 @@
-.. _electronic-signature:
+.. _electronicSignature:
 
 ================================
 Electronic signature on envelope

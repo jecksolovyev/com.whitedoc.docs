@@ -26,7 +26,7 @@ Request
 Request structure example
 =========================
 
-.. code-block:: JSON
+.. code-block:: json
 
     [
         {
