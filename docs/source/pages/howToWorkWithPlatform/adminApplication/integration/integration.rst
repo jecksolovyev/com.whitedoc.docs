@@ -2,12 +2,15 @@
 Integration
 ===========
 
+
+
 **Content list**
 
 .. toctree::
 
-   integrationPage.rst
-   ftp.rst
-   as2.rst
-   conversionRuleCreation.rst
-   conversionRuleInfo.rst
+   integrationPage/integrationPage.rst
+   conversionRule/conversionRuleCreation.rst
+   conversionRule/conversionRuleInfo.rst
+   protocols/ftp.rst
+   protocols/as2.rst
+   dbna/dbna.rst
