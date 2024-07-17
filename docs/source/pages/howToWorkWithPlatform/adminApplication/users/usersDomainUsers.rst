@@ -2,7 +2,7 @@
 Domain users
 ============
 
-In this section described domain users. It's a special type of user which could be created, menaged, removed by account administrator. The main point is that you verified some domain users which use respective domains will be automatically assigned to account which verified domain. How to add, verify and activate domains described in the :ref:`domains configuration <domains-configuration>` topic. How to create user or users within verified domain you can find in the topic :ref:`how to create user/users <create-users>`.
+In this section described domain users. It's a special type of user which could be created, menaged, removed by account administrator. The main point is that you verified some domain users which use respective domains will be automatically assigned to account which verified domain. How to add, verify and activate domains described in the :ref:`domains configuration <domains>` topic. How to create user or users within verified domain you can find in the topic :ref:`how to create user/users <createUsers>`.
 
 How users will be assigned to account within verified domain
 ============================================================

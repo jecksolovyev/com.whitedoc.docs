@@ -4,7 +4,7 @@
 Settings
 ========
 
-Settings is a page with account properties that help to identify and manage the account. Data from account is used for mailboxes creation and billing. From here you can :ref:`manage your accounts <accountSettings>`, :ref:`configure domains <domains>`, :ref:`add SSO providers <ssoProviders>`, :ref:`create external links <externalLinks>`, :ref:`configure password policy <passwordPolicy>`, and :ref:`manage cloud signatures <cloudSignature>`.
+Settings is a page with account properties that help to identify and manage the account. Data from account is used for mailboxes creation and billing. From here you can :ref:`manage your accounts <accountSettings>`, :ref:`configure domains <domains>`, :ref:`add SSO providers <ssoProviders>`, :ref:`create external links <externalLinks>`, :ref:`configure password policy <passwordPolicyConfig>`, and :ref:`manage cloud signatures <cloudSignature>`.
 
 .. image:: pic_accountSettings/settings.png
    :width: 600
@@ -188,13 +188,13 @@ How to add an external link?
 4. You can edit and delete links by clicking the "Edit and "Delete" buttons
 5. Drag the links by the "Reorder" icon to update links order
 
-.. _passwordPolicy:
+.. _passwordPolicyConfig:
 
 ===============
 Password policy
 ===============
 
-You're able to configure password and session policy for all users with verified domains in your account. You can make it more strict than default system configuration. To do that follow next instructions.
+You're able to configure password and session policy for all users with verified domains in your account. You can make it more strict than default system configuration. To do that follow next instructions. More info on password policy can be found :ref:`here <passwordPolicy>`.
 
 .. image:: pic_accountSettings/passwordPolicy.png
    :width: 600

@@ -352,4 +352,4 @@ It is necessary to send additional attributes like coordinates, dimension and th
 
 .. code-block:: xml
 
-    <field ... x="69.05625" y="257.61597" width="30.69167" height="7.9375" page="0".../>
+    <field x="69.05625" y="257.61597" width="30.69167" height="7.9375" page="0">

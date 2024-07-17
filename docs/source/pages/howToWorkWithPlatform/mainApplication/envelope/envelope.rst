@@ -17,7 +17,7 @@ Envelope is an entity containing documents (structured, external and PDF) with a
     externalDocumentOnEnvelope/externalDocumentOnEnvelope.rst
     comments/comments.rst
     envelopeSignatures/envelopeSignatures.rst
-    approvalProcess/approved.rst
+    approvalProcess/approvalProcess.rst
     delegationProcess/delegationProcess.rst
     envelopeCallback/envelopeCallback.rst
     envelopeFields/envelopeFields.rst

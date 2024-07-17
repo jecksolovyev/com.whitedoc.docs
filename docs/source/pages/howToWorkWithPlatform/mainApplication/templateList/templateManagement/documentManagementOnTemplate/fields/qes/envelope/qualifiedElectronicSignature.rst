@@ -1,4 +1,4 @@
-.. _qualified-electronic-signature:
+.. _qualifiedElectronicSignature:
 
 Reading qualified electronic signature
 ======================================
