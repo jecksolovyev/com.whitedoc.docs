@@ -51,7 +51,7 @@ In response you will get short information about envelopes from this mailbox whi
 **Response example:**
 Status code: 200 OK
 
-.. code:: json
+.. code-block:: json
 
     {
    "totalElements":3,
@@ -164,7 +164,7 @@ In response you will get full envelope and template.
 **Response example:**
 Status code: 200 OK
 
-.. code:: json
+.. code-block:: json
 
     {
       "envelope": {

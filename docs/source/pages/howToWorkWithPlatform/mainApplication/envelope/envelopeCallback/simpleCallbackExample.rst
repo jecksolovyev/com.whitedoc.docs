@@ -33,7 +33,7 @@ To create callbacks you have to achieve following requirements:
 
 **REQUEST BODY**
 
-.. code:: json
+.. code-block:: json
 
    {
     "filter": {},
@@ -49,7 +49,7 @@ To create callbacks you have to achieve following requirements:
 3. Follow to URL you defined in callback and wait for callback data
 4. As soon as your URL received callback you will see the following JSON data (data of UUIDs, status, labels, subject, dates, template and sender will be according to envelope you received)
 
-.. code:: json
+.. code-block:: json
 
   {
     "uuid": "74acfb70-78e9-4ca5-ac73-054c72402c0a",

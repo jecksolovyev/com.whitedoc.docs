@@ -238,7 +238,7 @@ Dynamic table field may have following attributes:
 
 Below you can find example of dynamic table with field inside:
 
-.. code:: xml
+.. code-block:: xml
 
     <div class="editor-table-field-wrapper">
         <table class="table-stripped" name="string" roleId="id" autoNumbering="boolean" iterable="true">
@@ -350,6 +350,6 @@ You can use almost all fields above with uploaded PDF. List of allowed fields: t
 
 It is necessary to send additional attributes like coordinates, dimension and the page for such fields:
 
-.. code:: xml
+.. code-block:: xml
 
     <field ... x="69.05625" y="257.61597" width="30.69167" height="7.9375" page="0".../>

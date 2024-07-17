@@ -22,7 +22,7 @@ For add file to document, you should upload this file in binary format to our sy
 
 **RESPONSE**
 
-.. code:: json
+.. code-block:: json
 
     {
       "attachmentId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",

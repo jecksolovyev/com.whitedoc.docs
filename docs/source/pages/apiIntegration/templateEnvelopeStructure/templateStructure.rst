@@ -2,7 +2,7 @@
 Template structure
 ==================
 
-.. code:: json
+.. code-block:: json
 
     {
       "access": "account",
@@ -25,7 +25,7 @@ Template consists of two blocks:
 
 1. Template information block.
 
-.. code:: json
+.. code-block:: json
 
     {
       "access": "account",
@@ -50,7 +50,7 @@ Template consists of two blocks:
 
 2. 'data' parameter is a XML
 
-.. code:: xml
+.. code-block:: xml
 
     <template>
         <info>
