@@ -37,7 +37,7 @@ Response
 
 Status code: **200 OK**
 
-.. code-block:: JSON
+.. code-block:: json
 
     [
         {

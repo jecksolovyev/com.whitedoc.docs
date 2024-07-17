@@ -21,7 +21,7 @@ To fill envelope you should provide data to field which assigned to him by reque
 sendEnvelopeDTO
 ===============
 
-.. code-block:: JSON
+.. code-block:: json
 
     {"data":"
     <envelope templateUuid=\"500afafd-711e-471a-a18f-24a89cd4ede3\" status=\"SENT\" templateVersion=\"143a2a4b-325e-4c05-a4c1-52f44e21b745\">
