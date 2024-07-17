@@ -17,7 +17,7 @@ Hash - is a necessary attribute in order to confirm the veracity of the image du
 
 URL is not allowed for image source! Instead please download the picture and upload to the platform using API:
 
-.. code-block:: json
+.. code-block::
 
     --upload--
     POST /api/v1/template/image
