@@ -1,8 +1,8 @@
 .. _dashboard:
 
-=========
-Dashboard
-=========
+==================
+Platform dashboard
+==================
 
 Dashboard is a page you reach after a successful :ref:`authorization <login>`. It contains several sections and links to other parts of the platform. Please refer to the content list for individual description of each section.
 
