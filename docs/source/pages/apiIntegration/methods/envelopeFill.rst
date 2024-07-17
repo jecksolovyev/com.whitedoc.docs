@@ -18,8 +18,8 @@ To fill envelope you should provide data to field which assigned to him by reque
    * - Body
      - "{""data"": ""string""}"
 
-sendEnvelopeDTO
-===============
+sendEnvelope
+============
 
 .. code-block:: json
 

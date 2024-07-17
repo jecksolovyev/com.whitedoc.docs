@@ -4,8 +4,8 @@ Get document(s) for sign
 
 You can sign document if document has signature field inside assigned to the particular customer. Using this endpoint you can get the list of the documents to sign. To get documents list for sign you should send the following api request:
 
-Request
-=======
+Request details
+===============
 
 .. list-table::
    :widths: 10 90
@@ -32,8 +32,8 @@ Depending on body of the request customer can get two type of the response:
 
 In response we get an array with information about documents for sign.
 
-Response
-========
+Response details
+================
 
 Status code: **200 OK**
 
