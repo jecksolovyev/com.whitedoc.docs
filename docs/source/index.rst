@@ -10,3 +10,4 @@ Welcome to platform documentation page
    pages/apiIntegration/apiIntegration.rst
    pages/errorCodes/errorCodes.rst
    pages/configuration/server.rst
+   pages/clients/clients.rst
