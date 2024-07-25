@@ -1,6 +1,6 @@
-=================
-External document
-=================
+==================
+External documents
+==================
 
 What is an external document
 ============================

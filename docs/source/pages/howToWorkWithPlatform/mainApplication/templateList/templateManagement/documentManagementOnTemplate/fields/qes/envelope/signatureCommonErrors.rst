@@ -1,4 +1,4 @@
-Signature common errors and solutions
+Common signature errors and solutions
 =====================================
 Sometimes the user may have problems with the selection of the Qualification Signature. Most often this is due to updates to the signature library, or incorrect configuration of the software package related to reading signatures.
 

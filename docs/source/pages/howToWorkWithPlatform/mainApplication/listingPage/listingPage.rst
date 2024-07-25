@@ -8,9 +8,6 @@ Listing page contains envelopes list divided by folders according to envelopes s
 
 .. toctree::
 
-    tabsDescription/tabsDescription.rst
-    labelsManagement/labelsManagement.rst
-    filtrationFunctionality/filtrationFunctionality.rst
     envelopeManagementListing/envelopeManagementListing.rst
     envelopesReport/envelopesReport.rst
-    envelopeChains/envelopeChains.rst
+    envelopeChain/envelopeChain.rst

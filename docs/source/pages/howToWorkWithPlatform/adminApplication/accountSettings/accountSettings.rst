@@ -4,7 +4,7 @@
 Settings tab
 ============
 
-Settings is a page with account properties that help to identify and manage the account. Data from account is used for mailboxes creation and billing. From here you can :ref:`manage your accounts <accountSettings>`, :ref:`configure domains <domains>`, :ref:`add SSO providers <ssoProviders>`, :ref:`create external links <externalLinks>`, :ref:`configure password policy <passwordPolicyConfig>`, and :ref:`manage cloud signatures <cloudSignature>`.
+Settings is a page with account properties that help to identify and manage the account. Data from account is used for mailboxes creation and billing. From here you can :ref:`manage your accounts<accountSettings>`, :ref:`configure domains<domains>`, :ref:`add SSO providers<ssoProviders>`, :ref:`create external links<externalLinks>`, :ref:`configure password policy<passwordPolicyConfig>`, and :ref:`manage cloud signatures<cloudSignature>`.
 
 .. image:: pic_accountSettings/settings.png
    :width: 600

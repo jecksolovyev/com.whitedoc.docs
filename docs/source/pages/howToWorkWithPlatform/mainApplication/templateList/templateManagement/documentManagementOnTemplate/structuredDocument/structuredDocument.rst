@@ -1,6 +1,6 @@
-===================
-Structured document
-===================
+====================
+Structured documents
+====================
 
 What is a structured document
 =============================

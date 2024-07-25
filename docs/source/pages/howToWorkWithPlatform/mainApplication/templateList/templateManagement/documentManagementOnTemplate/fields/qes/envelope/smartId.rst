@@ -1,7 +1,7 @@
 .. _smart-id:
 
-How to sign document with SmartId
-=================================
+How to sign a document with SmartID?
+====================================
 
 To use smart id as a method of the signing documents you have to follow instructions below:
 
