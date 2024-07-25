@@ -1,6 +1,6 @@
-============
-PDF document
-============
+=============
+PDF documents
+=============
 
 What is a PDF document
 ======================

@@ -172,5 +172,3 @@ How to generate a report by users
    usersInviteExternal.rst
    usersInviteInternal.rst
    usersDomainUsers.rst
-   manageUsers/manageUsers.rst
-   filterSearchUsers/filterSearchUsers.rst

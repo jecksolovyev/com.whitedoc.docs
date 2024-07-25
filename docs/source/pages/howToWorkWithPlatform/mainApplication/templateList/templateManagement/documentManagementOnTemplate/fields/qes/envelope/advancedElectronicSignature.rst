@@ -1,5 +1,7 @@
-Reading advanced electronic signature
-=====================================
+.. _advancedElectronicSignature:
+
+How to read an advanced electronic signature?
+=============================================
 
 1. Select the key on you computer or flash card
 2. As soon as file selected you will see the new modal window with password input which relates to chosen key and functionality ot manage keys or add stamp

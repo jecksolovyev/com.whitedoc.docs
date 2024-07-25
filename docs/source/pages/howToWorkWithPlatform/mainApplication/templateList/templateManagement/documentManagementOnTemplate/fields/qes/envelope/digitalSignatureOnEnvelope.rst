@@ -6,8 +6,8 @@ Electronic signature on envelope
 
 On the envelope you can set electronic signature and stamp to the document if needed. You can add electronic signature using key with your electronic signature. You sign the two documents type: pdf (human readable format) and xml (structured data of the document). You can download the signature and signed documents.
 
-How to sign the document
-========================
+How to sign a document?
+=======================
 
 If you want to sign document you have to have at least one signature field in the document. How to add electronic signature to the document you can read the topic "Electronic signature on template". To sign the the document you have to do the following:
 
@@ -24,7 +24,7 @@ If you want to sign document you have to have at least one signature field in th
    :align: center
 
 3. Click on the button "Choose key" and select your type of electronic signature which you want to apply. If sender specify "Qualified" attribute to electronic signature field you could apply only qualified electronic signature
-4. Read certificates from your key (`Advanced electronic signature <advancedElectronicSignature.html>`_ , `Qualified electronic signature <qualifiedElectronicSignature.html>`_)
+4. Read certificates from your key (here is more info on :ref:`qualified<qualifiedElectronicSignature>` and :ref:`advanced<advancedElectronicSignature>` signatures)
 5. Press on the button "Next" to watch the information related to documents which you're going to sign (pdf (human readable format) and xml (structured data of the document))
 
 .. image:: pic_digitalSignature/theListOfTheDocuments.png
@@ -51,8 +51,8 @@ If you want to sign document you have to have at least one signature field in th
 
 9. Also, you can set a stamp to the document if needed. You may do this just press on the link "I want to choose stamp" on the second step of the document signing
 
-How to sign all documents in envelope
-=====================================
+How to sign all documents in envelope?
+======================================
 
 You can sign all documents in envelope for one time. To do that follow the instructions above until you get step with documents list to sign. If you will have more than one document to sing option "Sign all documents" appears. Select "Sign all documents" option and all documents from particular envelope which you're able to sign will be shown to you.
 
@@ -64,8 +64,8 @@ If you continue signing procedure you will sign all documents from the list.
 
 .. note:: Don't forget to send signed envelope after last step, or signature will be lost.
 
-How to download the signed data
-===============================
+How to download signed documents?
+=================================
 
 You can download the signature(s) of the document(s) when all participant with role "Signer". You're able to download particular document with signatures or whole envelope with all the documents inside and all signatures inside. To do this, just:
 
@@ -76,8 +76,8 @@ You can download the signature(s) of the document(s) when all participant with r
 
 As soon as you click on the document download button archive with the documents will be uploaded.
 
-How to check validity of the signatures
-=======================================
+How to check signatures validity?
+=================================
 
 To check the validity of the signatures that roles did you have to do the following:
 
@@ -88,8 +88,12 @@ To check the validity of the signatures that roles did you have to do the follow
 
 After validation completed you will see results.
 
-.. include:: advancedElectronicSignature.rst
-.. include:: qualifiedElectronicSignature.rst
-.. include:: TINSignature.rst
-.. include:: signatureCommonErrors.rst
-.. include:: smartId.rst
+**Content list**
+
+.. toctree::
+
+   advancedElectronicSignature.rst
+   qualifiedElectronicSignature.rst
+   TINSignature.rst
+   signatureCommonErrors.rst
+   smartId.rst

@@ -6,15 +6,14 @@ Main application
 
 .. toctree::
 
-   contacts/contacts.rst
-   dashboard/dashboard.rst
-   dictionary/dictionary.rst
-   envelope/envelope.rst
-   listingPage/listingPage.rst
    registration/registration.rst
    userProfile/userProfile.rst
+   dashboard/dashboard.rst
+   listingPage/listingPage.rst
+   envelope/envelope.rst
    templateList/template.rst
-   scenario/scenario.rst
-   externalLinks/externalLinks.rst
    accessLevel/accessLevel.rst
+   scenario/scenario.rst
    approve/approve.rst
+   dictionary/dictionary.rst
+   externalLinks/externalLinks.rst

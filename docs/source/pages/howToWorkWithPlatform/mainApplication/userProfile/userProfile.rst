@@ -4,9 +4,9 @@ User profile
 
 This page allows you to edit various settings of your user profile. To open user profile page navigate to https://platform_address/profile
 
-============
-Settings tab
-============
+=============
+Settings page
+=============
 
 .. image:: pic_userprofile/tabSettings.png
    :width: 600
@@ -27,32 +27,8 @@ Settings tab
 
 Do not forget to click on Save changes button after editing anything on this page
 
-Personal account registration
-=============================
-
-1. To register new personal account click on Register personal account button
-2. In opened window enter a name for the account
-3. Select checkbox "I agree with Terms and conditions and Privacy policy"
-4. Click on Create button (button will be enable when previous steps are done)
-
-.. image:: pic_userprofile/createPersonalAccount.png
-   :width: 600
-   :align: center
-
-Company account registration
-============================
-
-1. To register new personal account click on Register company account button
-2. In opened window enter a name, ITN and mailbox name for the account
-3. Select checkbox "I agree with Terms and conditions and Privacy policy"
-4. Click on Create button (button will be enable when previous steps are done)
-
-.. image:: pic_userprofile/createCompanyAccount.png
-   :width: 600
-   :align: center
-
-Creating and applying an electronic ink signature
-=================================================
+How to creating an e-ink signature?
+===================================
 
 1. Go to user profile page
 2. Click on Replace signature button
@@ -65,8 +41,32 @@ Creating and applying an electronic ink signature
 4. Alternatively, text can be used as signature
 5. Click on Save changes button on the account setting page
 
-Password updating
-=================
+How to create a personal account?
+=================================
+
+1. To register new personal account click on Register personal account button
+2. In opened window enter a name for the account
+3. Select checkbox "I agree with Terms and conditions and Privacy policy"
+4. Click on Create button (button will be enable when previous steps are done)
+
+.. image:: pic_userprofile/createPersonalAccount.png
+   :width: 600
+   :align: center
+
+How to create a company account?
+================================
+
+1. To register new personal account click on Register company account button
+2. In opened window enter a name, ITN and mailbox name for the account
+3. Select checkbox "I agree with Terms and conditions and Privacy policy"
+4. Click on Create button (button will be enable when previous steps are done)
+
+.. image:: pic_userprofile/createCompanyAccount.png
+   :width: 600
+   :align: center
+
+How to update your password?
+============================
 
 .. image:: pic_userprofile/passwordSettings.png
    :width: 600
@@ -78,8 +78,8 @@ Password updating
 4. Confirm new password in second field
 5. Click on Save changes button
 
-User icon upload
-================
+How to uload user icon?
+=======================
 
 .. image:: pic_userprofile/userIconSettings.png
    :width: 600
@@ -95,9 +95,9 @@ User icon upload
 3. Click Save changes button to apply new icon
 4. You can return default profile logo with Set default link
 
-==============
-Forwarding tab
-==============
+===============
+Forwarding page
+===============
 
 .. note:: This functionality will be disabled if you do not have 2012 mailbox level permission (Delegate envelopes).
 
@@ -115,9 +115,9 @@ In this section you can configure automatic forwarding of all incoming envelopes
 
 Forwarding is configured now. If you wish to disable it at some point later, you can disable "Active forwarding" toggle and click on "Save changes" button.
 
-===============
-Danger zone tab
-===============
+================
+Danger zone page
+================
 
 This page allows you to delete your user account. To open user profile page navigate to https://platform_address/profile?activeTab=dangerzone
 
@@ -153,12 +153,17 @@ After User profile deletion all Accounts with role "Account owner" will be delet
    :width: 600
    :align: center
 
-.. note:: `Behaviour of data after deleting a user profile <delete_userProfile_behaviour.html>`_
+What happens with user data after deleting a user profile?
+==========================================================
 
-**Content list**
+After User profile deletion next related data will be deleted as well:
 
-.. toctree::
+1. Accounts where user has role "Account owner"
+2. Mailboxes
+3. Templates
+4. Dictionaries
+5. Contacts
+6. Aliases
+7. Envelope drafts
 
-   invitationManagement/invitationManagement.rst
-   delete_userProfile_behaviour.rst
-   addLogo.rst
+.. note:: Envelopes in the middle of the processing flow will not be deleted.
