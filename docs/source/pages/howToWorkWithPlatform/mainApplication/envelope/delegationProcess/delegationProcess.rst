@@ -4,7 +4,7 @@
 Envelope delegation process
 ===========================
 
-Envelope delegation is a process which allows to delegate all actions assigned to recepient mailbox in the envelope processing flow to other mailbox. In other words it can be called envelope forwarding.
+Envelope delegation is a process which allows to delegate all actions assigned to recipient mailbox in the envelope processing flow to other mailbox. In other words it can be called envelope forwarding.
 
 How to send envelope for delegation
 ===================================
@@ -19,12 +19,16 @@ How to send envelope for delegation
 
 2. In the mailbox field of opened window find and select desired delegate mailbox by name, UUID or alias (or enter email address) and click Confirm
 
+.. warning:: Role can not be delegated to mailbox which is already participating in the specific role
+
 .. image:: delegation_pic/delegationModal.png
    :width: 600
    :align: center
 
 3. When it is done envelope will be received by mailbox which was selected for delegation
-4. Delegate will be able to perform all actions which were assigned to initiator role or cancel the delegation
+4. Delegate will be able to perform all actions which were assigned to initiator role or perform delegation to another mailbox
+
+.. note:: Each delegate can perform delegation to another mailbox (if it is not prohibited by envelope/template configuration or user to mailbox permissions)
 
 .. image:: delegation_pic/delegationCancel.png
    :width: 600
@@ -56,6 +60,8 @@ It is possible to enable automatic incoming envelopes delegation for selected ma
 5. Click Save changes when all options are configured
 
 .. warning:: Envelopes with restricted delegation will not be automatically forwarded to selected mailbox and still be sent to your mailbox even when forwarding is enabled.
+
+.. warning:: If auto-delegation configured to the delegate who is already have access to the role than delegation will not happen
 
 How to restrict envelope delegation
 ===================================
