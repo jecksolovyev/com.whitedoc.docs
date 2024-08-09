@@ -49,3 +49,5 @@ When all attributes are set, you can click Save button and field will be added. 
 .. image:: pic_dictionary/dictionaryEdit.png
    :width: 600
    :align: center
+
+.. hint:: If this field contains a link in the envelope, it will be rendered a standard link in the browser (blue font with an underline). You can follow this link from the right-click context menu (any role) or directly click it (only if the field is inactive).

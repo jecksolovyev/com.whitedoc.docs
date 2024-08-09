@@ -17,7 +17,7 @@ project = 'WhiteDoc'
 copyright = '2024, DocStudio'
 author = 'DocStudio'
 # The full version, including alpha/beta/rc tags
-release = '111'
+release = '112'
 # -- General configuration ---------------------------------------------------
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
