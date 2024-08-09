@@ -17,7 +17,7 @@ DocStudio to DBNA message configuration
         :width: 600
         :align: center
 
-    .. code-block:: JSON
+    .. code-block:: json
 
         {
             "PROCESS_ID": "bdx-procid-transport::bdx:noprocess",
@@ -95,7 +95,7 @@ DBNA to DocStudio message configuration (DocStudio side)
     4.5 Add param <xsl:param name="SML_PROFILE"/> to your xslt conversion map
 
     4.6 Add block of XML to the envelope message block which will add to the end of the message SML_PROFILE value. If it's production it will add nothing.
-        .. code-block:: XML
+        .. code-block:: xml
 
             <message>
                 <xsl:value-of select="cbc:Note"/>

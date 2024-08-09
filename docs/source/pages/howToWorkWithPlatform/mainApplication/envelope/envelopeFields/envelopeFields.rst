@@ -4,15 +4,10 @@ Envelope fields
 
 As a participant in the envelope processing workflow, you can complete the fields in the documents assigned to your role. Here, you will find several field-related hints
 
-Text field
-==========
+Text
+====
 
-A text field is a common field used to store various types of text information, including strings, numbers, and special characters
-
-Text field can be single line and multiline, depends on :ref:`template configuration <textFieldTemplate>` of envelope
-
-
-As mentioned above, you can use any type of character as text field content, and the system will handle the necessary escaping for you. However, if you're using an API to send or fill the envelope, you must manually escape special characters
+A text field is a common field used to store various types of text information, including strings, numbers, and special characters. Text field can be single line and multiline, depends on :ref:`template configuration <textFieldTemplate>` of envelope. As mentioned above, you can use any type of character as text field content, and the system will handle the necessary escaping for you. However, if you're using an API to send or fill the envelope, you must manually escape special characters.
 
 .. note:: If your text contains one of the following special characters ", <, >, ', & and you want to send API request to fill/send envelope, wrap the content which contains special characters into <![CDATA["<content>"]]>. You can use CDATA with any type of field, text field is just as example
 

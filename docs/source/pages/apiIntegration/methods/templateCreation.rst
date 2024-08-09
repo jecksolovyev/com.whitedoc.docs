@@ -20,7 +20,7 @@ Template creation
 
 **JSON Body**
 
-.. code:: json
+.. code-block:: json
 
     {
     "access":"mailbox",
@@ -59,7 +59,7 @@ Depending on your needs, you can add different types of fields `template fields 
 
 **RESPONSE**
 
-.. code:: json
+.. code-block:: json
 
     {
     "uuid":"56cacd6a-ffe7-4b77-9c0c-f928d9a18cb5",

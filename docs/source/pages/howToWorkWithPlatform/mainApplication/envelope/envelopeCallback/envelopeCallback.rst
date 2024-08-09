@@ -8,7 +8,7 @@ Envelope callback is functionality which allows to receive notification to respe
 
 **JSON Callback data**
 
-.. code:: json
+.. code-block:: json
 
   {
     "mailbox": "F32A3BD9-CE5B-4AC5-A2D7-C2A2E7DD6636",

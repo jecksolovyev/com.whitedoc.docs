@@ -4,8 +4,8 @@ Envelope Structure
 
 Envelope data block below contains all fields which can be added to document body.
 
-.. code::
-
+.. code-block:: xml
+	
     <envelope templateUuid="1997a1b4-88e3-4f58-88ca-fcd2c6fb5869" templateVersion="4a303734-a118-44a2-aedf-67df61612628">
 	    <info>
 		    <subject>all fields envelope</subject>
@@ -57,21 +57,21 @@ Envelope data block below contains all fields which can be added to document bod
 How to fill each single field
 =============================
 
-+----------------------------------------------------------------+
-|**Text, Number, Currency, Date and time, A/B, Dropdown fields** |
-+================================================================+
-|`<field name="string">value</field>`                            |
-+----------------------------------------------------------------+
++---------------------------------------------------------------+
+|**Text, Number, Currency, Date and time, A/B, Dropdown fields**|
++===============================================================+
+|`<field name="string">value</field>`                           |
++---------------------------------------------------------------+
 
 - name - string, name of the field you want to fill
 - value - the value of the field, all validation restrictions configurable on template, mandatory if field doesn't have optional attribute
 - several values as additional tags inside field tag
 
-+--------------------------------------------------+
-|**Duplicate, Lookup and Autonumber fields**       |
-+==================================================+
-|                                                  |
-+--------------------------------------------------+
++-------------------------------------------+
+|**Duplicate, Lookup and Autonumber fields**|
++===========================================+
+|                                           |
++-------------------------------------------+
 
 You may not to send these types of fields if template contains it. It's automatically filled in fields.
 
@@ -112,13 +112,14 @@ You may not to send these types of fields if template contains it. It's automati
 - name - string, name of the GROUP of radio buttons
 - value - string, name of the field from the GROUP of radio buttons which should be marked as chosen
 
-+------------------------------------+
-|**Table field**                     |
-+====================================+
-|                                    |
-+------------------------------------+
++---------------+
+|**Table field**|
++===============+
+|               |
++---------------+
 
-.. code::
+.. code-block:: xml
+
     <fieldgroup name="string">
         <fieldset index="0">
             <field name="Text 2">1</field>

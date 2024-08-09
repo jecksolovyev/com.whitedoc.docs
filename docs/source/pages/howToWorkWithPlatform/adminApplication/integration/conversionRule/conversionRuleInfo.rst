@@ -8,7 +8,7 @@ WDExtensions
 WdExtensions - is a help java class for working with dictionaries inside XSLT map.
 In order to apply it, the following namespace has to be added:
 
-.. code:: xml
+.. code-block:: xml
 
     <?xml version='1.0'?>
     <xsl:stylesheet version="1.0"
@@ -34,7 +34,7 @@ There are 4 static methods:
 Conversion rule example for outgoing documents
 ==============================================
 
-.. code:: xml
+.. code-block:: xml
 
     <?xml version='1.0'?>
     <xsl:stylesheet version="1.0"
@@ -444,7 +444,7 @@ Our platform has capabilities to convert .xls and .xlsx files and X12 files (.xm
 Conversion rule example for incoming documents
 ==============================================
 
-.. code:: xml
+.. code-block:: xml
 
     <?xml version="1.0" encoding="ISO-8859-5"?>
     <xsl:stylesheet version="1.0"

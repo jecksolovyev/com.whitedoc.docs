@@ -49,3 +49,8 @@ On template configuration page you can set some template properties, such as tem
 8. Envelope sending and sharing - this property allows or denies possibility to attach documents to the envelope completion email notification or possibility to share the envelope. If set on template level, it's impossible to change it on envelope level later
 9. Template cover - preview of the template that will be visible mailboxes which have access to template. Can use custom image or dynamically generate preview of first page of the template
 10. Configure envelope archive files - this feature allows you to configure an envelope archive that can be downloaded upon completion of the envelope. You can read more about this functionality :ref:`here <archiveConfiguration>`
+
+.. toctree::
+
+   archiveConfiguration.rst
+   autoSubject.rst

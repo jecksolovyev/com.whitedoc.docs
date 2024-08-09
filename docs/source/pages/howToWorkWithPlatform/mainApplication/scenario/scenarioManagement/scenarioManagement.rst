@@ -134,7 +134,7 @@ Simple condition
 
 Condition is a XSLT map which will be applied to the source envelope of the step. A simple condition has to return "true" or "false" in xml format:
 
-.. code:: xml
+.. code-block:: xml
 
     <result>
         true
@@ -142,7 +142,7 @@ Condition is a XSLT map which will be applied to the source envelope of the step
 
 A condition XSLT example:
 
-.. code:: xml
+.. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -165,7 +165,7 @@ One to Many condition
 
 This type of condition can be applied ONLY to a table inside a document. Condition has to return "true" or "false" for every row in the table in the following format:
 
-.. code:: xml
+.. code-block:: xml
 
     <result>
       <rows>
@@ -178,7 +178,7 @@ This type of condition can be applied ONLY to a table inside a document. Conditi
 
 Index attribute has to match index attribute in "fieldset" node. A condition XSLT example:
 
-.. code:: xml
+.. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -204,13 +204,13 @@ Index attribute has to match index attribute in "fieldset" node. A condition XSL
 
 For every row where result = "true" a new envelope will be created. To provide "xslt" map with a proper row index, this map has to be modified accordingly. The following parameter has to be added:
 
-.. code:: xml
+.. code-block:: xml
 
     <xsl:param name="row_index"/>
 
 And it can be used in following way:
 
-.. code:: xml
+.. code-block:: xml
 
     <field name="field_name">
         <xsl:value-of select="envelope/documents/document[@id='document_id']/fieldgroup[@name='table_name']/
@@ -228,7 +228,7 @@ You can re-use attachments uploaded on previous step of scenario. To do that you
 
 Imagine that source envelope looks like example below
 
-.. code:: xml
+.. code-block:: xml
 
     <envelope templateUuid="bd6c94c9-715f-4611-bcb0-cc4114cff83d" templateVersion="bd6c94c9-715f-4611-bcb0-cc4114cff83d">
 	    <info>
@@ -256,7 +256,7 @@ Imagine that source envelope looks like example below
 
 To re-use envelope attachments from source you can use one of the following constructions below
 
-.. code:: xml
+.. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -271,7 +271,7 @@ To re-use envelope attachments from source you can use one of the following cons
 
 OR
 
-.. code:: xml
+.. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -294,7 +294,7 @@ You are able to run specific scenario through integration functionality. As soon
 
 Defined scenario UUID should be inside <envelope> tag as attribute scenarioUuid="uuidOfScenario"
 
-.. code:: xml
+.. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -309,7 +309,7 @@ Defined scenario UUID should be inside <envelope> tag as attribute scenarioUuid=
 
 Scenario configuration of chaining envelopes will be ignored by default if you create envelope with defined scenario inside integration rule. But you are able to define chain UUID inside <envelope> tag as attribute chainUuid="uuidOfChain". If you want to chain all created envelopes though integration it should be static UUID which should be defined once in integration rule, but if you want to chain envelopes created for each file pulled though integration separately it should be defined dynamically.
 
-.. code:: xml
+.. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">

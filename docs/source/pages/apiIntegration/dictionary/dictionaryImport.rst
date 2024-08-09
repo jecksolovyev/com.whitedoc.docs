@@ -6,7 +6,7 @@ In order to import CSV file to dictionary user has to perform 2 steps:
 
 1. Upload CSV file by '/api/v1/upload/dictionary-large' endpoint using TUS client (https://github.com/tus/tus-js-client)
 
-.. code:: js
+.. code-block:: js
 
     input.addEventListener("change", function(e) {
         // Get the selected file from the input element

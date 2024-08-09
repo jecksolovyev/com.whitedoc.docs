@@ -1,8 +1,8 @@
 .. _registration:
 
-============
-Registration
-============
+============================
+Registration on the platform
+============================
 
 To register user account on the platform:
 

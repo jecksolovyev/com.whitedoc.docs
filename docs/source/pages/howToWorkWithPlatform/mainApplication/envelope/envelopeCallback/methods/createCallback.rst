@@ -23,7 +23,7 @@ Create callback
 
 **REQUEST BODY**
 
-.. code:: json
+.. code-block:: json
 
    {
     "filter": {
@@ -101,7 +101,7 @@ In response you get 201 status code (in case of successful callback creation) an
 
 **Response example (JSON):**
 
-.. code:: json
+.. code-block:: json
 
   {
     "id": "f8c97405-9185-4998-a3c0-2c4d0edaf43b",
