@@ -7,7 +7,7 @@ Welcome to the WhiteDoc documentation page
 .. toctree::
 
    pages/howToWorkWithPlatform/howToWorkWithPlatform.rst
-   pages/api/api.rst
+   pages/apiIntegration/apiIntegration.rst
    pages/errorCodes/errorCodes.rst
    pages/configuration/server.rst
    pages/clients/clients.rst

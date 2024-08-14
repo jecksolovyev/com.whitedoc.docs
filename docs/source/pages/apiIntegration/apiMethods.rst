@@ -2,6 +2,8 @@
 API methods
 ===========
 
+.. hint:: All api requests will be send to: https://api.platform_address_here
+
 Authorization endpoints
 =======================
 
