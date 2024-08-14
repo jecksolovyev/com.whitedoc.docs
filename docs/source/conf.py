@@ -49,21 +49,18 @@ html_static_path = ['_static']
 html_css_files = ['custom.css']
 html_js_files = ['custom.js']
 master_doc = 'index'
-
-# ----- Redoc configuration
 redoc_uri = 'https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js'
 redoc = [
     {
-        'name': 'WhiteDoc API',
-        'page': 'pages/api',
-        'spec': 'pages/api/swagger.json',
+        'name': 'Open API',
+        'page': 'pages/apiIntegration/openapi/openApi',
+        'spec': 'pages/apiIntegration/openapi/swagger.json',
         'embed': True,
         'opts': {
-            'lazy-rendering' : True,
             'suppress-warnings' : False,
-            'hide-hostname' : True,
+            'lazy-rendering' : True,
             'required-props-first' : True,
-            'expand-responses': ["200", "201"]
+            'hide-hostname' : True
         }
     }
 ]
