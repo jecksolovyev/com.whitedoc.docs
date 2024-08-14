@@ -49,18 +49,21 @@ html_static_path = ['_static']
 html_css_files = ['custom.css']
 html_js_files = ['custom.js']
 master_doc = 'index'
+
+# ----- Redoc configuration
 redoc_uri = 'https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js'
 redoc = [
     {
-        'name': 'Open API',
-        'page': 'pages/apiIntegration/openapi/openApi',
-        'spec': 'pages/apiIntegration/openapi/swagger.json',
+        'name': 'DocStudio API',
+        'page': 'pages/api/openApi',
+        'spec': 'pages/api/api-docs.json',
         'embed': True,
         'opts': {
-            'suppress-warnings' : False,
             'lazy-rendering' : True,
+            'suppress-warnings' : False,
+            'hide-hostname' : True,
             'required-props-first' : True,
-            'hide-hostname' : True
+            'expand-responses': ["200","201"]
         }
     }
 ]

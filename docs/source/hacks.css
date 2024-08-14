@@ -1,10 +1,8 @@
 /*
  * CSS mods for documentation powered by Sphinx
+ * Text colors and styles
+ * For example, :black:`black color` or :under:`text underlined` in rST.
  */
-
-
-/* Text colors and styles
- For example, :black:`black color` or :under:`text underlined` in rST. */
 
 .black {
     color: black;
