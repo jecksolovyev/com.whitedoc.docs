@@ -55,8 +55,8 @@ redoc_uri = 'https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js
 redoc = [
     {
         'name': 'DocStudio API',
-        'page': 'pages/api/openapi/openApi',
-        'spec': 'pages/api/openapi/api-docs.json',
+        'page': 'pages/api/openApi',
+        'spec': 'pages/api/api-docs.json',
         'embed': True,
         'opts': {
             'lazy-rendering' : True,

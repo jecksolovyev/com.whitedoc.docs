@@ -2,7 +2,7 @@
 API
 ===
 
-`Full API documentation (Redoc) <openApi/openApi.html>`_
+`Full API documentation (Redoc) <openApi.html>`_
 
 `Full API documentation (Swagger) <https://api.docstudio.com/swagger-ui/index.html>`_
 
