@@ -30,8 +30,7 @@ extension .rst in docs/source/pages/howToWorkWithPlatform/authorization/login fo
 After file creation we have to link it with head file of the folder (according to example it would be 
 docs/source/pages/howToWorkWithPlatform/authorization/autorization.rst). 
 
-To create link head file with child files we 
-have to add to head file link to child file. It could be done two ways:
+To create link head file with child files we have to add to head file link to child file. It could be done two ways:
 
 1. Link it directly within ref functionality
 

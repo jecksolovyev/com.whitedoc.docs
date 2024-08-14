@@ -1,6 +1,6 @@
-======================================
-Welcome to platform documentation page
-======================================
+==========================================
+Welcome to the WhiteDoc documentation page
+==========================================
 
 **Content list**
 

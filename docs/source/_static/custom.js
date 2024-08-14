@@ -3,4 +3,4 @@ $(document).ready(function () {
         $(this).attr('href', $(this).attr('href').replace('newtab::',''));
         $(this).attr('target', '_blank');
     });
-});
+})
