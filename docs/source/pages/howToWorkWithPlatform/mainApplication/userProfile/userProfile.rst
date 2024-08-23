@@ -9,7 +9,7 @@ Settings page
 =============
 
 .. image:: pic_userprofile/tabSettings.png
-   :width: 600
+   :width: 900
    :align: center
 
 1. First name
@@ -22,8 +22,9 @@ Settings page
 8. Email (can not be changed, only copied)
 9. Auto deposit mailbox - specifies which mailbox will be used for incoming envelopes. If disabled - you will have to manually specify mailbox for each incoming envelope
 10. Signature settings - here you can create or update your e-ink signature
-11. Register personal account
-12. Register company account
+11. Initials settings - here you can create or update your initials
+12. Register personal account
+13. Register company account
 
 Do not forget to click on Save changes button after editing anything on this page
 
@@ -102,7 +103,7 @@ Forwarding page
 .. note:: This functionality will be disabled if you do not have 2012 mailbox level permission (Delegate envelopes).
 
 .. image:: pic_userprofile/tabForwarding.png
-   :width: 600
+   :width: 900
    :align: center
 
 In this section you can configure automatic forwarding of all incoming envelopes. To do so:
@@ -122,7 +123,7 @@ Danger zone page
 This page allows you to delete your user account. To open user profile page navigate to https://platform_address/profile?activeTab=dangerzone
 
 .. image:: pic_userprofile/tabDangerZone.png
-   :width: 600
+   :width: 900
    :align: center
 	
 .. note:: Ability to remove own user profile can be restricted in instance settings. In such case there will be no Danger zone tab on Profile information page.

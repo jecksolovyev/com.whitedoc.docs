@@ -23,7 +23,7 @@ How to add PAdES field to the document
 
 3. Name - this is a name of a field
 4. Role name - this is a role which will be assgined to fill this field
-5. Placeholder - this text will be shown in the text box before anything is filled in (can be left empty, field name will be used instead)
+5. Placeholder - this text will be shown inside the field before it is filled in (can be left empty; field`s name will be used instead)
 6. Qualified - this attribute specifies if signature will be qualified
 7. TIN (becomes editable if there are other fields in the template) - this attribute restricts signing process for everyone except a person with TIN code specified in field selected below
 8. Document (appears if TIN is enabled) - document where TIN field is placed

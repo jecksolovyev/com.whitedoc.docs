@@ -40,9 +40,9 @@ How to add formula field to the document
    :align: center
 
 3. Name - this is a name of a field
-4. Placeholder - this text will be shown in the input box before anything is filled in (can be left empty, field name will be used instead)
+4. Placeholder - this text will be shown inside the field before it is filled in (can be left empty; field`s name will be used instead)
 5. Operation - type of operation which will be performed with arguments
-6. Argument (1, 2 and so on, appears after operation is selected) - arguments which will be used for calculation. They are parsed in strict order from first to last. If you will click on argument input, dropdown selector with available fields will appear. Static values can be typed in directly as well.
+6. Argument (1, 2 and so on, appears after operation is selected) - arguments which will be used for calculation. They are parsed in strict order from first to last. If you will click on argument input, dropdown selector with available fields will appear. Static values can be typed in directly as well
 
 .. note:: You can add more then 2 default arguments by clicking "+ add argument" link
 

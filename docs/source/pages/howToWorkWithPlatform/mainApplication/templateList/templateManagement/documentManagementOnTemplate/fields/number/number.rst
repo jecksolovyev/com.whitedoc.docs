@@ -23,7 +23,7 @@ How to add number field to the document
 
 3. Name - this is a name of a field
 4. Role name - this is a role which will be assgined to fill this field
-5. Placeholder - this text will be shown in the input box before anything is filled in (can be left empty, field name will be used instead)
+5. Placeholder - this text will be shown inside the field before it is filled in (can be left empty; field`s name will be used instead)
 6. Optional - this attribute specifies if this field is mandatory to fill
 7. Search - this attribute specifies if this field should be eligible for mailbox page search
 8. Adapt to the local format - this attribute specifies if numbers will be formatted according to regional standard
