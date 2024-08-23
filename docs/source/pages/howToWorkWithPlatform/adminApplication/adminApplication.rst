@@ -10,5 +10,6 @@ Admin panel
    users/users.rst
    mailboxes/mailboxes.rst
    integration/integration.rst
+   auditLog/auditLog.rst
    callbacks/callbacks.rst
    permissionsList/permissionsList.rst
