@@ -36,6 +36,6 @@ How to fill an initials field in the envelope
 
 1. Open envelope where initials field is located
 2. Click on the initials field
-3. Initials will be automatically generated from your first and last name specified in your user profile and set in the field (if you already specified your inityials before, they will be used)
+3. Initials will be automatically generated from your first and last name specified in your user profile and set in the field (if you already specified your initials before, they will be used)
 
 .. note:: If you want to edit your initials, you can click on the filled in initials field. Initials drawing window similar to signature drawing window will open.
