@@ -23,7 +23,7 @@ How to add file field to the document
 
 3. Name - this is a name of a field
 4. Role name - this is a role which will be assgined to fill this field
-5. Placeholder - this text will be shown in the input box before anything is filled in (can be left empty, field name will be used instead)
+5. Placeholder - this text will be shown inside the field before it is filled in (can be left empty; field`s name will be used instead)
 6. Optional - this attribute specifies if this field is mandatory to fill
 7. File extension - this attribute specifies file extensions which will be allowed by field. Next options are available:
    1. All: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .png, .jpg, .jpeg, .tiff, .tif, .zip, .7z, .rar

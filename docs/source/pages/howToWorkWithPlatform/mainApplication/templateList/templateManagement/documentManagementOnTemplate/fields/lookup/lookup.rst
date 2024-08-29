@@ -22,7 +22,7 @@ How to add lookup field to the document
    :align: center
 
 3. Name - this is a name of a field
-4. Placeholder - this text will be shown in the input box before anything is filled in (can be left empty, field name will be used instead)
+4. Placeholder - this text will be shown inside the field before it is filled in (can be left empty; field`s name will be used instead)
 5. Optional - this attribute specifies if this field is mandatory to fill
 6. Allow custom values - this attribute specifies if field will allow free text input besides selection from predefined values
 
@@ -38,3 +38,5 @@ When all attributes are set, you can click Save button and field will be added. 
 .. image:: pic_lookup/lookupEdit.png
    :width: 600
    :align: center
+
+.. hint:: If this field contains a link in the envelope, it will be rendered a standard link in the browser (blue font with an underline). You can follow this link from the right-click context menu (any role) or directly click it (only if the field is inactive).
