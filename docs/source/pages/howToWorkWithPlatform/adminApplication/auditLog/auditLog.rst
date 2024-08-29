@@ -2,7 +2,7 @@
 Audit Log
 =========
 
-The Audit Log is a feature that allows you to view and filter different events within a user's account.
+The Audit Log is a feature that allows you to view and filter different events within an account.
 It is located in the administrative panel
 
 .. image:: pic_auditLog/auditLogAdmin.png
@@ -12,7 +12,7 @@ It is located in the administrative panel
 Manage audit log
 ================
 
-1. When you open the audit log, you will see all the events that occurred within the account on the current day for the current user.
+1. When you open the audit log, you will see all the events that occurred within the account on the current day for all users who has access to the account.
 
 .. image:: pic_auditLog/auditLogViewDefault.png
    :width: 600
@@ -169,11 +169,11 @@ Errors actions:
 *Object type* = Template, envelope, user and others listed above.
 *Mailbox* = Mailbox name and its UUID, available for copying.
 *User* = User name and its UUID, available for copying.
-*IP Address* = your IP address.
+*IP Address* = user's IP address.
 *System* = Browser and OS.
 *Data* = Date when the event occurred.
 
-Envelope acion description
+Envelope action description
 ==========================
 
 1. **Envelope chain**
@@ -187,4 +187,3 @@ When an envelope is added to or removed from a chain of envelopes, the following
    :align: center
 
 .. note:: To learn how to add or remove an envelope from a chain, please refer to the link - :ref:`Envelope chain <envelopeChain>`
-   
