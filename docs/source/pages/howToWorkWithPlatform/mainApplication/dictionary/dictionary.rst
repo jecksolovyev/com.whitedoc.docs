@@ -152,6 +152,8 @@ By clicking on "Change delimiter" button additional configuration options open
 3. "Quote" - the option defines type of the quotes is using in csv uploaded by you. available options double quote ("), single quote (') or null value if no quotes should be defined
 4. "Escape" - the option defines type of the escape symbol is using in csv uploaded by you. available options backslash (\\), double quote (") or null value if no escape symbol should be defined
 
+.. note:: to read more about how additional parameters "Delimiter", "Quote", "Escape" work, follow `the link to apache docs <https://commons.apache.org/proper/commons-csv/apidocs/org/apache/commons/csv/CSVFormat.html#DEFAULT>`_
+
 .. _import logic:
 
 Import logic depends on configuration
