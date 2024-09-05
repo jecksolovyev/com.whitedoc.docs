@@ -92,6 +92,8 @@ Dictionary import
 
 You are able to import csv file to the dictionary which will be converted into the dictionary records. To read more about import logic depends on configuration :ref:`click here <import logic>`
 
+.. note:: The order of the rows may not be saved after import of csv file data into the dictionary
+
 1. Navigate to platform_address_here/dictionary
 2. Open dictionary for editing (by clicking on edit icon) or create new one
 3. Click on "Import" button in the header
