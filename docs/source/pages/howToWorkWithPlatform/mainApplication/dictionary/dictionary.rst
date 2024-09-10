@@ -111,13 +111,13 @@ At this moment you will observe modal window with upload csv file button
 4. Clicking on "Select file to upload" button file manager on your PC will be opened
 5. As soon as file is chosen you can click on the "Next" button
 
-At this moment you will observe modal window with uploaded csv file and two configuration options of importing file "Header is 1st row?" and "Replace". To read more about import logic depends on configuration :ref:`click here <import logic>`
+At this moment you will observe modal window with uploaded csv file and two configuration options of importing file "Header 1st row?" and "Replace". To read more about import logic depends on configuration :ref:`click here <import logic>`
 
 .. image:: pic_dictionary/importUploadedFile.png
    :width: 600
    :align: center
 
-.. note:: "Header is 1st row?" - the option is responsible for determination if first row from csv file will be the header row in dictionary after import
+.. note:: "Header 1st row?" - the option is responsible for determination if first row from csv file will be the header row in dictionary after import
 
 .. note:: "Replace" - the option defines if existing dictionary records will be replaced or not after import
 
@@ -144,7 +144,7 @@ Import preview modal window contains import configuration properties and you are
    :width: 600
    :align: center
 
-1. "Header is 1st row?" - you are able to make the option selected or not and according to the choice data from csv will be parsed differently
+1. "Header 1st row?" - you are able to make the option selected or not and according to the choice data from csv will be parsed differently
 
 By clicking on "Change delimiter" button additional configuration options open
 
