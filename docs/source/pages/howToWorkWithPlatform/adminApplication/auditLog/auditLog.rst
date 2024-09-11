@@ -174,7 +174,7 @@ Errors actions:
 *Data* = Date when the event occurred.
 
 Envelope action description
-==========================
+===========================
 
 1. **Envelope chain**
 When an envelope is added to or removed from a chain of envelopes, the following actions are logged in the audit log:
