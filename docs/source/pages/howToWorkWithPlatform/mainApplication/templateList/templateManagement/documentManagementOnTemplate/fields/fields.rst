@@ -42,7 +42,7 @@ This method is similar to drag & drop, but works in 2 clicks instead of 1. Click
    duplicate/duplicate.rst
    formula/formula.rst
    autonumber/autonumber.rst
-   qrBarcode/qrBarcode.rst
+   qrBarcode/qrBarcode1.rst
    qes/qes.rst
    pades/pades.rst
    signature/signature.rst
