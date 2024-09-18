@@ -122,8 +122,8 @@ This tab allows you to manage pending and accepted invitations to accounts and m
    :width: 900
    :align: center
 
-1. In the "Pending invitation" sections you can see a list of invitations from other users. Each row represents an account where you are invited to (first column). Second column shows a list of account mailboxes where you are invited to. Each invitation can be accepted or declined.
-2. In the "Accepted invitation" sections you can see a list of already accepted invitations. Each row represents a mailbox (second column) where you are invited to. Accepted invitations are grouped by account (first column). Each mailbox where you accepted an invitation to can be left.
+1. In the "Pending invitation" section you can see a list of invitations from other users. Each row represents an account where you are invited to (first column). Second column shows a list of account mailboxes where you are invited to. Each invitation can be accepted or declined.
+2. In the "Accepted invitation" section you can see a list of already accepted invitations. Each row represents a mailbox (second column) where you are invited to. Accepted invitations are grouped by account (first column). Each mailbox where you accepted an invitation to can be left.
 
 ===============
 Forwarding page
