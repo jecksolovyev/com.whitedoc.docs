@@ -1,7 +1,7 @@
 .. _qualifiedElectronicSignature:
 
-How to raead a qualified electronic signature?
-==============================================
+How to read a qualified electronic signature?
+=============================================
 
 To use qualified electronic signature you should install special software manually to your PC.
 
@@ -33,8 +33,8 @@ To use qualified electronic signature you should install special software manual
    :width: 400
    :align: center
 
-How to reading electronic signature using a bluetooth token?
-============================================================
+How read an electronic signature using a bluetooth token?
+=========================================================
 
 To use qualified electronic signature which located on bluetooth token produced by IIT you should install special software manually to your Mobile device.
 
@@ -51,7 +51,7 @@ To use qualified electronic signature which located on bluetooth token produced 
 7. Click on it and enter password to key you selected
 8. Wait for registration completion and after that you will be able to connect to your key where you can get key identifier
 
-**Reading key**
+**Reading a key**
 
 1. Select option "Other electronic signature devices"
 
