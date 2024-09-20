@@ -13,3 +13,4 @@ Admin panel
    auditLog/auditLog.rst
    callbacks/callbacks.rst
    permissionsList/permissionsList.rst
+   billing/billing.rst
