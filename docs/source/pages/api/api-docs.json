@@ -2,7 +2,7 @@
     "openapi": "3.0.1",
     "info": {
         "title": "DocStudio Api Documentation",
-        "version": "R114.1"
+        "version": "R115.5"
     },
     "servers": [
         {
@@ -116,9 +116,9 @@
         "/api/v1/user/invite/{uuid}": {
             "put": {
                 "tags": [
-                    "user-controller"
+                    "user-invite-controller"
                 ],
-                "summary": "Update invitation by userUuid.",
+                "summary": "Update invitation by userUuid",
                 "operationId": "updateInvitation",
                 "parameters": [
                     {
@@ -3742,9 +3742,9 @@
         "/api/v1/user/invite": {
             "post": {
                 "tags": [
-                    "user-controller"
+                    "user-invite-controller"
                 ],
-                "summary": "Create invitation to join account or mailbox with defined permissions.",
+                "summary": "Create invitation to join account or mailbox with defined permissions",
                 "operationId": "createInvitation",
                 "requestBody": {
                     "content": {
@@ -3773,7 +3773,7 @@
         "/api/v1/user/invite/accept/{inviteCode}": {
             "post": {
                 "tags": [
-                    "user-controller"
+                    "user-invite-controller"
                 ],
                 "summary": "Accept invite",
                 "operationId": "acceptInvite",
@@ -8379,7 +8379,14 @@
                 },
                 "responses": {
                     "200": {
-                        "description": "OK"
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ChangeAccountTariffResponse"
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -9168,6 +9175,56 @@
                         }
                     }
                 }
+            }
+        },
+        "/api/v1/account/webhook": {
+            "post": {
+                "tags": [
+                    "misc-controller"
+                ],
+                "operationId": "webhook",
+                "parameters": [
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "accountKey",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                },
+                "security": []
             }
         },
         "/api/logout": {
@@ -10298,7 +10355,7 @@
         "/api/v1/user/invites": {
             "get": {
                 "tags": [
-                    "user-controller"
+                    "user-invite-controller"
                 ],
                 "summary": "Get paged invites list",
                 "operationId": "getInvites",
@@ -13001,6 +13058,68 @@
                 }
             }
         },
+        "/api/v1/account/{accountUuid}/payment-method": {
+            "get": {
+                "tags": [
+                    "account-billing-controller"
+                ],
+                "operationId": "getPaymentMethodInfo",
+                "parameters": [
+                    {
+                        "name": "accountUuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PaymentMethodInfo"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/account/{accountUuid}/payment-method-init": {
+            "get": {
+                "tags": [
+                    "account-billing-controller"
+                ],
+                "operationId": "getPaymentMethodInitKey",
+                "parameters": [
+                    {
+                        "name": "accountUuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/api/v1/account/{accountUuid}/mailbox": {
             "get": {
                 "tags": [
@@ -13497,7 +13616,7 @@
         "/api/v1/user/invite/decline/{inviteCode}": {
             "delete": {
                 "tags": [
-                    "user-controller"
+                    "user-invite-controller"
                 ],
                 "summary": "Decline invite",
                 "operationId": "declineInvite",
@@ -13856,6 +13975,31 @@
                 }
             }
         },
+        "/api/v1/mailbox/{mailboxUuid}/leave": {
+            "delete": {
+                "tags": [
+                    "mailbox-controller"
+                ],
+                "summary": "Leave mailbox if possible",
+                "operationId": "leaveMailbox",
+                "parameters": [
+                    {
+                        "name": "mailboxUuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
         "/api/v1/envelope/{envelopeUuid}/chain": {
             "delete": {
                 "tags": [
@@ -14038,6 +14182,10 @@
                     },
                     "system": {
                         "type": "boolean"
+                    },
+                    "invited": {
+                        "type": "boolean",
+                        "description": "User added via invitation"
                     }
                 },
                 "description": "Mailboxes linked to this account"
@@ -16333,6 +16481,9 @@
                     },
                     "authorization": {
                         "$ref": "#/components/schemas/UserAuthorizationDTO"
+                    },
+                    "invited": {
+                        "type": "boolean"
                     }
                 }
             },
@@ -18409,8 +18560,10 @@
                     "mailbox-alias-created",
                     "mailbox-alias-deleted",
                     "mailbox-integration-updated",
-                    "user-invited-to-account",
-                    "user-invited-to-mailbox",
+                    "user-invited",
+                    "user-invitation-revoked",
+                    "user-accepted-invitation",
+                    "user-declined-invitation",
                     "user-permissions-changed",
                     "user-password-reset",
                     "user-password-renew",
@@ -18418,6 +18571,7 @@
                     "user-unblocked",
                     "user-created",
                     "user-deleted",
+                    "user-left-mailbox",
                     "category-created",
                     "category-updated",
                     "category-deleted",
@@ -18813,6 +18967,10 @@
                     "system": {
                         "type": "boolean"
                     },
+                    "invited": {
+                        "type": "boolean",
+                        "description": "User added via invitation"
+                    },
                     "roles": {
                         "type": "array",
                         "items": {
@@ -19075,6 +19233,86 @@
                     }
                 }
             },
+            "AccountTariffInfo": {
+                "type": "object",
+                "properties": {
+                    "validFrom": {
+                        "type": "string",
+                        "description": "Valid from datetime",
+                        "format": "date-time"
+                    },
+                    "validTo": {
+                        "type": "string",
+                        "description": "Valid to datetime",
+                        "format": "date-time"
+                    },
+                    "tariff": {
+                        "$ref": "#/components/schemas/TariffDetails"
+                    }
+                },
+                "description": "Tariff info"
+            },
+            "ChangeAccountTariffResponse": {
+                "type": "object",
+                "properties": {
+                    "result": {
+                        "type": "boolean",
+                        "description": "Operation result"
+                    },
+                    "details": {
+                        "uniqueItems": true,
+                        "type": "array",
+                        "description": "Operation result details",
+                        "items": {
+                            "type": "string",
+                            "description": "Operation result details"
+                        }
+                    },
+                    "tariff": {
+                        "$ref": "#/components/schemas/AccountTariffInfo"
+                    }
+                }
+            },
+            "TariffDetails": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "Id",
+                        "format": "uuid"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Name"
+                    },
+                    "tariffPrice": {
+                        "type": "integer",
+                        "description": "Tariff price",
+                        "format": "int64"
+                    },
+                    "tariffPriceApplyRule": {
+                        "type": "string",
+                        "description": "Tariff price apply rule"
+                    },
+                    "displayName": {
+                        "type": "string",
+                        "description": "Display name"
+                    },
+                    "publicAvailable": {
+                        "type": "boolean",
+                        "description": "Public availability"
+                    },
+                    "prepay": {
+                        "type": "boolean",
+                        "description": "Prepay"
+                    },
+                    "active": {
+                        "type": "boolean",
+                        "description": "Active"
+                    }
+                },
+                "description": "Tariff details"
+            },
             "MailboxesSearchFilterDTO": {
                 "type": "object",
                 "properties": {
@@ -19235,6 +19473,12 @@
                         "type": "string",
                         "description": "Street"
                     },
+                    "street2": {
+                        "maxLength": 200,
+                        "minLength": 0,
+                        "type": "string",
+                        "description": "Street"
+                    },
                     "city": {
                         "maxLength": 200,
                         "minLength": 1,
@@ -19252,6 +19496,10 @@
                         "minLength": 1,
                         "type": "string",
                         "description": "Formatted address"
+                    },
+                    "countryISO": {
+                        "type": "string",
+                        "description": "Country ISO code"
                     }
                 },
                 "description": "Account billing address"
@@ -19473,6 +19721,11 @@
                             "LOCKED",
                             "AVAILABLE"
                         ]
+                    },
+                    "mailboxUuid": {
+                        "type": "string",
+                        "description": "Owner of the dictionary",
+                        "format": "uuid"
                     }
                 }
             },
@@ -20093,6 +20346,10 @@
                     },
                     "defaultCurrency": {
                         "type": "string"
+                    },
+                    "stripePublicKey": {
+                        "type": "string",
+                        "description": "Stripe public key for client-side"
                     }
                 },
                 "description": "Billing properties"
@@ -20226,6 +20483,21 @@
                 "properties": {
                     "salesSupportEmail": {
                         "type": "string"
+                    },
+                    "helpCenterTitleKey": {
+                        "type": "string"
+                    },
+                    "addressTitleKey": {
+                        "type": "string"
+                    },
+                    "contacts": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
                     }
                 },
                 "description": "E-mails for support"
@@ -21163,7 +21435,10 @@
                             "316",
                             "317",
                             "401",
-                            "402"
+                            "402",
+                            "501",
+                            "502",
+                            "503"
                         ]
                     },
                     "data": {
@@ -22140,6 +22415,27 @@
                     "order": {
                         "type": "integer",
                         "format": "int32"
+                    }
+                }
+            },
+            "PaymentMethodInfo": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "description": "Payment method type"
+                    },
+                    "address": {
+                        "type": "string",
+                        "description": "Payment method address"
+                    },
+                    "data": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "string",
+                            "description": "Payment method details"
+                        },
+                        "description": "Payment method details"
                     }
                 }
             },
