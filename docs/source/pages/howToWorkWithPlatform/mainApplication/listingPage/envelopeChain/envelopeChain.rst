@@ -51,7 +51,7 @@ How to see envelopes in a chain?
    :width: 600
    :align: center
 
-2. In opened section you can find complete list of envelopes from this chain ordered by receive date in descending order. Current envelope highlighted with color. Click on other envelopes will open desired envelope in new tab
+2. In opened section you can find complete list of envelopes from this chain ordered by receive date in descending order. Current envelope highlighted with color. Clicking other envelopes will open desired envelope in new tab
 
 .. image:: pic_envelopeChain/chain06.png
    :width: 600

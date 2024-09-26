@@ -20,7 +20,7 @@ This approach allows you to resend envelope notifications from envelope view pag
 
 1. Open an envelope you want to resend notifications for
 
-2. Click on the resend notification button in the header of the page
+2. Click the "Resend notification" button in the header of the page
 
 .. image:: pic_resendEnvelopeNotifications/envelopeResendBtn.png
    :width: 700
@@ -42,7 +42,7 @@ This approach allows you to resend envelope notifications from envelope list pag
 1. Open envelope list (page called Mailbox)
 2. Follow to specific folder with envelope(s) you want to resend notifications
 3. Select envelope(s) you want to resend notifications for
-4. Click on resend notification button in the envelopes table header
+4. Click the "Resend notification" button in the envelopes table header
 
 .. image:: pic_resendEnvelopeNotifications/selectEnvsResendBtn.png
    :width: 700
@@ -59,4 +59,3 @@ This approach allows you to resend envelope notifications from envelope list pag
 .. image:: pic_resendEnvelopeNotifications/resultsModal.png
    :width: 400
    :align: center
-

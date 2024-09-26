@@ -10,13 +10,13 @@ It is a document which you can fill in with static (simple text, tables, images 
 How to add a structured document?
 =================================
 
-1. Click on the "Add new document" button on the left side (menu with it can be collapsed depending on your monitor resolution, just expand it by clicking "Documents" icon)
+1. Click the "Add new document" button on the left side (menu with it can be collapsed depending on your monitor resolution, just expand it by clicking "Documents" icon)
 
 .. image:: pic_structuredDocument/newDocument.png
    :width: 600
    :align: center
 
-2. Click on "Structured" button
+2. Click the "Structured" button
 
 .. image:: pic_structuredDocument/structured.png
    :width: 600

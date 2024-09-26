@@ -4,7 +4,6 @@
 How to register on platform?
 ============================
 
-
 To be able to use platform, you must register and create an account:
 
 - Registration personal account
@@ -57,13 +56,13 @@ Personal account registration
    :width: 400
    :align: center
 
-8. After filled all required fields button "Create Account" stay active and clickable. Click on the button for continue registration
+8. After filled all required fields button "Create Account" stay active and clickable. Click the button for continue registration
 
 .. image:: pic_registration/personal_registration_6.png
    :width: 400
    :align: center
 
-9. After you click on "Create account", this button will be enabled after you filled in all required fields and will be navigate you to  main application page
+9. After you click the "Create account", this button will be enabled after you filled in all required fields and will be navigate you to  main application page
 
 .. image:: pic_registration/registration_submit_btn.png
    :width: 400
@@ -126,7 +125,7 @@ Company account registration
    :width: 400
    :align: center
 
-10. To finish registration you should click on "Create Account" button, this button will be enabled after you filled in all required fields and will be navigate you to  main application page
+10. To finish registration you should click the "Create Account" button, this button will be enabled after you filled in all required fields and will be navigate you to  main application page
 
 .. image:: pic_registration/registration_submit_btn.png
    :width: 400

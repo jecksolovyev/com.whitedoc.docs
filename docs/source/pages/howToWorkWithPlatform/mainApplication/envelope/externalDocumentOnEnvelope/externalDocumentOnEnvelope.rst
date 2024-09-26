@@ -5,7 +5,7 @@ External Document
 How to upload an external document
 ==================================
 
-1. Click on the upload zone
+1. Click the upload zone
 
 .. image:: pic_externalDocument/ExternalDocument.png
    :width: 600
@@ -23,7 +23,7 @@ How to upload an external document
 How to upload an external document with embedded fields
 =======================================================
 
-1. Click on the upload zone
+1. Click the upload zone
 
 .. image:: pic_externalDocument/ExternalDocument.png
    :width: 600
@@ -42,7 +42,7 @@ How to upload an external document with embedded fields
 
 .. note:: If the external document contains E-ink signature the option "Keep signatures and fields" will be unavailable. In this case, it is impossible to retain built-in signatures.
 
-4. Depending on the selected option, the PDF document will be rendered, and you can continue working with the envelope in the usual manner.
+4. Depending on the selected option, the PDF document will be rendered, and you can continue working with the envelope in the usual manner
 
 External document signing process
 =================================
@@ -60,16 +60,16 @@ Process of signing external documents with QES has one difference from signing i
 How to add an e-ink signature to external document
 ==================================================
 
-1. To add e-ink signature to the external document click on the signature field
+1. To add e-ink signature to the external document click the signature field
 
 .. image:: pic_externalDocument/ExternalDocumentEink.png
    :width: 600
    :align: center
 
-2. After this place signature where you want it to be and click. The signature can be changed by clicking on it.
+2. After this place signature where you want it to be and click. The signature can be changed by clicking it
 
 .. image:: pic_externalDocument/ExternalDocumentEinkDone.png
    :width: 600
    :align: center
 
-3. When this is done you can finish filling all mandatory fields and send the envelope - all signatures will be visible on it
+3. When this is done you can finish filling all mandatory fields and send the envelope - all signatures will be shown on it

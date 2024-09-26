@@ -56,7 +56,7 @@ How to create your initials?
 
 3. Draw your initials in the opened window
 4. Alternatively, text can be used for initials
-5. Click on "Save changes" button on the account setting page
+5. Click the "Save changes" button on the account setting page
 
 How to create a personal account?
 =================================

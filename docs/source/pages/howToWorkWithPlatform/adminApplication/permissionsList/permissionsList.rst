@@ -13,11 +13,11 @@ Account permissions
 ===================
 
 .. list-table::
-   :widths: 20 20 60
+   :widths: 20 10 70
    :header-rows: 1
 
-   * - Permission name
-     - Permission code
+   * - Name
+     - Code
      - Description
    * - userAssignToAccount
      - 10000
@@ -86,11 +86,11 @@ Mailbox permissions
 ===================
 
 .. list-table::
-   :widths: 20 20 60
+   :widths: 20 10 70
    :header-rows: 1
 
-   * - Permission name
-     - Permission code
+   * - Name
+     - Code
      - Description
    * - templateManage
      - 1000

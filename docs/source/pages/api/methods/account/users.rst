@@ -6,7 +6,6 @@ Account corporate users
 
 Account can have corporate users, which belongs to account's domain names. Before you can create multiple users you should download a file example, make changes in it and upload after that.
 
-
 Download example file
 =====================
 

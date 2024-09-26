@@ -24,7 +24,7 @@ You will have everything ready after this. To build a local copy of documentatio
 
 When we want to create new documentation page we have to follow the heirarchy functionality in documentation. 
 
-So, if we want to create documentation related to customer authorization on platform we have to create file with 
+So, if we want to create documentation related to user authorization on platform we have to create file with 
 extension .rst in docs/source/pages/howToWorkWithPlatform/authorization/login folder.
 
 After file creation we have to link it with head file of the folder (according to example it would be 

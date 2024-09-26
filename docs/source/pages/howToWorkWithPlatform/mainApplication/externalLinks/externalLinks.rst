@@ -13,10 +13,10 @@ If at least one external link added as official, account or specifically for mai
    :width: 600
    :align: center
 
-You can click on it and menu with links for external resources will be opened.
+You can click it and menu with links for external resources will be opened.
 
 .. image:: pic_externalLinks/externalLinksMenu.png
    :width: 600
    :align: center
 
-If you click on any link from menu external resource will be opened in new browser tab.
+If you click any link from menu external resource will be opened in new browser tab.

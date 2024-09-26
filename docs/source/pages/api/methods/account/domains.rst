@@ -48,7 +48,6 @@ Create/add new domain, if it is enabled for adding: domain should be resolvable 
         }
     ]
 
-
 **Response example:**
 
 .. code-block:: json
@@ -100,7 +99,6 @@ Request domain verification
         }
     ]
 
-
 **Response example:**
 
 .. code-block:: json
@@ -116,7 +114,6 @@ Request domain verification
         },
         "verifyMethod": "DNS_TXT_RECORD"
     }
-
 
 Confirm account domain verification
 ===================================
@@ -419,4 +416,3 @@ Domain verify methods
 
 - **DNS_CNAME_RECORD**. With this method you should add CNAME record with name `verifyInfo.domain` to your domain. Example: _whitedoc-verify-abc123.google.com
 - **DNS_TXT_RECORD**. With this method you should add TXT record with name `verifyInfo.domain` and content `verifyInfo.value` to your domain. Example: TXT _whitedoc-verify.google.com = abc123
-

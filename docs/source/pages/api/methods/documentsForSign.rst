@@ -2,7 +2,7 @@
 Get document(s) for sign
 ========================
 
-You can sign document if document has signature field inside assigned to the particular customer. Using this endpoint you can get the list of the documents to sign. To get documents list for sign you should send the following api request:
+You can sign document if document has signature field inside assigned to the particular user. Using this endpoint you can get the list of the documents to sign. To get documents list for sign you should send the following api request:
 
 Request details
 ===============
@@ -25,9 +25,9 @@ Request details
    * - docIds
      - (array[string])
 
-Depending on body of the request customer can get two type of the response:
+Depending on the body of a request you can get two type of the response:
 
-1. Send request with empty array in body - get all documents from the envleope with signature related to particular customer
+1. Send request with empty array in body - get all documents from the envleope with signature related to particular user
 2. Send request with particular documentID in body - get particular document for sign
 
 In response we get an array with information about documents for sign.

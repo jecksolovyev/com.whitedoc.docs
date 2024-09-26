@@ -12,13 +12,13 @@ It is an external file upload form in the envelope created from template. It can
 How to add an external document to template
 ===========================================
 
-1. Click on the "Add new document" button on the left side (menu with it can be collapsed depending on your monitor resolution, just expand it by clicking "Documents" icon)
+1. Click the "Add new document" button on the left side (menu with it can be collapsed depending on your monitor resolution, just expand it by clicking "Documents" icon)
 
 .. image:: pic_externalDocument/newDocument.png
    :width: 600
    :align: center
 
-2. Click on "External" button. After this document will appear under default first structured document (assigned to Sender by default)
+2. Click the "External" button. After this document will appear under default first structured document (assigned to Sender by default)
 
 .. image:: pic_externalDocument/external.png
    :width: 600

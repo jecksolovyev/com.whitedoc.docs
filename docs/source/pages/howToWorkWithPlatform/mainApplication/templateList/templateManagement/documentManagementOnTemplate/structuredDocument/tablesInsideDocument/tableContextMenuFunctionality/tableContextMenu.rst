@@ -4,12 +4,11 @@
 Table context menu options
 ==========================
 
-Table context menu contains actions to manage column/rows quantity, borders visibility, cell content alignment and you can delete table. To open context menu click on respective cell or cells right mouse button.
+Table context menu contains actions to manage column/rows quantity, borders visibility, cell content alignment and you can delete table. To open a context menu right-click the respective cell or cells.
 
 .. image:: pic_tableContextMenu/tableContextMenu.png
    :width: 400
    :align: center
-
 
 Manage columns/rows
 ===================

@@ -11,18 +11,18 @@ User can specify access level of the template when creating or editing it. There
 - access for all mailboxes in your account (My account)
 - access for everyone on the platform (Everyone)
 
-.. note:: Public templates can be made accessible to users not registered on the platform via direct link. To generate this link first you need to make sure that such template includes only public dictionaries (or no dictionaries at all). Also such templates should have subject field filled and all participants of the flow should have specified mailbox adresses in the flow configuration tab. When this is done, click on the template menu button in upper right corner of template on template list and click "Get link". Menu with sharing link will open where you can copy this link, generate new one to revoke access by previous link or remove access by link completely. Account on the platform will be created automatically for anyone who will create an envelope using such link.
+.. note:: Public templates can be made accessible to users not registered on the platform via direct link. To generate this link first you need to make sure that such template includes only public dictionaries (or no dictionaries at all). Also such templates should have subject field filled and all participants of the flow should have specified mailbox adresses in the flow configuration tab. When this is done, click the the template menu button in upper right corner of template on template list and click "Get link". Menu with sharing link will open where you can copy this link, generate new one to revoke access by previous link or remove access by link completely. Account on the platform will be created automatically for anyone who will create an envelope using such link.
 
 How to share template with mailbox or mailboxes group
 =====================================================
 
-1. In order to set access level of template you need to go to "Template" tab and click on "Template access"
+1. In order to set access level of template you need to go to "Template" tab and click the "Template access"
 
 .. image:: picTemplateAccess/templateAccess1.png
    :width: 400
    :align: center
 
-2. You can grant access to specific mailboxes or mailboxes groups. To choose this option you need to click on edit button
+2. You can grant access to specific mailboxes or mailboxes groups. To choose this option you need to click the edit button
 
 .. image:: picTemplateAccess/templateAccess2.png
    :width: 400

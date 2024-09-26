@@ -164,7 +164,6 @@ File field may have following attributes:
 - optional - boolean, defines if field to be filled in optionally or not on envelope, if not set default value false, optional attribute
 - attachmentType - enum, one of the values [all, file, document, image, archive], defines file types could be uploaded on envelope, mandatory attribute
 
-
 Supported document types:
 
 1) all: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .png, .jpg, .jpeg, .tiff, .tif, .zip, .7z, .rar
@@ -273,7 +272,6 @@ Below you can find example of dynamic table with field inside:
             </tbody>
         </table>
     </div>
-
 
 +--------------------------------------------------------------------------------+
 |**Duplicate field**                                                             |

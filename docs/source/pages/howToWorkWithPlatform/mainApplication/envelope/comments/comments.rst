@@ -5,7 +5,7 @@ Comments
 How to toggle comments section
 ==============================
 
-1. Click on comments icon in header
+1. Click the comments icon in the header
 
 .. image:: pic_comments/ToggleComment/ToggleCommentSection1.png
    :width: 600
@@ -32,13 +32,13 @@ How to add comment
 
 .. note:: Comments can be applied only to whole table or table cell in tables.
 
-2. Right-click on the selection and click "Comment"
+2. Right-click the selection and click "Comment"
 
 .. image:: pic_comments/AddComment/AddCommentStep2.png
    :width: 600
    :align: center
 
-3. Alternatively, if envelope has no prior open comment threads you can expand comment section and click on Create link
+3. Alternatively, if envelope has no prior open comment threads you can expand comment section and click the "Create" link
 
 .. image:: pic_comments/AddComment/AddCommentStep3.png
    :width: 600
@@ -52,7 +52,7 @@ How to add comment
    :width: 600
    :align: center
    
-5. Click on visibility link to select who will be able to see this comment
+5. Click the visibility link to select who will be able to see this comment
 
 .. image:: pic_comments/AddComment/AddCommentStep5.png
    :width: 600
@@ -104,7 +104,7 @@ How to edit comment
 
 .. note:: You can edit only your comments
 
-1. Click on "Edit" (only for initial comment in thread) or edit icon (for comments inside thread)
+1. Click the "Edit" button (only for initial comment in thread) or edit icon (for comments inside thread)
 
 .. image:: pic_comments/EditComment/EditComment1.png
    :width: 600
@@ -125,7 +125,7 @@ How to edit comment
 How to delete comment
 =====================
 
-1. Click on delete icon
+1. Click the delete icon
 
 .. image:: pic_comments/DeleteComment/DeleteComment1.png
    :width: 600
@@ -150,7 +150,7 @@ How to delete comment
 How to resolve comment threads
 ==============================
 
-1. Click on resolve icon
+1. Click the resolve icon
 
 .. image:: pic_comments/resolveComment/resolveComment1.png
    :width: 600
@@ -167,7 +167,7 @@ How to resolve comment threads
 How to reopen comment threads
 =============================
 
-1. Click on reopen icon
+1. Click the reopen icon
 
 .. image:: pic_comments/ReopenComment/ReopenComment1.png
    :width: 600

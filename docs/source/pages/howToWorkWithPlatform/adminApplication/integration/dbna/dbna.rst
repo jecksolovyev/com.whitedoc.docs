@@ -144,11 +144,10 @@ You can re-run conversion process of converted file
     Request headers: send Authorization param with value Bearer token, where token is toke of authorized user
     Request path variables: MailboxUUID is UUID of recipient (mailbox who has configured integration) and envelope UUID is UUID of envelope need to be resend
 
-
 **DBNA to DocStudio message errors**
 
 1. *Recipient doesn't exist in DocStudio. Send error to all users who have access to DBNA roaming mailbox by email and in system (error related to non existent recipient)*
 2. Exchange service can not find conversion rule in sender mailbox integration or in account integration level. Send error to all users who have access to DBNA roaming mailbox by email and in system (error related to non existent conversion rule)
 3. Exchange service can not convert message with conversion rule matched with message. Send error to all users who have access to DBNA roaming mailbox by email and in system (error related to issue with conversion of the message)
 
-You can re-run conversion process if one of Exchange service errors appear. To do that you have Move payload file from error to coutbox in respective mailbox FTP integration
+You can re-run conversion process if one of Exchange service errors appear. To do that you have Move payload file from error to coutbox in respective mailbox FTP integration.

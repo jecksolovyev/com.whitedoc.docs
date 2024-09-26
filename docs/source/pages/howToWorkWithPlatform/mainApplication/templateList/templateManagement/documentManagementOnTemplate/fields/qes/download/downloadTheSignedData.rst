@@ -9,19 +9,19 @@ You can download the signature(s) of the document(s) when all participants with 
 
 1. Check that envelope completed
 2. Open envelope
-3. Click on respective "download" button in the header, to download the full envelope with all signed documents
+3. Click the respective "Download" button in the header, to download the full envelope with all signed documents
 
 .. image:: pic_download/downloadEnvelope.png
    :width: 600
    :align: center
 
-4. Or click on respective "download" button ahead document name to download particular document with all signatures
+4. Alternatively, click the respective "Download" button ahead document name to download particular document with all signatures
 
 .. image:: pic_download/downloadDocument.png
    :width: 600
    :align: center
 
-As soon as you click on the document download button, archive with the documents will be uploaded. You can also download all envelopes en masse:
+As soon as you clicked the document download button, archive with the documents will be uploaded. You can also download all envelopes en masse:
 
 1. Press button "Mailbox" on the left sidebar
 2. Choose envelopes which you want to download. You can download only completed envelopes
@@ -97,7 +97,7 @@ Printable version of the document you can get in two ways. First is described be
    :width: 600
    :align: center
 
-2. You can click on it and document opens for print in PDF format
+2. You can click it and document opens for print in PDF format
 
 *Document structure is:*
 

@@ -38,7 +38,7 @@ Envelope which has been sent directly to the email could be finished in three ca
 Participants which could be invited to an envelope
 ==================================================
 
-We're able to invite to an envelope such as customers of the platform and non-registered users. The one difference is flow of the envelope invitation acceptence.
+We're able to invite to envelope users of the platform and non-registered users. The one difference is flow of the envelope invitation acceptence.
 
 * If you leave the email address at the input at the processing flow, participant will be invited by email
 * If you select the mailbox from the drop-down list at the processing flow, participant will get envelope as usual
@@ -55,11 +55,10 @@ The envelope sent via email can be automatically assigned to a mailbox with the 
 
 .. note:: The user has the option to select an default mailbox in the invitation email under the mailbox selection menu.
 
-
 How to accept invitation and send envelope without authorization (for guests)
 =============================================================================
 
-1. To accept the invitation to the envelope, the user must follow the link sent to their email address. You have received a new envelope message will be displayed. Click on "Agree button"
+1. To accept the invitation to the envelope, the user must follow the link sent to their email address. You have received a new envelope message will be displayed. Click the "Agree button"
 
 .. image:: pic_inviteToEnvelopeByEmail/inviteYouRecieveEnvelope.png
    :width: 400
@@ -72,7 +71,7 @@ How to accept invitation and send envelope without authorization (for guests)
    :width: 400
    :align: center
 
-4. Click on "Send" button
+4. Click the "Send" button
 5. If there are roles in the envelope flow that inherit from the current role, then the envelope with the functionality of the next role (Approver/Signer) will be displayed
 
 .. image:: pic_inviteToEnvelopeByEmail/inviteSameAsRoles.png
@@ -84,7 +83,6 @@ How to accept invitation and send envelope without authorization (for guests)
 .. image:: pic_inviteToEnvelopeByEmail/inviteSuccessPage.png
    :width: 400
    :align: center
-
 
 How to accept invitation and send envelope without authorization for registered users
 =====================================================================================
@@ -109,7 +107,7 @@ How to accept invitation and send envelope without authorization for registered 
    :width: 400
    :align: center
 
-4. Click on "Send" button
+4. Click the "Send" button
 5. If there are roles in the envelope flow that inherit from the current role, then the envelope with the functionality of the next role (Approver/Signer) will be displayed
 
 .. image:: pic_inviteToEnvelopeByEmail/inviteSameAsRolesEnvelope1.png

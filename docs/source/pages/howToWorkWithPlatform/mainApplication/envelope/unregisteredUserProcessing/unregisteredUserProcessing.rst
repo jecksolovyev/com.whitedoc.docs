@@ -9,7 +9,7 @@ How to process a received envelope without registration?
 
 1. Participants have to be defined by the envelope initiator. To do that, the initiator of the envelope has to fill this role with the email address of the recipients
 2. When the envelope processing flow reaches the recipient, an email with instructions is sent
-3. Follow the instructions in the email and click on the "Review document" button
+3. Follow the instructions in the email and click the "Review document" button
 
 .. image:: pic_unregisteredUserProcessing/invitationEmail.png
    :width: 600
@@ -65,7 +65,7 @@ How to generate an envelope initiation link?
 
 .. note:: In the same window, you can find the Embed code. It can integrate the envelope creation process with third-party services via iframe. Please note that you can add a redirect URL to the embed code. This page will open in a new browser tab after sending the envelope.
 
-11. You can revoke the current link and code by clicking the "Revoke link" button. This action disables the previously generated link. Also, you can create a new link and code by clicking on "Generate new link" (note that this revokes the previously generated link). Link and code are unique every time, and revoked ones can not be restored
+11. You can revoke the current link and code by clicking the "Revoke link" button. This action disables the previously generated link. Also, you can create a new link and code by clicking the "Generate new link" button (note that this revokes the previously generated link). Link and code are unique every time, and revoked ones can not be restored
 
 How to send an envelope without registration?
 =============================================

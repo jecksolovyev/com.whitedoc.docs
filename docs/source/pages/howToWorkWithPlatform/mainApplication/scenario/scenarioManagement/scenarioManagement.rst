@@ -9,7 +9,7 @@ Scenario includes the following information: name, description, UUID, scenario a
 How to create a scenario
 ========================
 
-To create scenario you have to click on button "New scenario" on the scenario list. And after that fill in required details.
+To create scenario you have to click the "New scenario" button in the scenario list. And after that fill in required details.
 
 .. note:: First step of the scenario does not contain source. It contains only destination.
 
@@ -47,18 +47,18 @@ How to configure a scenario step
 2. Fill the destination with template UUID and template version UUID of template you need
 3. You have to enter xslt conversion rule which will create envelope after run
 4. You can set checkbox "Send an envelope immediately after starting a step" if you need this action
-5. Click on "Save" icon in the right top corner of the step
+5. Click the "Save" icon in the right top corner of the step
 
 .. note:: The latest template version UUID automatically applies in the field after template UUID entered
 
-To create second, third and the rest of the following steps you have to click on "+ Add new step" button near "Scenario steps" title. After that new form will appear, but you will need to fill new field "source" and may check "condition". Source it's two field with template UUID and template version UUID of the previous step of the scenario.
+To create second, third and the rest of the following steps you have to click the "+ Add new step" button near "Scenario steps" title. After that new form will appear, but you will need to fill new field "source" and may check "condition". Source it's two field with template UUID and template version UUID of the previous step of the scenario.
 
 How to edit scenario?
 =====================
 
 1. Open scenario list
-2. Click on three dots in the right corner of the scenario you need to edit
-3. Click on "Edit" option from the list
+2. Click three dots in the right corner of the scenario you need to edit
+3. Click the "Edit" option from the list
 4. Add your changes if needed and save scenario
 
 **Description of the scenario edit form below**
@@ -82,14 +82,14 @@ How to edit scenario?
 How to edit a scenario step
 ===========================
 
-If you need edit scenario step you have to click on "edit" button (pencil icon) on the scenario step you have to edit, add changes and click on "Save" button in the top right corner of the edited scenario step. After that click on "Save" scenario button.
+If you need edit scenario step you have to click the "Edit" button (pencil icon) on the scenario step you have to edit, add changes and click the "Save" button in the top right corner of the edited scenario step. After that click the "Save" scenario button.
 
 How to clone a scenario
 =======================
 
 1. Open scenario list
-2. Click on three dots in the right corner of the scenario you need to edit
-3. Click on "Clone" option from the list
+2. Click three dots in the right corner of the scenario you need to edit
+3. Click the "Clone" option from the list
 4. If scenario cloned successfully you will get respective message and will see cloned scenario in the list
 
 .. note:: You can also clone a scenario using the "Clone" button inside the edit form for a specific scenario.
@@ -98,8 +98,8 @@ How to delete a scenario
 ========================
 
 1. Open scenario list
-2. Click on three dots in the right corner of the scenario you need to edit
-3. Click on "Delete" option from the list
+2. Click three dots in the right corner of the scenario you need to edit
+3. Click the "Delete" option from the list
 4. If scenario deletes successfully you will get respective message and scenario disappear from the list
 
 You can also delete a scenario using the "Delete" button inside the edit form for a specific scenario.
@@ -113,7 +113,6 @@ If you want to send envelope after step run, mark the respective checkbox.
 
 If you any required data is missed on the step (at the conversion rule) you will get an error while saving scenario.
 
-
 What is condition and how to use it
 ===================================
 
@@ -121,7 +120,6 @@ On the platform presented two types of the conditions:
 
 1. A condition based on some fields to create different branches of the script, for example, if in the certificate of completion the amount of service is more than 1000, then give the opportunity to launch one branch of the script, if more then another
 2. Condition that creates several envelopes based on values in the source. But at the same time, if the value is "Yes", then create envelope(s) that respond to "Yes" value, and if the value is "No", then create envelope(s) that respond to "No" value
-
 
 Condition is optional and may or may not be in the request or could be null.
 

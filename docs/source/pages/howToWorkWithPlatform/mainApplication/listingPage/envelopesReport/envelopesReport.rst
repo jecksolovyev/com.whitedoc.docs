@@ -6,11 +6,11 @@ In this section you will know how to generate report by envelopes. If you want t
 
 1. Open mailbox page
 2. Open tab with envelopes filter you need or filter data manually
-3. Click on button with document icon (button called "Generate envelopes report")
+3. Click the button with document icon (button called "Generate envelopes report")
 4. After click you will see the message that report will be send after generation to you email address
 5. Follow to email address
 6. Open email you got
-7. Click on button "Download"
+7. Click "Download" button
 
 Report file will be downloaded after this.
 
