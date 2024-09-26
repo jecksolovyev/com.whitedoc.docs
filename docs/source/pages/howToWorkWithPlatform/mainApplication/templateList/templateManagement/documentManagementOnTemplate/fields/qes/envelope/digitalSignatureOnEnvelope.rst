@@ -9,7 +9,7 @@ On the envelope you can set electronic signature and stamp to the document if ne
 How to sign a document?
 =======================
 
-If you want to sign document you have to have at least one signature field in the document. How to add electronic signature to the document you can read the topic "Electronic signature on template". To sign the the document you have to do the following:
+If you want to sign document you have to have at least one signature field in the document. How to add electronic signature to the document you can read the topic "Electronic signature on template". To sign the document you have to do the following:
 
 1. Click the button of the electronic signature in the "Required signatures" block (or click the "pencil" icon to follow to the field and click it)
 
