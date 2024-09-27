@@ -62,19 +62,19 @@ You can download invoices by clicking the respective button in the specific invo
 
 If you have unpaid invoices, you are able to pay the invoices manually by clicking the respective button in the specific invoice and choose the one of the available payment provider
 
-.. image:: pic_billing/invoicesPageUnpaid.png
+.. image:: pic_billing/invoicesPageUnpaidInvoice.png
    :width: 400
    :align: center
 
 As soon as you click the "Pay invoice" button, a modal window will appear
 
-.. image:: pic_billing/invoicesPagePayInvoiceModal.png
+.. image:: pic_billing/invoicesPagePayInvoice.png
    :width: 400
    :align: center
 
 You can choose one of the appropriate payment provider to pay the invoice and proceed with payment provider, as soon as invoice paid you will observe paid invoice
 
-.. image:: pic_billing/invoicesPagePaid.png
+.. image:: pic_billing/invoicesPagePaidInvoice.png
    :width: 400
    :align: center
 
