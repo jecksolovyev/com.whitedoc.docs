@@ -2,7 +2,7 @@
 Conversion rule
 ===============
 
-Conversion rule allows to convert document from to whitedoc format from other formats and vise versa. To do so you should create a conversion rule and depending on the selection on this page you can create conversion rule for incoming and outgoing documents. Existing conversion rule can be updated, cloned or deleted here.
+Conversion rule allows to convert documents to whitedoc format from other formats and vise versa. To do so you should create a conversion rule and depending on the selection on this page you can create conversion rule for incoming and outgoing documents. Existing conversion rule can be updated, cloned or deleted here.
 
 Conversion rule creation process for outgoing document
 ======================================================

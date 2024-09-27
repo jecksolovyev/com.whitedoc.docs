@@ -44,7 +44,7 @@ Tariff may be applied by clicking the respective button "Select tariff". After c
 Invoices tab
 ============
 
-This page contains account invoices. Here you can see paid, unpaid and cancelled invoices, download them, annd mark as paid. Invoice can be issued manually or, more often, automatically. Automatic invoice issuing works according to the tariff configuration.
+This page contains account invoices. Here you can see paid, unpaid and cancelled invoices, download and pay them. Invoice can be issued manually or, more often, automatically. Automatic invoice issuing works according to the tariff configuration.
 
 **Invoice download options**
 
