@@ -18,7 +18,7 @@ Send envelope
    * - Body
      - "{""data"": ""string""}"
 
-For create and send envelope customer should know based on what template will be created envelope.
+To create and send an envelope you should know what template will be used for envelope creation.
 
 sendEnvelopeDto
 ===============

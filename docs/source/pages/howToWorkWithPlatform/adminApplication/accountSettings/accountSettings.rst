@@ -110,13 +110,13 @@ How to verify a domain?
    :align: center
 
 3. Copy data from the modal and enter to the respective field on the DNS configuration of your domain
-4. Click on "Verify" button on modal window and system automatically tries to confirm you ownership
+4. Click the "Verify" button on modal window and system automatically tries to confirm you ownership
 5. As soon as system get proofs of your ownership admin get email notification related to successful domain verification on the platform
 
 How to activate a domain?
 =========================
 
-1. Click on the "Activate" button near an inactive domain
+1. Click the "Activate" button near an inactive domain
 2. Domain is active
 
 How to delete a domain?

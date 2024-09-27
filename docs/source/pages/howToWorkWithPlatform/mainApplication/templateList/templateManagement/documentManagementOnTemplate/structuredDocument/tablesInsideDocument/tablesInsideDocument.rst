@@ -9,7 +9,7 @@ Static table is a table with constant quantity of columns and rows on envelope, 
 How to create static a static table
 ===================================
 
-1. Click on table option in menu
+1. Click the "Table" button in the menu
 
 .. image:: pic_tablesInsideDocument/tableOptionInMenu.png
    :width: 400

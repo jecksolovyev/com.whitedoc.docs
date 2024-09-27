@@ -20,7 +20,7 @@ You can create hyperlinks inside your structured documents. To do so follow next
    
 .. note:: You can also select static text in the document and click Link button to create a link from text. Make sure to select only static text, because any dynamic fields selected for link creation will be romoved from the document.
    
-3. To edit existing links yo can click on any link and click Edit (also you can copy and remove link by according buttons)
+3. To edit existing links yo can click any link and click Edit (also you can copy and remove link by according buttons)
 
 .. image:: pic_linksInsideDocument/linkEditModal.png
    :width: 400

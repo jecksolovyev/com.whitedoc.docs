@@ -103,13 +103,13 @@ Setting that will be reset: columns sorting, arrangement, widths, displaying cus
 Envelope list settings
 ======================
 
-1. You can select how many envelopes are shown on the page in "Items per page" menu.
+1. You can select how many envelopes are shown on the page in "Items per page" menu
 
 .. image:: picEnvelopeManagement/paginator.png
    :width: 400
    :align: center
 
-2. On the left side of the page you can navigate through your mailbox folders.
+2. On the left side of the page you can navigate through your mailbox folders
 
 .. image:: picEnvelopeManagement/folders.png
    :width: 400
@@ -117,9 +117,9 @@ Envelope list settings
 
 .. note:: Empty folders can be hidden from list if such setting is enabled by system administrator.
 
-3. Also on the left side of the page you can manage labels.
+3. Also on the left side of the page you can manage labels
 
-You can add new label by clicking on + icon
+You can add new label by clicking the "+" icon
 
 .. image:: picEnvelopeManagement/addlabel.png
    :width: 400
@@ -143,7 +143,7 @@ You can edit a label (name and color) or delete it through the additional contex
    :width: 400
    :align: center
 
-4. There is an option to filter displayed envelopes by specific parameters, such as status, date range, sender, or template.
+4. There is an option to filter displayed envelopes by specific parameters, such as status, date range, sender, or template
 
 .. image:: picEnvelopeManagement/mainfilters.png
    :width: 400
@@ -157,15 +157,14 @@ Additionally, you can filter shown envelopes by adding filters or envelope field
    
 .. note:: Configured filters can be saved by clicking Save filter button.
 
-5. Using the search bar, you can find a specific envelope by subject or mailbox UUID.
+5. Using the search bar, you can find a specific envelope by subject or mailbox UUID
 
 .. image:: picEnvelopeManagement/search.png
    :width: 400
    :align: center
 
-6. New envelope can be created from this page by clicking "New envelope" button near your profile icon in the upper-right corner.
+6. New envelope can be created from this page by clicking "New envelope" button near your profile icon in the upper right corner
 
 .. image:: picEnvelopeManagement/page.png
    :width: 400
    :align: center
-   

@@ -8,9 +8,9 @@ Admin panel
 
    accountSettings/accountSettings.rst
    users/users.rst
+   permissionsList/permissionsList.rst
    mailboxes/mailboxes.rst
    integration/integration.rst
    auditLog/auditLog.rst
-   callbacks/callbacks.rst
-   permissionsList/permissionsList.rst
    billing/billing.rst
+   callbacks/callbacks.rst

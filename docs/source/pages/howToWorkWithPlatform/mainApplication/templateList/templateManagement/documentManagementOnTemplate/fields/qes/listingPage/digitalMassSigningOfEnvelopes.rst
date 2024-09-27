@@ -17,18 +17,17 @@ To mass sign the envelopes you have to do the following:
    :width: 400
    :align: center
 
-As soon as you click on it, the modal window opens.
+After clicking it, a modal window will appear/
 
 4. The first two steps are similar with signing of the single document. How to do this you can read :ref:`here <electronicSignature>`
-5. In the third step you will see a list of envelopes that will be signed. You can click on any envelope to watch the content. Envelope opens in new window
+5. In the third step you will see a list of envelopes that will be signed. You can click any envelope to see its` content. Envelopes open in a new window
 
 .. image:: pic_listingPage/theListOfTheDocuments.png
    :width: 400
    :align: center
 
-6. Click on 'Next' button and wait for the envelopes to sign. While you are waiting you will see progress bar of the envelopes signing process. You can close the window if needed, process will not stop
-
-7. In the end you will see the result of the mass signing. If any error occures you will see special icon with error. To check the cause of error just hower the mouse cursor on icon and you will see the explanation
+6. Click the "Next" button and wait for the envelopes to sign. While you are waiting you will see progress bar of the envelopes signing process. You can close the window if needed, process will not stop
+7. In the end you will see the results of the mass signing. If any error occured you will see special icon with error. To check the cause of error hower the mouse cursor over an icon
 
 .. image:: pic_listingPage/resultMassSigning.png
    :width: 400

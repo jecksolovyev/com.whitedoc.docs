@@ -7,7 +7,7 @@ Envelope approval process
 How to send an envelope for approval
 ====================================
 
-1. User can send envelope for approval in the "Waiting" status or a draft envelope. To do this open envelope in "Waiting" status, in the upper right corner of the envelope header click on Approval button
+1. User can send envelope for approval in the "Waiting" status or a draft envelope. To do this open envelope in "Waiting" status, in the upper right corner of the envelope header click the "Approval" button
 
 .. image:: pic_approvalProcess/Screenshot_2.png
    :width: 600
@@ -19,8 +19,8 @@ How to send an envelope for approval
    :width: 600
    :align: center
 
-3. In order to create a new route, click on the Create button
-4. In the name field, write the name of the route. In the input "Аpprover" and "Mailbox" (you can search mailbox by name or UUID) enter details of the approver and click on Add button. You can create unlimited quantity of approvers. You can delete approver by clicking on Cancel button
+3. In order to create a new route, click the "Create" button
+4. In the name field, write the name of the route. In the input "Аpprover" and "Mailbox" (you can search mailbox by name or UUID) enter details of the approver and click the "Add" button. You can create unlimited quantity of approvers. You can delete approver by clicking the "Cancel" button
 
 .. warning:: You can't set approver mailbox to mailbox that's takes part in envelope processing or duplicate mailbox from approval flow.
 
@@ -34,13 +34,13 @@ How to send an envelope for approval
    :width: 600
    :align: center
 
-6. Grant access to specific mailboxes click on edit access Selected mailboxes, and write name of mailbox
+6. Grant access to specific mailboxes click the edit access Selected mailboxes, and write name of mailbox
 
 .. image:: pic_approvalProcess/Screenshot_05.png
    :width: 600
    :align: center
 
-7. As soon as you finish approval flow creation you can click on Save button. After them, user has saved the route, he goes to the list of routes, selects desired route and click Confirm button
+7. As soon as you finish approval flow creation you can click the "Save" button. After them, user has saved the route, he goes to the list of routes, selects desired route and click Confirm button
 8. Envelopes which have been sent for approval have status "On approval"
 
 .. image:: pic_approvalProcess/Screenshot_10.png

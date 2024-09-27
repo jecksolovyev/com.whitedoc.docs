@@ -7,7 +7,7 @@ What is envelope processing flow
 Processing flow is an order in which envelope will be received by all recepients. You can configure in what sequence recipients will get an envelope with it. There are three types of the sequences: parallel, consistent and serial-parallel
 
 1. Parallel flow is an AUTO mode of the flow when system make configuration of the flow by scripted rules and participants of flow receive envelope parallel and according to the role type
-2. Consistent flow is a MANUAL mode of the flow. To enable it click on "Set ordering process" toggle and configure roles according to your requirements to the flow
+2. Consistent flow is a MANUAL mode of the flow. To enable it click the "Set ordering process" toggle and configure roles according to your requirements to the flow
 3. Serial-parallel flow is also a MANUAL mode but with a couple of roles with similar order
 
 Role configuration interface

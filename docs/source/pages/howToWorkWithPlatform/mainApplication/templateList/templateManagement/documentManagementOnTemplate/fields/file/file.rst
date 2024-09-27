@@ -41,4 +41,4 @@ When all attributes are set, you can click Save button and field will be added. 
 How to fill a file field in the envelope
 ========================================
 
-To upload a file to the file field you should click on it, and select a file in opened file file explorer window. You can upload only one file in one field. Maximum file size and size of all uploaded files in one envelope is set on instance but typical default value is 5MB and 25MB respectively.
+To upload a file to the file field you should click it and select a file in opened file explorer window. You can upload only one file in one field. Maximum file size and size of all uploaded files in one envelope is set on instance but typical default value is 5MB and 25MB respectively.

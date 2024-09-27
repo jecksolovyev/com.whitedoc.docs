@@ -2,8 +2,6 @@
 Integration
 ===========
 
-
-
 **Content list**
 
 .. toctree::

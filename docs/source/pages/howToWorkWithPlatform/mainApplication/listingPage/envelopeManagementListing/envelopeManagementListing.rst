@@ -40,9 +40,9 @@ Validation which can occur:
 How to send several envelopes for approve
 =========================================
 
-You can send envelope or envelopes for approve from the envelope list page. To do this you should select respective envelope or envelopes in status Draft or Waiting for you, click on the "Approve" icon in the header of the table and select flow or create new one as described :ref:`here <approval>`. After successful approval request customer will see modal window with results of the approval request.
+You can send envelope or envelopes for approve from the envelope list page. To do this you should select respective envelope or envelopes in status Draft or Waiting for you, click the "Approve" icon in the header of the table and select flow or create new one as described :ref:`here <approval>`. After successful approval request you will see modal window with results of the approval request.
 
 How to cancel several envelopes
 ===============================
 
-You can cancel envelope or envelopes from the envelope list page. To do this customer has to select respective envelope or envelopes in statuses Pending (if customer was initiator of the envelope) or Waiting for you, click on the "Cancel envelopes" icon (looks like the circle with x) in the header of the table and in the modal window enter the comment if needed and confirm action. After successful cancel action all selected envelopes change status to CANCELLED.If customer selects envelopes in different status from allowed, error message will be displayed for customer after confirmation of cancel action.
+You can cancel envelope or envelopes from the envelope list page. To do this you should select respective envelope or envelopes in statuses Pending (if user was initiator of the envelope) or Waiting for you, click the "Cancel envelopes" icon (looks like the circle with x) in the header of the table and in the modal window enter the comment if needed and confirm action. After successful cancel action all selected envelopes change status to CANCELLED.If envelopes in statuses other then allowed are selected, error message will be displayed after confirmation of the action.

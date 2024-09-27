@@ -8,19 +8,19 @@ How to create template?
 =======================
 
 1. Open template list
-2. Click on "New template" button
+2. Click the "New template" button
 3. Fill in template subject and description in "Template" tab of right side menu
 4. Configure processing flow of the template. More info on this topic can be found :ref:`here <processing-flow>`
 5. Fill document with desired content and add new documents if needed
-6. Click on the "Save" button to save template
+6. Click the "Save" button to save template
 
 How to edit template?
 =====================
 
 1. Open template list
-2. Click on template options icon near template you want to edit
+2. Click the template options icon near template you want to edit
 3. Select "Edit" option from the list to open template editor
-4. Now you can make you changes. To save you changes click on button "Save" on the template editor page
+4. Now you can make you changes. To save you changes click the "Save" button in the template editor page
 
 .. _templatePropertyTemplate:
 

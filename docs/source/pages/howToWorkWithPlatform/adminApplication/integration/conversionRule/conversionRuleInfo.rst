@@ -527,7 +527,6 @@ Conversion rule example for incoming documents
         FTX+DEL+1+002+<xsl:value-of select="DESCRIPTION"/>'</xsl:if>--><xsl:if test="field[@name='CONDITIONSTATUS']">
         FTX+QQD+1+002+<xsl:value-of select="field[@name='CONDITIONSTATUS']"/>'</xsl:if></xsl:template>
 
-
         <xsl:template name="KONTRCIFRA">
 
             <xsl:value-of select="10 + count(field[@name='CAMPAIGNNUMBER']) + count(field[@name='TOTALPACKAGES']) + count(field[@name='TOTALPALLETS']) +  count(field[@name='DELIVERYNOTENUMBER']) +   count(field[@name='DELIVERYPLACE']) +   count(fieldgroup[@name='PACKINGSEQUENCE']/fieldset/field[@name='PRODUCT']) +   count(fieldgroup[@name='PACKINGSEQUENCE']/fieldset/field[@name='PRODUCTIDBUYER']) +   count(fieldgroup[@name='PACKINGSEQUENCE']/fieldset/field[@name='DELIVEREDQUANTITY']) +   count(fieldgroup[@name='PACKINGSEQUENCE']/fieldset/field[@name='ORDEREDQUANTITY'])  "/>
@@ -571,7 +570,6 @@ Conversion rule example for incoming documents
             </xsl:choose>
         </xsl:template>
 
-
         <xsl:template name="NUMB1">
             <xsl:variable name="literals">+?"'&amp;&lt;&gt;</xsl:variable>
             <xsl:value-of select="substring(translate(field[@name='NUMBER'], 'ІіЙйЦцУуКкЕеНнГгШшЩщЗзХхЪъЭэЖжДдЛлОоРрПпАаВвЫыФфЯяЧчСсМмИиТтЬьБбЮюЁёЇїЄє AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz-№#!@$%^*№()-_=+:;', ''), $literals, '')"/>
@@ -594,8 +592,7 @@ Conversion rule example for incoming documents
         </xsl:template>
     </xsl:stylesheet>
 
-
 Scenario run through integration
 ================================
 
-Customer is able to run scenario through integration, to get more details follow the :ref:`link <run-scenario-from-integration>`
+You can run scenario through integration, to get more details follow the :ref:`link <run-scenario-from-integration>`.

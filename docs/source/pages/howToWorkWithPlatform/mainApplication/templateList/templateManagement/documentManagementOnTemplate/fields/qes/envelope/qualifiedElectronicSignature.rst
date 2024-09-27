@@ -3,7 +3,7 @@
 How to read a qualified electronic signature?
 =============================================
 
-To use qualified electronic signature you should install special software manually to your PC.
+To use qualified electronic signature you should install special software manually on your PC.
 
 **Installation**
 
@@ -15,72 +15,72 @@ To use qualified electronic signature you should install special software manual
 
 **Reading key**
 
-1. Wait until process of searching devices is finished
+1. Wait until process of a device search is finished
 
 .. image:: pic_qualifiedSignature/searching-device.png
    :width: 400
    :align: center
 
-2. Select your hardware key and enter the password of the key and click "Read key" button (if you enter the valid password and key is valid you will see sign details and the next form of the modal window, if not you will see the error message)
+2. Select your hardware key, enter the key password and click the "Read key" button (if you entered the valid password and key is valid you will see the signature details and the next form of the modal window, if not you will see the error message)
 
 .. image:: pic_qualifiedSignature/open-device.png
    :width: 400
    :align: center
 
-3. As soon as you enter valid data you will see the information related to key with which you want to sign the document
+3. As soon as you entered the valid data you will see the information related to key with which you want to sign the document
 
 .. image:: pic_qualifiedSignature/key-info.png
    :width: 400
    :align: center
 
-How read an electronic signature using a bluetooth token?
-=========================================================
+How to read an electronic signature using a bluetooth token?
+============================================================
 
-To use qualified electronic signature which located on bluetooth token produced by IIT you should install special software manually to your Mobile device.
+To use qualified electronic signature located on a bluetooth token produced by IIT you should install special software manually on your mobile device.
 
 **Installation**
 
 .. warning:: Update your OS and browser to the latest version before proceeding.
 
-1. Download and install sign client respectively to your OS ( Sign client for Apple iOS - https://apps.apple.com/ua/app/iit-sign-client/id1467005893 / Sign client for Google Android - https://play.google.com/store/apps/details?id=ua.com.iit.signclient ) to access your qualified keys
-2. Open the app "Sign client" and register new user using bluetooth token (how to do this described below)
-3. Click on "+" plus icon in app
-4. Select key type (if you use bluetooth token Almaz-1K bluetooth device select option "Key media")
-5. Click on "Read" option and click on "Key media" again
-6. Turn on bluetooth device and wait until it will be displayed oin app
-7. Click on it and enter password to key you selected
-8. Wait for registration completion and after that you will be able to connect to your key where you can get key identifier
+1. Download and install sign client for your OS (Sign client for iOS - https://apps.apple.com/ua/app/iit-sign-client/id1467005893 / Sign client for Android - https://play.google.com/store/apps/details?id=ua.com.iit.signclient) to access your qualified keys
+2. Open the "Sign client" app and register new user using a bluetooth token (as described above)
+3. Click the "+" icon in the app
+4. Select the key type (if you use a bluetooth token of a Almaz-1K productin, select option "Key media")
+5. Click the "Read" option and click the "Key media" again
+6. Turn on the bluetooth device and wait until it is displayed in the app
+7. Click it and enter the key password
+8. Wait for the registration  to complete and you will be able to connect to your key, where you can get the key identifier
 
 **Reading a key**
 
-1. Select option "Other electronic signature devices"
+1. Select "Other electronic signature devices" option
 
 .. image:: pic_qualifiedSignature/otherDeviceSelection.png
    :width: 400
    :align: center
 
-2. Enter you key identifier to respective input and click on "Read key"
+2. Enter you key identifier to the respective input and click the "Read key" button
 
 .. image:: pic_qualifiedSignature/keyIdentifierView.png
    :width: 400
    :align: center
 
-3. Modal window with confirmation will appear and you have to confirm you action in app "Sign client"
+3. Modal window with confirmation will appear and you will have to confirm you action in "Sign client" app
 
 .. image:: pic_qualifiedSignature/readingKey.png
    :width: 400
    :align: center
 
-4. After confirmation of the key reading you will see detailed information about signer, click on "Next" button to proceed with signing
+4. After the key reading confirmation you will see detailed information about the signer. Click the "Next" button to proceed with signing
 
 .. image:: pic_qualifiedSignature/readKey.png
    :width: 400
    :align: center
 
-5. Pay attention to the documents you want to sign. If everything fine click on "Next" button and modal window with instructions will appear again
+5. Pay attention to the documents you want to sign. If everything is fine click the "Next" button and modal window with instructions will appear again
 
 .. image:: pic_qualifiedSignature/signingDocument.png
    :width: 400
    :align: center
 
-6. Confirm signing requests (quantity of requests similar to quantity of the documents to sign) in application "Sign client"
+6. Confirm the signing requests (quantity of requests will depend on the documents quantity) in the "Sign client" app

@@ -36,7 +36,7 @@ How to fill a signature field in the envelope
 =============================================
 
 1. Open envelope where signature field is located
-2. Click on the signature field
+2. Click the signature field
 
 .. image:: pic_signature/signatureEnvelope.png
    :width: 600
@@ -72,4 +72,4 @@ How to fill a signature field in the envelope
    :width: 600
    :align: center
 
-8. Signature can be changed by clicking on the picture of your signature and repeating steps 3, 4, and 6
+8. Signature can be changed by clicking the picture of your signature and repeating steps 3, 4, and 6

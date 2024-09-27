@@ -9,14 +9,14 @@ Envelope subject can be configured to contain data from dynamic fields in the en
 How to configure subject autoformat?
 ====================================
 
-1. Click on subject configuration icon, form will open
+1. Click the subject configuration icon. Form will appear:
 
 .. image:: pic_templateCreationEdition/autoSubjectForm.png
    :width: 600
    :align: center
 
 2. Enter required prefix text (3 characters minimum) (1)
-3. Add fields to subject by clicking on their names in the list of available fields (4)
+3. Add fields to subject by clicking their names in the list of available fields (4)
 4. You can used search box to narrow the list (3)
 5. Fields can be removed from subject by trash bin icon in added fields list (2)
 6. Pay attention to the preview (5) - it shows example of how subject will look (field values are separated by comma and space)

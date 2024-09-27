@@ -12,13 +12,13 @@ It is a PDF file upload form in the template. Also it can be left empty in templ
 How to add a PDF document to template
 =====================================
 
-1. Click on the "Add new document" button on the left side (menu with it can be collapsed depending on your monitor resolution, just expand it by clicking "Documents" icon)
+1. Click the "Add new document" button on the left side (menu with it can be collapsed depending on your monitor resolution, just expand it by clicking "Documents" icon)
 
 .. image:: pic_pdfDocument/newDocument.png
    :width: 600
    :align: center
 
-2. Click on "PDF document" button. After this file explorer will open for you to select PDF file
+2. Click the "PDF document" button. After this file explorer will open for you to select PDF file
 
 .. image:: pic_pdfDocument/pdf.png
    :width: 600

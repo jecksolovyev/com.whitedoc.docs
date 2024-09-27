@@ -2,9 +2,9 @@
 Billing
 =======
 
-Billing the functionality is allowing to manage :ref:`tariffs <tariffs>`, :ref:`invoices <invoices>`, :ref:`payment methods <paymentDetails>` and viewing the account balance details.
+.. note:: Billing page will not appear in the admin panel if it is not enabled in the instance settings.
 
-Billing may not be displayable in administrative panel if instance settings configuration prohibit it. But if it's allowed you can observe respective tab in administrative dashboard and left side menu
+Billing functionality allows you to manage :ref:`tariffs <tariffs>`, :ref:`invoices <invoices>`, :ref:`payment methods <paymentDetails>` and see the account balance details.
 
 .. image:: pic_billing/billing.png
    :width: 600
@@ -12,16 +12,16 @@ Billing may not be displayable in administrative panel if instance settings conf
 
 .. _tariffs:
 
-Tariffs
-=======
+Tariffs tab
+===========
 
-Tariffs page represents available tariffs on the instance and the actual tariff assigned to the account.
+This page lists available instance tariffs and which tariff is currently applied to the account.
 
 .. image:: pic_billing/tariffsPage.png
    :width: 400
    :align: center
 
-Tariff may be applied by clicking on the respective button "Select tariff". By clicking on the "Select tariff" button modal window with confirmation will be displayed for customer. By confirming, the applicable tariff will be assigned to the account.
+Tariff may be applied by clicking the respective button "Select tariff". After clicking the "Select tariff" button modal window with confirmation will be displayed. By confirming, the applicable tariff will be assigned to the account.
 
 .. note:: If instance contains payment provider "Stripe" the following verifications and actions will be performed
 
@@ -32,7 +32,6 @@ Tariff may be applied by clicking on the respective button "Select tariff". By c
 3. As soon as user enters payment and billing details it will be added to the account as :ref:`payment method <paymentDetails>`
 4. On this step, if tariff has prepay configuration (most tariffs has), tariff will be assigned to the account, :ref:`invoice <invoices>` will be generated and paid (if the added payment method has sufficient funds)
 
-
 **Account has payment details and billing address**
 
 1. By confirming, the applicable tariff the system will verify if account has billing address and :ref:`payment method <paymentDetails>`
@@ -42,16 +41,14 @@ Tariff may be applied by clicking on the respective button "Select tariff". By c
 
 .. _invoices:
 
-Invoices
-========
+Invoices tab
+============
 
-Invoices page contains account invoices. On this page user is able to observe paid, unpaid and cancelled invoices, download them and pay them.
-
-Invoice may be issued in manual or automatic way, usually in automatic way. In automatic way it works according to tariff configuration.
+This page contains account invoices. Here you can see paid, unpaid and cancelled invoices, download and pay them. Invoice can be issued manually or, more often, automatically. Automatic invoice issuing works according to the tariff configuration.
 
 **Invoice download options**
 
-You are able to download invoices by clicking on the respective button in the specific invoice and choose the one of the invoice option
+You can download invoices by clicking the respective button in the specific invoice and choosing one of the invoice options.
 
 .. image:: pic_billing/invoicesPageDownloadInvoice.png
    :width: 400
@@ -63,24 +60,23 @@ You are able to download invoices by clicking on the respective button in the sp
 
 **Invoice payment options**
 
-If you have unpaid invoices, you are able to pay the invoices manually by clicking on respective button in the specific invoice and choose the one of the available payment provider
+If you have unpaid invoices, you are able to pay the invoices manually by clicking the respective button in the specific invoice and choose the one of the available payment provider
 
-.. image:: pic_billing/invoicesPageUnpaid.png
+.. image:: pic_billing/invoicesPageUnpaidInvoice.png
    :width: 400
    :align: center
 
-As soon as you click on the button "Pay invoice" the modal window will be opened
+As soon as you click the "Pay invoice" button, a modal window will appear
 
-.. image:: pic_billing/invoicesPagePayInvoiceModal.png
+.. image:: pic_billing/invoicesPagePayInvoice.png
    :width: 400
    :align: center
 
 You can choose one of the appropriate payment provider to pay the invoice and proceed with payment provider, as soon as invoice paid you will observe paid invoice
 
-.. image:: pic_billing/invoicesPagePaid.png
+.. image:: pic_billing/invoicesPagePaidInvoice.png
    :width: 400
    :align: center
-
 
 .. _balanceDetails:
 
@@ -110,7 +106,7 @@ By default page doesn't contain payment details
    :width: 400
    :align: center
 
-You are able to add them by clicking on "Add payment details"
+You can add them by clicking the "Add payment details" button
 
 .. image:: pic_billing/paymentMethodsPageAddPayment.png
    :width: 400

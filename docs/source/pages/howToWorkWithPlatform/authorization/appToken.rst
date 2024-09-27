@@ -14,7 +14,7 @@ You can create authorization tokens for use with API and 3rd party integrations.
    :width: 600
    :align: center
 
-2. Click on New token button
+2. Click the "New token" button
 3. Fill in Token name and Token expire date
 
 .. image:: pic_authorization/newToken.png

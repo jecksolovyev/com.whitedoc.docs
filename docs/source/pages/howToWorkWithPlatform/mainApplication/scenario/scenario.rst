@@ -2,7 +2,7 @@
 Scenario
 ========
 
-Scenario functionality allows to create chains of the envelopes and transmit data from one envelope to antoher if needed. To manage scenario you have to follow scenario page which you can find at the left side menu with respective icon and tooltip or follow the directly. You can create, edit, clone and delete scenarios. Also you can add, edit, delete steps where specify source template, destination template, xslt conversion rule, condition rule for scenario. To create scenario you have to open scenario page and click on button "New scenario".
+Scenario functionality allows to create chains of the envelopes and transmit data from one envelope to antoher if needed. To manage scenario you have to follow scenario page which you can find at the left side menu with respective icon and tooltip or follow the directly. You can create, edit, clone and delete scenarios. Also you can add, edit, delete steps where specify source template, destination template, xslt conversion rule, condition rule for scenario. To create scenario you have to open scenario page and click the "New scenario" button.
 
 Scenario list and scenario concept
 ==================================

@@ -2,7 +2,7 @@
 Notification system
 ===================
 
-Notifications system using for provide customers information about different activities in accounts/mailboxes where customers has access:
+Notifications provide information about different activities in accounts/mailboxes which you have access to:
 
 * New envelope
 * Envelope reached final status(complete, rejected, expired)
@@ -13,9 +13,7 @@ Notifications system using for provide customers information about different act
 * Integration
 * Dictionary
 
-To watch at notifications you should click on bell in the upper right corner. By default bell without notification will be grey,
-when user get new notification bell will be shown with badge. Badge shows quantity of the notifications you have, if you have more than 9  notifications
-in badge shown "9+". After you click on bell will be open window with notifications, sorted by date.
+To see your notifications you should click the bell icon in the upper right corner. By default bell without notification will be grey, when user get new notification bell will be shown with badge. Badge shows quantity of the notifications you have, if you have more than 9  notifications in badge shown "9+". After clicking the bell icon window with notifications sorted by date will open.
 
 **All notifications are divided into three types:**
 
@@ -32,9 +30,7 @@ in badge shown "9+". After you click on bell will be open window with notificati
 
 Each notification consists of an icon+link+text+time of receipt.
 
-All customers who have an access to same account/mailbox observe all notifications for these elements. If one of the
-customers who has access clicks on a notification he will be redirected to the corresponding page of our application and
-this notification changes state to read and will be hidden for all of the customers.
+All users with access to same account/mailbox observe all notifications for these elements. If one of the users clicks a notification he will be redirected to the corresponding page of our application and this notification changes state to read and will be hidden for all users.
 
 **All redirects depends on notification type:**
 
@@ -44,7 +40,6 @@ this notification changes state to read and will be hidden for all of the custom
 * Mailbox notification(new envelope or envelope reached final status) - redirect to correspond envelope page
 * Dictionary notification(uploaded or not on platform) - redirect to dictionary page
 * Domain notification(domain verified or verification expired) - redirect to admin panel on account setting on domain tab
-
 
 **The Notification tab**
 

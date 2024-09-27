@@ -9,7 +9,7 @@ Dynamic fields allow you to create various inputs for different data types in th
 Text cursor method
 ==================
 
-This method is only available for structured documents. To create a field, click where you want it to be placed in the document. When flashing text cursor appears, click on a field icon in the Fields tab of template editor menu. Field will be placed on the spot of a cursor.
+This method is only available for structured documents. To create a field, click where you want it to be placed in the document. When flashing text cursor appears, click a field icon in the Fields tab of template editor menu. Field will be placed on the spot of a cursor.
 
 Drag & drop method
 ==================

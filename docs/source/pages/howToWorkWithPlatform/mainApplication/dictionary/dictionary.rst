@@ -17,7 +17,7 @@ Dictionary creation
 *Dictionary row delete* - allow to delete records.
 
 1. Navigate to platform_address_here/dictionary
-2. Click on create dictionary button
+2. Click the create dictionary button
 
 .. image:: pic_dictionary/newDictionary.png
    :width: 600
@@ -38,9 +38,9 @@ Dictionary creation
 *Account* - dictionary is visible to all mailboxes in this account. In envelopes with this dictionary field records from this dictionary will be available to mailboxes in current account. Roles with mailboxes from other accounts will not be able to select data from this dictionary field.
 *Public* - dictionary is visible to all mailboxes. In envelopes with this dictionary field records from this dictionary will be available to any mailbox. Roles with any mailbox will be able to select data from this dictionary field.
 
-8. Click on Add row button to add new row
+8. Click the "Add row" button to add new row
 9. You can select rows with a checkmark. If any rows are selected, Delete rows button will appear which allow you to remove rows
-10. Click on Add column button to add new column
+10. Click the "Add column" button to add new column
 11. Enter a column name (64 characters max)
 
 .. image:: pic_dictionary/columnModal.png
@@ -66,7 +66,7 @@ Dictionary creation
 Record editing
 ==============
 
-1. Click on a table cell and enter a value (256 characters max)
+1. Click a table cell and enter a value (256 characters max)
 2. Click checkmark to apply new value (also you can click outside of a cell)
 3. Click cancel to revert changes
 
@@ -75,16 +75,16 @@ Records filtration
 
 Multiple filters connected by 'OR'. Filter types: Contains, Does not contain, Is equal, Is not equal, Is empty, Is not empty.
 
-1. Click on a filter icon (appears on column header hover)
+1. Click the filter icon (appears on column header hover)
 2. Select filter and enter value
-3. Click on Add button
+3. Click the "Add" button
 4. Column name with active filter will have the same color as filter
 5. Filters are sorted by column order
 
 Dictionary deletion
 ===================
 
-1. Click on a delete icon on according dictionary on a dictionary list page
+1. Click the delete icon near according dictionary on a dictionary list page
 2. Confirm your action
 
 Dictionary import
@@ -95,8 +95,8 @@ You are able to import csv file to the dictionary which will be converted into t
 .. note:: The order of the rows may not be saved after import of csv file data into the dictionary
 
 1. Navigate to platform_address_here/dictionary
-2. Open dictionary for editing (by clicking on edit icon) or create new one
-3. Click on "Import" button in the header
+2. Open dictionary for editing (by clicking the edit icon) or create new one
+3. Click the "Import" button in the header
 
 .. image:: pic_dictionary/importButton.png
    :width: 600
@@ -108,8 +108,8 @@ At this moment you will observe modal window with upload csv file button
    :width: 600
    :align: center
 
-4. Clicking on "Select file to upload" button file manager on your PC will be opened
-5. As soon as file is chosen you can click on the "Next" button
+4. Clicking the "Select file to upload" button file manager on your PC will be opened
+5. As soon as file is chosen you can click the "Next" button
 
 At this moment you will observe modal window with uploaded csv file and two configuration options of importing file "Header 1st row?" and "Replace". To read more about import logic depends on configuration :ref:`click here <import logic>`
 
@@ -121,7 +121,7 @@ At this moment you will observe modal window with uploaded csv file and two conf
 
 .. note:: "Replace" - the option defines if existing dictionary records will be replaced or not after import
 
-6. You can chose any combination of configuration file and proceed by clicking on the "Next button"
+6. You can chose any combination of configuration file and proceed by clicking the "Next button"
 
 At this moment you will observe modal window with preview of the dictionary import results
 
@@ -129,7 +129,7 @@ At this moment you will observe modal window with preview of the dictionary impo
    :width: 600
    :align: center
 
-7. If preview corresponds to expected import results, you can proceed with import and click on "Confirm" button. If not you are able to `adjust the import configuration`_
+7. If preview corresponds to expected import results, you can proceed with import and click the "Confirm" button. If not you are able to `adjust the import configuration`_
 8. You will be redirected to dictionary list and dictionary with import process will be locked for the time, until dictionary imported
 9. As soon as dictionary imported all users who have access to mailbox receive an email and system notification (in case if the notifications are not turned off in the user profile)
 
@@ -146,7 +146,7 @@ Import preview modal window contains import configuration properties and you are
 
 1. "Header 1st row?" - you are able to make the option selected or not and according to the choice data from csv will be parsed differently
 
-By clicking on "Change delimiter" button additional configuration options open
+By clicking the "Change delimiter" button additional configuration options open
 
 2. "Delimiter" - the option defines the type of the records delimiter in csv uploaded by you. Available options ",", ";", "tab(\\t)" and "space(\\s)"
 3. "Quote" - the option defines type of the quotes is using in csv uploaded by you. available options double quote ("), single quote (') or null value if no quotes should be defined
@@ -274,8 +274,8 @@ Dictionary export
 You are able to export dictionary as CSV file with all records included into the dictionary, to do that you have to make the following
 
 1. Navigate to platform_address_here/dictionary
-2. Open dictionary for editing (by clicking on edit icon)
-3. Click on "Export" button in the header and chose CSV option
+2. Open dictionary for editing (by clicking the edit icon)
+3. Click the "Export" button in the header and chose CSV option
 
 .. image:: pic_dictionary/exportButton.png
    :width: 600

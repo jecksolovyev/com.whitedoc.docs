@@ -6,7 +6,7 @@ Registration on the platform
 
 To register user account on the platform:
 
-1. Click on "Create account" link
+1. Click the "Create account" link
 2. Select account type you want to create
 
 .. note:: Platform has two types of account: personal and company. Personal accounts fit to small companies who want to use a couple of mailboxes. Company account is better for big companies with big amount of employees.

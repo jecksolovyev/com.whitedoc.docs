@@ -43,7 +43,6 @@ Template consists of two blocks:
       "version": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
     }
 
-
 .. csv-table::
   :file: templateStructure.csv
   :widths:  10, 10, 10
