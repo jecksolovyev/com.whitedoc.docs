@@ -111,7 +111,7 @@ As an administrator of an account you can create a corporate user, which is usef
 
 .. note:: If you are editing existing users, this tab will be available only for corporate users.
 
-7. When all permissions are defined click the "Save" button in the header of the page
+7. When all permissions and settings are defined click the "Save" button in the header of the page
 
 Mass corporate users creation
 =============================
