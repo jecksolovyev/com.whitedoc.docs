@@ -185,9 +185,8 @@ Users report
 You can generate a report by account users as described below:
 
 1. Navigate to https://platform_address_here/admin/users
-2. Open "Users" tab and select all necessary records
-3. Click the "Generate report" button (document icon)
-4. After click you will see a message that report will be sent to your email after generation
-5. Follow to email address
-6. Open email you got
-7. Click the "Download" button
+2. Click the "Generate report" button (document icon)
+3. After click you will see a message that report will be sent to your email after generation
+4. Follow to email address
+5. Open email you got
+6. Click the "Download" button
