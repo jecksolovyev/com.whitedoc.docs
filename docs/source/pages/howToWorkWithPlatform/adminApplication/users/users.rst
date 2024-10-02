@@ -134,7 +134,7 @@ As an administrator of account you also can mass-create corporate users, which i
    :width: 400
    :align: center
 
-3. Third sheet is "Users". Here you should enter users data (first name, last name and email). Also can choose should a personal mailbox be created for each user individually (Y to create, N or leave empty to not create). Users will be created according to this data
+3. Third sheet is "Users". Here you should enter users data (first name, last name and email). Also you can choose should a personal mailbox be created for each user individually (Y to create, N or leave empty to not create). Users will be created according to this data
 
 .. warning:: All users in the list should have relations to an active domain(s). If any users without such relation will be added to the list, user creation process will fail.
 
