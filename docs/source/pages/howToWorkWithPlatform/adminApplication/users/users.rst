@@ -116,7 +116,7 @@ As an administrator of an account you can create a corporate user, which is usef
 Mass corporate users creation
 =============================
 
-As an administrator of account you can also can mass-create corporate users, which is useful for company accounts with a big number of employees. To do so, click the "Create user" button in the page header and select "Create user" option from the menu. A form will appear, allowing you to download the example file for mass user creation. You can open the file using any tool which support .xlsx format. Also, you have to save the file in this particular format, so make sure to not change the file extention after editing.
+As an administrator of account you also can mass-create corporate users, which is useful for company accounts with a big number of employees. To do so, click the "Create user" button in the page header and select "Create user" option from the menu. A form will appear, allowing you to download the example file for mass user creation. You can open the file using any tool which support .xlsx format. Also, you have to save the file in this particular format, so make sure to not change the file extention after editing.
 
 .. image:: pic_users/createUsersModal.png
    :width: 400
