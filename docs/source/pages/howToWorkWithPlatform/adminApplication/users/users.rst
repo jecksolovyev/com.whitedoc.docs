@@ -76,7 +76,7 @@ After an invite is sent, not registered user will receive an email with a link t
 Corporate users
 ===============
 
-Corporate user is a special type of user that can be created, menaged and removed by an administrator of an accoun with at least one active domain. Such users can only be create with an email address from a verified domain of the account. All users using such emails during self-registration will also be automatically assigned to the this account. More info on the domains management can be found :ref:`here <domains>`.
+Corporate user is a special type of user that can be created, menaged and removed by an administrator of an accoun with at least one active domain. Such users can only be created with an email address from a verified domain of the account. All users using such emails during self-registration will also be automatically assigned to the this account. More info on the domains management can be found :ref:`here <domains>`.
 
 Users assignment to a domain account
 ====================================
