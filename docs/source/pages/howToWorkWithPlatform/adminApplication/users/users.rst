@@ -148,7 +148,7 @@ As an administrator of account you also can mass-create corporate users, which i
    :width: 400
    :align: center
 
-.. warning:: If ny incorrect emails will be added to the sheet, such users will not be created.
+.. warning:: If any incorrect emails will be added to the sheet, such users will not be created.
 
 5. Fifth and the rest of sheets are "Mailbox" sheets. These sheets allow to set mailbox roles and permissions for each user from the list
 
@@ -156,7 +156,7 @@ As an administrator of account you also can mass-create corporate users, which i
    :width: 400
    :align: center
 
-.. warning:: If ny incorrect emails will be added to the sheet, such users will not be created.
+.. warning:: If any incorrect emails will be added to the sheet, such users will not be created.
 
 When you will fill the file with data you should upload it in the users creation form and submit it. All users will receive email notifications with the instructions as described below.
 
