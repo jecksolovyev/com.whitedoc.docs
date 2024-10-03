@@ -70,7 +70,7 @@ After user accepted or declined an invitation you will receive a notification em
 Not registered user invitation
 ==============================
 
-After an invite is sent, not registered user will receive an email with a link to the registration page. By following the link user will be redirected to the registration form with prefilled email address and name (if it was filled in the invitation form). After completing this form, profile, account and personal mailbox (alongside with access to the mailboxes from the invitation) will be created for the user and permissions specified in the invitation will be granted.
+After an invite is sent, not registered user will receive an email with a link to the registration page. By following the link user will be redirected to the registration form. After completing this form, profile, account and personal mailbox (alongside with access to the mailboxes from the invitation) will be created for the user and permissions specified in the invitation will be granted.
 
 ===============
 Corporate users
@@ -86,7 +86,7 @@ As soon as you've added, verified and activated a domain you can create and mana
 * Users registered before a domain activation will be automatically assigned to the domain account after the domain activation. They will not lose any previosly owned permissions to other accounts and mailboxes.
 * Users registered after a domains activation will be automatically assigned to the domain account immediately. They will not have any account and mailbox permissions until granted by the account administrator. Personal mailbox with a specified role may or may not be automatically created for such users based on the :ref:`account configuration <accountSettings>`.
 
-In case of a domain unverification or deactivation all domain users will retain all assigned account and mailbox permissions, but creation or self-registration of new users in this domain be disabled. In case of an account deletion all user will lose acces to the account and its' mailboxes, but retain a corporate user status, meaning that they will not be able to create accounts and delete their user profiles.
+In case of a domain unverification or deactivation all domain users will retain all assigned account and mailbox permissions, but creation or self-registration of new users in this domain be disabled. In case of an account deletion all users will lose access to the account and its' mailboxes, but retain a corporate user status, meaning that they will not be able to create accounts and delete their user profiles.
 
 Single corporate user creation
 ==============================
@@ -116,7 +116,7 @@ As an administrator of an account you can create a corporate user, which is usef
 Mass corporate users creation
 =============================
 
-As an administrator of account you also can mass-create corporate users, which is useful for company accounts with a big number of employees. To do so, click the "Create user" button in the page header and select "Create user" option from the menu. A form will appear, allowing you to download the example file for mass user creation. You can open the file using any tool which support .xlsx format. Also, you have to save the file in this particular format, so make sure to not change the file extention after editing.
+As an administrator of account you also can mass-create corporate users, which is useful for company accounts with a big number of employees. To do so, click the "Create user" button in the page header and select "Create users" option from the menu. A form will appear, allowing you to download the example file for mass user creation. You can open the file using any tool which support .xlsx format. Also, you have to save the file in this particular format, so make sure to not change the file extention after editing.
 
 .. image:: pic_users/createUsersModal.png
    :width: 400
@@ -158,10 +158,10 @@ As an administrator of account you also can mass-create corporate users, which i
 
 .. warning:: If any incorrect emails will be added to the sheet, such users will not be created.
 
-When you will fill the file with data you should upload it in the users creation form and submit it. All users will receive email notifications with the instructions as described below.
+When you have filled the file with data, you should upload it in the user creation form and submit it. All users will receive email notifications with the instructions as described below.
 
-How to authorized as a corporate user
-=====================================
+How to get authorized as a corporate user
+=========================================
 
 1. Open "You are registered on the electronic document management platform" email
 
