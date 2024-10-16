@@ -9,7 +9,7 @@ Main application
    registration/registration.rst
    userProfile/userProfile.rst
    dashboard/dashboard.rst
-   listingPage/listingPage.rst
+   mailbox/mailbox.rst
    envelope/envelope.rst
    templateList/template.rst
    accessLevel/accessLevel.rst
