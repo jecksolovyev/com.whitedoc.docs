@@ -11,6 +11,7 @@ Mailboxes page is a part of admin panel interface. This page allows to:
    :width: 600
    :align: center
 
+=============
 Mailboxes tab
 =============
 
@@ -47,8 +48,8 @@ Edition interface allows update name of the mailbox, add and remove aliases to t
    :width: 600
    :align: center
 
-Mailbox settings page
-=====================
+Mailbox settings section
+========================
 
 **How to copy mailbox UUID**
 
@@ -135,8 +136,8 @@ Forwarding is configured now. If you wish to disable it at some point later, you
 
 .. _customDashboard:
 
-Dashboard tab
-=============
+Dashboard section
+=================
 
 To create custom dashboard instead of default one switch to tab "Dashboard" which contains:
 
@@ -156,8 +157,8 @@ If you want to customize dashboard it's necessary to put content to html area, s
 
 .. note:: Custom HTML can not be more than 16 mb size.
 
-Danger zone tab
-===============
+Danger zone section
+===================
 
 To remove all users from mailbox or delete mailbox switch to "Danger zone" tab
 
@@ -176,19 +177,23 @@ To remove all users from mailbox or delete mailbox switch to "Danger zone" tab
 
 **How to delete mailbox**
 
-1. Click the "Delete" button
+1. Click the "Delete" button to open the deletion modal window
+
+.. image:: pic_mailboxes/deleteMailboxModal.png
+   :width: 600
+   :align: center
+
 2. Enter the mailbox in upper case to the field in the modal window which opens after click the "Delete" button
-3. Confirm the decision and mailbox will be deleted
+3. If you wish to transfer the ownership of templates, scenarios and dictionaries of this mailbox to other mailbox from the account – check the according and select a mailbox to transfer ownership to (selector will appear after the checkbox is checked, the checkbox will be disabled if there are no other mailboxes in the account)
+4. Confirm the decision and mailbox will be deleted
 
 .. note:: `Behaviour of mailbox after deletion <delete_mailbox_behaviour.html>`_
 
 .. _mailboxDelete:
 
-=======================
-Delete mailbox behavior
-=======================
+**Delete mailbox behavior**
 
-1. Deleted mailbox can't be restored
+1. Deleted mailbox can not be restored
 2. Mailbox will disappear from mailbox list at admin panel on mailbox page
 3. If user tries to use deleted mailbox he will receive error 410 and will be redirected to first mailbox to which he has access. If user has no access to any of mailboxes he will be redirected to user profile page and all functionality will be blocked except profile and admin pages (if there is access to any account)
 

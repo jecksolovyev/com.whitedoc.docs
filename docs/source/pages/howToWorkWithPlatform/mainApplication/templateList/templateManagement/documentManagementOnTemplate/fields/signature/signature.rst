@@ -32,6 +32,8 @@ When all attributes are set, you can click "Save" button and field will be added
    :width: 600
    :align: center
 
+.. _simpleElectronicSignature:
+
 How to fill a signature field in the envelope
 =============================================
 
@@ -42,7 +44,7 @@ How to fill a signature field in the envelope
    :width: 600
    :align: center
 
-3. Window will appear
+3. A modal window will appear
 
 .. image:: pic_signature/signatureDraw.png
    :width: 600

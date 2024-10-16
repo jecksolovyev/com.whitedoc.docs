@@ -186,4 +186,4 @@ When an envelope is added to or removed from a chain of envelopes, the following
    :width: 600
    :align: center
 
-.. note:: To learn how to add or remove an envelope from a chain, please refer to the link - :ref:`Envelope chain <envelopeChain>`
+.. note:: To learn how to add or remove an envelope from a chain, please refer to :ref:`the link <envelopeChain>`.
