@@ -2,7 +2,7 @@
     "openapi": "3.0.1",
     "info": {
         "title": "DocStudio Api Documentation",
-        "version": "R115.5"
+        "version": "R117.4"
     },
     "servers": [
         {
@@ -44,7 +44,7 @@
                 "tags": [
                     "user-controller"
                 ],
-                "summary": "Retrieve user profile",
+                "summary": "Retrieve self profile",
                 "operationId": "getProfile",
                 "responses": {
                     "200": {
@@ -63,7 +63,7 @@
                 "tags": [
                     "user-controller"
                 ],
-                "summary": "Update user's profile",
+                "summary": "Update self profile",
                 "operationId": "updateProfile",
                 "requestBody": {
                     "content": {
@@ -82,6 +82,96 @@
                             "application/json": {
                                 "schema": {
                                     "$ref": "#/components/schemas/ProfileDTO"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/user/profile/{uuid}/account/{accountUuid}": {
+            "get": {
+                "tags": [
+                    "user-controller"
+                ],
+                "summary": "Retrieve corporate user profile",
+                "operationId": "getCorporateUserProfile",
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "accountUuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/CorporateProfileDTO"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "user-controller"
+                ],
+                "summary": "Update corporate user's profile",
+                "operationId": "updateCorporateUserProfile",
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "accountUuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UpdateProfileDTO"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/CorporateProfileDTO"
                                 }
                             }
                         }
@@ -3028,7 +3118,7 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "#/components/schemas/AccountDTO"
+                                "$ref": "#/components/schemas/UpdateAccountRequest"
                             }
                         }
                     },
@@ -7067,6 +7157,42 @@
                 "security": []
             }
         },
+        "/api/v1/envelope/approve": {
+            "post": {
+                "tags": [
+                    "envelope-controller"
+                ],
+                "summary": "Approve envelope",
+                "operationId": "approve",
+                "parameters": [
+                    {
+                        "name": "Mailbox",
+                        "in": "header",
+                        "description": "Mailbox context, HTTP Header with current mailbox UUID",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/BulkEnvelopeActionDTO"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
         "/api/v1/dictionary": {
             "get": {
                 "tags": [
@@ -10397,7 +10523,7 @@
                 }
             }
         },
-        "/api/v1/user/avatar/{userUuid}": {
+        "/api/v1/user/avatar/{uuid}": {
             "get": {
                 "tags": [
                     "user-controller"
@@ -10406,7 +10532,7 @@
                 "operationId": "getAvatar",
                 "parameters": [
                     {
-                        "name": "userUuid",
+                        "name": "uuid",
                         "in": "path",
                         "required": true,
                         "schema": {
@@ -11286,6 +11412,16 @@
                         "required": true,
                         "schema": {
                             "type": "string"
+                        }
+                    },
+                    {
+                        "name": "moveEntitiesToMailbox",
+                        "in": "query",
+                        "description": "Move entities to chosen mailbox",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
                         }
                     },
                     {
@@ -13514,6 +13650,29 @@
                 }
             }
         },
+        "/api/v1/account/currency-rates": {
+            "get": {
+                "tags": [
+                    "account-billing-controller"
+                ],
+                "operationId": "getCurrencyRates",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/CurrencyRateDTO"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/api/v1/account/brand-logo/{accountUuid}": {
             "get": {
                 "tags": [
@@ -14305,6 +14464,84 @@
                     }
                 },
                 "description": "User accounts belongs to"
+            },
+            "CorporateProfileDTO": {
+                "type": "object",
+                "properties": {
+                    "uuid": {
+                        "type": "string",
+                        "description": "User uuid",
+                        "format": "uuid"
+                    },
+                    "email": {
+                        "type": "string",
+                        "description": "User email"
+                    },
+                    "firstName": {
+                        "type": "string",
+                        "description": "User first name"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "User last name"
+                    },
+                    "status": {
+                        "type": "string",
+                        "description": "User status",
+                        "enum": [
+                            "PENDING_INVITE",
+                            "ACTIVE",
+                            "BLOCKED",
+                            "PENDING_PASSWORD",
+                            "DELETED"
+                        ]
+                    },
+                    "dateLocale": {
+                        "type": "string",
+                        "description": "User locale for dates"
+                    },
+                    "locale": {
+                        "type": "string",
+                        "description": "User locale"
+                    },
+                    "timezone": {
+                        "type": "string",
+                        "description": "User timezone"
+                    },
+                    "autoDepositMailboxUuid": {
+                        "type": "string",
+                        "description": "Auto Deposit Mailbox UUID",
+                        "format": "uuid"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "User phone"
+                    },
+                    "displayExactDate": {
+                        "type": "boolean",
+                        "description": "Display exact date instead of relative"
+                    },
+                    "mailboxes": {
+                        "type": "array",
+                        "description": "Mailboxes user has access to",
+                        "items": {
+                            "$ref": "#/components/schemas/MailboxNameUuidDTO"
+                        }
+                    }
+                }
+            },
+            "MailboxNameUuidDTO": {
+                "type": "object",
+                "properties": {
+                    "uuid": {
+                        "type": "string",
+                        "format": "uuid"
+                    },
+                    "name": {
+                        "type": "string"
+                    }
+                },
+                "description": "Mailboxes user has access to"
             },
             "UpdatePasswordDTO": {
                 "required": [
@@ -15597,6 +15834,45 @@
                 },
                 "description": "Flow to create"
             },
+            "UpdateAccountRequest": {
+                "required": [
+                    "name"
+                ],
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "maxLength": 256,
+                        "minLength": 3,
+                        "type": "string",
+                        "description": "Account Name"
+                    },
+                    "inn": {
+                        "maxLength": 128,
+                        "minLength": 8,
+                        "type": "string",
+                        "description": "Account TAX number"
+                    },
+                    "logo": {
+                        "type": "string",
+                        "description": "Account logo in base64 format (svg, png, jpeg)"
+                    },
+                    "brand": {
+                        "type": "string",
+                        "description": "Account brand logo in base64 format (svg, png, jpeg)"
+                    },
+                    "timezone": {
+                        "maxLength": 40,
+                        "minLength": 0,
+                        "type": "string",
+                        "description": "Account timezone for billing purposes"
+                    },
+                    "allowCreatePersonalMailboxWithRole": {
+                        "type": "string",
+                        "description": "Create personal mailbox for self-registered corporate user with role UUID",
+                        "format": "uuid"
+                    }
+                }
+            },
             "AccountDTO": {
                 "required": [
                     "name"
@@ -16503,6 +16779,8 @@
                         "format": "uuid"
                     },
                     "envelopes": {
+                        "maxItems": 1000,
+                        "minItems": 1,
                         "uniqueItems": true,
                         "type": "array",
                         "items": {
@@ -16882,7 +17160,7 @@
                 "type": "object",
                 "properties": {
                     "envelopeUuids": {
-                        "maxItems": 10000,
+                        "maxItems": 1000,
                         "minItems": 1,
                         "uniqueItems": true,
                         "type": "array",
@@ -17763,7 +18041,7 @@
                         }
                     }
                 },
-                "description": "Send QuickSendDTO in BLOB format"
+                "description": "Send QuickSendDTO in BLOB format with Content-Type: application/json"
             },
             "QuickSendRecipientDTO": {
                 "required": [
@@ -18219,6 +18497,23 @@
                 },
                 "description": "Envelope callback dto"
             },
+            "BulkEnvelopeActionDTO": {
+                "required": [
+                    "uuids"
+                ],
+                "type": "object",
+                "properties": {
+                    "uuids": {
+                        "uniqueItems": true,
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "description": "UUID of envelope",
+                            "format": "uuid"
+                        }
+                    }
+                }
+            },
             "DictionaryFiltersRequestDTO": {
                 "type": "object",
                 "properties": {
@@ -18560,6 +18855,7 @@
                     "mailbox-alias-created",
                     "mailbox-alias-deleted",
                     "mailbox-integration-updated",
+                    "mailbox-entities-transferred",
                     "user-invited",
                     "user-invitation-revoked",
                     "user-accepted-invitation",
@@ -18572,6 +18868,7 @@
                     "user-created",
                     "user-deleted",
                     "user-left-mailbox",
+                    "user-profile-updated-by-admin",
                     "category-created",
                     "category-updated",
                     "category-deleted",
@@ -19528,9 +19825,6 @@
                     },
                     "email": {
                         "type": "string"
-                    },
-                    "phoneNumber": {
-                        "type": "string"
                     }
                 }
             },
@@ -19593,23 +19887,6 @@
                     }
                 },
                 "description": "Mailbox update data"
-            },
-            "BulkEnvelopeActionDTO": {
-                "required": [
-                    "uuids"
-                ],
-                "type": "object",
-                "properties": {
-                    "uuids": {
-                        "uniqueItems": true,
-                        "type": "array",
-                        "items": {
-                            "type": "string",
-                            "description": "UUID of envelope",
-                            "format": "uuid"
-                        }
-                    }
-                }
             },
             "DictionaryRequestDTO": {
                 "required": [
@@ -20335,7 +20612,7 @@
                     "paymentProviders": {
                         "type": "array",
                         "items": {
-                            "type": "string"
+                            "$ref": "#/components/schemas/PaymentProviderInfo"
                         }
                     },
                     "allowedCurrencies": {
@@ -20346,10 +20623,6 @@
                     },
                     "defaultCurrency": {
                         "type": "string"
-                    },
-                    "stripePublicKey": {
-                        "type": "string",
-                        "description": "Stripe public key for client-side"
                     }
                 },
                 "description": "Billing properties"
@@ -20828,6 +21101,23 @@
                         "items": {
                             "type": "string"
                         }
+                    }
+                }
+            },
+            "PaymentProviderInfo": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Payment provider name"
+                    },
+                    "params": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "string",
+                            "description": "Payment provider params"
+                        },
+                        "description": "Payment provider params"
                     }
                 }
             },
@@ -21548,18 +21838,6 @@
                     },
                     "hasCustomDashboard": {
                         "type": "boolean"
-                    }
-                }
-            },
-            "MailboxNameUuidDTO": {
-                "type": "object",
-                "properties": {
-                    "uuid": {
-                        "type": "string",
-                        "format": "uuid"
-                    },
-                    "name": {
-                        "type": "string"
                     }
                 }
             },
@@ -22751,6 +23029,24 @@
                     }
                 }
             },
+            "CurrencyRateDTO": {
+                "type": "object",
+                "properties": {
+                    "from": {
+                        "type": "string",
+                        "description": "From currency"
+                    },
+                    "to": {
+                        "type": "string",
+                        "description": "To currency"
+                    },
+                    "rate": {
+                        "type": "number",
+                        "description": "Exchange rate",
+                        "format": "float"
+                    }
+                }
+            },
             "LoginCheckResponseDTO": {
                 "type": "object",
                 "properties": {
@@ -22811,7 +23107,7 @@
                         }
                     },
                     "comment": {
-                        "maxLength": 2147483647,
+                        "maxLength": 5000,
                         "minLength": 5,
                         "type": "string",
                         "description": "Reason of cancellation"
