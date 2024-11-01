@@ -31,6 +31,20 @@ There are 4 static methods:
 | 4. wdExtensions:getMailboxUuidByAlias(String mailboxAlias)
 | Extension accepts alias name and return mailboxUUID. Can be used to configure recipients in flow. Instead of mailboxAlias can be path to respective value in original document.
 
+XSLT Predefined Parameters
+============
+To get rid of duplicate identifiers, the following parameters can be used:
+
+| SENDER_MAILBOX - for current mailbox UUID
+| TEMPLATE_UUID - for selected template UUID in the rule
+| TEMPLATE_VERSION - for selected template version UUID in the rule
+
+.. code-block:: xml
+    <xsl:param name="SENDER_MAILBOX"/>
+    <xsl:param name="TEMPLATE_UUID"/>
+    <xsl:param name="TEMPLATE_VERSION"/>
+
+
 Conversion rule example for outgoing documents
 ==============================================
 
@@ -43,6 +57,9 @@ Conversion rule example for outgoing documents
                     xmlns:wdExtensions="java:com.whitedoc.xslt.extensions.WdExtensions"
                     exclude-result-prefixes="saxon wdExtensions">
         <xsl:output indent="yes"/>
+        <xsl:param name="SENDER_MAILBOX"/>
+        <xsl:param name="TEMPLATE_UUID"/>
+        <xsl:param name="TEMPLATE_VERSION"/>
 
         <xsl:template match="/">
             <xsl:apply-templates select="EDIFACT/ORDERS"/>
@@ -53,7 +70,7 @@ Conversion rule example for outgoing documents
             <xsl:variable name="supplierGLN" select="../UNB/UNB03/UNB0301"/>
             <xsl:variable name="senderGLN" select="../UNB/UNB02/UNB0201"/>
             <xsl:variable name="supplierUuid" select="{wdExtensions:getValueFromDictionary('a5390637-f3b5-49f3-b7f6-48132f6fe8bb', '7f9d20ab-71d8-45e0-9756-2887fd427cd6', $supplierGLN, 'f69ee017-1fb3-4ff1-a803-c4ade48ea65e')}"/>
-            <envelope templateUuid="579ba3f3-7e26-4c7a-845c-ffa0fdf78057" templateVersion="55809865-32df-4341-91b0-b8bc44451394">
+            <envelope templateUuid="{$TEMPLATE_UUID}" templateVersion="{$TEMPLATE_VERSION}">
                 <info>
                     <subject>Замовлення на постачання № <xsl:choose><!--Dlya MTI-->
                         <xsl:when test="../UNB/UNB02/UNB0201=4820140450000"><xsl:value-of select="BGM/BGM02/BGM0201"/></xsl:when>
@@ -112,7 +129,7 @@ Conversion rule example for outgoing documents
                 </documents>
                 <flow>
                     <roles>
-                        <role id="f9378c46-5dfe-484a-b985-5a157d238b5c" mailboxUuid="625d1530-8896-49a5-b53c-37e5ade5e750"/>
+                        <role id="f9378c46-5dfe-484a-b985-5a157d238b5c" mailboxUuid="{$SENDER_MAILBOX}"/>
                         <role id="d59d8545-f1d2-4008-951f-2f43509d966e" mailboxUuid="{$supplierUuid}"/>
                     </roles>
                 </flow>
@@ -435,7 +452,7 @@ Conversion rule example for outgoing documents
         </xsl:template>
 
     </xsl:stylesheet>
-	
+
 XLS and X12 to XML conversion
 =============================
 
