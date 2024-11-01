@@ -32,18 +32,19 @@ There are 4 static methods:
 | Extension accepts alias name and return mailboxUUID. Can be used to configure recipients in flow. Instead of mailboxAlias can be path to respective value in original document.
 
 XSLT Predefined Parameters
-============
+==========================
+
 To get rid of duplicate identifiers, the following parameters can be used:
 
 | SENDER_MAILBOX - for current mailbox UUID
 | TEMPLATE_UUID - for selected template UUID in the rule
 | TEMPLATE_VERSION - for selected template version UUID in the rule
 
-.. code-block:: xml
+.. code-block:: 
+    
     <xsl:param name="SENDER_MAILBOX"/>
     <xsl:param name="TEMPLATE_UUID"/>
     <xsl:param name="TEMPLATE_VERSION"/>
-
 
 Conversion rule example for outgoing documents
 ==============================================
