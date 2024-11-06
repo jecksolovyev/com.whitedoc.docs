@@ -22,7 +22,7 @@ Following operations can only be performed with a field inside a dynamic table (
 
 Next fields can be used as arguments in formulas: Number, Currency, Dictionary, Lookup, Duplicate and other Formula.
 
-.. note:: If you use dictionary, lookup or duplicate as an argument, value will be parsed as a number. All symbols except numbers and last period will be ignored in calculations. If there are several periods, only last one will be considered as decimal place separator, rest will ignored. This means that if you will pass "Abc@/.1.1.1" and "Abc@/.1.1.1" as arguments into SUM formula, it will return "22.2" as a result.
+.. note:: If you use dictionary, lookup or duplicate as an argument, value will be parsed as a number. All symbols except numbers and last period will be ignored in calculation. If there are several periods, only last one will be considered as decimal place separator, rest will ignored. This means that if you will pass "Abc@/.1.1.1" and "Abc@/.1.1.1" as arguments into SUM formula, it will return "22.2" as a result.
 
 How to add formula field to the document
 ========================================
