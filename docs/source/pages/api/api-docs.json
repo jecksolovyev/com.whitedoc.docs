@@ -2,7 +2,7 @@
     "openapi": "3.0.1",
     "info": {
         "title": "DocStudio Api Documentation",
-        "version": "R117.4"
+        "version": "R118.2"
     },
     "servers": [
         {
@@ -21371,6 +21371,12 @@
                     "table": {
                         "$ref": "#/components/schemas/TemplTableRestriction"
                     },
+                    "patterns": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/TextFieldPattern"
+                        }
+                    },
                     "expireAfterDays": {
                         "type": "integer",
                         "format": "int32"
@@ -21401,6 +21407,17 @@
                     }
                 },
                 "description": "Template Restrictions"
+            },
+            "TextFieldPattern": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "pattern": {
+                        "type": "string"
+                    }
+                }
             },
             "UserProperties": {
                 "type": "object",
