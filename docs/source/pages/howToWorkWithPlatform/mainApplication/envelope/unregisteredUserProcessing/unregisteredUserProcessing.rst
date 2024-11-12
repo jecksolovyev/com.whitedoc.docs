@@ -122,7 +122,7 @@ How to send an envelope without authorization as a registered user?
    :width: 600
    :align: center
 
-5. Enter valid credentials and sign in. Authorization through third-party services is also available
+5. Enter valid credentials and sign in. Authorization through third-party services is also available. Please note, that if you want to use Keycloak or Azure for the first time during this authorization, you will have to confirm your email. A confirmation code will be sent to your user email, which you will have to enter in a prompted modal window
 
 .. image:: pic_unregisteredUserProcessing/authForm.png
    :width: 600
