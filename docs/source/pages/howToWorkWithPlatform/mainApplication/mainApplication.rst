@@ -14,6 +14,6 @@ Main application
    templateList/template.rst
    accessLevel/accessLevel.rst
    scenario/scenario.rst
-   approve/approve.rst
+   approval/approval.rst
    dictionary/dictionary.rst
    externalLinks/externalLinks.rst

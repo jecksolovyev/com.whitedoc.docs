@@ -4,17 +4,17 @@ Mailbox page
 
 Mailbox page contains envelope list divided by folders according to the envelopes statuses. It also allows you to apply next mass action to envelopes:
 
-1. Assigning labels to envelopes *this functionality available on both Desktop and Mobile versions of application
+1. Assigning labels to envelopes *(also available in mobile version)*
 2. :ref:`Signing envelopes with QES and Signature <qualifiedElectronicSignature>` 
 3. Envelope deletion and restoring
 4. Envelope archiving and unarchiving
-5. Downloading completed envelopes *this functionality available on both Desktop and Mobile versions of application
-6. Sharing envelopes *this functionality available on both Desktop and Mobile versions of application
+5. Downloading completed envelopes *(also available in mobile version)*
+6. Sharing envelopes *(also available in mobile version)*
 7. Envelopes chaining and unchaining
-8. Envelopes delegation *this functionality available on both Desktop and Mobile versions of application
-9. :ref:`Adding envelopes for approval <approval>` *this functionality available on both Desktop and Mobile versions of application
-10. Approving envelopes *this functionality available on both Desktop and Mobile versions of application
-11. Rejecting envelopes *this functionality available on both Desktop and Mobile versions of application
+8. Envelopes delegation *(also available in mobile version)*
+9. :ref:`Adding envelopes for approval <approval>` *(also available in mobile version)*
+10. Approving envelopes *(also available in mobile version)*
+11. Rejecting envelopes *(also available in mobile version)*
 12. Envelopes report generation
 13. Envelopes notification resend
 
