@@ -49,3 +49,5 @@ How to approve or reject several envelopes?
 ===========================================
 
 Open "To approve" or "Urgent" folder, select several approvals you want to process and click the "Approve" or "Reject" button in the list header. Modal window with comment area and confirmation button will appear. Add comment (mandatory only for the reject action) and confirm your action. As soon as all approvals will be processed results will be displayed in the modal window.
+
+.. note:: Note for API users: single envelope search request used for mass actions is limited to 1000 envelope UUIDs and will fail if more UUIDs are sent.
