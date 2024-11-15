@@ -114,6 +114,8 @@ How to delegate envelopes?
 
 You can delegate your role in envelopes to other mailbox.
 
+.. note:: If you select more envelopes than displayed on the screen, asynchronous mass action operation will start and you will receive operation start notification in System and on Email, as well as finish operation notification in System and on Email. Finish email notification contains detailed information related processed envelopes: envelope subject, envelope UUID, envelope link, status and error message if exists
+
 1. Select required envelopes (envelopes in "Waiting for you" status are eligible for delegation)
 2. Click the "Delegate envelopes" button
 
@@ -134,6 +136,8 @@ How to add envelopes for approval?
 ==================================
 
 You can request an approval of envelopes from a mailbox which does not participates in the envelope processing flow.
+
+.. note:: If you select more envelopes than displayed on the screen asynchronous mass action operation will start and you will receive operation start notification in System and on Email, as well as operation finish notification in System and on Email. Finish email notification contains detailed information related processed envelopes: envelope subject, envelope UUID, envelope link, status and error message if exists
 
 1. Select required envelopes (envelopes in "Waiting for you" and "Draft" statuses are eligible for adding for approval)
 2. Click the "Add envelopes for approval" button
@@ -156,6 +160,8 @@ How to approve envelopes?
 
 You can complete your active approver role in envelopes.
 
+.. note:: If you select more envelopes than displayed on the screen asynchronous mass action operation will start and you will receive operation start notification in System and on Email, as well as operation finish notification in System and on Email. Finish email notification contains detailed information related processed envelopes: envelope subject, envelope UUID, envelope link, status and error message if exists
+
 1. Select required envelopes (envelopes in "Waiting for you" status with active approver role are eligible for approval)
 2. Click the "Approve envelopes" button
 
@@ -176,6 +182,8 @@ How to reject envelopes?
 
 You can reject envelopes if they are not completed yet.
 
+.. note:: If you select more envelopes than displayed on the screen asynchronous mass action operation will start and you will receive operation start notification in System and on Email, as well as operation finish notification in System and on Email. Finish email notification contains detailed information related processed envelopes: envelope subject, envelope UUID, envelope link, status and error message if exists
+
 1. Select required envelopes (envelopes in "Waiting for you" and "Pending" statuses are eligible for rejection)
 2. Click the "Reject envelopes" button
 
@@ -190,7 +198,7 @@ You can reject envelopes if they are not completed yet.
    :align: center
 
 4. Enter a cancellation reason anc click the "Reject" button
-5. After a successful processed all applicable envelopes from the selection will change status to "Cancelled"
+5. After a successful process you will see a modal window with the results
 
 How to generate an envelopes report?
 ====================================
@@ -214,4 +222,4 @@ You can generate a .xlsx report by envelopes.
 5. Filter details is the first tab of the report. It contains the filter configuration of the envelope selection
 6. Report data is the second tab of the report. It contains envelope list with details
 
-.. note:: Note for API users: single envelope search request used for mass actions is limited to 1000 envelope UUIDs and will fail if more UUIDs are sent. Also, a limit of 200 UUIDs is applied for next mass action requests: delegate, add for approval and reject. The rest of mass action requests have a limit of 1000 UUIDs, same to search request.
+.. note:: Note for API users: single envelope search request (POST /api/v1/envelope/search) used for mass actions is limited up to 10000 envelope UUIDs and will fail if more UUIDs are sent. Assign label, delete, archive and share mass action requests have a limit of 1000 UUIDs. The rest of mass actions have 10000 UUIDs limit in single request.
