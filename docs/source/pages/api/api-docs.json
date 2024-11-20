@@ -2,7 +2,7 @@
     "openapi": "3.0.1",
     "info": {
         "title": "DocStudio Api Documentation",
-        "version": "R118.2"
+        "version": "R119.17"
     },
     "servers": [
         {
@@ -2129,157 +2129,6 @@
                 }
             }
         },
-        "/api/v1/envelope/{envelopeUuid}/approval/{flowUuid}": {
-            "get": {
-                "tags": [
-                    "envelope-controller"
-                ],
-                "summary": "Get envelope approval",
-                "operationId": "getApprovalFlow",
-                "parameters": [
-                    {
-                        "name": "envelopeUuid",
-                        "in": "path",
-                        "description": "Envelope to approve",
-                        "required": true,
-                        "schema": {
-                            "type": "string",
-                            "format": "uuid"
-                        }
-                    },
-                    {
-                        "name": "flowUuid",
-                        "in": "path",
-                        "description": "Flow to approve",
-                        "required": true,
-                        "schema": {
-                            "type": "string",
-                            "format": "uuid"
-                        }
-                    },
-                    {
-                        "name": "Mailbox",
-                        "in": "header",
-                        "description": "Mailbox context, HTTP Header with current mailbox UUID",
-                        "required": true,
-                        "schema": {
-                            "type": "string",
-                            "format": "uuid"
-                        }
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "OK",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/EnvelopeApprovalHistoryDTO"
-                                }
-                            }
-                        }
-                    }
-                }
-            },
-            "put": {
-                "tags": [
-                    "envelope-controller"
-                ],
-                "summary": "Approve or Reject envelope",
-                "operationId": "envelopeApproval",
-                "parameters": [
-                    {
-                        "name": "envelopeUuid",
-                        "in": "path",
-                        "description": "Envelope to approve",
-                        "required": true,
-                        "schema": {
-                            "type": "string",
-                            "format": "uuid"
-                        }
-                    },
-                    {
-                        "name": "flowUuid",
-                        "in": "path",
-                        "description": "Flow to approve",
-                        "required": true,
-                        "schema": {
-                            "type": "string",
-                            "format": "uuid"
-                        }
-                    },
-                    {
-                        "name": "Mailbox",
-                        "in": "header",
-                        "description": "Mailbox context, HTTP Header with current mailbox UUID",
-                        "required": true,
-                        "schema": {
-                            "type": "string",
-                            "format": "uuid"
-                        }
-                    }
-                ],
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "#/components/schemas/ApprovalStatusDTO"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "OK"
-                    }
-                }
-            },
-            "delete": {
-                "tags": [
-                    "envelope-controller"
-                ],
-                "summary": "Cancel envelope approval",
-                "operationId": "cancelApprovalFlow",
-                "parameters": [
-                    {
-                        "name": "envelopeUuid",
-                        "in": "path",
-                        "description": "Envelope to approve",
-                        "required": true,
-                        "schema": {
-                            "type": "string",
-                            "format": "uuid"
-                        }
-                    },
-                    {
-                        "name": "flowUuid",
-                        "in": "path",
-                        "description": "Flow to approve",
-                        "required": true,
-                        "schema": {
-                            "type": "string",
-                            "format": "uuid"
-                        }
-                    },
-                    {
-                        "name": "Mailbox",
-                        "in": "header",
-                        "description": "Mailbox context, HTTP Header with current mailbox UUID",
-                        "required": true,
-                        "schema": {
-                            "type": "string",
-                            "format": "uuid"
-                        }
-                    }
-                ],
-                "responses": {
-                    "204": {
-                        "description": "No Content"
-                    }
-                }
-            }
-        },
         "/api/v1/envelope/send-for-approval": {
             "put": {
                 "tags": [
@@ -2311,7 +2160,14 @@
                 },
                 "responses": {
                     "200": {
-                        "description": "OK"
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/SingleUuidDTO"
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -2481,6 +2337,42 @@
                                     "type": "string",
                                     "format": "uuid"
                                 }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/api/v1/envelope/approval": {
+            "put": {
+                "tags": [
+                    "envelope-controller"
+                ],
+                "summary": "Approve or Reject envelopes",
+                "operationId": "envelopeApproval",
+                "parameters": [
+                    {
+                        "name": "Mailbox",
+                        "in": "header",
+                        "description": "Mailbox context, HTTP Header with current mailbox UUID",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ApprovalStatusDTO"
                             }
                         }
                     },
@@ -6093,6 +5985,15 @@
                         }
                     },
                     {
+                        "name": "uuidOnly",
+                        "in": "query",
+                        "description": "Retrieve only UUID of envelope",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
                         "name": "Mailbox",
                         "in": "header",
                         "description": "Mailbox context, HTTP Header with current mailbox UUID",
@@ -6671,7 +6572,14 @@
                 },
                 "responses": {
                     "200": {
-                        "description": "OK"
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/SingleUuidDTO"
+                                }
+                            }
+                        }
                     }
                 }
             },
@@ -7188,7 +7096,14 @@
                 },
                 "responses": {
                     "200": {
-                        "description": "OK"
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/SingleUuidDTO"
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -10523,6 +10438,48 @@
                 }
             }
         },
+        "/api/v1/user/confirm-oauth-email-get-token": {
+            "get": {
+                "tags": [
+                    "user-controller"
+                ],
+                "summary": "Confirm email from OAuth2 Identity Provider",
+                "operationId": "confirmOauthEmailAndGetToken",
+                "parameters": [
+                    {
+                        "name": "code",
+                        "in": "query",
+                        "description": "Verification code",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "emailToMatch",
+                        "in": "query",
+                        "description": "Check email matches",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/LoginResponseDTO"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": []
+            }
+        },
         "/api/v1/user/avatar/{uuid}": {
             "get": {
                 "tags": [
@@ -11235,6 +11192,49 @@
                             "*/*": {
                                 "schema": {
                                     "$ref": "#/components/schemas/StatDTO"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/process-status/{id}": {
+            "get": {
+                "tags": [
+                    "misc-controller"
+                ],
+                "summary": "Process status",
+                "description": "Getting async bulk process status details by id",
+                "operationId": "getProcessStatus",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Process id",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "details",
+                        "in": "query",
+                        "description": "Return details",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ProcessStatus"
                                 }
                             }
                         }
@@ -12271,6 +12271,103 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        },
+        "/api/v1/envelope/{envelopeUuid}/approval/{flowUuid}": {
+            "get": {
+                "tags": [
+                    "envelope-controller"
+                ],
+                "summary": "Get envelope approval",
+                "operationId": "getApprovalFlow",
+                "parameters": [
+                    {
+                        "name": "envelopeUuid",
+                        "in": "path",
+                        "description": "Envelope to approve",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "flowUuid",
+                        "in": "path",
+                        "description": "Flow to approve",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "Mailbox",
+                        "in": "header",
+                        "description": "Mailbox context, HTTP Header with current mailbox UUID",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/EnvelopeApprovalHistoryDTO"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "envelope-controller"
+                ],
+                "summary": "Cancel envelope approval",
+                "operationId": "cancelApprovalFlow",
+                "parameters": [
+                    {
+                        "name": "envelopeUuid",
+                        "in": "path",
+                        "description": "Envelope to approve",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "flowUuid",
+                        "in": "path",
+                        "description": "Flow to approve",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "Mailbox",
+                        "in": "header",
+                        "description": "Mailbox context, HTTP Header with current mailbox UUID",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
                     }
                 }
             }
@@ -14226,7 +14323,14 @@
                 },
                 "responses": {
                     "200": {
-                        "description": "OK"
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/SingleUuidDTO"
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -15542,28 +15646,6 @@
                     }
                 }
             },
-            "ApprovalStatusDTO": {
-                "required": [
-                    "status"
-                ],
-                "type": "object",
-                "properties": {
-                    "status": {
-                        "type": "string",
-                        "enum": [
-                            "NOT_STARTED",
-                            "WAITING",
-                            "APPROVED",
-                            "REJECTED",
-                            "CANCELLED"
-                        ]
-                    },
-                    "comment": {
-                        "type": "string"
-                    }
-                },
-                "description": "Approval Details"
-            },
             "EnvelopeApprovalRequestDTO": {
                 "required": [
                     "uuids"
@@ -15619,6 +15701,19 @@
                 },
                 "description": "Set of approvers (Flow UUID must not be set)"
             },
+            "SingleUuidDTO": {
+                "required": [
+                    "uuid"
+                ],
+                "type": "object",
+                "properties": {
+                    "uuid": {
+                        "type": "string",
+                        "description": "Uuid",
+                        "format": "uuid"
+                    }
+                }
+            },
             "UpdateEnvColumnDTO": {
                 "type": "object",
                 "properties": {
@@ -15632,6 +15727,53 @@
                     "width": {
                         "type": "integer",
                         "format": "int32"
+                    }
+                }
+            },
+            "ApprovalStatusDTO": {
+                "required": [
+                    "status"
+                ],
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string",
+                        "enum": [
+                            "NOT_STARTED",
+                            "WAITING",
+                            "APPROVED",
+                            "REJECTED",
+                            "CANCELLED"
+                        ]
+                    },
+                    "comment": {
+                        "type": "string"
+                    },
+                    "envelopes": {
+                        "maxItems": 200,
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/EnvelopeWithFlow"
+                        }
+                    }
+                },
+                "description": "Approval Details"
+            },
+            "EnvelopeWithFlow": {
+                "required": [
+                    "envelopeUuid",
+                    "flowUuid"
+                ],
+                "type": "object",
+                "properties": {
+                    "envelopeUuid": {
+                        "type": "string",
+                        "format": "uuid"
+                    },
+                    "flowUuid": {
+                        "type": "string",
+                        "format": "uuid"
                     }
                 }
             },
@@ -16542,19 +16684,6 @@
                     "email": {
                         "type": "string",
                         "description": "Email of invited user"
-                    }
-                }
-            },
-            "SingleUuidDTO": {
-                "required": [
-                    "uuid"
-                ],
-                "type": "object",
-                "properties": {
-                    "uuid": {
-                        "type": "string",
-                        "description": "Uuid",
-                        "format": "uuid"
                     }
                 }
             },
@@ -19582,7 +19711,7 @@
                         "type": "string",
                         "description": "Name"
                     },
-                    "tariffPrice": {
+                    "price": {
                         "type": "integer",
                         "description": "Tariff price",
                         "format": "int64"
@@ -21608,6 +21737,52 @@
                     }
                 }
             },
+            "EnvelopeProcessingResult": {
+                "type": "object",
+                "properties": {
+                    "envelopeUuid": {
+                        "type": "string",
+                        "description": "Envelope uuid",
+                        "format": "uuid"
+                    },
+                    "result": {
+                        "type": "boolean",
+                        "description": "Processing result"
+                    },
+                    "errorMessage": {
+                        "type": "string",
+                        "description": "Processing error message"
+                    }
+                },
+                "description": "Processing details"
+            },
+            "ProcessStatus": {
+                "type": "object",
+                "properties": {
+                    "total": {
+                        "type": "integer",
+                        "description": "Total envelopes in bulk",
+                        "format": "int32"
+                    },
+                    "processed": {
+                        "type": "integer",
+                        "description": "Processed envelopes in bulk",
+                        "format": "int32"
+                    },
+                    "successful": {
+                        "type": "integer",
+                        "description": "Successfully processed envelopes in bulk",
+                        "format": "int32"
+                    },
+                    "details": {
+                        "type": "array",
+                        "description": "Processing details",
+                        "items": {
+                            "$ref": "#/components/schemas/EnvelopeProcessingResult"
+                        }
+                    }
+                }
+            },
             "AccountPermissionsDTO": {
                 "required": [
                     "account"
@@ -21741,6 +21916,8 @@
                             "315",
                             "316",
                             "317",
+                            "318",
+                            "319",
                             "401",
                             "402",
                             "501",
@@ -22672,7 +22849,7 @@
                     "name": {
                         "type": "string"
                     },
-                    "tariffPrice": {
+                    "price": {
                         "type": "integer",
                         "format": "int64"
                     },
@@ -22987,7 +23164,7 @@
             "AccountBillingTariffInfoDTO": {
                 "type": "object",
                 "properties": {
-                    "tariffId": {
+                    "id": {
                         "type": "string",
                         "description": "Id",
                         "format": "uuid"
@@ -23021,7 +23198,7 @@
                         "format": "int64"
                     }
                 },
-                "description": "Tariffs"
+                "description": "Account tariff info"
             },
             "MailboxAccountSimpleDTO": {
                 "type": "object",
@@ -23073,7 +23250,7 @@
                     },
                     "existingUser": {
                         "type": "boolean",
-                        "description": "Is used already created in the service?"
+                        "description": "Is user already created in the service?"
                     }
                 }
             },
