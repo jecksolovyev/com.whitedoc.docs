@@ -84,7 +84,7 @@ You can select envelopes and share access to them with other mailboxes or send e
 
 .. note:: Sharing envelope files by email can be restricted on the envelope or template level. Such envelopes will not be shared when using this option.
 
-5. If you have selected "Share access" option, select a mailbox in the opened and confirm your action. Note that you can select several mailboxes
+5. If you have selected "Share access" option, select a mailbox in the opened window and confirm your action. Note that you can select several mailboxes
 
 .. image:: pic_mailbox/shareModal.png
    :width: 400
