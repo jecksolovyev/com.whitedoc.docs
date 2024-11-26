@@ -58,6 +58,38 @@ Next errors can occur during the mass signing process:
 3. Envelope contains signature without coordinates (signature the place of which is define by Signer instead of template owner)
 4. Signature is placed in an uncompleted dynamic table (table field the assignee of which has not defined final rows quantity yet)
 
+How to share envelopes?
+=======================
+
+You can select envelopes and share access to them with other mailboxes or send envelope archive by email.
+
+1. Select required envelopes (envelopes in any status are eligible for sharing access with other mailboxes, envelopes in "Completed" status are eligible for sharing the documents archive)
+2. Click the "Share envelopes" button
+
+.. image:: pic_mailbox/shareButton.png
+   :width: 400
+   :align: center
+
+3. From the opened menu select a sharing option
+
+.. image:: pic_mailbox/shareMenu.png
+   :width: 400
+   :align: center
+
+4. If you have selected "Send to email" option, select the type of archive and enter recipient email in the opened window and confirm your action. Note that you can enter several email addresses by pressing Enter after each one
+
+.. image:: pic_mailbox/shareZipModal.png
+   :width: 400
+   :align: center
+
+.. note:: Sharing envelope files by email can be restricted on the envelope or template level. Such envelopes will not be shared when using this option.
+
+5. If you have selected "Share access" option, select a mailbox in the opened and confirm your action. Note that you can select several mailboxes
+
+.. image:: pic_mailbox/shareModal.png
+   :width: 400
+   :align: center
+
 .. _envelopeChain:
 
 How to chain and unchain envelopes?
