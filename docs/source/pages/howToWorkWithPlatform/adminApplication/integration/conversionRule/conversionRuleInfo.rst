@@ -34,10 +34,7 @@ There are several static methods:
 | 5. wdExtensions:findEnvelopeUuidByField(String templateUuid, String fieldName, String fieldValue)
 | Extension searches for a exact value in the template field and returns envelopeUuid only if one envelope is found.
 
-| 6. wdExtensions:cancelEnvelope(String envelopeUuid, String reason)
-| Extension cancels the envelope in any status. Returns nothing (void)
-
-| 7. wdExtensions:chainEnvelope(String envelopeUuid)
+| 6. wdExtensions:chainEnvelope(String envelopeUuid)
 | Extension returns existing chainUuid or creates a new one for the envelope. Can return null if already chained by another mailbox. Must be used for chainUuid attribute in envelope.
 
 XSLT Predefined Parameters
@@ -462,8 +459,8 @@ Conversion rule example for outgoing documents
         </xsl:template>
     </xsl:stylesheet>
 
-Conversion rule example for outgoing invoice correction. Previous invoice will be cancelled and chained to a new one.
-=====================================================================================================================
+Conversion rule example for outgoing invoice correction. Previous invoice will be chained to a new one.
+=======================================================================================================
 
 .. code-block:: xml
 
@@ -483,7 +480,6 @@ Conversion rule example for outgoing invoice correction. Previous invoice will b
                     <xsl:when test="InvoiceType = 'InvoiceCorrection'">
                         <xsl:variable name="originalEnvUuid" select="wdExtensions:findEnvelopeUuidByField($TEMPLATE_UUID, 'invoice-number', string(OriginalInvoiceNumber))"/>
                         <xsl:if test="$originalEnvUuid">
-                            <xsl:sequence select="wdExtensions:cancelEnvelope($originalEnvUuid, string(CorrectionReason))"/>
                             <xsl:variable name="chainUuid" select="wdExtensions:chainEnvelope($originalEnvUuid)"/>
                             <xsl:if test="$chainUuid">
                                 <xsl:attribute name="chainUuid"><xsl:value-of select="$chainUuid"/></xsl:attribute>
