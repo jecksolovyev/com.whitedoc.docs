@@ -38,7 +38,7 @@ Scenario creation form presented below:
 |    2.5 Scenario step to send immediately.
 |    2.6 Scenario step save action.
 
-**3 - Scenario step add button**  
+**3 - Scenario step add button**
 
 How to configure a scenario step
 ================================
@@ -143,7 +143,7 @@ A condition XSLT example:
 .. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
-    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <xsl:template match="/">
             <result>
                 <xsl:choose>
@@ -179,7 +179,7 @@ Index attribute has to match index attribute in "fieldset" node. A condition XSL
 .. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
-    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <xsl:template match="/">
             <result>
                 <rows>
@@ -257,7 +257,7 @@ To re-use envelope attachments from source you can use one of the following cons
 .. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
-    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <xsl:template match="/">
             ...
             <field name="File 1">
@@ -272,7 +272,7 @@ OR
 .. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
-    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <xsl:template match="/">
             ...
 			<xsl:variable name="att1Uuid" select="envelope/documents/document/field[@name='b70d61fa-4805-4e7b-9561-aa1f4f5c653f']/@attachmentUuid"/>
@@ -295,7 +295,7 @@ Defined scenario UUID should be inside <envelope> tag as attribute scenarioUuid=
 .. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
-    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <xsl:template match="/">
             <envelope templateUuid="19089ab8-a828-4447-9129-44b1da1cbc9d" templateVersion="f2e1a1c5-15ac-4bfb-bf31-f1ddba652b89" scenarioUuid="e17db760-580a-4192-bc96-a91683123bea">
 	            ...
@@ -310,7 +310,7 @@ Scenario configuration of chaining envelopes will be ignored by default if you c
 .. code-block:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
-    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <xsl:template match="/">
             <envelope templateUuid="19089ab8-a828-4447-9129-44b1da1cbc9d" templateVersion="f2e1a1c5-15ac-4bfb-bf31-f1ddba652b89" scenarioUuid="e17db760-580a-4192-bc96-a91683123bea" chainUuid="e17db760-580a-4192-bc96-a91683123ben">
 	            ...
