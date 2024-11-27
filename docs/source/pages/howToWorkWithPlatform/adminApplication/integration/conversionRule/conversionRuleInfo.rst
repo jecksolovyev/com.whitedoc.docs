@@ -31,8 +31,8 @@ There are several static methods:
 | 4. wdExtensions:getMailboxUuidByAlias(String mailboxAlias)
 | Extension accepts alias name and returns mailboxUUID. Can be used to configure recipients in flow. Instead of mailboxAlias can be path to respective value in original document.
 
-| 5. wdExtensions:findEnvelopeUuidByField(String fieldName, String fieldValue)
-| Extension searches for a exact value in the field and returns envelopeUuid only if one envelope is found.
+| 5. wdExtensions:findEnvelopeUuidByField(String templateUuid, String fieldName, String fieldValue)
+| Extension searches for a exact value in the template field and returns envelopeUuid only if one envelope is found.
 
 | 6. wdExtensions:cancelEnvelope(String envelopeUuid, String reason)
 | Extension cancels the envelope in any status. Returns nothing (void)
@@ -481,7 +481,7 @@ Conversion rule example for outgoing invoice correction. Previous invoice will b
             <envelope templateUuid="{$TEMPLATE_UUID}" templateVersion="{$TEMPLATE_VERSION}">
                 <xsl:choose>
                     <xsl:when test="InvoiceType = 'InvoiceCorrection'">
-                        <xsl:variable name="originalEnvUuid" select="wdExtensions:findEnvelopeUuidByField('invoice-number', string(OriginalInvoiceNumber))"/>
+                        <xsl:variable name="originalEnvUuid" select="wdExtensions:findEnvelopeUuidByField($TEMPLATE_UUID, 'invoice-number', string(OriginalInvoiceNumber))"/>
                         <xsl:if test="$originalEnvUuid">
                             <xsl:sequence select="wdExtensions:cancelEnvelope($originalEnvUuid, string(CorrectionReason))"/>
                             <xsl:variable name="chainUuid" select="wdExtensions:chainEnvelope($originalEnvUuid)"/>
