@@ -463,7 +463,7 @@ Conversion rule example for outgoing documents
     </xsl:stylesheet>
 
 Conversion rule example for outgoing invoice correction. Previous invoice will be cancelled and chained to a new one.
-==============================================
+=====================================================================================================================
 
 .. code-block:: xml
 
