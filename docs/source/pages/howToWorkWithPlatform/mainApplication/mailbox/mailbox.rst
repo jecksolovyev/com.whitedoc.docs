@@ -76,17 +76,19 @@ You can select envelopes and share access to them with other mailboxes or send e
    :width: 400
    :align: center
 
-4. If you have selected "Send to email" option, select the type of archive and enter recipient email in the opened window and confirm your action. Note that you can enter several email addresses by pressing Enter after each one
+4. If you have selected "Send to email" option, in the opened window select the type of archive, enter recipient email and confirm your action. Note that you can enter several email addresses by pressing Enter after each one
 
 .. image:: pic_mailbox/shareZipModal.png
    :width: 400
    :align: center
 
+.. note:: Sharing envelope files by email is disabled if more envelopes then shown on one page are selected due to technical constraints.
+
 .. note:: Sharing envelope files by email can be restricted on the envelope or template level. Such envelopes will not be shared when using this option.
 
-5. If you have selected "Share access" option, select a mailbox in the opened window and confirm your action. Note that you can select several mailboxes
+5. If you have selected "Share access" option, in the opened window select a mailbox and confirm your action. Note that you can select several mailboxes
 
-.. image:: pic_mailbox/shareModal.png
+.. image:: pic_mailbox/shareAccessModal.png
    :width: 400
    :align: center
 

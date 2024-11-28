@@ -1,19 +1,19 @@
-========
-Comments
-========
+===========================
+Envelope commenting process
+===========================
 
 How to toggle comments section
 ==============================
 
 1. Click the comments icon in the header
 
-.. image:: pic_comments/ToggleComment/ToggleCommentSection1.png
+.. image:: pic_commentProcess/ToggleComment/ToggleCommentSection1.png
    :width: 600
    :align: center
 
 2. Comment section appears
 
-.. image:: pic_comments/ToggleComment/ToggleCommentSection2.png
+.. image:: pic_commentProcess/ToggleComment/ToggleCommentSection2.png
    :width: 600
    :align: center
 
@@ -26,7 +26,7 @@ How to add comment
 
 1. Select content to which you want to attach your comment
 
-.. image:: pic_comments/AddComment/AddCommentStep1.png
+.. image:: pic_commentProcess/AddComment/AddCommentStep1.png
    :width: 600
    :align: center
 
@@ -34,13 +34,13 @@ How to add comment
 
 2. Right-click the selection and click "Comment"
 
-.. image:: pic_comments/AddComment/AddCommentStep2.png
+.. image:: pic_commentProcess/AddComment/AddCommentStep2.png
    :width: 600
    :align: center
 
 3. Alternatively, if envelope has no prior open comment threads you can expand comment section and click the "Create" link
 
-.. image:: pic_comments/AddComment/AddCommentStep3.png
+.. image:: pic_commentProcess/AddComment/AddCommentStep3.png
    :width: 600
    :align: center
 
@@ -48,25 +48,25 @@ How to add comment
 
 4. Write a comment in the window that appears
 
-.. image:: pic_comments/AddComment/AddCommentStep4.png
+.. image:: pic_commentProcess/AddComment/AddCommentStep4.png
    :width: 600
    :align: center
    
 5. Click the visibility link to select who will be able to see this comment
 
-.. image:: pic_comments/AddComment/AddCommentStep5.png
+.. image:: pic_commentProcess/AddComment/AddCommentStep5.png
    :width: 600
    :align: center
    
 6. If you picked "Selected mailboxes" option you will need to add all desired mailboxes one by one in this window
 
-.. image:: pic_comments/AddComment/AddCommentStep6.png
+.. image:: pic_commentProcess/AddComment/AddCommentStep6.png
    :width: 600
    :align: center
 
 7. Click Save in visibility window and Save in comment window to add your comment. Also you can see highlighted section on envelope to which this comment is attached
 
-.. image:: pic_comments/AddComment/AddCommentStep7.png
+.. image:: pic_commentProcess/AddComment/AddCommentStep7.png
    :width: 600
    :align: center
 
@@ -74,7 +74,7 @@ How to add comment
    
 8. You can edit visibility level of your comment by clicking visibility link near it
 
-.. image:: pic_comments/AddComment/AddCommentStep8.png
+.. image:: pic_commentProcess/AddComment/AddCommentStep8.png
    :width: 600
    :align: center
 
@@ -83,19 +83,19 @@ How to add a reply to a comment
 
 1. Click to a "Reply" on initial comment
 
-.. image:: pic_comments/ReplyMessage/ReplyMessage1.png
+.. image:: pic_commentProcess/ReplyMessage/ReplyMessage1.png
    :width: 600
    :align: center
 
 2. Enter your reply message and click "Save"
 
-.. image:: pic_comments/ReplyMessage/ReplyMessage2.png
+.. image:: pic_commentProcess/ReplyMessage/ReplyMessage2.png
    :width: 600
    :align: center
 
 3. New message appeared in comment thread
 
-.. image:: pic_comments/ReplyMessage/ReplyMessage3.png
+.. image:: pic_commentProcess/ReplyMessage/ReplyMessage3.png
    :width: 600
    :align: center
 
@@ -106,19 +106,19 @@ How to edit comment
 
 1. Click the "Edit" button (only for initial comment in thread) or edit icon (for comments inside thread)
 
-.. image:: pic_comments/EditComment/EditComment1.png
+.. image:: pic_commentProcess/EditComment/EditComment1.png
    :width: 600
    :align: center
 
 2. Edit your comment and click "Save"
 
-.. image:: pic_comments/EditComment/EditComment2.png
+.. image:: pic_commentProcess/EditComment/EditComment2.png
    :width: 600
    :align: center
 
 3. Comment should be edied now
 
-.. image:: pic_comments/EditComment/EditComment3.png
+.. image:: pic_commentProcess/EditComment/EditComment3.png
    :width: 600
    :align: center
 
@@ -127,7 +127,7 @@ How to delete comment
 
 1. Click the delete icon
 
-.. image:: pic_comments/DeleteComment/DeleteComment1.png
+.. image:: pic_commentProcess/DeleteComment/DeleteComment1.png
    :width: 600
    :align: center
 
@@ -135,13 +135,13 @@ How to delete comment
 
 2. Confirm deletion of the comment
 
-.. image:: pic_comments/DeleteComment/DeleteComment2.png
+.. image:: pic_commentProcess/DeleteComment/DeleteComment2.png
    :width: 600
    :align: center
 
 3. Comment deleted
 
-.. image:: pic_comments/DeleteComment/DeleteComment3.png
+.. image:: pic_commentProcess/DeleteComment/DeleteComment3.png
    :width: 600
    :align: center
 
@@ -152,7 +152,7 @@ How to resolve comment threads
 
 1. Click the resolve icon
 
-.. image:: pic_comments/resolveComment/resolveComment1.png
+.. image:: pic_commentProcess/resolveComment/resolveComment1.png
    :width: 600
    :align: center
 
@@ -160,7 +160,7 @@ How to resolve comment threads
 
 2. Comment resolved. Now this comment thread is located in resolved comment section. Also highlighted section on envelope to which this comment attached is removed in case when it's last comment attached to this section
 
-.. image:: pic_comments/resolveComment/resolveComment2.png
+.. image:: pic_commentProcess/resolveComment/resolveComment2.png
    :width: 600
    :align: center
 
@@ -169,7 +169,7 @@ How to reopen comment threads
 
 1. Click the reopen icon
 
-.. image:: pic_comments/ReopenComment/ReopenComment1.png
+.. image:: pic_commentProcess/ReopenComment/ReopenComment1.png
    :width: 600
    :align: center
 
@@ -177,6 +177,6 @@ How to reopen comment threads
 
 2. Comment reopened. Now this comment thread is located in active comment section. Also highlighted section on envelope to which this comment attached is added in case when it's the first comment attached to this section
 
-.. image:: pic_comments/ReopenComment/ReopenComment2.png
+.. image:: pic_commentProcess/ReopenComment/ReopenComment2.png
    :width: 600
    :align: center

@@ -11,7 +11,7 @@ How to send envelope for delegation
 
 1. For delegation you need to open envelope in “Waiting” status and click Delegation button in the upper right corner of the envelope header
 
-.. image:: delegation_pic/delegationButton.png
+.. image:: pic_delegationProcess/delegationButton.png
    :width: 600
    :align: center
 
@@ -21,7 +21,7 @@ How to send envelope for delegation
 
 .. warning:: Role can not be delegated to mailbox which is already participating in the specific role
 
-.. image:: delegation_pic/delegationModal.png
+.. image:: pic_delegationProcess/delegationModal.png
    :width: 600
    :align: center
 
@@ -30,7 +30,7 @@ How to send envelope for delegation
 
 .. note:: Each delegate can perform delegation to another mailbox (if it is not prohibited by envelope/template configuration or user to mailbox permissions)
 
-.. image:: delegation_pic/delegationCancel.png
+.. image:: pic_delegationProcess/delegationCancel.png
    :width: 600
    :align: center
 
@@ -43,7 +43,7 @@ It is possible to enable automatic incoming envelopes delegation for selected ma
 
 1. Go to Admin panel -> Mailboxes -> Selected mailbox settings
 
-.. image:: delegation_pic/autoDelegation.png
+.. image:: pic_delegationProcess/autoDelegation.png
    :width: 600
    :align: center
 
@@ -53,7 +53,7 @@ It is possible to enable automatic incoming envelopes delegation for selected ma
 3. You can specify Effective until date. If selected, forwarding will be automatically disabled day after selected. For example if 18.04.23 is selected, automatic delegation should turn off 19.04.23 at 00:00 (up to 2 hours delay is possible)
 4. Make sure to enable Active forwarding toggle if you want to enable delegation to selected mailbox
 
-.. image:: delegation_pic/autoDelegateOptions.png
+.. image:: pic_delegationProcess/autoDelegateOptions.png
    :width: 600
    :align: center
 
@@ -70,12 +70,12 @@ It is possible to restrict delegation of any outgoing envelope. Such envelopes c
 
 1. Envelope delegation can be restricted in template editor. It will affect all envelopes created from this template and can not be overridden on envelope level. This option is disabled by default
 
-.. image:: delegation_pic/denyDelegationTemplate.png
+.. image:: pic_delegationProcess/denyDelegationTemplate.png
    :width: 600
    :align: center
 
 2. It is also possible to restrict delegation on draft page for each envelope individually if it was not done on template level
 
- .. image:: delegation_pic/denyDelegationEnvelope.png
+ .. image:: pic_delegationProcess/denyDelegationEnvelope.png
    :width: 600
    :align: center
