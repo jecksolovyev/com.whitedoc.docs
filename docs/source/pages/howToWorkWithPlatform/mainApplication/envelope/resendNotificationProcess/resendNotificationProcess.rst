@@ -1,6 +1,6 @@
-========================================================
-Resend envelope invite and income envelope notifications
-========================================================
+========================================
+Resending envelope notifications process
+========================================
 
 Sender of envelope is able to resend envelope notification to all recipients who have active roles at the moment of performing resend action.
 
@@ -22,13 +22,13 @@ This approach allows you to resend envelope notifications from envelope view pag
 
 2. Click the "Resend notification" button in the header of the page
 
-.. image:: pic_resendEnvelopeNotifications/envelopeResendBtn.png
+.. image:: pic_resendNotificationProcess/envelopeResendBtn.png
    :width: 700
    :align: center
 
 3. Confirm action in modal window that appears
 
-.. image:: pic_resendEnvelopeNotifications/resendConfirmBtn.png
+.. image:: pic_resendNotificationProcess/resendConfirmBtn.png
    :width: 400
    :align: center
 
@@ -44,18 +44,18 @@ This approach allows you to resend envelope notifications from envelope list pag
 3. Select envelope(s) you want to resend notifications for
 4. Click the "Resend notification" button in the envelopes table header
 
-.. image:: pic_resendEnvelopeNotifications/selectEnvsResendBtn.png
+.. image:: pic_resendNotificationProcess/selectEnvsResendBtn.png
    :width: 700
    :align: center
 
 5. Confirm action in modal window that appears
 
-.. image:: pic_resendEnvelopeNotifications/resendConfirmBtn.png
+.. image:: pic_resendNotificationProcess/resendConfirmBtn.png
    :width: 400
    :align: center
 
 6. You will observe results of resending notifications in the results modal window
 
-.. image:: pic_resendEnvelopeNotifications/resultsModal.png
+.. image:: pic_resendNotificationProcess/resultsModal.png
    :width: 400
    :align: center
