@@ -11,25 +11,31 @@ In order to apply it, the following namespace has to be added:
 .. code-block:: xml
 
     <?xml version='1.0'?>
-    <xsl:stylesheet version="1.0"
+    <xsl:stylesheet version="2.0"
                     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                     xmlns:saxon="http://saxon.sf.net/"
                     xmlns:wdExtensions="java:com.whitedoc.xslt.extensions.WdExtensions"
                     exclude-result-prefixes="saxon wdExtensions">
 
-There are 4 static methods:
+There are several static methods:
 
 | 1. wdExtensions:getValueFromDictionary(String dictionaryUuid, String columnByUuid, String valueToFind, String columnToFind)
-| Can be used to find a value in column
+| Can be used to find a value in column.
 
 | 2. wdExtensions:getRecordUuidByValueFromDictionary(String dictionaryUuid, String columnUuid, String valueToFind)
-| Can be used to find UUID of dictionary record
+| Can be used to find UUID of dictionary record.
 
 | 3. wdExtensions:createAttachementWithSourceFile()
 | Extension uploads original file to storage, creates attachment UUID and return UUID as result. This extension can be used if created envelope required original file. Each repetition of extension will create new attachment with new UUID.
 
 | 4. wdExtensions:getMailboxUuidByAlias(String mailboxAlias)
-| Extension accepts alias name and return mailboxUUID. Can be used to configure recipients in flow. Instead of mailboxAlias can be path to respective value in original document.
+| Extension accepts alias name and returns mailboxUUID. Can be used to configure recipients in flow. Instead of mailboxAlias can be path to respective value in original document.
+
+| 5. wdExtensions:findEnvelopeUuidByField(String templateUuid, String fieldName, String fieldValue)
+| Extension searches for a exact value in the template field and returns envelopeUuid only if one envelope is found.
+
+| 6. wdExtensions:chainEnvelope(String envelopeUuid)
+| Extension returns existing chainUuid or creates a new one for the envelope. Can return null if already chained by another mailbox. Must be used for chainUuid attribute in envelope.
 
 XSLT Predefined Parameters
 ==========================
@@ -40,8 +46,8 @@ To get rid of duplicate identifiers, the following parameters can be used:
 | TEMPLATE_UUID - for selected template UUID in the rule
 | TEMPLATE_VERSION - for selected template version UUID in the rule
 
-.. code-block:: 
-    
+.. code-block::
+
     <xsl:param name="SENDER_MAILBOX"/>
     <xsl:param name="TEMPLATE_UUID"/>
     <xsl:param name="TEMPLATE_VERSION"/>
@@ -52,7 +58,7 @@ Conversion rule example for outgoing documents
 .. code-block:: xml
 
     <?xml version='1.0'?>
-    <xsl:stylesheet version="1.0"
+    <xsl:stylesheet version="2.0"
                     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                     xmlns:saxon="http://saxon.sf.net/"
                     xmlns:wdExtensions="java:com.whitedoc.xslt.extensions.WdExtensions"
@@ -451,7 +457,59 @@ Conversion rule example for outgoing documents
                 </xsl:choose>
             </xsl:if>
         </xsl:template>
+    </xsl:stylesheet>
 
+Conversion rule example for outgoing invoice correction. Previous invoice will be chained to a new one.
+=======================================================================================================
+
+.. code-block:: xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <xsl:stylesheet version="2.0"
+                    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                    xmlns:saxon="http://saxon.sf.net/"
+                    xmlns:wdExtensions="java:com.whitedoc.xslt.extensions.WdExtensions"
+                    exclude-result-prefixes="saxon wdExtensions">
+        <xsl:param name="SENDER_MAILBOX"/>
+        <xsl:param name="TEMPLATE_UUID"/>
+        <xsl:param name="TEMPLATE_VERSION"/>
+
+        <xsl:template match="/Invoice">
+            <envelope templateUuid="{$TEMPLATE_UUID}" templateVersion="{$TEMPLATE_VERSION}">
+                <xsl:choose>
+                    <xsl:when test="InvoiceType = 'InvoiceCorrection'">
+                        <xsl:variable name="originalEnvUuid" select="wdExtensions:findEnvelopeUuidByField($TEMPLATE_UUID, 'invoice-number', string(OriginalInvoiceNumber))"/>
+                        <xsl:if test="$originalEnvUuid">
+                            <xsl:variable name="chainUuid" select="wdExtensions:chainEnvelope($originalEnvUuid)"/>
+                            <xsl:if test="$chainUuid">
+                                <xsl:attribute name="chainUuid"><xsl:value-of select="$chainUuid"/></xsl:attribute>
+                            </xsl:if>
+                        </xsl:if>
+                    </xsl:when>
+                </xsl:choose>
+                <info>
+                    <message>
+                        <xsl:value-of select="InvoiceNumber"/>
+                    </message>
+                </info>
+                <flow>
+                    <roles>
+                        <role id="roleId-0" mailboxUuid="{$SENDER_MAILBOX}"/>
+                        <role id="roleId-1" mailboxUuid="{approver}"/>
+                    </roles>
+                </flow>
+                <documents>
+                    <document id="11111111-1111-1111-1111-111111111111">
+                        <field name="invoice-number">
+                            <xsl:value-of select="InvoiceNumber"/>
+                        </field>
+                        <field name="invoice-total">
+                            <xsl:value-of select="InvoiceTotal"/>
+                        </field>
+                    </document>
+                </documents>
+            </envelope>
+        </xsl:template>
     </xsl:stylesheet>
 
 XLS and X12 to XML conversion
@@ -465,7 +523,7 @@ Conversion rule example for incoming documents
 .. code-block:: xml
 
     <?xml version="1.0" encoding="ISO-8859-5"?>
-    <xsl:stylesheet version="1.0"
+    <xsl:stylesheet version="2.0"
                     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                     xmlns:uuid="java:java.util.UUID"
                     xmlns:saxon="http://saxon.sf.net/"
