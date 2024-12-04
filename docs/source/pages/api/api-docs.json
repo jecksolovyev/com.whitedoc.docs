@@ -2,7 +2,7 @@
     "openapi": "3.0.1",
     "info": {
         "title": "DocStudio Api Documentation",
-        "version": "R119.17"
+        "version": "R120.8"
     },
     "servers": [
         {
@@ -10116,13 +10116,21 @@
                 "tags": [
                     "sso-authentication-controller"
                 ],
-                "summary": "Login with SSO, redirects to UI after login",
-                "operationId": "loginGetSso",
+                "summary": "Login with SAML2",
+                "operationId": "loginSaml2",
                 "parameters": [
                     {
                         "name": "registrationId",
                         "in": "path",
                         "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "redirectUrl",
+                        "in": "query",
+                        "required": false,
                         "schema": {
                             "type": "string"
                         }
@@ -10268,6 +10276,39 @@
                                 }
                             }
                         }
+                    }
+                },
+                "security": []
+            }
+        },
+        "/oauth2/authorization/{registrationId}": {
+            "get": {
+                "tags": [
+                    "sso-authentication-controller"
+                ],
+                "summary": "Login with oAuth2",
+                "operationId": "loginOauth2",
+                "parameters": [
+                    {
+                        "name": "registrationId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "redirectUrl",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "302": {
+                        "description": "Found"
                     }
                 },
                 "security": []
@@ -22640,7 +22681,6 @@
                             "SIGN_DOCUMENTS",
                             "ENVELOPE_UPDATE",
                             "ENVELOPE_DELEGATE",
-                            "DOC_STAMP",
                             "DELETE",
                             "RESTORE",
                             "INFO",
@@ -23078,7 +23118,10 @@
                     "cloud-signature",
                     "envelope-approval",
                     "password-policy",
-                    "callback-sent"
+                    "callback-sent",
+                    "create-template",
+                    "delete-template",
+                    "allow-template"
                 ]
             },
             "AccountBillingCounterValueDTO": {
