@@ -36,7 +36,7 @@ Account permissions
      - Allows to create and edit mailboxes in particular account
    * - mailboxArchive
      - 10005
-     - ...
+     - Allows to archive mailboxes in particular account
    * - mailboxDelete
      - 10006
      - Allows to remove mailboxes in particular account
@@ -67,6 +67,27 @@ Account permissions
    * - mailboxListView
      - 10015
      - Allows to view mailboxes list page
+   * - auditLogView
+     - 10016
+     - Allows to view audit log page
+   * - dashboardManage
+     - 10017
+     - Allows to configure custom dashboard page
+   * - mailboxGroupView
+     - 10018
+     - Allows to view mailbox group list page
+   * - mailboxGroupManage
+     - 10019
+     - Allows to create and edit mailbox groups
+   * - mailboxGroupAssign 
+     - 10020
+     - Allows to add mailboxes to a group
+   * - integrationView 
+     - 10021
+     - Allows to view integration list page
+   * - integrationManage 
+     - 10022
+     - Allows to create, edit and remove conversion rules
    * - domainListView
      - 10100
      - Allows to view domains list page
@@ -79,6 +100,27 @@ Account permissions
    * - accountView
      - 10130
      - Allows to view account settings page
+   * - externalLinkListView
+     - 10200
+     - Allows to view external links page
+   * - externalLinkManage
+     - 10201
+     - Allows to add abd edit external links
+   * - externalLinkDelete
+     - 10202
+     - Allows to remove external links
+   * - billingTariffView
+     - 10211
+     - Allows to view billing plans page
+   * - billingTariffManage 
+     - 10212
+     - Allows to change plan on the billing page
+   * - billingInvoiceView 
+     - 10213
+     - Allows to view invoices list page
+   * - billingInvoicePayment 
+     - 10214
+     - Allows to pay invoices
 
 .. _mailboxPermissions:
 
@@ -116,9 +158,51 @@ Mailbox permissions
    * - envelopeListView
      - 2004
      - Allows to view envelopes list and elements on dashboard which related to envelope list (counters and wwaiting for you block)
+   * - envelopeCommentRead 
+     - 2005
+     - Allows to view comments added to an envelope
+   * - envelopeCommentWrite 
+     - 2006
+     - Allows to create, edit, solve, resolve and remove envelope comments
+   * - envelopeChainAdd  
+     - 2007
+     - Allows to chain envelope with another envelope or envelopes
+   * - envelopeChainRemove  
+     - 2008
+     - Allows to remove envelope from chain
+   * - approvalFlowManage  
+     - 2009
+     - Allows to view, create, edit and remove approval routes
+   * - envelopeApproval   
+     - 2010
+     - Allows to send envelopes to approval
+   * - envelopeApprove
+     - 2011
+     - Allows to approve or decline envelopes on approval
    * - envelopeDelegate
      - 2012
      - Allows to delegate envelopes and configure automatic forwarding rule for mailbox
+   * - approvalFlowShare
+     - 2013
+     - Allows to share envelopes approval routes
+   * - envelopeCallbackManage
+     - 2014
+     - Allows to create, edit and remove callbacks
+   * - envelopeRecycleBin
+     - 2015
+     - Allows to delete envelopes
+   * - envelopeAuditTrailRecord 
+     - 2016
+     - Allows to add record to audit trail via API
+   * - envelopeDownloadBinaries
+     - 2017
+     - Allows to download and print envelope documents
+   * - envelopeShare
+     - 2018
+     - Allows to share envelopes by email or share access to envelope
+   * - envelopeApprovalListView
+     - 2019
+     - Allows to view envelopes on approval list page
    * - categoryManage
      - 3000
      - Allows to create, update and move categories in particular mailbox

@@ -4,7 +4,7 @@ Common API error codes
 
 400 - Bad request (if request data is invalid and doesn’t correspond to API documentation. Also can contain detailed issue description).
 401 - Unauthorized (if auth token is invalid, incorrect or expired).
-402 - Payment Required (if billing deny some functionality because of no payment or tariff restriction).
+402 - Payment Required (if billing deny some functionality because of no payment or plan restriction).
 403 - Forbidden (if particular entity doesn’t have access or permissions to requested entity. Also can contain detailed issue description).
 404 - Not found (if requested entity doesn’t exist or is deleted (in case of not soft deletion)).
 409 - Conflict (very rare case, appears if two entities has conflicts but usually we have retries and users doesn’t see this error).

@@ -12,32 +12,32 @@ Billing functionality allows you to manage :ref:`tariffs <tariffs>`, :ref:`invoi
 
 .. _tariffs:
 
-Tariffs tab
-===========
+Plans tab
+=========
 
-This page lists available instance tariffs and which tariff is currently applied to the account.
+This page lists available instance plans and which plan is currently applied to the account.
 
 .. image:: pic_billing/tariffsPage.png
    :width: 400
    :align: center
 
-Tariff may be applied by clicking the respective button "Select tariff". After clicking the "Select tariff" button modal window with confirmation will be displayed. By confirming, the applicable tariff will be assigned to the account.
+Plan may be applied by clicking the respective button "Select plan". After clicking the "Select plan" button modal window with confirmation will be displayed. By confirming, the applicable plan will be assigned to the account.
 
 .. note:: If instance contains payment provider "Stripe" the following verifications and actions will be performed
 
 **Account doesn't have billing address or payment details or both**
 
-1. By confirming, the applicable tariff the system will verify if account has billing address and :ref:`payment method <paymentDetails>`
+1. By confirming, the applicable plan the system will verify if account has billing address and :ref:`payment method <paymentDetails>`
 2. If one of the billing address and :ref:`payment method <paymentDetails>` is not added to the account, modal window with respective configuration will be displayed
 3. As soon as user enters payment and billing details it will be added to the account as :ref:`payment method <paymentDetails>`
-4. On this step, if tariff has prepay configuration (most tariffs has), tariff will be assigned to the account, :ref:`invoice <invoices>` will be generated and paid (if the added payment method has sufficient funds)
+4. On this step, if plan has prepay configuration (most plans has), plan will be assigned to the account, :ref:`invoice <invoices>` will be generated and paid (if the added payment method has sufficient funds)
 
 **Account has payment details and billing address**
 
-1. By confirming, the applicable tariff the system will verify if account has billing address and :ref:`payment method <paymentDetails>`
-2. If tariff has prepay configuration (most tariffs has), tariff will be assigned to the account, :ref:`invoice <invoices>` will be generated and paid (if the added payment method has sufficient funds)
+1. By confirming, the applicable plan the system will verify if account has billing address and :ref:`payment method <paymentDetails>`
+2. If plan has prepay configuration (most plans has), plan will be assigned to the account, :ref:`invoice <invoices>` will be generated and paid (if the added payment method has sufficient funds)
 
-.. note:: You can choose only one tariff at the moment. You can change tariff not more that 1 time per hour.
+.. note:: You can choose only one plan at the moment. You can change plan not more that 1 time per hour.
 
 .. _invoices:
 
@@ -83,7 +83,7 @@ You can choose one of the appropriate payment provider to pay the invoice and pr
 Balance details
 ===============
 
-Balance details page represents details related to account events activities that impact the account balance and the account counters (f.e.: envelopes quantity left, mailboxes quantity can be created and etc.(each counter depends on tariff configuration))
+Balance details page represents details related to account events activities that impact the account balance and the account counters (f.e.: envelopes quantity left, mailboxes quantity can be created and etc.(each counter depends on plan configuration))
 
 .. image:: pic_billing/balanceDetailsPage.png
    :width: 400
