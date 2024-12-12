@@ -4,20 +4,20 @@ Billing
 
 .. note:: Billing page will not appear in the admin panel if it is not enabled in the instance settings.
 
-Billing functionality allows you to manage :ref:`tariffs <tariffs>`, :ref:`invoices <invoices>`, :ref:`payment methods <paymentDetails>` and see the account balance details.
+Billing functionality allows you to manage :ref:`plans <plans>`, :ref:`invoices <invoices>`, :ref:`payment methods <paymentDetails>` and see the account balance details.
 
 .. image:: pic_billing/billing.png
    :width: 600
    :align: center
 
-.. _tariffs:
+.. _plans:
 
 Plans tab
 =========
 
 This page lists available instance plans and which plan is currently applied to the account.
 
-.. image:: pic_billing/tariffsPage.png
+.. image:: pic_billing/plansPage.png
    :width: 400
    :align: center
 
@@ -44,7 +44,7 @@ Plan may be applied by clicking the respective button "Select plan". After click
 Invoices tab
 ============
 
-This page contains account invoices. Here you can see paid, unpaid and cancelled invoices, download and pay them. Invoice can be issued manually or, more often, automatically. Automatic invoice issuing works according to the tariff configuration.
+This page contains account invoices. Here you can see paid, unpaid and cancelled invoices, download and pay them. Invoice can be issued manually or, more often, automatically. Automatic invoice issuing works according to the plan configuration.
 
 **Invoice download options**
 

@@ -561,9 +561,9 @@
 110009,Link has invalid URL,Link has invalid URL. Please fix
 110010,Cannot use official link access,Cannot use official link access
 **BILLING**,,
-120001,Tariff {0} was not found in billing system,Tariff not found for the account
+120001,Plan {0} was not found in billing system,Plan not found for the account
 120002,Cannot change billing plan so often,You cannot change billing plan so often. Please try next day
 120003,"You have reached the limit, consider upgrading your plan","You have reached the limit, consider upgrading your plan"
 120004,"You have reached the limit ({0}), consider upgrading your plan","You have reached the limit, consider upgrading your plan"
 120005,The action is not available in your billing plan. You may want to consider upgrading,"You have reached the limit, consider upgrading your plan"
-120006,"This billing plan cannot be selected. Limit '{0}' is exceeded. The count is {1} in your account but must be no more than {2}",Select another tariff or modify your account
+120006,"This billing plan cannot be selected. Limit '{0}' is exceeded. The count is {1} in your account but must be no more than {2}",Select another plan or modify your account

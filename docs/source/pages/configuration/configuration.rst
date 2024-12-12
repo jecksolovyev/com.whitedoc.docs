@@ -1,6 +1,6 @@
-===============================
-Server Configuration Properties
-===============================
+================================
+Server configuration information
+================================
 
 Global properties
 =================
