@@ -44,9 +44,10 @@ To create link head file with child files we have to add to head file link to ch
 .. toctree::
 
 pages/howToWorkWithPlatform/howToWorkWithPlatform.rst
-pages/apiIntegration/apiIntegration.rst
+pages/api/api.rst
 pages/errorCodes/errorCodes.rst
-pages/configuration/server.rst
+pages/configuration/configuration.rst
+pages/clients/clients.rst
 ```
 
 As soon as files linked we could start fill in content of the documentation page. To fill documentation we have to use 

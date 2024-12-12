@@ -33,7 +33,7 @@ How to add currency field to the document
 9. Min - minimal value allowed in field (no limit is applied if left empty)
 10. Max - maximal value allowed in field (no limit is applied if left empty)
 
-.. warning:: Maximum allowed character count for currency field is 15 (according to `IEEE 754 <http://https://en.wikipedia.org/wiki/IEEE_754>`_). Please note this includes decimal places. This means that if you insert a value 999999999999999 or more characters, it will be converted to 9999999999999.00.
+.. warning:: Maximum allowed character count for currency field is 15 (according to `IEEE 754 <https://en.wikipedia.org/wiki/IEEE_754>`_). Please note this includes decimal places. This means that if you insert a value 999999999999999 or more characters, it will be converted to 9999999999999.00.
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
