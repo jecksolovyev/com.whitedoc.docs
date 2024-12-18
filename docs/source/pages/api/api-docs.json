@@ -2,7 +2,7 @@
     "openapi": "3.0.1",
     "info": {
         "title": "DocStudio Api Documentation",
-        "version": "R121.13"
+        "version": "R121.14"
     },
     "servers": [
         {
@@ -12708,6 +12708,27 @@
                 }
             }
         },
+        "/api/v1/envelope/callback/callbackRequestPayload": {
+            "get": {
+                "tags": [
+                    "envelope-callback-controller"
+                ],
+                "summary": "Check CallbackEnvelopeDataDTO as an example of callback payload",
+                "operationId": "getCallbackRequestPayload",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/CallbackEnvelopeDataDTO"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/api/v1/envelope/attachment/page-sizes": {
             "get": {
                 "tags": [
@@ -22599,6 +22620,59 @@
                     }
                 },
                 "description": "Envelope properties distinct with filter"
+            },
+            "CallbackEnvelopeDataDTO": {
+                "type": "object",
+                "properties": {
+                    "uuid": {
+                        "type": "string",
+                        "format": "uuid"
+                    },
+                    "label": {
+                        "uniqueItems": true,
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    "status": {
+                        "type": "string",
+                        "enum": [
+                            "DRAFT",
+                            "SENT",
+                            "WAITING",
+                            "COMPLETED",
+                            "CANCELLED",
+                            "EXPIRED",
+                            "ON_APPROVAL"
+                        ]
+                    },
+                    "subject": {
+                        "type": "string"
+                    },
+                    "receiveDate": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "expireDate": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "template": {
+                        "type": "string",
+                        "format": "uuid"
+                    },
+                    "sender": {
+                        "type": "string",
+                        "format": "uuid"
+                    },
+                    "mailbox": {
+                        "type": "string",
+                        "format": "uuid"
+                    }
+                },
+                "description": "This DTO is sent as a callback payload."
             },
             "PageDTODictionaryResponseDTO": {
                 "type": "object",
