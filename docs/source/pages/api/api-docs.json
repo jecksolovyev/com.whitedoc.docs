@@ -2,7 +2,7 @@
     "openapi": "3.0.1",
     "info": {
         "title": "DocStudio Api Documentation",
-        "version": "R120.8"
+        "version": "R121.13"
     },
     "servers": [
         {
@@ -933,7 +933,7 @@
                     "permission-account-controller"
                 ],
                 "summary": "Replace all permissions for selected user-to-account relation",
-                "operationId": "replaceAllPermissionsPermissionAccount",
+                "operationId": "replaceAllPermissions_1",
                 "parameters": [
                     {
                         "name": "userUuid",
@@ -1055,7 +1055,7 @@
                     "permission-account-controller"
                 ],
                 "summary": "Add exact permission for selected user-to-account relation. Add if absent or ignore if already present.",
-                "operationId": "patchMbPermissionsPermissionAccount",
+                "operationId": "patchMbPermissions_1",
                 "parameters": [
                     {
                         "name": "userUuid",
@@ -1131,7 +1131,7 @@
                     "role-controller"
                 ],
                 "summary": "Update role, allow to change name and permissions",
-                "operationId": "updateRole",
+                "operationId": "update_1",
                 "parameters": [
                     {
                         "name": "uuid",
@@ -1409,7 +1409,7 @@
                     "label-controller"
                 ],
                 "summary": "Update label",
-                "operationId": "updateLabel",
+                "operationId": "update_2",
                 "parameters": [
                     {
                         "name": "uuid",
@@ -1460,7 +1460,7 @@
                     "label-controller"
                 ],
                 "summary": "Delete label",
-                "operationId": "deleteLabel",
+                "operationId": "delete_1",
                 "parameters": [
                     {
                         "name": "uuid",
@@ -1634,7 +1634,7 @@
                     "filter-settings-controller"
                 ],
                 "summary": "Update FilterSettings for mailbox",
-                "operationId": "updateFilterSettings",
+                "operationId": "update_3",
                 "parameters": [
                     {
                         "name": "uuid",
@@ -1677,7 +1677,7 @@
                     "filter-settings-controller"
                 ],
                 "summary": "Delete FilterSettings",
-                "operationId": "deleteFilterSettings",
+                "operationId": "delete_2",
                 "parameters": [
                     {
                         "name": "uuid",
@@ -1712,7 +1712,7 @@
                     "envelope-controller"
                 ],
                 "summary": "Update draft envelope",
-                "operationId": "updateEnvelope",
+                "operationId": "update_4",
                 "parameters": [
                     {
                         "name": "Mailbox",
@@ -1746,7 +1746,7 @@
                     "envelope-controller"
                 ],
                 "summary": "Create draft envelope",
-                "operationId": "createEnvelope",
+                "operationId": "create",
                 "parameters": [
                     {
                         "name": "Mailbox",
@@ -2391,7 +2391,7 @@
                     "dictionary-controller"
                 ],
                 "summary": "Update dictionary column",
-                "operationId": "updateColumnDictionary",
+                "operationId": "updateColumn_1",
                 "parameters": [
                     {
                         "name": "dictionaryUuid",
@@ -2536,7 +2536,7 @@
                     "dictionary-controller"
                 ],
                 "summary": "Delete column. Will return deleted column UUID",
-                "operationId": "deleteColumnDictionary",
+                "operationId": "deleteColumn",
                 "parameters": [
                     {
                         "name": "dictionaryUuid",
@@ -2589,7 +2589,7 @@
                     "contact-controller"
                 ],
                 "summary": "Update the contact in DB",
-                "operationId": "updateContact",
+                "operationId": "update_5",
                 "parameters": [
                     {
                         "name": "uuid",
@@ -2640,7 +2640,7 @@
                     "contact-controller"
                 ],
                 "summary": "Delete contact by Id",
-                "operationId": "deleteContact",
+                "operationId": "delete_3",
                 "parameters": [
                     {
                         "name": "uuid",
@@ -2676,7 +2676,7 @@
                     "category-controller"
                 ],
                 "summary": "Update the category in DB",
-                "operationId": "updateCategory",
+                "operationId": "update_6",
                 "parameters": [
                     {
                         "name": "id",
@@ -2727,7 +2727,7 @@
                     "category-controller"
                 ],
                 "summary": "Delete category by Id",
-                "operationId": "deleteCategory",
+                "operationId": "delete_4",
                 "parameters": [
                     {
                         "name": "id",
@@ -2911,7 +2911,7 @@
                     "approval-flow-controller"
                 ],
                 "summary": "Update approval flow",
-                "operationId": "updateApprovalFlow",
+                "operationId": "update_7",
                 "parameters": [
                     {
                         "name": "flowUuid",
@@ -4054,7 +4054,7 @@
                     "template-controller"
                 ],
                 "summary": "Create new template",
-                "operationId": "create",
+                "operationId": "create_1",
                 "parameters": [
                     {
                         "name": "Mailbox",
@@ -4432,7 +4432,7 @@
                     "role-controller"
                 ],
                 "summary": "Create a role",
-                "operationId": "createRole",
+                "operationId": "create_2",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4679,7 +4679,7 @@
                     "mailbox-controller"
                 ],
                 "summary": "Retrieve mailboxes info",
-                "operationId": "getMailboxesInfoMailbox",
+                "operationId": "getMailboxesInfo_1",
                 "parameters": [
                     {
                         "name": "accountName",
@@ -4876,7 +4876,7 @@
                     "label-controller"
                 ],
                 "summary": "Save label to DB",
-                "operationId": "createLabel",
+                "operationId": "create_3",
                 "parameters": [
                     {
                         "name": "Mailbox",
@@ -5252,7 +5252,7 @@
                     "filter-settings-controller"
                 ],
                 "summary": "Read all by mailbox",
-                "operationId": "getAllFilterSettings",
+                "operationId": "getAll_1",
                 "parameters": [
                     {
                         "name": "Mailbox",
@@ -5286,7 +5286,7 @@
                     "filter-settings-controller"
                 ],
                 "summary": "Create FilterSettings for mailbox",
-                "operationId": "createFilterSettings",
+                "operationId": "create_4",
                 "parameters": [
                     {
                         "name": "Mailbox",
@@ -6689,7 +6689,7 @@
                     "envelope-search-controller"
                 ],
                 "summary": "Delete columns from displaying",
-                "operationId": "deleteColumn",
+                "operationId": "deleteColumn_1",
                 "parameters": [
                     {
                         "name": "Mailbox",
@@ -6983,13 +6983,13 @@
                     "200": {
                         "description": "OK",
                         "content": {
-                            "application/json": {
+                            "*/*": {
                                 "schema": {
                                     "type": "string",
                                     "format": "binary"
                                 }
                             },
-                            "*/*": {
+                            "application/json": {
                                 "schema": {
                                     "type": "string",
                                     "format": "binary"
@@ -7629,7 +7629,7 @@
                     "contact-controller"
                 ],
                 "summary": "Save a contact in DB",
-                "operationId": "createContact",
+                "operationId": "create_5",
                 "parameters": [
                     {
                         "name": "Mailbox",
@@ -7672,7 +7672,7 @@
                     "category-controller"
                 ],
                 "summary": "Save a category in DB",
-                "operationId": "createCategory",
+                "operationId": "create_6",
                 "parameters": [
                     {
                         "name": "Mailbox",
@@ -7856,7 +7856,7 @@
                     "approval-flow-controller"
                 ],
                 "summary": "Create approval flow",
-                "operationId": "createApprovalFlow",
+                "operationId": "create_7",
                 "parameters": [
                     {
                         "name": "Mailbox",
@@ -7897,7 +7897,7 @@
                     "approval-flow-controller"
                 ],
                 "summary": "Delete approval flows",
-                "operationId": "deleteApprovalFlow",
+                "operationId": "delete_5",
                 "parameters": [
                     {
                         "name": "Mailbox",
@@ -7938,7 +7938,7 @@
                     "alias-controller"
                 ],
                 "summary": "Save alias to mailbox",
-                "operationId": "createAlias",
+                "operationId": "create_8",
                 "parameters": [
                     {
                         "name": "Mailbox",
@@ -8013,7 +8013,7 @@
                     "account-controller"
                 ],
                 "summary": "Create account and mailbox(es) under this account. User will be assigned with default system roles for this account and mailbox(es).",
-                "operationId": "createAccount",
+                "operationId": "create_9",
                 "parameters": [
                     {
                         "name": "code",
@@ -9800,7 +9800,7 @@
                     "dictionary-controller"
                 ],
                 "summary": "Archive dictionary",
-                "operationId": "archiveDictionary",
+                "operationId": "archive_1",
                 "parameters": [
                     {
                         "name": "dictionaryUuid",
@@ -9877,7 +9877,7 @@
                     "mailbox-group-controller"
                 ],
                 "summary": "Delete mailbox group",
-                "operationId": "updateMailboxGroupMailboxGroup",
+                "operationId": "updateMailboxGroup",
                 "parameters": [
                     {
                         "name": "accountUuid",
@@ -9911,7 +9911,7 @@
                     "mailbox-group-controller"
                 ],
                 "summary": "Update mailbox group",
-                "operationId": "updateMailboxGroup",
+                "operationId": "updateMailboxGroup_1",
                 "parameters": [
                     {
                         "name": "accountUuid",
@@ -10894,13 +10894,13 @@
                     "200": {
                         "description": "OK",
                         "content": {
-                            "application/json": {
+                            "*/*": {
                                 "schema": {
                                     "type": "string",
                                     "format": "byte"
                                 }
                             },
-                            "*/*": {
+                            "application/json": {
                                 "schema": {
                                     "type": "string",
                                     "format": "byte"
@@ -11009,13 +11009,13 @@
                     "200": {
                         "description": "OK",
                         "content": {
-                            "application/json": {
+                            "*/*": {
                                 "schema": {
                                     "type": "string",
                                     "format": "byte"
                                 }
                             },
-                            "*/*": {
+                            "application/json": {
                                 "schema": {
                                     "type": "string",
                                     "format": "byte"
@@ -11444,7 +11444,7 @@
                     "mailbox-controller"
                 ],
                 "summary": "Delete mailbox by UUID in the header.",
-                "operationId": "deleteMailbox",
+                "operationId": "delete_6",
                 "parameters": [
                     {
                         "name": "checkMessage",
@@ -13254,7 +13254,7 @@
                     "alias-controller"
                 ],
                 "summary": "Get aliases by mailbox",
-                "operationId": "getAllByMailboxAlias",
+                "operationId": "getAllByMailbox_1",
                 "parameters": [
                     {
                         "name": "qualified",
@@ -13400,7 +13400,7 @@
                     "account-controller"
                 ],
                 "summary": "Get paged account mailboxes list",
-                "operationId": "searchMailboxesAccount",
+                "operationId": "searchMailboxes_1",
                 "parameters": [
                     {
                         "name": "accountUuid",
@@ -13714,6 +13714,37 @@
                 }
             }
         },
+        "/api/v1/account/{accountUuid}/billing-state": {
+            "get": {
+                "tags": [
+                    "account-billing-controller"
+                ],
+                "operationId": "getAccountBillingStateHeader",
+                "parameters": [
+                    {
+                        "name": "accountUuid",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/BillingHeaderState"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/api/v1/account/mailbox/{uuid}": {
             "get": {
                 "tags": [
@@ -13752,7 +13783,7 @@
                     "account-controller"
                 ],
                 "summary": "Retrieve account logo",
-                "operationId": "getAccountLogoAccount",
+                "operationId": "getAccountLogo_1",
                 "parameters": [
                     {
                         "name": "accountUuid",
@@ -21047,6 +21078,11 @@
                 "description": "Envelope Restrictions"
             },
             "ExchangeAs2Props": {
+                "required": [
+                    "encryptionAlgorithms",
+                    "signingAlgorithms",
+                    "url"
+                ],
                 "type": "object",
                 "properties": {
                     "url": {
@@ -21067,6 +21103,11 @@
                 }
             },
             "ExchangeAs4DbnaProps": {
+                "required": [
+                    "dbnaAccount",
+                    "ftpPassword",
+                    "url"
+                ],
                 "type": "object",
                 "properties": {
                     "url": {
@@ -21102,6 +21143,10 @@
                 ]
             },
             "ExchangeSshProps": {
+                "required": [
+                    "host",
+                    "port"
+                ],
                 "type": "object",
                 "properties": {
                     "host": {
@@ -23135,6 +23180,10 @@
                         "type": "integer",
                         "description": "Value",
                         "format": "int64"
+                    },
+                    "headerName": {
+                        "type": "string",
+                        "description": "Counter header name"
                     }
                 },
                 "description": "Counters"
@@ -23242,6 +23291,21 @@
                     }
                 },
                 "description": "Account tariff info"
+            },
+            "BillingHeaderState": {
+                "type": "object",
+                "properties": {
+                    "headerName": {
+                        "type": "string",
+                        "description": "Counter header name, may contain '{}' for counter value"
+                    },
+                    "counterValue": {
+                        "type": "integer",
+                        "description": "Counter value",
+                        "format": "int64"
+                    }
+                },
+                "description": "Account billing top-most counter name and value"
             },
             "MailboxAccountSimpleDTO": {
                 "type": "object",
