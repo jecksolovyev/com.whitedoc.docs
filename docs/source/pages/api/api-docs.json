@@ -2,7 +2,7 @@
     "openapi": "3.0.1",
     "info": {
         "title": "DocStudio Api Documentation",
-        "version": "R121.14"
+        "version": "R121.30"
     },
     "servers": [
         {
@@ -12725,6 +12725,16 @@
                                 }
                             }
                         }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/CommonExceptionDTO"
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -22621,23 +22631,60 @@
                 },
                 "description": "Envelope properties distinct with filter"
             },
+            "CommonExceptionDTO": {
+                "required": [
+                    "code",
+                    "message"
+                ],
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "integer",
+                        "description": "The code of the error",
+                        "format": "int32"
+                    },
+                    "message": {
+                        "type": "string",
+                        "description": "The message of the error"
+                    },
+                    "messageLocalized": {
+                        "type": "string",
+                        "description": "Localized message of the error"
+                    },
+                    "messageArgs": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "description": "Dynamic argument to build the message"
+                        }
+                    },
+                    "data": {
+                        "type": "object",
+                        "description": "Some additional data"
+                    }
+                },
+                "description": "The DTO for exception details"
+            },
             "CallbackEnvelopeDataDTO": {
+                "required": [
+                    "mailbox",
+                    "receiveDate",
+                    "sender",
+                    "status",
+                    "subject",
+                    "template",
+                    "uuid"
+                ],
                 "type": "object",
                 "properties": {
                     "uuid": {
                         "type": "string",
+                        "description": "UUID of the envelope",
                         "format": "uuid"
-                    },
-                    "label": {
-                        "uniqueItems": true,
-                        "type": "array",
-                        "items": {
-                            "type": "string",
-                            "format": "uuid"
-                        }
                     },
                     "status": {
                         "type": "string",
+                        "description": "Status of the envelope",
                         "enum": [
                             "DRAFT",
                             "SENT",
@@ -22649,26 +22696,41 @@
                         ]
                     },
                     "subject": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "Subject of the envelope"
+                    },
+                    "label": {
+                        "uniqueItems": true,
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "description": "Envelope's label UUID",
+                            "format": "uuid"
+                        }
                     },
                     "receiveDate": {
                         "type": "string",
+                        "description": "The date of the envelope was received",
                         "format": "date-time"
                     },
                     "expireDate": {
                         "type": "string",
+                        "description": "The date of the envelope expiration",
                         "format": "date-time"
                     },
                     "template": {
                         "type": "string",
+                        "description": "Template of the envelope",
                         "format": "uuid"
                     },
                     "sender": {
                         "type": "string",
+                        "description": "Sender of the envelope",
                         "format": "uuid"
                     },
                     "mailbox": {
                         "type": "string",
+                        "description": "Mailbox of the envelope",
                         "format": "uuid"
                     }
                 },

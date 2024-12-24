@@ -2,7 +2,7 @@
 Authorization on the platform
 =============================
 
-To work on the platform you have to :ref:`authorize <login>`. To do so you will have to :ref:`register <registration>` a user account (note that there are :ref:`password policies <passwordPolicy>`). If you are planning to work with the platform via API you can use :ref:`application tokens <appToken>` (please note that this feature can be disabled by instance administrator).
+To work on the platform you have to :ref:`authorize <login>`. To do so you will have to :ref:`register <registration>` a user account (note that there are :ref:`password policies <passwordPolicy>`). :ref:`UTM codes <utmCodes>` can be added to the platform link to add certain information to the newly registered user account. If you are planning to work with the platform via API you can use :ref:`application tokens <appToken>` (please note that this feature can be disabled by instance administrator).
 
 .. _registration:
 
@@ -92,3 +92,30 @@ You can create authorization tokens for use with API and 3rd party integrations.
    :align: center
 
 .. note:: You will receive email notification before token expiration in 30 and 1 days before it expires.
+
+.. _utmCodes:
+
+UTM codes
+=========
+
+UTM codes can be attached to the platform link to include certain information about the newly registered user. 3 code types are supported on the platform:
+
+1. utm_source - the source of the traffic
+2. utm_medium - the medium of the traffic
+3. utm_campaign - the campaign of the traffic. It assigns a certain billing plan to the newly created account.
+
+Link with codes attached should look like this:
+
+https://app.docstudio.com/?utm_source={source}&utm_medium={medium}&utm_campaign={billing_plan_UUID}
+
+*{source}*, *{medium}*, and *{billing_plan_UUID}* should be replaced with needed values. Please note that if there is a default billing plan on the instance, it will be overridden by the value passed in the utm_campaign code. User should complete the registration on the platform via such link for codes to take effect.
+
+If you want to add these codes to an envelope initiation link, it should look like this:
+
+https://app.docstudio.com/shared-envelope/create?code=09c8a0ce572c40e196b2f1782b7ebe01&redirectUrl=&utm_source={source}&utm_medium={medium}&utm_campaign={billing_plan_UUID}
+
+For an envelope initiation iframe, it should look like this:
+
+.. code-block:: xml
+   
+   <iframe width="100%" height="100%" src="https://app.docstudio.com/shared-envelope/create?code=09c8a0ce572c40e196b2f1782b7ebe01&redirectUrl=&utm_source={source}&utm_medium={medium}&utm_campaign={billing_plan_UUID}" frameborder="0"></iframe>
