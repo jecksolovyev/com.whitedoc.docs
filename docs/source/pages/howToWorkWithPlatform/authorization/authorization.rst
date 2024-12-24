@@ -108,7 +108,7 @@ Link with codes attached should look like this:
 
 https://app.docstudio.com/?utm_source='source'&utm_medium='medium'&utm_campaign='billing_plan_UUID'
 
-*'source'*, *'medium'*, and *'billing_plan_UUID'* should be replaced with needed values. Please note that if there is a default billing plan on the instance, it will be overridden by the value passed in the utm_campaign code.
+*'source'*, *'medium'*, and *'billing_plan_UUID'* should be replaced with needed values. Please note that if there is a default billing plan on the instance, it will be overridden by the value passed in the utm_campaign code. User should complete the registration on the platform via such link for codes to take effect.
 
 If you want to add these codes to an envelope initiation link, it should look like this:
 
