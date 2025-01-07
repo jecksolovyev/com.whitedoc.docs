@@ -9,6 +9,8 @@ It is an external file upload form in the envelope created from template. It can
 
 .. note:: Please note that maximum amount of external and PDF documents together per envelope is limited to 50 by default system configuration.
 
+.. _addExternalDocumentToTemplate:
+
 How to add an external document to template
 ===========================================
 
@@ -26,8 +28,8 @@ How to add an external document to template
 
 3. In the template editor you can edit document properties, such as role, optionality or allowed file extensions:
 
-* All - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .png, .jpg, .jpeg, .tiff, .tif, .zip, .7z, .rar
-* File - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg
+* All - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xlsb, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .crt, .pem, .der, .cer, .ppt, .pptx, .png, .jpg, .jpeg, .tiff, .tif, .zip, .7z, .rar
+* File - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xlsb, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .crt, .pem, .der, .cer, .ppt, .pptx
 * PDF document - .pdf
 * Image - .png, .jpg, .jpeg, .tiff, .tif
 * Archive - .zip, .7z, .rar
@@ -45,3 +47,41 @@ How to delete an external document
 
 1. Click "More" button in the right upper corner of the document
 2. Click "Delete" button in the menu
+
+.. _documentAccessRestriction:
+
+How to configure restriction of document viewing by role
+========================================================
+
+.. note:: Role which is has to upload document on envelope can not be restricted to view document. Role which has fields, such as QES or signatures can not be restricted to view document.
+
+1. Add external document to the template (:ref:`How to add external document to template<addExternalDocumentToTemplate>`)
+2. Click document to open it's properties
+
+.. image:: pic_externalDocument/ExternalDocumentPropertiesDefault.png
+   :width: 300
+   :align: center
+
+3. Click "Advanced settings"
+
+.. image:: pic_externalDocument/ExternalDocumentPropertiesAdvanced.png
+   :width: 300
+   :align: center
+
+4. Click role selector
+
+.. image:: pic_externalDocument/ExternalDocumentSelectorSelected.png
+   :width: 300
+   :align: center
+
+5. Remove selected checkboxes from roles you want to restrict access
+
+.. image:: pic_externalDocument/ExternalDocumentSelectorNotSelected.png
+   :width: 300
+   :align: center
+
+6. Save changes by clicking "Save" button in the "Properties" of the External document
+
+.. image:: pic_externalDocument/ExternalDocumentPropertiesRestricted.png
+   :width: 300
+   :align: center

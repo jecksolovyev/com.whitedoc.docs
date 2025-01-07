@@ -38,7 +38,7 @@ How to configure automatic mailbox creation for corporatre users?
 
 .. note:: This section will be visible and active only if you have the 10014 (rolesListView) account permission and your account has at least one verified domain.
 
-1. Enable the toggle switch in this sections
+1. Enable the toggle switch in this section
 
 .. image:: pic_accountSettings/settingsAutomaticMailboxCreation.png
    :width: 600
@@ -46,8 +46,35 @@ How to configure automatic mailbox creation for corporatre users?
 
 2. In the "Mailbox role" input select the mailbox role which will be assigned to the corporate users for automatically created mailboxes
 3. You can start typing in the role name in the input to narrow the roles list
-4. After clicing on the required role click the "Save" button
+4. After clicking on the required role click the "Save" button
 5. Success message will appear and settings will be saved
+
+.. _msViewerConfiguration:
+
+How to configure viewing of the documents through MS viewer?
+============================================================
+
+.. note:: this action allows you activate Microsoft Office Viewer. Active option allows the transfer of files to Microsoft Office Viewer for processing and display. This process involves handling the file outside of our platform. For more information about data processing and Microsoft's privacy policy, please visit the following link: https://www.microsoft.com/en-us/servicesagreement
+
+1. Enable the toggle switch in this section
+
+.. image:: pic_accountSettings/settingsMSViewer.png
+   :width: 600
+   :align: center
+
+2. Modal window with confirmation request will be displayed
+
+.. image:: pic_accountSettings/settingsMSViewerAcceptModal.png
+   :width: 600
+   :align: center
+
+3. Accept agreement
+4. Toggle switch will be activated
+5. Click the "Save" button to save changes
+
+.. note:: As soon as you activated this option, all mailboxes withing this account will view external documents with uploaded files .doc, .docx, .xls, .xlsx, .ppt, .pptx in MS viewer iframe.
+
+If Option is turned off files will no longer be displayed by MS viewer and will be displayed with DocStudio engine, if possible to render.
 
 How to upload an account and platform images?
 =============================================

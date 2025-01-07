@@ -73,3 +73,33 @@ How to add an e-ink signature to external document
    :align: center
 
 3. When this is done you can finish filling all mandatory fields and send the envelope - all signatures will be shown on it
+
+Viewing external documents through MS viewer
+============================================
+
+To view external documents with MS viewer you need to turn on functionality, :ref:`MS viewer configuration<msViewerConfiguration>`
+
+.. note:: the following files will be displayed though MS viewer .doc, .docx, .xls, .xlsx, .ppt, .pptx
+
+1. Upload one of the files which will be processed by MS viewer
+2. Iframe with size of the default document size will be displayed (f.e.: default document size in DocStudio is US letter)
+3. Uploaded document in iframe will be displayed
+
+.. image:: pic_externalDocument/ExternalDocumentRenderedByMSViewer.png
+   :width: 600
+   :align: center
+
+.. note:: Uploaded document will be transferred to the MS viewer and will be publicly available by specific link (which MS viewer generates)
+
+Documents with restricted access
+================================
+
+Some documents in the envelope may be with restricted access for some role of the processing flow. :ref:`Document access configuration<documentAccessRestriction>`
+
+Documents with restricted access have respective locker icon and doesn't have possibility to be downloaded
+
+.. image:: pic_externalDocument/ExternalDocumentRestrictedAccessByRole.png
+   :width: 600
+   :align: center
+
+.. note:: documents with restriction, also will not be included to the envelope archive if archive downloaded by role for which restriction configured
