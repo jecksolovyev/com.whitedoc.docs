@@ -26,6 +26,8 @@ Envelope sending without authorization
 
 Envelopes can also be sent without authorization. This is done via an envelope initiation link created by an authorized user.
 
+.. _createInitLink:
+
 How to generate an envelope initiation link?
 ============================================
 
@@ -63,7 +65,12 @@ How to generate an envelope initiation link?
 
 10. Copy the link and send it to a person who should initiate an envelope without authorization
 
-.. note:: In the same window, you can find the Embed code. It can integrate the envelope creation process with third-party services via iframe. Please note that you can add a redirect URL to the embed code. This page will open in a new browser tab after sending the envelope.
+.. note::
+   In the same window, you can find the Embed code. It can integrate the envelope creation process with third-party services via iframe.
+
+   Please note that you can add a redirect URL to the embed code or shareable link. This page will open in a new browser tab after sending the envelope.
+
+   To add a redirect URL to the initiation link (either a shareable link or embed code), include the parameter 'redirectUrl' with the desired URL to redirect to. :ref:`Click to more details<redirectUrl>`.
 
 11. You can revoke the current link and code by clicking the "Revoke link" button. This action disables the previously generated link. Also, you can create a new link and code by clicking the "Generate new link" button (note that this revokes the previously generated link). Link and code are unique every time, and revoked ones can not be restored
 
@@ -150,3 +157,29 @@ How to send an envelope without authorization as a registered user?
 .. image:: pic_unregisteredUserProcessing/successPage.png
    :width: 600
    :align: center
+
+.. _redirectUrl:
+
+How to add redirect url to shareable link or embed code?
+========================================================
+
+1. Copy link or embed code (:ref:`Click here to read more about link/code creation<createInitLink>`.)
+
+2. Modify your link by adding redirectUrl={yourUrl} parameter. In examples below you can see added redirectUrl to the both shareable link and embed code, f.e.: redirect url to https://www.google.com
+
+
+**Shareable link with redirect url**
+
+.. code-block:: RST
+
+   https://app.docstudio.com/shared-envelope/create?code=b434c43b75f34e70af0bdd1cf59f16d7&redirectUrl=https://www.google.com
+
+
+**Embed code with redirect url**
+
+.. code-block:: RST
+
+   <iframe width="100%" height="100%" src="https://app.docstudio.com/shared-envelope/create?code=b434c43b75f34e70af0bdd1cf59f16d7&redirectUrl=redirectUrl=https://www.google.com" frameborder="0"></iframe>
+
+
+.. note:: To proper configuration of the redirect in the shareable link replace special characters (in the example slashes //) in the redirect url according to https:%2F%2Fwww.google.com
