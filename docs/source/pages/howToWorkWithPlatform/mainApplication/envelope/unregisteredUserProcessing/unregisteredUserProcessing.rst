@@ -165,7 +165,7 @@ How to add redirect url to shareable link or embed code?
 
 1. Copy link or embed code (:ref:`Click here to read more about link/code creation<createInitLink>`.)
 
-2. Modify your link by adding redirectUrl={yourUrl} parameter. In examples below you can see added redirectUrl to the both shareable link and embed code, f.e.: redirect url to https://www.google.com
+2. Modify your link by adding redirectUrl={yourUrl} parameter. In examples below you can see added redirectUrl to both the shareable link and the embed code, f.e.: redirect url to https://www.google.com
 
 
 **Shareable link with redirect url**
@@ -182,4 +182,4 @@ How to add redirect url to shareable link or embed code?
    <iframe width="100%" height="100%" src="https://app.docstudio.com/shared-envelope/create?code=b434c43b75f34e70af0bdd1cf59f16d7&redirectUrl=redirectUrl=https://www.google.com" frameborder="0"></iframe>
 
 
-.. note:: To proper configuration of the redirect in the shareable link replace special characters (in the example slashes //) in the redirect url according to https:%2F%2Fwww.google.com
+.. note:: For proper configuration of the redirect in the shareable link, replace special characters (e.g., slashes //) in the redirect URL with their encoded form, as shown in this example: https:%2F%2Fwww.google.com
