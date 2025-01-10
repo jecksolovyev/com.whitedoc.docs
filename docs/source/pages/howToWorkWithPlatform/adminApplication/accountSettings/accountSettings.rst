@@ -51,10 +51,10 @@ How to configure automatic mailbox creation for corporatre users?
 
 .. _msViewerConfiguration:
 
-How to configure viewing of the documents through MS viewer?
-============================================================
+How to configure document viewing through the Microsoft Viewer?
+===============================================================
 
-.. note:: this action allows you activate Microsoft Office Viewer. Active option allows the transfer of files to Microsoft Office Viewer for processing and display. This process involves handling the file outside of our platform. For more information about data processing and Microsoft's privacy policy, please visit the following link: https://www.microsoft.com/en-us/servicesagreement
+.. note:: This action allows you to activate the Microsoft Office Viewer. The active option allows the transfer of files to the Microsoft Office Viewer for processing and display. This process involves handling the file outside our platform. For more information about data processing and Microsoft's privacy policy, please visit the following link: https://www.microsoft.com/en-us/servicesagreement
 
 1. Enable the toggle switch in this section
 
@@ -62,19 +62,19 @@ How to configure viewing of the documents through MS viewer?
    :width: 600
    :align: center
 
-2. Modal window with confirmation request will be displayed
+2. Modal window with a confirmation request will be displayed
 
 .. image:: pic_accountSettings/settingsMSViewerAcceptModal.png
    :width: 600
    :align: center
 
-3. Accept agreement
+3. Accept the agreement
 4. Toggle switch will be activated
 5. Click the "Save" button to save changes
 
 .. note:: As soon as you activated this option, all mailboxes withing this account will view external documents with uploaded files .doc, .docx, .xls, .xlsx, .ppt, .pptx in MS viewer iframe.
 
-If Option is turned off files will no longer be displayed by MS viewer and will be displayed with DocStudio engine, if possible to render.
+If the option is turned off, files will no longer be displayed by MS viewer and will be displayed with the DocStudio engine,  if rendering is possible.
 
 How to upload an account and platform images?
 =============================================
