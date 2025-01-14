@@ -2,7 +2,7 @@
     "openapi": "3.0.1",
     "info": {
         "title": "DocStudio Api Documentation",
-        "version": "R121.30"
+        "version": "R122.10"
     },
     "servers": [
         {
@@ -3588,7 +3588,7 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "$ref": "#/components/schemas/DataMap"
+                                    "$ref": "#/components/schemas/CommonExceptionDTO"
                                 }
                             }
                         }
@@ -3630,7 +3630,7 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "$ref": "#/components/schemas/DataMap"
+                                    "$ref": "#/components/schemas/CommonExceptionDTO"
                                 }
                             }
                         }
@@ -3902,7 +3902,7 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "$ref": "#/components/schemas/DataMap"
+                                    "$ref": "#/components/schemas/CommonExceptionDTO"
                                 }
                             }
                         }
@@ -3941,7 +3941,7 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "$ref": "#/components/schemas/DataMap"
+                                    "$ref": "#/components/schemas/CommonExceptionDTO"
                                 }
                             }
                         }
@@ -5822,7 +5822,7 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "$ref": "#/components/schemas/DataMap"
+                                    "$ref": "#/components/schemas/CommonExceptionDTO"
                                 }
                             }
                         }
@@ -14025,7 +14025,7 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "$ref": "#/components/schemas/DataMap"
+                                    "$ref": "#/components/schemas/CommonExceptionDTO"
                                 }
                             }
                         }
@@ -14651,6 +14651,10 @@
                     },
                     "system": {
                         "type": "boolean"
+                    },
+                    "allowMicrosoftOfficeViewer": {
+                        "type": "boolean",
+                        "description": "Allow envelope attachments public access for MS Office Viewer"
                     },
                     "permissions": {
                         "uniqueItems": true,
@@ -16115,6 +16119,10 @@
                         "type": "string",
                         "description": "Create personal mailbox for self-registered corporate user with role UUID",
                         "format": "uuid"
+                    },
+                    "allowMicrosoftOfficeViewer": {
+                        "type": "boolean",
+                        "description": "Allow envelope attachments public access for MS Office Viewer. Skip property for non-owner users."
                     }
                 }
             },
@@ -16187,6 +16195,10 @@
                         "type": "string",
                         "description": "Create personal mailbox for self-registered corporate user with role UUID",
                         "format": "uuid"
+                    },
+                    "allowMicrosoftOfficeViewer": {
+                        "type": "boolean",
+                        "description": "Allow envelope attachments public access for MS Office Viewer"
                     }
                 }
             },
@@ -16699,16 +16711,39 @@
                     }
                 }
             },
-            "DataMap": {
+            "CommonExceptionDTO": {
+                "required": [
+                    "code",
+                    "message"
+                ],
                 "type": "object",
                 "properties": {
-                    "empty": {
-                        "type": "boolean"
+                    "code": {
+                        "type": "integer",
+                        "description": "The code of the error",
+                        "format": "int32"
+                    },
+                    "message": {
+                        "type": "string",
+                        "description": "The message of the error"
+                    },
+                    "messageLocalized": {
+                        "type": "string",
+                        "description": "Localized message of the error"
+                    },
+                    "messageArgs": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "description": "Dynamic argument to build the message"
+                        }
+                    },
+                    "data": {
+                        "type": "object",
+                        "description": "Some additional data"
                     }
                 },
-                "additionalProperties": {
-                    "type": "object"
-                }
+                "description": "The DTO for exception details"
             },
             "LoginResponseDTO": {
                 "type": "object",
@@ -20324,6 +20359,10 @@
                     "system": {
                         "type": "boolean"
                     },
+                    "allowMicrosoftOfficeViewer": {
+                        "type": "boolean",
+                        "description": "Allow envelope attachments public access for MS Office Viewer"
+                    },
                     "permissions": {
                         "uniqueItems": true,
                         "type": "array",
@@ -20543,6 +20582,19 @@
                         "type": "boolean"
                     }
                 }
+            },
+            "DataMap": {
+                "type": "object",
+                "properties": {
+                    "empty": {
+                        "type": "boolean"
+                    }
+                },
+                "additionalProperties": {
+                    "type": "object",
+                    "description": "Data records"
+                },
+                "description": "Data records"
             },
             "PageDTODataMap": {
                 "type": "object",
@@ -22630,40 +22682,6 @@
                     }
                 },
                 "description": "Envelope properties distinct with filter"
-            },
-            "CommonExceptionDTO": {
-                "required": [
-                    "code",
-                    "message"
-                ],
-                "type": "object",
-                "properties": {
-                    "code": {
-                        "type": "integer",
-                        "description": "The code of the error",
-                        "format": "int32"
-                    },
-                    "message": {
-                        "type": "string",
-                        "description": "The message of the error"
-                    },
-                    "messageLocalized": {
-                        "type": "string",
-                        "description": "Localized message of the error"
-                    },
-                    "messageArgs": {
-                        "type": "array",
-                        "items": {
-                            "type": "object",
-                            "description": "Dynamic argument to build the message"
-                        }
-                    },
-                    "data": {
-                        "type": "object",
-                        "description": "Some additional data"
-                    }
-                },
-                "description": "The DTO for exception details"
             },
             "CallbackEnvelopeDataDTO": {
                 "required": [

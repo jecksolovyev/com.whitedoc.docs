@@ -72,7 +72,7 @@ How to configure document viewing through the Microsoft Viewer?
 4. Toggle switch will be activated
 5. Click the "Save" button to save changes
 
-.. note:: As soon as you activated this option, all mailboxes withing this account will view external documents with uploaded files .doc, .docx, .xls, .xlsx, .ppt, .pptx in MS viewer iframe.
+.. note:: As soon as you activated this option, all mailboxes withing this account will view external documents with uploaded files in .doc, .docx, .ppt, .pptx .xls, .xslb, .xlsm, and .xlsx formats in MS viewer iframe.
 
 If the option is turned off, files will no longer be displayed by MS viewer and will be displayed with the DocStudio engine,  if rendering is possible.
 
