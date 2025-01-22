@@ -119,7 +119,7 @@ Choice (Radio button) field may have following attributes:
 - search - boolean, defines if field is searchable on envelope search or not, if not set default value false, optional attribute
 - roleId - id of the role who should fill field on envelope, mandatory attribute
 
-For one group any amount of choice options can be created, but only one of the can be selected in the envelope.
+For one group any amount of choice options can be created, but only one of them can be selected in the envelope.
 
 +----------------------------------------------------------------------------------------+
 |**Checkbox field**                                                                      |
