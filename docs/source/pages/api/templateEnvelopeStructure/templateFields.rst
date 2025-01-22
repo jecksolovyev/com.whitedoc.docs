@@ -119,21 +119,7 @@ Choice (Radio button) field may have following attributes:
 - search - boolean, defines if field is searchable on envelope search or not, if not set default value false, optional attribute
 - roleId - id of the role who should fill field on envelope, mandatory attribute
 
-For one group may be created not limited quantity of choices but on envelope only one will be available to chose
-
-+------------------------------------------------------------------------------------+
-|**A/B (Yes/No) field**                                                              |
-+====================================================================================+
-|`<field type="yesno" name="string" roleId="Id" valueYes="string" valueNo="string"/>`|
-+------------------------------------------------------------------------------------+
-
-A/B field may have following attributes:
-
-- type - define if this field is yesno type, mandatory attribute
-- name - string, length from 1 up to 128 symbols, restricted symbols &, ", <, >, field name used to fill in on envelope, unique for document, mandatory attribute
-- roleId - id of the role who should fill field on envelope, mandatory attribute
-- valueYes - string, min quantity 1 symbols and max quantity 50 symbols, only one option will be selected on envelope, mandatory value
-- valueNo - string, min quantity 1 symbols and max quantity 50 symbols, only one option will be selected on envelope, mandatory value
+For one group any amount of choices may be created, but on envelope only one will be available to chose
 
 +----------------------------------------------------------------------------------------+
 |**Checkbox field**                                                                      |

@@ -252,7 +252,7 @@
 40041,"Missed document info section, document id: {0}","Structure of the template data isn't correct. Please add info sections to the document structure"
 40042,Too many signatures per role {0},Signature role can have one signature field per one document
 40043,No signature provider for digital signing,Please use eInk signature instead
-40044,"Unexpected field type '{0}'","Type of the entered field is not supported. Supported types of fields: text, number, money, datetime, select-dictionary, yesno, attachment"
+40044,"Unexpected field type '{0}'","Type of the entered field is not supported. Supported types of fields: text, number, money, datetime, select-dictionary, attachment"
 40045,Unexpected document body content: {0},"Only one type of field ""attachment"" is allowed for external document"
 40046,Dynamic table name not found,Name of the dynamic table is missed
 40047,Dynamic table roleId not found,"Table field doesn't have assigned role"
