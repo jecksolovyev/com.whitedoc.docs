@@ -36,7 +36,6 @@ This method is similar to drag & drop, but works in 2 clicks instead of 1. Click
    dropdown/dropdown.rst
    dictionary/dictionary.rst
    lookup/lookup.rst
-   aB/aB.rst
    file/file.rst
    table/table.rst
    duplicate/duplicate.rst
