@@ -2,7 +2,7 @@
     "openapi": "3.0.1",
     "info": {
         "title": "DocStudio Api Documentation",
-        "version": "R122.10"
+        "version": "R124.8"
     },
     "servers": [
         {
@@ -1830,6 +1830,16 @@
                         "in": "path",
                         "description": "Envelope to update",
                         "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "sessionId",
+                        "in": "query",
+                        "description": "Mass signing session UUID",
+                        "required": false,
                         "schema": {
                             "type": "string",
                             "format": "uuid"
@@ -5490,6 +5500,16 @@
                         }
                     },
                     {
+                        "name": "sessionId",
+                        "in": "query",
+                        "description": "Mass signing session UUID",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
                         "name": "Mailbox",
                         "in": "header",
                         "description": "Mailbox context, HTTP Header with current mailbox UUID",
@@ -5537,6 +5557,16 @@
                         "in": "path",
                         "description": "Envelope UUID",
                         "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "sessionId",
+                        "in": "query",
+                        "description": "Mass signing session UUID",
+                        "required": false,
                         "schema": {
                             "type": "string",
                             "format": "uuid"
@@ -12459,6 +12489,106 @@
                 }
             }
         },
+        "/api/v1/envelope/signing-report/{sessionId}": {
+            "get": {
+                "tags": [
+                    "envelope-controller"
+                ],
+                "summary": "Get mass signing report",
+                "operationId": "getMassSigningReport",
+                "parameters": [
+                    {
+                        "name": "sessionId",
+                        "in": "path",
+                        "description": "Mass signing session UUID",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "Mailbox",
+                        "in": "header",
+                        "description": "Mailbox context, HTTP Header with current mailbox UUID",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/octet-stream": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            },
+                            "application/json": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/envelope/shared-attachment": {
+            "get": {
+                "tags": [
+                    "envelope-controller"
+                ],
+                "summary": "Download shared attachment for specific provider",
+                "operationId": "downloadSharedAttachment",
+                "parameters": [
+                    {
+                        "name": "provider",
+                        "in": "query",
+                        "description": "Sharing provider name",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "attachmentUuid",
+                        "in": "query",
+                        "description": "Attachment UUID",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "*/*": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            },
+                            "application/json": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": []
+            }
+        },
         "/api/v1/envelope/invite-info": {
             "get": {
                 "tags": [
@@ -17804,7 +17934,6 @@
                         "enum": [
                             "text",
                             "datetime",
-                            "yesno",
                             "selectDictionary",
                             "einksign",
                             "initials",
@@ -18024,7 +18153,6 @@
                         "enum": [
                             "text",
                             "datetime",
-                            "yesno",
                             "selectDictionary",
                             "einksign",
                             "initials",
@@ -18479,7 +18607,6 @@
                         "enum": [
                             "text",
                             "datetime",
-                            "yesno",
                             "selectDictionary",
                             "einksign",
                             "initials",
@@ -20932,17 +21059,14 @@
             "CryptoProperties": {
                 "type": "object",
                 "properties": {
+                    "region": {
+                        "type": "string"
+                    },
                     "signatureProviders": {
                         "type": "array",
                         "items": {
                             "type": "string"
                         }
-                    },
-                    "region": {
-                        "type": "string"
-                    },
-                    "smartIdClientPrefix": {
-                        "type": "string"
                     },
                     "signatureContainer": {
                         "type": "string",
@@ -20950,6 +21074,12 @@
                             "P7S",
                             "ASICE"
                         ]
+                    },
+                    "documentSharingProviders": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
                     },
                     "stampSupported": {
                         "type": "boolean"
@@ -21485,6 +21615,10 @@
                     "theme": {
                         "type": "string",
                         "description": "The name of the UI theme"
+                    },
+                    "supportChatProvider": {
+                        "type": "string",
+                        "description": "Support live chat provider name"
                     },
                     "hideUnauthorizedFunctions": {
                         "type": "boolean",
