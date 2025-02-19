@@ -6,12 +6,12 @@ This field allows you to place a PAdES signature on the document.
 
 .. hint:: This field can be added to PDF documents uploaded on a template level only.
 
-How to add PAdES field to the document
-======================================
+How to add a PAdES field to the document?
+=========================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
-.. image:: pic_pades/padesIcon.png
+.. image:: pic_pades/padesTile.png
    :width: 600
    :align: center
 

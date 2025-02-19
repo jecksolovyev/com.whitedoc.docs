@@ -8,12 +8,12 @@ This field allows you to create dynamic input box which will be filled by partic
 
 .. hint:: This field can be added to structured and PDF documents.
 
-How to add text field to the document
-=====================================
+How to add a text field to the document?
+========================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
-.. image:: pic_text/textIcon.png
+.. image:: pic_text/textTile.png
    :width: 600
    :align: center
 

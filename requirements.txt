@@ -1,3 +1,4 @@
-sphinx
 cloud-sptheme
+setuptools
+sphinx
 sphinxcontrib-redoc

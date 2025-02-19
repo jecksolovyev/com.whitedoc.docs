@@ -62,12 +62,12 @@ Currency field may have following attributes:
 - trailingZeros - true (always), you can not change this value and it's not necessary to define
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------+
-|**Date and time field**                                                                                                                                 |
+|**Date field**                                                                                                                                          |
 +========================================================================================================================================================+
 |`<field type="datetime" name="string" placeholder="string" roleId="id" optional="boolean" time="boolean" search="boolean" min="integer" max="integer"/>`|
 +--------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Date and time field may have following attributes:
+Date field may have following attributes:
 
 - type - define if this field is datetime type, mandatory attribute
 - name - string, length from 1 up to 128 symbols, restricted symbols &, ", <, >, field name used to fill in on envelope, unique for document, mandatory attribute
@@ -330,7 +330,7 @@ Field value size limited up to 10kb. Field value - base64 encoded png image, siz
 PDF fields on template
 ======================
 
-You can use almost all fields above with uploaded PDF. List of allowed fields: text, number, currency, date and time, dropdown, choice, a/b, checkbox, dictionary, lookup, duplicate, formula, autonumber, signature.
+You can use almost all fields above with uploaded PDF. List of allowed fields: text, number, currency, date, dropdown, choice, checkbox, dictionary, lookup, duplicate, formula, autonumber, signature.
 
 It is necessary to send additional attributes like coordinates, dimension and the page for such fields:
 

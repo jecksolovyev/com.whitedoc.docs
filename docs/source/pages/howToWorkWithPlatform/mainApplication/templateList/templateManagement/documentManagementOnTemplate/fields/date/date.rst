@@ -1,23 +1,23 @@
-===================
-Date and time field
-===================
+==========
+Date field
+==========
 
 This field allows you to create calendar selector which will be filled by participants of the envelope processing flow.
 
 .. hint:: This field can be added to structured and PDF documents.
 
-How to add date and time field to the document
-==============================================
+How to add a date field to the document?
+========================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
-.. image:: pic_dateAndTime/dateAndTimeIcon.png
+.. image:: pic_date/dateTile.png
    :width: 600
    :align: center
 
 2. Field creation form will appear, where you should set field attributes
 
-.. image:: pic_dateAndTime/dateAndTimeCreate.png
+.. image:: pic_date/dateCreate.png
    :width: 600
    :align: center
 
@@ -34,6 +34,6 @@ How to add date and time field to the document
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
-.. image:: pic_dateAndTime/dateAndTimeEdit.png
+.. image:: pic_date/dateEdit.png
    :width: 600
    :align: center

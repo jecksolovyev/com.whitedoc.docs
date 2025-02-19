@@ -6,12 +6,12 @@ This field allows you to create a static duplicate of other field. Please note t
 
 .. hint:: This field can be added to structured and PDF documents.
 
-How to add duplicate field to the document
-==========================================
+How to add a duplicate field to the document?
+=============================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
-.. image:: pic_duplicate/duplicateIcon.png
+.. image:: pic_duplicate/duplicateTile.png
    :width: 600
    :align: center
 

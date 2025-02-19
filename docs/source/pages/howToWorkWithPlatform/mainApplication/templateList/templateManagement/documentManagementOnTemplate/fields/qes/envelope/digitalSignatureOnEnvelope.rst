@@ -94,6 +94,5 @@ After validation completed you will see results.
 
    advancedElectronicSignature.rst
    qualifiedElectronicSignature.rst
-   TINSignature.rst
    signatureCommonErrors.rst
    smartId.rst

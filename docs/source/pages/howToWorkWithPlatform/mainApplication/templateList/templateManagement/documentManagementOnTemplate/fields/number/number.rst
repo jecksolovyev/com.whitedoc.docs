@@ -6,12 +6,12 @@ This field allows you to create dynamic input box which will be filled by partic
 
 .. hint:: This field can be added to structured and PDF documents.
 
-How to add number field to the document
-=======================================
+How to add a number field to the document?
+==========================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
-.. image:: pic_number/numberIcon.png
+.. image:: pic_number/numberTile.png
    :width: 600
    :align: center
 

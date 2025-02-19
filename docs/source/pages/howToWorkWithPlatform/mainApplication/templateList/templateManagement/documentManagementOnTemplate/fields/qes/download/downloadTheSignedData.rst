@@ -2,8 +2,8 @@
 Download or send to print the signed data
 =========================================
 
-How to download the signed data
-===============================
+How to download the signed data?
+================================
 
 You can download the signature(s) of the document(s) when all participants with role "Signer" completed actions. You're able to download particular document with signatures or whole envelope with all documents inside and all signatures inside. To do this:
 

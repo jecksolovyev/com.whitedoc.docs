@@ -30,7 +30,7 @@ This method is similar to drag & drop, but works in 2 clicks instead of 1. Click
    text/text.rst
    number/number.rst
    currency/currency.rst
-   dateAndTime/dateAndTime.rst
+   date/date.rst
    choice/choice.rst
    checkbox/checkbox.rst
    dropdown/dropdown.rst

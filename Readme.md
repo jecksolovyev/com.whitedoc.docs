@@ -1,24 +1,23 @@
-# WhiteDoc documentation manual 
+# WhiteDoc ReadTheDocs documentation manual 
 
 ## Installation of the required sources
 
 ### Windows
 
-1. Install latest version of Python from https://www.python.org/downloads/
-2. Update pip to latest version: `python -m pip install --upgrade`
-3. Install latest version of Setuptools: `pip install -U setuptools`
-4. Install dependencies from requirements file: `pip install -r requirements.txt`
-5. Update Sphinx to the latest version: `pip install -U sphinx`
+1. Install the latest version of Python from https://www.python.org/downloads/
+2. Update PIP to the latest version: in powershell run `python -m pip install --upgrade pip`
+3. Install all dependencies from the requirements file: in powershell run `pip install -r requirements.txt`
+4. Periodically check if any packages should be updated: in powershell run `pip list --outdated`
+5. If any packages show that newer version is available: in powershell run `pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}`
 
 ### Linux, MacOS
 
 1. Update all packages: `sudo apt update && sudo apt upgrade -y`
-2. Install pip: `sudo apt install python3-pip`
-3. Install latest version of Setuptools: `sudo pip install -U setuptools`
-4. Install dependencies from requirements file: `sudo pip install -r requirements.txt`
-5. Update Sphinx to the latest version: `sudo pip install -U sphinx`
+2. Install PIP: `sudo apt install python3-pip`
+3. Install all dependencies from the requirements file: `sudo pip install -r requirements.txt`
+4. Periodically run first step again to keep all packages up to date
 
-You will have everything ready after this. To build a local copy of documentation with your latest updates run next command from /docs folder: `make html`
+You will have everything ready after this. To build a local copy of documentation with your latest updates run next command from /docs folder: `.\make.bat html`
 
 ## Documentation creation rules
 

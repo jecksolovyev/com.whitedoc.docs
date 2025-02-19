@@ -6,12 +6,12 @@ This field allows you to create QR and barcodes of different types.
 
 .. hint:: This field can be added to structured and PDF documents.
 
-How to add QR/barcode field to the document
-===========================================
+How to add a QR/barcode field to the document?
+==============================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
-.. image:: pic_qrBarcode/qrBarcodeIcon.png
+.. image:: pic_qrBarcode/qrBarcodeTile.png
    :width: 600
    :align: center
 
