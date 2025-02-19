@@ -47,7 +47,7 @@ Conversion rule creation process for incoming document
 - {date dateFormat} - date of the envelope receiving in format you need (dateFormat can be DDMMYYYY or any of available date formats)
 - {"documentId":"fieldName"} - value from the specific document of the template version used in integration rule.
 
-.. important:: **Restrictions of using field value {"documentId":"fieldName"}** - available fields: text, number, currency, date and time, dictionary, lookup, formula, duplicate, autonumber. Fields used in dynamic table can not be used in the naming pattern
+.. important:: **Restrictions of using field value {"documentId":"fieldName"}** - available fields: text, number, currency, date, dictionary, lookup, formula, duplicate, autonumber. Fields used in dynamic table can not be used in the naming pattern
 
 .. note:: **Validation of field value in the naming pattern** - field can be optional and in case if field is not filled in empty value will be placed instead of variable. If mandatory field not filled yet until conversion rule should be applied empty value will be placed instead of variable. If naming pattern will contain only optional field or in the moment of file creation no obligatory fields filled in yet we'll place "filename_empty" text instead of variables.
 

@@ -6,12 +6,12 @@ This field allows you to create radio button selector from several predefined va
 
 .. hint:: This field can be added to structured and PDF documents.
 
-How to add choice field to the document
-=======================================
+How to add a choice field to the document?
+==========================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
-.. image:: pic_choice/choiceIcon.png
+.. image:: pic_choice/choiceTile.png
    :width: 600
    :align: center
 

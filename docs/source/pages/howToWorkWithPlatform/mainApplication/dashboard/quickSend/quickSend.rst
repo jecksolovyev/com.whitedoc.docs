@@ -52,13 +52,13 @@ If you want to send external document (PDF, image, archive, etc.) to anyone in a
    :width: 600
    :align: center
 
-9. If "I want to sign an envelope" checkbox was selected you will be able to assign fields also for Sender role. Please note that for Sender role you should set fields value right on the editor. Applies to fields such as Text, Number, Currency, Date and time, Dropdown, Choice, Checkbox, Dictionary, Lookup, Duplicate, Formula, Signature and QR/barcode.
+9. If "I want to sign an envelope" checkbox was selected you will be able to assign fields also for Sender role. Please note that for Sender role you should set fields value right on the editor. Applies to fields such as Text, Number, Currency, Date, Dropdown, Choice, Checkbox, Dictionary, Lookup, Duplicate, Formula, Signature and QR/barcode.
 
 .. image:: pic_quickSend/senderFile.png
    :width: 600
    :align: center
 
-10. The rest of the fields, such as A/B, Formula, QES and PAdES could be added without value and new role for Sender will be created, which can be completed by filling in the fields after envelope send action.
+10. The rest of the fields, such as Formula, QES and PAdES could be added without value and new role for Sender will be created, which can be completed by filling in the fields after envelope send action.
 
 .. image:: pic_quickSend/senderFileNoValue.png
    :width: 600
@@ -69,15 +69,15 @@ If you want to send external document (PDF, image, archive, etc.) to anyone in a
 How to fill fields by Sender role on Quick-send editor?
 =======================================================
 
-If user selected "I want to sign an envelope" option in quick-send, he is able to add fields assigned to Sender and fill them in. Next fields can be filled in by Sender: Text, Number, Currency, Date and time, Choice, Checkbox, Dropdown, Dictionary, Lookup, Duplicate, Formula, QR/barcode, and Signature.
+If user selected "I want to sign an envelope" option in quick-send, he is able to add fields assigned to Sender and fill them in. Next fields can be filled in by Sender: Text, Number, Currency, Date, Choice, Checkbox, Dropdown, Dictionary, Lookup, Duplicate, Formula, QR/barcode, and Signature.
 There are two ways how to enter data into fields:
 
 1. Fill data inside field properties. This option is available for all fields from the list above
 2. Draw a signature by clicking the signature field
-3. Fill data by double-clicking the field. This option is available for the following fields: Text, Number, Currency, Date and time, Choice, Checkbox and QR/barcode
+3. Fill data by double-clicking the field. This option is available for the following fields: Text, Number, Currency, Date, Choice, Checkbox and QR/barcode
 
 - By double-clicking the Text, Number or Currency fields, edit mode of the field will be activated and user will be able to enter data in the field
-- By double-clicking the Date and time or QR/barcode (if data code content is selected) fields, modal window will be opened and user will be able to select or filll in required data
+- By double-clicking the Date or QR/barcode (if data code content is selected) fields, modal window will be opened and user will be able to select or filll in required data
 - By double-clicking the Choice option or Checkbox, it will be marked as selected
 
 How to import embedded PDF fields?

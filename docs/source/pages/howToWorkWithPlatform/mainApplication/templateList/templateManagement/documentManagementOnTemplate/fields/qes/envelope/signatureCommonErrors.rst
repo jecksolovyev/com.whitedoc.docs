@@ -1,5 +1,7 @@
+=====================================
 Common signature errors and solutions
 =====================================
+
 Sometimes the user may have problems with the selection of the Qualification Signature. Most often this is due to updates to the signature library, or incorrect configuration of the software package related to reading signatures.
 
 1. If you are trying to select a signature, and you receive an error "There was a problem while interacting with the cryptographic library", as shown in the figure below, make sure that you have gone through all the steps for installing the library on your PC, which you can find by the :ref:`here <qualifiedElectronicSignature>`, and try again

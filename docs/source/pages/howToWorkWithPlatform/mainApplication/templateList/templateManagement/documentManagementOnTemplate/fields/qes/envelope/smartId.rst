@@ -1,5 +1,6 @@
 .. _smart-id:
 
+====================================
 How to sign a document with SmartID?
 ====================================
 
@@ -12,6 +13,6 @@ To use smart id as a method of the signing documents you have to follow instruct
 
 As soon as you scanned QR code you have to follow the instructions in Privat 24 application. When things will be done in modal window QR code replaced with signature data
 
-5. Click the "Next" button or select another signature or add stamp as needed
-6. You will see the list of documents you're going to sign, if needed you can click the checkbox to select all documents in the envelope
-7. Proceed with signing, click the "Sign" button and you will see one more QR code, make procedure as described in step 4 and all documents will be signed
+1. Click the "Next" button or select another signature or add stamp as needed
+2. You will see the list of documents you're going to sign, if needed you can click the checkbox to select all documents in the envelope
+3. Proceed with signing, click the "Sign" button and you will see one more QR code, make procedure as described in step 4 and all documents will be signed

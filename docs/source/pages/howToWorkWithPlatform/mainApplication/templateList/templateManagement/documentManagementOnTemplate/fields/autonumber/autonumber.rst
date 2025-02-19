@@ -6,12 +6,12 @@ This field allows you to create an automatic counter of envelopes created from a
 
 .. hint:: This field can be added to structured and PDF documents.
 
-How to add autonumber field to the document
-===========================================
+How to add an autonumber field to the document?
+===============================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
-.. image:: pic_autonumber/autonumberIcon.png
+.. image:: pic_autonumber/autonumberTile.png
    :width: 600
    :align: center
 

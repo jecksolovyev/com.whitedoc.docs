@@ -6,12 +6,12 @@ This field allows you to create a dynamic checkbox. It can be checked or left un
 
 .. hint:: This field can be added to structured and PDF documents.
 
-How to add checkbox field to the document
-=========================================
+How to add a checkbox field to the document?
+============================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
-.. image:: pic_checkbox/checkboxIcon.png
+.. image:: pic_checkbox/checkboxTile.png
    :width: 600
    :align: center
 

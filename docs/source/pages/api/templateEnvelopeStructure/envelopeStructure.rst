@@ -20,25 +20,24 @@ Envelope data block below contains all fields which can be added to document bod
 	    </flow>
 	    <documents>
 		    <document id="16c545db-1002-4efb-a4de-b46bc5ed4885">
-			    <field name="Text 1">text</field>
-			    <field name="Duplicate 1">text</field>
-			    <field name="Number 1">10</field>
-			    <field name="Currency 1">10.20</field>
-			    <field name="Date and time 1">2024-01-11</field>
-			    <field name="Dictionary 1" recordUuid="76d0b4a4-114f-45a6-9039-d654c90a2df2">one 2</field>
-			    <field name="Signature 1">data:image/png;base64,iVBORw...K5CYII=</field>
-			    <field name="File 1" attachmentUuid="dc317260-adf3-4231-8eaa-588759d7b6f7">Screenshot 2024-01-11 at 11.22.54.png</field>
-			    <field name="A B 1">A</field>
-			    <field name="Lookup 1">two 2</field>
-			    <field name="Checkbox 1">1</field>
-			    <field name="Dropdown 1">2</field>
+			    <field name="Text">text</field>
+			    <field name="Duplicate">text</field>
+			    <field name="Number">10</field>
+			    <field name="Currency">10.20</field>
+			    <field name="Date">2024-01-11</field>
+			    <field name="Dictionary" recordUuid="76d0b4a4-114f-45a6-9039-d654c90a2df2">one 2</field>
+			    <field name="Signature">data:image/png;base64,iVBORw...K5CYII=</field>
+			    <field name="File" attachmentUuid="dc317260-adf3-4231-8eaa-588759d7b6f7">Screenshot 2024-01-11 at 11.22.54.png</field>
+			    <field name="Lookup">two 2</field>
+			    <field name="Checkbox">1</field>
+			    <field name="Dropdown">2</field>
                 // If dropdown contains option multiselect
                 <field name="Dropdown 2">
                     <value>1</value>
                     <value>2</value>
                 </field>
-			    <field name="1234">Choice 1</field>
-			    <fieldgroup name="Table 1">
+			    <field name="1234">Choice</field>
+			    <fieldgroup name="Table">
 				    <fieldset index="0">
 					    <field name="Text 2">1</field>
 				    </fieldset>
@@ -57,11 +56,11 @@ Envelope data block below contains all fields which can be added to document bod
 How to fill each single field
 =============================
 
-+---------------------------------------------------------------+
-|**Text, Number, Currency, Date and time, A/B, Dropdown fields**|
-+===============================================================+
-|`<field name="string">value</field>`                           |
-+---------------------------------------------------------------+
++-------------------------------------------------+
+|**Text, Number, Currency, Date, Dropdown fields**|
++=================================================+
+|`<field name="string">value</field>`             |
++-------------------------------------------------+
 
 - name - string, name of the field you want to fill
 - value - the value of the field, all validation restrictions configurable on template, mandatory if field doesn't have optional attribute

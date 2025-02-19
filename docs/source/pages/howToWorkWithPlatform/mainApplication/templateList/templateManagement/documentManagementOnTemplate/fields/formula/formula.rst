@@ -24,12 +24,12 @@ Next fields can be used as arguments in formulas: Number, Currency, Dictionary, 
 
 .. note:: If you use dictionary, lookup or duplicate as an argument, value will be parsed as a number. All symbols except numbers and last period will be ignored in calculation. If there are several periods, only the last one will be considered as decimal place separator. This means that if you will pass "Abc@/.1.1.1" and "Abc@/.1.1.1" as arguments into SUM formula, it will return "22.2" as a result.
 
-How to add formula field to the document
-========================================
+How to add a formula field to the document?
+===========================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
-.. image:: pic_formula/formulaIcon.png
+.. image:: pic_formula/formulaTile.png
    :width: 600
    :align: center
 
