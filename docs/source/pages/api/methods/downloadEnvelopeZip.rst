@@ -44,7 +44,7 @@ ZIP content depending on the document state
 
 Depending on the document state you will receive different ZIP content
 
-1. If not all dynamic fields (such as text, number, currency, date and time, dropdown, choice, a/b, checkbox, file, dictionary, lookup, dynamic table, duplicate, formula, autonumber, signature) are filled in the document — you will only get audit trail in the archive, because platform is not able to generate files while document is not completed
+1. If not all dynamic fields (such as text, number, currency, date, dropdown, choice, checkbox, file, dictionary, lookup, dynamic table, duplicate, formula, autonumber, signature) are filled in the document — you will only get audit trail in the archive, because platform is not able to generate files while document is not completed
 2. If the document is completed and all dynamic fields are filled (described above) — you will get a ZIP with original documents, printable versions and processing/signing certificates
 3. If the document is completed, all dynamic fields are filled (described above), and at least one QES is applied to the document — you will get a ZIP with original documents, printable versions, signatures which are already set, and processing/signing certificates
 

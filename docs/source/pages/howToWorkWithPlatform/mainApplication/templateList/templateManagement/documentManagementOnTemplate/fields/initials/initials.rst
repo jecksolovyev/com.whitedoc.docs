@@ -6,12 +6,12 @@ This field allows you to place your initials on the document.
 
 .. hint:: This field can be added to structured and PDF documents.
 
-How to add initials field to the document
-=========================================
+How to add an initials field to the document?
+=============================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
-.. image:: pic_initials/initialsIcon.png
+.. image:: pic_initials/initialsTile.png
    :width: 600
    :align: center
 
@@ -31,8 +31,8 @@ When all attributes are set, you can click "Save" button and field will be added
    :width: 600
    :align: center
 
-How to fill an initials field in the envelope
-=============================================
+How to fill an initials field in the envelope?
+==============================================
 
 1. Open envelope where initials field is located
 2. Click the initials field

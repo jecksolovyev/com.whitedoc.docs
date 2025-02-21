@@ -6,12 +6,12 @@ This field allows you to create a dynamic grid in the document, which allows to 
 
 .. hint:: This field can be added to structured documents only.
 
-How to add table field to the document
-======================================
+How to add a table field to the document?
+=========================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
-.. image:: pic_table/tableIcon.png
+.. image:: pic_table/tableTile.png
    :width: 600
    :align: center
 
@@ -34,8 +34,8 @@ When all attributes are set, you can click Save button and table will be created
 
 .. note:: If you want to hide certain columns of the table in its initial state you can click the according column, enable "Initially hidden" attribute in column properties and click "Save". Note that this is supported only for columns which have optional dynamic fields in them. Columns with static text, non-optional fields or empty cells can not be hidden. On the envelope view user will be able to show such columns from the menu on the right end of the table (only columns which have optional fields assigned for viewing user will be presented). If hidden column fields will not be filled during document processing these columns will be excluded from the final version of the document.
 
-How to fill a table field in the envelope
-=========================================
+How to fill a table field in the envelope?
+==========================================
 
 1. Only owner of the table has management buttons to add or remove rows "+" and "-" which located at the left side of the table field
 

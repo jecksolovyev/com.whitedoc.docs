@@ -2,7 +2,7 @@
     "openapi": "3.0.1",
     "info": {
         "title": "DocStudio Api Documentation",
-        "version": "R124.8"
+        "version": "R125.2"
     },
     "servers": [
         {
@@ -322,6 +322,15 @@
                         "schema": {
                             "type": "string",
                             "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "checkEnvelopeCreation",
+                        "in": "query",
+                        "description": "Check if envelope can be created using this template",
+                        "required": false,
+                        "schema": {
+                            "type": "boolean"
                         }
                     },
                     {
@@ -4503,6 +4512,228 @@
                 }
             }
         },
+        "/api/v1/notification/user/{userUuid}/account/{accountUuid}/mailbox-preferences": {
+            "get": {
+                "tags": [
+                    "notification-controller"
+                ],
+                "summary": "Get corporate user mailbox related notification preferences",
+                "operationId": "getMailboxPreferences",
+                "parameters": [
+                    {
+                        "name": "Mailbox",
+                        "in": "header",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "userUuid",
+                        "in": "path",
+                        "description": "User uuid",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "accountUuid",
+                        "in": "path",
+                        "description": "Account uuid",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "notification-controller"
+                ],
+                "summary": "Update corporate user mailbox related notification preferences",
+                "operationId": "setMailboxPreferences",
+                "parameters": [
+                    {
+                        "name": "Mailbox",
+                        "in": "header",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "userUuid",
+                        "in": "path",
+                        "description": "User uuid",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "accountUuid",
+                        "in": "path",
+                        "description": "Account uuid",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "additionalProperties": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                    }
+                                },
+                                "description": "Preferences map, possible keys (email, web)"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "/api/v1/notification/user/{userUuid}/account/{accountUuid}/account-preferences": {
+            "get": {
+                "tags": [
+                    "notification-controller"
+                ],
+                "summary": "Get corporate user account related notification preferences",
+                "operationId": "getCorporateUserAccountPreferences",
+                "parameters": [
+                    {
+                        "name": "userUuid",
+                        "in": "path",
+                        "description": "User uuid",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "accountUuid",
+                        "in": "path",
+                        "description": "Account uuid",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "additionalProperties": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "integer",
+                                            "format": "int32"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "notification-controller"
+                ],
+                "summary": "Update corporate user account related notification preferences",
+                "operationId": "setCorporateUserAccountPreferences",
+                "parameters": [
+                    {
+                        "name": "userUuid",
+                        "in": "path",
+                        "description": "User uuid",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    },
+                    {
+                        "name": "accountUuid",
+                        "in": "path",
+                        "description": "Account uuid",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "uuid"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "additionalProperties": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "integer",
+                                        "format": "int32"
+                                    }
+                                },
+                                "description": "Preferences map, possible keys (email, web)"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
         "/api/v1/notification/read": {
             "post": {
                 "tags": [
@@ -4551,7 +4782,7 @@
                     "notification-controller"
                 ],
                 "summary": "Get mailbox related notification preferences",
-                "operationId": "getMailboxPreferences",
+                "operationId": "getMailboxPreferences_1",
                 "parameters": [
                     {
                         "name": "Mailbox",
@@ -4587,7 +4818,7 @@
                 "tags": [
                     "notification-controller"
                 ],
-                "summary": "Save mailbox related notification preferences",
+                "summary": "Update mailbox related notification preferences",
                 "operationId": "saveMailboxPreferences",
                 "parameters": [
                     {
@@ -4656,7 +4887,7 @@
                 "tags": [
                     "notification-controller"
                 ],
-                "summary": "Save account related notification preferences",
+                "summary": "Update account related notification preferences",
                 "operationId": "saveAccountPreferences",
                 "requestBody": {
                     "content": {
@@ -12846,22 +13077,22 @@
                 "summary": "Check CallbackEnvelopeDataDTO as an example of callback payload",
                 "operationId": "getCallbackRequestPayload",
                 "responses": {
-                    "200": {
-                        "description": "OK",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/CallbackEnvelopeDataDTO"
-                                }
-                            }
-                        }
-                    },
                     "400": {
                         "description": "Bad Request",
                         "content": {
                             "application/json": {
                                 "schema": {
                                     "$ref": "#/components/schemas/CommonExceptionDTO"
+                                }
+                            }
+                        }
+                    },
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/CallbackEnvelopeDataDTO"
                                 }
                             }
                         }
@@ -14786,6 +15017,10 @@
                         "type": "boolean",
                         "description": "Allow envelope attachments public access for MS Office Viewer"
                     },
+                    "company": {
+                        "type": "boolean",
+                        "description": "Is account registered as a company?"
+                    },
                     "permissions": {
                         "uniqueItems": true,
                         "type": "array",
@@ -14801,6 +15036,14 @@
                         "description": "Mailboxes linked to this account",
                         "items": {
                             "$ref": "#/components/schemas/MailboxProfileDTO"
+                        }
+                    },
+                    "documentSharingProviders": {
+                        "uniqueItems": true,
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "description": "Supported Sharing Provider"
                         }
                     }
                 },
@@ -15080,6 +15323,11 @@
                     "mailbox": {
                         "type": "string",
                         "description": "Template creator's mailbox",
+                        "format": "uuid"
+                    },
+                    "account": {
+                        "type": "string",
+                        "description": "Template creator's account",
                         "format": "uuid"
                     },
                     "archive": {
@@ -20490,6 +20738,10 @@
                         "type": "boolean",
                         "description": "Allow envelope attachments public access for MS Office Viewer"
                     },
+                    "company": {
+                        "type": "boolean",
+                        "description": "Is account registered as a company?"
+                    },
                     "permissions": {
                         "uniqueItems": true,
                         "type": "array",
@@ -20505,6 +20757,14 @@
                         "description": "Mailboxes linked to this account",
                         "items": {
                             "$ref": "#/components/schemas/MailboxProfileDTO"
+                        }
+                    },
+                    "documentSharingProviders": {
+                        "uniqueItems": true,
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "description": "Supported Sharing Provider"
                         }
                     },
                     "code": {
@@ -21075,7 +21335,7 @@
                             "ASICE"
                         ]
                     },
-                    "documentSharingProviders": {
+                    "accountDocumentSharingProviders": {
                         "type": "array",
                         "items": {
                             "type": "string"
@@ -21245,6 +21505,9 @@
             "EnvelopeRestrictions": {
                 "type": "object",
                 "properties": {
+                    "einkFooter": {
+                        "type": "string"
+                    },
                     "field": {
                         "$ref": "#/components/schemas/FieldRestriction"
                     },

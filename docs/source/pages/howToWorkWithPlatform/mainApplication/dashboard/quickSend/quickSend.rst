@@ -97,7 +97,6 @@ Each field has advanced settings that can be configured by clicking the correspo
 
 Using the advanced settings, it is possible to configure the field more precisely and specifically, for example, by adding a minimum or maximum for Number or Currency fields, specifying not only a date but also a time for a Date field, setting a custom size for a QR/barcode, simply changing the fields name, and other settings depending on the type of field selected.
 
-
 There are two ways how to enter data into fields:
 
 1. Fill data inside field properties. This option is available for all fields that can be assigned to Sender.
@@ -105,7 +104,7 @@ There are two ways how to enter data into fields:
 3. Fill data by double-clicking the field. This option is available for the following fields: Text, Number, Currency, Date, Choice, Checkbox and QR/barcode (if data code content is selected).
 
 - By double-clicking the Text, Number or Currency fields, edit mode of the field will be activated and user will be able to enter data in the field
-- By double-clicking the Date and time or QR/barcode (if data code content is selected) fields, modal window will be opened and user will be able to select or filll in required data
+- By double-clicking the Date or QR/barcode (if data code content is selected) fields, modal window will be opened and user will be able to select or filll in required data
 - By double-clicking the Choice option or Checkbox, it will be marked as selected
 
 How to import embedded PDF fields?

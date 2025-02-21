@@ -6,12 +6,12 @@ This field allows you to place an e-ink signature on the document.
 
 .. hint:: This field can be added to structured and PDF documents. If added to external document, it will be converted to PDF automatically.
 
-How to add signature field to the document
-==========================================
+How to add a signature field to the document?
+=============================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
-.. image:: pic_signature/signatureIcon.png
+.. image:: pic_signature/signatureTile.png
    :width: 600
    :align: center
 
@@ -34,8 +34,8 @@ When all attributes are set, you can click "Save" button and field will be added
 
 .. _simpleElectronicSignature:
 
-How to fill a signature field in the envelope
-=============================================
+How to fill a signature field in the envelope?
+==============================================
 
 1. Open envelope where signature field is located
 2. Click the signature field

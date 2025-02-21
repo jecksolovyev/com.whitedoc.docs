@@ -6,12 +6,12 @@ This field allows you to create a dropdown menu selector from several predefined
 
 .. hint:: This field can be added to structured and PDF documents.
 
-How to add dropdown field to the document
-=========================================
+How to add a dropdown field to the document?
+============================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
-.. image:: pic_dropdown/dropdownIcon.png
+.. image:: pic_dropdown/dropdownTile.png
    :width: 600
    :align: center
 

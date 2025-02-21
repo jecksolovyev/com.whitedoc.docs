@@ -6,12 +6,12 @@ This field allows you to create an upload box for external files. Participants o
 
 .. hint:: This field can be added to structured documents only.
 
-How to add file field to the document
-=====================================
+How to add a file field to the document?
+========================================
 
 1. To add field to the document, use one of field adding methods with field icon in the Fields tab of template editor menu
 
-.. image:: pic_file/fileIcon.png
+.. image:: pic_file/fileTile.png
    :width: 600
    :align: center
 
@@ -38,7 +38,7 @@ When all attributes are set, you can click Save button and field will be added. 
    :width: 600
    :align: center
 
-How to fill a file field in the envelope
-========================================
+How to fill a file field in the envelope?
+=========================================
 
 To upload a file to the file field you should click it and select a file in opened file explorer window. You can upload only one file in one field. Maximum file size and size of all uploaded files in one envelope is set on instance but typical default value is 5MB and 25MB respectively.

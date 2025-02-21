@@ -66,6 +66,7 @@
 1064,Please log in using SSO,Corporate user cannot register or log in using a password
 1065,Wrong code format,Please send a proper code from email
 1066,File {0} cannot be converted to PDF,File conversion error
+1067,"The array '{0}' size is too large. No more than {1} items expected",Please consider the limit
 1068,Unsupported format {0},This format cannot be processed
 1069,Shared mailboxes must be specified for access level = shared,Check shared mailboxes are filled
 1070,"Date field '{0}' must be greater than {1}",Please change the date value
@@ -83,6 +84,11 @@
 1082,"PDF file is already signed, please specify 'action' parameter with any of: {0}","Parameter 'action' has to be set in order to modify PDF file"
 1083,"PDF file is encrypted, please specify 'action' parameter with any of: {0}","Parameter 'action' has to be set in order to modify PDF file"
 1084,Category access cannot be changed for category {0},Access cannot be changed after category was created
+1085,There are no suitable objects for processing,Objects cannot be processed
+1086,Email does not match with entered before,"Invalid email, possible fraud"
+1087,Attachment {0} is not in allowed format,Allowed format is either doc/docx or xls/xlsx/xlsb/xlsm or ppt/pptx
+1088,Attachment {0} is not accessible for provider {1},Please check correctness of provider name
+1089,Attachment {0} is already attached to an envelope,Please use another endpoint with envelopeUuid specified
 **USER/PROFILE**,,
 10001,User {0} not found,User with requested UUID was not found
 10002,User {0} deleted,"User has been deleted and couldn't be used"
@@ -113,7 +119,7 @@
 10028,ITN code has to be specified for company account,Please add missing property to the request
 10029,Incorrect phone number,Phone number should be in international format
 10030,This endpoint can only be executed for user with expired password,"Active user should use another endpoint, please check documentation"
-10031,User already exists,Email already registered in the system
+10031,You cannot remove yourself from the mailbox,User was added to mailbox not via invitation
 10032,User is blocked,Ask your system administrator to unblock
 10033,Verification record expired,Please repeat operation
 10034,Auto-deposit mailbox is not set,Auto-deposit mailbox has to be set for user
@@ -179,6 +185,13 @@
 20061,Signing key and certificate are required for EntityID {0},Please specify signing fields
 20062,No valid users found for creating,Import file is empty
 20063,This role cannot be deleted while it is in use for auto mailbox creation in the account {0},Role is in use as a default role for auto mailbox creation
+20064,Country ISO code must be 2 characters long,Country ISO code should be 2 characters long
+20065,The same Diia.Sharing token is already activated,The same token cannot be re-used
+20066,Another Diia.Sharing token is already activated for this account,Only one token can be activated at once
+20067,"Integration with Diia.Sharing is not activated. Please contact the owner of account '{0}' or the support chat",Set up the account
+20068,Integration with Diia.Sharing is available only for company account,Forbidden for personal account
+20069,"Diia.Sharing token is wrong, blocked or revoked. Please contact the owner of account '{0}' or the support chat",The token has to be changed
+20070,There is some Diia.Sharing connectivity issue,Try later
 **MAILBOX**,,
 30001,Mailbox {0} not found,Entered mailbox could not be found in the system
 30002,Mailbox {0} deleted,Mailbox has been deleted. Please use active mailbox.
@@ -246,6 +259,7 @@
 40034,Dynamic table body not found. Table name: {0},Table structure is not correct. Table should contain body.
 40035,Wrong style attribute: {0},Table attribute is forbidden. Allowed attributes for table: margin
 40036,"Field '{0}' assigned to wrong role",Field assigned to a role which cannot fill data. Restricted roles are Signer and Copy
+40037,"Sharing provider has to be specified for document {0} with type 'shared'",Please add attribute info -> shared -> sharingProvider to XML
 40038,No rows found,Table should contain at least 1 row
 40039,Signature assigned to not Signer role {0},"Signature field is assigned to the role which is different from Signer, please reassign the field or remove it"
 40040,Duplicated signature name in document {0},Names of the signature fields are duplicated. A document must have unique names of the fields
@@ -311,6 +325,8 @@
 40100,"All options have to be unique for dropdown '{0}'",Please update the field options
 40101,Different digital signature types are not allowed in one document,Please select only one type of signature
 40102,"All radios fields in the group '{0}' must have the same roleId or to be in the same table",Please update radio fields
+40103,Sharing provider for document {0} does not match any of supported: {1},Check correctness of the sharingProvider value
+40104,Fields do not match the expected ones in document {0},Check correctness of the provided fields
 40106,"Document '{0}' must have a field '{1}' and marked with original attribute",Please add missing fields
 40107,Maximum external documents count exceeded: found {0} of {1} maximum,Maximum external documents count exceeded
 40108,"Unsupported barcode type '{0}'",Choose another barcode type
@@ -322,6 +338,7 @@
 40115,Single attachment document in envelope cannot be optional,Fix optionality of field
 40116,Field {0} width is greater than max allowed {1} size in this position,Please decrease field width
 40117,Field {0} height is greater than max allowed {1} size in this position,Please decrease field height
+40119,"Attribute 'pattern' is not valid for field '{0}'",Fill attribute with a proper value
 **ENVELOPE**,,
 50001,"Envelope field '{0}' is empty",Required field on envelope is empty. To solve this issue please fill field with a valid content
 50002,"Value of '{0}' should be greater than {1}",Entered value in the field is less than minimal value. Please enter valid value
@@ -378,7 +395,7 @@
 50053,Invitation envelope {0} not found,"Envelope for the invitation not found, inconsistent data"
 50054,Accepted envelopes list is empty,List of UUID for accepting is empty
 50055,Invitations for envelopes {0} not found,Some envelope requests have no invitations for this user
-50056,"Cannot approve invitation, envelope {0} is in final status",Envelope for invitation is in final state
+50056,The attachment in the document {0} is not from the trusted provider,Please check the correctness of the attachment
 50057,Role not found for invitation {0},Envelope has no role for email
 50058,Role unavailable for processing {0},Envelope has no role for email
 50059,ITN value not found for signature {0},No ITN value found to match during signing
@@ -394,7 +411,7 @@
 50069,"Not enough UUIDs, at least {0} needed",Request has no enough UUIDs to merge/add into a chain
 50070,No access to chain,Mailbox has no access to any envelope within this chain UUID
 50071,Envelope {0} belongs to another chain,Envelope belongs to another chain
-50072,Envelope added to chain by another user,Current user has no rights to remove envelope from the chain
+50072,Envelope added to chain by another mailbox,Current user has no rights to remove envelope from the chain
 50073,Envelopes belong to different chains,Envelopes belong to different chains
 50074,Envelope belongs to automatically created chain,Envelope belongs to automatically created chain
 50075,Approvers cannot participate in the envelope processing,One or more approvers are already in the main flow
@@ -429,6 +446,7 @@
 50104,Sharing envelope files by e-mail is prohibited,Sharing is disabled for the envelope
 50105,Envelope callback {0} not found,Envelope callback not found by id
 50106,Too many rows in the table {0}. Allowed only {1},Please decrease number of rows in table
+50107,Field values do not match those expected in document {0},Check correctness of the provided field values
 50108,"Invalid value '{0}' for checkbox value of field '{1}'",Invalid format of value has been entered to the checkbox field. Checkbox field accepts only 1 or 0
 50109,"Checkbox '{0}' expected to be checked","Checkbox field in template is required, soi must be checked"
 50110,"Envelope document id duplicated: '{0}'",Using of duplicated ids is prohibited
@@ -443,8 +461,12 @@
 50119,"Active field except signature was found, please fill or sign envelope manually",Role has active fields except SES and should be filled manually
 50120,"Table with signature is empty, please fill or sign envelope manually",Found signature in empty table
 50121,"Signing of external PDF impossible automatically, please sign document manually",The signature must have coordinates
-50122,"Envelope doesn't match with callback filter",Use check endpoint to find more details
+50122,Envelope does not match with callback filter,Use check endpoint to find more details
 50123,"Invalid barcode data for field '{0}'",Barcode data validation failed
+50124,Wrong used action for role {0} {1},Used wrong action or wrong role
+50125,"Value '{0}' doesn't match pattern '{1}' for field '{2}'.",Pattern match failed
+50126,Envelope bulk process {0} not found,Envelope bulk process not found by id
+50127,No access to bulk process,User has no access to bulk process
 **DICTIONARY**,,
 60001,Dictionary {0} not found,Dictionary with entered UUID was not found. Please check correctness of the entered data
 60002,Dictionary name length exceeded limit,Dictionary name length is higher than maximum allowed. Limit is 128 symbols.
@@ -478,6 +500,7 @@
 60030,Export task do not match,"Dictionary export task don't match"
 60031,Dictionary column width must be greater or equal to 140,Dictionary column width must be greater or equal to 140
 60032,Dictionary column search filter error,Field is missed or empty
+60033,Dictionary {0} deleted,Dictionary has been deleted and cannot be used in the template. Please use an actual dictionary.
 **INTEGRATION**,,
 80001,Integration rule {0} deleted,Integration rule with entered UUID has been deleted
 80002,Integration rule {0} not found,Integration rule with entered UUID has was found or not exists
@@ -561,9 +584,10 @@
 110009,Link has invalid URL,Link has invalid URL. Please fix
 110010,Cannot use official link access,Cannot use official link access
 **BILLING**,,
-120001,Plan {0} was not found in billing system,Plan not found for the account
+120001,Plan {0} was not found in billing system,Tariff not found for the account
 120002,Cannot change billing plan so often,You cannot change billing plan so often. Please try next day
 120003,"You have reached the limit, consider upgrading your plan","You have reached the limit, consider upgrading your plan"
 120004,"You have reached the limit ({0}), consider upgrading your plan","You have reached the limit, consider upgrading your plan"
 120005,The action is not available in your billing plan. You may want to consider upgrading,"You have reached the limit, consider upgrading your plan"
-120006,"This billing plan cannot be selected. Limit '{0}' is exceeded. The count is {1} in your account but must be no more than {2}",Select another plan or modify your account
+120006,"This billing plan cannot be selected. Limit '{0}' is exceeded. The count is {1} in your account but must be no more than {2}",Select another tariff or modify your account
+120007,Account billing address is not valid: {0},Please correct the billing address
