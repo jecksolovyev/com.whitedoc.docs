@@ -22,7 +22,7 @@ If you want to send external document (PDF, image, archive, etc.) to anyone in a
    :width: 600
    :align: center
 
-4. You can add other roles to envelope by expanding Addition action menu
+4. You can add other roles to envelope by expanding Add approver or send a copy menu
 
 .. image:: pic_quickSend/additionalActions.png
    :width: 600
@@ -52,29 +52,56 @@ If you want to send external document (PDF, image, archive, etc.) to anyone in a
    :width: 600
    :align: center
 
-9. If "I want to sign an envelope" checkbox was selected you will be able to assign fields also for Sender role. Please note that for Sender role you should set fields value right on the editor. Applies to fields such as Text, Number, Currency, Date, Dropdown, Choice, Checkbox, Dictionary, Lookup, Duplicate, Formula, Signature and QR/barcode.
+9. If "I want to sign an envelope" checkbox was selected you will be able to assign fields also for Sender role. Please note that for Sender role you should set fields value right on the editor. Applies to fields such as Text, Number, Currency, Date, Dropdown, Choice, Checkbox, Dictionary, QR/barcode, Signature and Initials.
 
 .. image:: pic_quickSend/senderFile.png
    :width: 600
    :align: center
 
-10. The rest of the fields, such as Formula, QES and PAdES could be added without value and new role for Sender will be created, which can be completed by filling in the fields after envelope send action.
+10. The rest of the fields, such as Lookup, Duplicate, Formula, QES and PAdES could be added without value. If QES and PAdES will be added than new role for Sender will be created, which can be completed by filling in the fields after envelope send action.
 
 .. image:: pic_quickSend/senderFileNoValue.png
    :width: 600
    :align: center
 
-11. As soon as all Recipient roles and Sender role (in case of setting in up "I want to..." checkbox) have at least one field you can click the "Send" button in the header
+11. The sender can add fields for one, all, or none of the specified recipients, as well as for themselves (in case of setting in up “I want to…” checkbox) — or not add any fields at all. In any case, the envelope can be sent by clicking the "Send" or "Finish" buttons in the header or below all uploaded documents.
+
+.. image:: pic_quickSend/sendButtons.png
+   :width: 600
+   :align: center
+
+12. Recipients who have not been assigned any fields will automatically be converted to the "CC" role.
 
 How to fill fields by Sender role on Quick-send editor?
 =======================================================
 
-If user selected "I want to sign an envelope" option in quick-send, he is able to add fields assigned to Sender and fill them in. Next fields can be filled in by Sender: Text, Number, Currency, Date, Choice, Checkbox, Dropdown, Dictionary, Lookup, Duplicate, Formula, QR/barcode, and Signature.
+If user selected "I want to sign an envelope" option in quick-send, he is able to add fields assigned to Sender and fill them in. Next fields can be filled in by Sender: Text, Number, Currency, Date and time, Choice, Checkbox, Dropdown, Dictionary, Lookup, Duplicate, Formula, QR/barcode, Signature and Initials.
+
+If there is a recipient in addition to the sender, the option to select who should fill in the field will appear when adding a field. For each specified recipient email address, it will be possible to assign a field.
+
+.. image:: pic_quickSend/senderRecipientField.png
+   :width: 600
+   :align: center
+
+If the sender is the only role, all fields will be assigned to them by default, and there will be no option to select a role when adding a field.
+
+.. image:: pic_quickSend/senderOnlyField.png
+   :width: 600
+   :align: center
+
+Each field has advanced settings that can be configured by clicking the corresponding button.
+
+.. image:: pic_quickSend/fieldAdvancedSettings.png
+   :width: 600
+   :align: center
+
+Using the advanced settings, it is possible to configure the field more precisely and specifically, for example, by adding a minimum or maximum for Number or Currency fields, specifying not only a date but also a time for a Date field, setting a custom size for a QR/barcode, simply changing the fields name, and other settings depending on the type of field selected.
+
 There are two ways how to enter data into fields:
 
-1. Fill data inside field properties. This option is available for all fields from the list above
+1. Fill data inside field properties. This option is available for all fields that can be assigned to Sender.
 2. Draw a signature by clicking the signature field
-3. Fill data by double-clicking the field. This option is available for the following fields: Text, Number, Currency, Date, Choice, Checkbox and QR/barcode
+3. Fill data by double-clicking the field. This option is available for the following fields: Text, Number, Currency, Date, Choice, Checkbox and QR/barcode (if data code content is selected).
 
 - By double-clicking the Text, Number or Currency fields, edit mode of the field will be activated and user will be able to enter data in the field
 - By double-clicking the Date or QR/barcode (if data code content is selected) fields, modal window will be opened and user will be able to select or filll in required data
