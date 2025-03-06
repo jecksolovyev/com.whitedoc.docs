@@ -13,9 +13,8 @@ In order to apply it, the following namespace has to be added:
     <?xml version='1.0'?>
     <xsl:stylesheet version="2.0"
                     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                    xmlns:saxon="http://saxon.sf.net/"
                     xmlns:wdExtensions="java:com.whitedoc.xslt.extensions.WdExtensions"
-                    exclude-result-prefixes="saxon wdExtensions">
+                    exclude-result-prefixes="wdExtensions">
 
 There are several static methods:
 
@@ -60,9 +59,8 @@ Conversion rule example for outgoing documents
     <?xml version='1.0'?>
     <xsl:stylesheet version="2.0"
                     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                    xmlns:saxon="http://saxon.sf.net/"
                     xmlns:wdExtensions="java:com.whitedoc.xslt.extensions.WdExtensions"
-                    exclude-result-prefixes="saxon wdExtensions">
+                    exclude-result-prefixes="wdExtensions">
         <xsl:output indent="yes"/>
         <xsl:param name="SENDER_MAILBOX"/>
         <xsl:param name="TEMPLATE_UUID"/>
@@ -467,9 +465,8 @@ Conversion rule example for outgoing invoice correction. Previous invoice will b
     <?xml version="1.0" encoding="UTF-8"?>
     <xsl:stylesheet version="2.0"
                     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                    xmlns:saxon="http://saxon.sf.net/"
                     xmlns:wdExtensions="java:com.whitedoc.xslt.extensions.WdExtensions"
-                    exclude-result-prefixes="saxon wdExtensions">
+                    exclude-result-prefixes="wdExtensions">
         <xsl:param name="SENDER_MAILBOX"/>
         <xsl:param name="TEMPLATE_UUID"/>
         <xsl:param name="TEMPLATE_VERSION"/>
@@ -525,12 +522,9 @@ Conversion rule example for incoming documents
     <?xml version="1.0" encoding="ISO-8859-5"?>
     <xsl:stylesheet version="2.0"
                     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                    xmlns:uuid="java:java.util.UUID"
-                    xmlns:saxon="http://saxon.sf.net/"
                     xmlns:wdExtensions="java:com.whitedoc.xslt.extensions.WdExtensions"
-                    exclude-result-prefixes="saxon wdExtensions">
+                    exclude-result-prefixes="wdExtensions">
         <xsl:output indent="yes" omit-xml-declaration="yes" encoding="ISO-8859-5" method="text"/>
-        <xsl:variable name="uid" select="uuid:randomUUID()"/>
         <xsl:param name="senderMailboxUuid" select="envelope/flow/roles/role[1]/@mailboxUuid"/>
         <xsl:param name="recipientMailboxUuid" select="envelope/flow/roles/role[2]/@mailboxUuid"/>
         <xsl:variable name="senderGLN" select="wdExtensions:getValueFromDictionary('5bc5be5a-751d-4ae3-8ad8-3a6ac1ab71c8', '1ddf9e46-49f5-41a2-b6f5-7c3015bc4505', $senderMailboxUuid, '4f68fbf0-d78d-4aef-9192-bccd0c8d6011')"/>
