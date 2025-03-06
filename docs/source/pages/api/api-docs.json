@@ -2,7 +2,7 @@
     "openapi": "3.0.1",
     "info": {
         "title": "DocStudio Api Documentation",
-        "version": "R125.2"
+        "version": "R126.5"
     },
     "servers": [
         {
@@ -15337,6 +15337,10 @@
                     "newEnvelopeCanBeCreated": {
                         "type": "boolean",
                         "description": "Returns a flag whether a new envelope can be created using this template"
+                    },
+                    "publiclyShared": {
+                        "type": "boolean",
+                        "description": "Returns a flag indicating whether the template is publicly accessible by code"
                     },
                     "defaultDownloadOptions": {
                         "type": "boolean",
