@@ -48,9 +48,10 @@ You can select envelopes and sign them with specific signing method if selected 
 
 4. If you have selected any type of AES signature please follow the the signing instructions from :ref:`here <electronicSignature>`
 5. If you have selected any type of QES signature please follow the the signing instructions from :ref:`here <qualifiedElectronicSignature>`
-6. If you have selected Simple electronic signature please follow the the signing instructions from :ref:`here <simpleElectronicSignature>` (starting from step 3)
-7. Follow to third step of the signing modal window to sign all required documents
-8. After a successful process you will see a modal window with the results
+6. If you have selected the Simple electronic signature please follow the the signing instructions from :ref:`here <simpleElectronicSignature>` (starting from step 3)
+7. If you have selected any other signature priveder please follow the instructions shown in the next steps of the signing modal window
+8. Follow to third step of the signing modal window to sign all required documents
+9. After a successful process you will see a modal window with the results
 
 Next errors can occur during the mass signing process:
 
