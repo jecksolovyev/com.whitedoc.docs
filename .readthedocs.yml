@@ -19,9 +19,9 @@ formats:
 
 # Set the version of Python
 build:
-  os: ubuntu-22.04
+  os: "latest"
   tools:
-    python: "3.12"
+    python: "latest"
 
 # Python requirements required to build your docs
 python:
