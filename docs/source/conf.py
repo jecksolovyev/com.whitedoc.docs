@@ -11,7 +11,7 @@
 
 # ----- Project information
 project = 'WhiteDoc'
-copyright = '2024, DocStudio'
+copyright = '2025, DocStudio'
 author = 'DocStudio'
 # The full version, including alpha/beta/rc tags
 # release = ''
