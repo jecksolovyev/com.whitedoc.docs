@@ -21,7 +21,7 @@ formats:
 build:
   os: ubuntu-lts-latest
   tools:
-    python: "latest"
+    python: latest
 
 # Python requirements required to build your docs
 python:
