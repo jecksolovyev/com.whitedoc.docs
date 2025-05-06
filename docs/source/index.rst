@@ -7,7 +7,8 @@ Welcome to the DocStudio documentation page
 .. toctree::
 
    pages/howToWorkWithPlatform/howToWorkWithPlatform.rst
+   pages/widgets/widgets.rst
    pages/api/api.rst
    pages/errorCodes/errorCodes.rst
-   pages/configuration/configuration.rst
-   pages/clients/clients.rst
+   pages/configuration.rst
+   pages/clients.rst

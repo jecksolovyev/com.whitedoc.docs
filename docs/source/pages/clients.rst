@@ -1,6 +1,6 @@
-=====================================
+====================================
 Java & PHP Software Development Kits
-=====================================
+====================================
 
 For further convenience we have built SDK for Java and PHP.
 
