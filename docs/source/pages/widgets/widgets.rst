@@ -41,7 +41,7 @@ After a successful confirmation, envelope will be created and sent to the signer
 
 To embed this widget in any web page, please do as described below:
 
-1. Insert javascript into your webpage just after a <body> tag:
+1. Insert javascript into your webpage just after a <body> tag
 
 .. code-block:: javascript
     :force:
@@ -49,8 +49,10 @@ To embed this widget in any web page, please do as described below:
     <script src="https://platform_url_here/widgets/simple-send.bundle.js"></script>
     <wd-widget base-api="https://platform_url_here/"></wd-widget>
 
+.. note:: Platform URL has to be replaced with a real one (e.g. https://app.docstudio.com/)
+
 2. Insert and style <div> where widget will be rendered
-3. Insert javascript code into your webpage:
+3. Insert javascript code into your webpage
 4. You can style elements of the widget since all CSS classes we use are prefixed
 5. Example implementation:
 
@@ -82,5 +84,7 @@ To embed this widget in any web page, please do as described below:
         <script src="dist/simple-send.bundle.js"></script>
     </body>
     </html>
+
+.. note:: Platform URL has to be replaced with a real one (e.g. https://app.docstudio.com/)
 
 .. Tip:: Please note the widgets min required dimensions - min-height: 504px, min-width: 350px
