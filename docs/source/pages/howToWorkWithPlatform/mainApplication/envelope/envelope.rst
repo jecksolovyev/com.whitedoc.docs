@@ -22,3 +22,4 @@ Envelope is an entity containing documents (structured, external and PDF) with a
     resendNotificationProcess/resendNotificationProcess.rst
     envelopeCallback/envelopeCallback.rst
     envelopeFields/envelopeFields.rst
+    aiAssistantChat/aiAssistantChat.rst

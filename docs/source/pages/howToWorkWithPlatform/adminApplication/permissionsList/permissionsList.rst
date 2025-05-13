@@ -203,6 +203,9 @@ Mailbox permissions
    * - envelopeApprovalListView
      - 2019
      - Allows to view envelopes on approval list page
+   * - AIAssistantChat
+     - 2020
+     - Allows to use the AI assistant chat
    * - categoryManage
      - 3000
      - Allows to create, update and move categories in particular mailbox
