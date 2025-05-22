@@ -108,6 +108,8 @@ How to delete an account?
 Domains tab
 ===========
 
+.. note:: This tab is available only in company accounts.
+
 This page allows to manage, verify and activate domains. Domains are necessary for corporate users creation.
 
 .. image:: pic_accountSettings/domains.png
@@ -152,42 +154,11 @@ How to delete a domain?
 1. Click the "Delete" buttoin near a domain
 2. Confirm you action
 
-.. note:: If verified domain is deleted you will lose the ability to manage user in it.
+.. note:: If verified domain is deleted you will lose the ability to manage users in it.
 
 .. image:: pic_accountSettings/domainsDelete.png
    :width: 600
    :align: center
-
-.. _ssoProviders:
-
-=================
-SSO providers tab
-=================
-
-You can set authorization via SSO for your corporate users. To do this, you need to create a domain and verify it on the platform. Next, you need to create an ISP SSO and connect it to the domain.
-
-.. image:: pic_accountSettings/ssoProviders.png
-   :width: 600
-   :align: center
-
-How to add an SSO provider?
-===========================
-
-1. Click the "Add SSO provider" button. A  window will open. Fill in the main fields. You can choose the Metadata type. Provide URL or XML. Once you have filled in all the data click the "Add" button
-
-.. image:: pic_accountSettings/ssoProvidersAdd.png
-   :width: 600
-   :align: center
-
-2. Go to the :ref:`domains tab <domains>`. Chose active domain and click the "Manage SSO setting" button near it. Window will open
-
-.. image:: pic_accountSettings/ssoProvidersDomain.png
-   :width: 600
-   :align: center
-
-3. Select the available SSO procider and confirm your action
-4. After SSO is connected to the domain, your corporate users will be able to log in via SSO
-5. Corporate user enters your corporate domain and fills out an authorization page, as a result of which he will be successfully authorized or receive a message that he needs to register via SSO.
 
 .. _externalLinks:
 
@@ -220,6 +191,8 @@ How to add an external link?
 ===================
 Password policy tab
 ===================
+
+.. note:: This tab is available only in company accounts.
 
 You're able to configure password and session policy for all users with verified domains in your account. You can make it more strict than default system configuration. To do that follow next instructions. More info on password policy can be found :ref:`here <passwordPolicy>`.
 
@@ -267,29 +240,53 @@ How to make session policy more strict?
 6. The list of allowed IPs. The list of IP addresses from which users are able to log in on platform
 7. The list of blocked IPs. The list of IP addresses from which users aren't able to log in on platform
 
-.. _cloudSignature:
+================
+Integrations tab
+================
 
-===================
-Cloud signature tab
-===================
+.. note:: This tab is available only in company accounts.
 
-Cloud signature is one of the many ways to sign document with Qualified Electronic Signature. And on this page will be described how to configure cloud signature for your corporate account.
+This tab contains configurations of integration with different external services.
 
-.. image:: pic_accountSettings/cloudSignature.png
+.. image:: pic_accountSettings/integrations.png
    :width: 600
    :align: center
+
+.. _ssoProviders:
+
+How to add an SSO provider?
+===========================
+
+SSO authentication methods can be created for the users inside a corporate account. Follow these steps to do so:
+
+1. Create a domain and verify it on the platform
+2. Click the "Add configurations" button and select the "SSO providers" option from the menu
+3. Fill in the main fields in the opened window. You can choose the URL or XML Metadata types. When all fields are filled, click the "Add" button
+
+.. image:: pic_accountSettings/ssoProvidersAdd.png
+   :width: 600
+   :align: center
+
+4. Go to the :ref:`domains tab <domains>`. Chose active domain and click the "Manage SSO setting" button near it
+
+.. image:: pic_accountSettings/ssoProvidersDomain.png
+   :width: 600
+   :align: center
+
+5. Select the available SSO provider and confirm your action in the opened window
+6. After SSO is connected to the domain, your corporate users will be able to log in via SSO
+7. Corporate user enters your corporate domain and fills out an authorization page, as a result of which he will be successfully authorized or receive a message that he needs to register via SSO
+
+.. _cloudSignature:
 
 How to add a cloud signature?
 =============================
 
-Owner or user who has respective permissions to corporate account can configure Cloud signature for all corporate users and users with verified corporate domains can use Cloud signature. The short instruction here: Go to Admin panel, select Account Settings. On Account Settings page, select Cloud Signature tab.
+Custom Cloud signature providers can be added for the users inside a corporate account. Follow these steps to do so:
 
-1.  Click the "Add setting" button
-2.  Fill configuration form. Name of the signature can be any you want, URL should contain address to the signature server and port should respect to available port to connect
+1.  Click the "Add configurations" button and select the "Cloud signature" option from the menu
+2.  Fill in the main fields in the opened window. Name of the signature can be anything you want, URL should contain address to the signature server, and port should be available for connection on the specified server. When all fields are filled, click the "Add" button
 
 .. image:: pic_accountSettings/cloudSignatureAdd.png
    :width: 600
    :align: center
-
-3. After filling, click the "Save" button
-4. You can edit and delete configurations by clicking the "Edit and "Delete" buttons
