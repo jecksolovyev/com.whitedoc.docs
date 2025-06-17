@@ -84,11 +84,11 @@ Date field may have following attributes:
 - 2019-12-31T23:59:59+02:00
 - 2019-12-31T23:59:59Z
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|**Dropdown field**                                                                                                                                                                                                    |
-+======================================================================================================================================================================================================================+
-|`<field type="dropdown" name="string" placeholder="string" roleId="id" optional="boolean" allow-custom-value="boolean" multiSelect="boolean" search="boolean"><option>string<option>...<option>string<option></field>`|
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|**Dropdown field**                                                                                                                                                                                                  |
++====================================================================================================================================================================================================================+
+|`<field type="dropdown" name="string" placeholder="string" roleId="id" optional="boolean" allowCustomValue="boolean" multiSelect="boolean" search="boolean"><option>string<option>...<option>string<option></field>`|
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Dropdown field may have following attributes and values:
 
@@ -97,8 +97,8 @@ Dropdown field may have following attributes and values:
 - placeholder - field placeholder displayable on template and envelope, length from 0 up to 1024 symbols, if empty on envelope will be displayed field name, optional attribute
 - roleId - id of the role who should fill field on envelope, mandatory attribute
 - optional - boolean, defines if field to be filled in optionally or not on envelope, if not set default value false, optional attribute
-- allow-custom-value - boolean, defines if custom value would be acceptable on envelope, allow-custom-value and multiSelect is not possible in the same time (only one attribute can be applied), optional attribute
-- multiSelect - boolean, defines if multiselect will be available on envelope, allow-custom-value and multiSelect is not possible in the same time (only one attribute can be applied), optional attribute
+- allowCustomValue - boolean, defines if custom value would be acceptable on envelope, allowCustomValue and multiSelect is not possible in the same time (only one attribute can be applied), optional attribute
+- multiSelect - boolean, defines if multiselect will be available on envelope, allowCustomValue and multiSelect is not possible in the same time (only one attribute can be applied), optional attribute
 - search - boolean, defines if field is searchable on envelope search or not, if not set default value false, optional attribute
 
 field options (max quantity of options 100):
@@ -158,11 +158,11 @@ Supported document types:
 4) image: .png, .jpg, .jpeg, .tiff, .tif
 5) archive: .zip, .7z, .rar
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|**Dictionary field**                                                                                                                                                                                            |
-+================================================================================================================================================================================================================+
-|`<field type="select-dictionary" name="string" placeholder="string" roleId="id" optional="boolean" allow-custom-value="boolean" search="boolean" dictionaryUuid="UUID" columnUuid="UUID" filterQuery="string"/>`|
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|**Dictionary field**                                                                                                                                                                                          |
++==============================================================================================================================================================================================================+
+|`<field type="select-dictionary" name="string" placeholder="string" roleId="id" optional="boolean" allowCustomValue="boolean" search="boolean" dictionaryUuid="UUID" columnUuid="UUID" filterQuery="string"/>`|
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Dictionary field may have following attributes:
 
@@ -171,7 +171,7 @@ Dictionary field may have following attributes:
 - placeholder - field placeholder displayable on template and envelope, length from 0 up to 1024 symbols, if empty on envelope will be displayed field name, optional attribute
 - roleId - id of the role who should fill field on envelope, mandatory attribute
 - optional - boolean, defines if field to be filled in optionally or not on envelope, if not set default value false, optional attribute
-- allow-custom-value - boolean, defines if custom value would be acceptable on envelope, optional attribute
+- allowCustomValue - boolean, defines if custom value would be acceptable on envelope, optional attribute
 - search - boolean, defines if field is searchable on envelope search or not, if not set default value false, optional attribute
 - dictionaryUuid - UUID of dictionary, mandatory attribute
 - columnUuid - UUID of dictionary column, which value should be taken as text value, mandatory attribute
@@ -190,18 +190,18 @@ Dictionary field may have following attributes:
 - dictionaryColumnUUID - UUID of dictionary column, column UUID by which dictionary values will be filtered
 - roleId - id, id of the role by which value data in envelope will be filtered
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|**Lookup field**                                                                                                                                                     |
-+=====================================================================================================================================================================+
-|`<lookup name="string" placeholder="string" optional="boolean" allow-custom-value="boolean" search="boolean" documentId="Id" relatedTo="string" columnUuid="UUID" />`|
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|**Lookup field**                                                                                                                                                   |
++===================================================================================================================================================================+
+|`<lookup name="string" placeholder="string" optional="boolean" allowCustomValue="boolean" search="boolean" documentId="Id" relatedTo="string" columnUuid="UUID" />`|
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Lookup field may have following attributes:
 
 - name - string, length from 1 up to 128 symbols, restricted symbols &, ", <, >, field name used to fill in on envelope, unique for document, mandatory attribute
 - placeholder - field placeholder displayable on template and envelope, length from 0 up to 1024 symbols, if empty on envelope will be displayed field name, optional attribute
 - optional - boolean, defines if field to be filled in optionally or not on envelope, if not set default value false, optional attribute
-- allow-custom-value - boolean, defines if custom value would be acceptable on envelope, optional attribute
+- allowCustomValue - boolean, defines if custom value would be acceptable on envelope, optional attribute
 - search - boolean, defines if field is searchable on envelope search or not, if not set default value false, optional attribute
 - documentId - id, document id where dictionary field which will be looked up is located, mandatory attribute
 - relatedTo - string, name of dictionary to which lookup will be connected, mandatory attribute
