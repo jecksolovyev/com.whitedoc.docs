@@ -84,6 +84,16 @@ How to accept invitation and send envelope without authorization (for guests)
    :width: 400
    :align: center
 
+.. note:: Please pay attention to the following scenario: 
+   You're already a registered and logged-in user, and you receive an email invitation to an envelope. However, this invitation was sent to a different email address that isn't yet registered. 
+   In this situation, when you click the envelope link, you'll see a message indicating that you're currently logged in as "User A" (your current account), but the invitation is intended for "User B" (the unregistered email address).
+   You'll then have two options:
+   Log out of your current account and accept the envelope as a new user: Choose this if you want to use the unregistered email address for this envelope.
+   Cancel: Select this to remain logged into your current account and disregard the invitation to the unregistered email.
+.. image:: pic_inviteToEnvelopeByEmail/acceptAsRegisteredToUnregistered.png
+   :width: 400
+   :align: center
+
 How to accept invitation and send envelope without authorization for registered users
 =====================================================================================
 
