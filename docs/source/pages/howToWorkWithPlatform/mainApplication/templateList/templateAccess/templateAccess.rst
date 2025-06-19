@@ -11,8 +11,6 @@ User can specify access level of the template when creating or editing it. There
 - access for all mailboxes in your account (My account)
 - access for everyone on the platform (Everyone)
 
-.. note:: Public templates can be made accessible to users not registered on the platform via direct link. To generate this link first you need to make sure that such template includes only public dictionaries (or no dictionaries at all). Also such templates should have subject field filled and all participants of the flow should have specified mailbox adresses in the flow configuration tab. When this is done, click the template menu button in upper right corner of template on template list and click "Get link". Menu with sharing link will open where you can copy this link, generate new one to revoke access by previous link or remove access by link completely. Account on the platform will be created automatically for anyone who will create an envelope using such link.
-
 How to share template with mailbox or mailboxes group
 =====================================================
 
@@ -64,12 +62,39 @@ How to share template with mailbox or mailboxes group
    :width: 400
    :align: center
    
+How to share a template with mailboxes within the account
+=========================================================
+
+1. You can grant access to this template for all mailboxes within your account. To do this, set the checkbox next to the "My Account" option
+
+.. image:: picTemplateAccess/templateAccess7.png
+   :width: 400
+   :align: center
+
+How to share a template with everyone
+=====================================
+
+1. You can grant access to the template to all users of the platform.
+2. If you set the checkbox next to "Everyone", users will only be able to access this template via a direct link or by knowing its UUID
+
+.. image:: picTemplateAccess/templateAccess8.png
+   :width: 400
+   :align: center
+
+3. If you set the checkbox next to "Everyone" and also enable the "Share with community" toggle, users who are part of this community will have access to the template. They will be able to find it by name, by UUID, or via a direct link.
+
+.. image:: picTemplateAccess/templateAccess9.png
+   :width: 400
+   :align: center
+
+.. note:: Public templates can be made accessible to users not registered on the platform via direct link. To generate this link first you need to make sure that such template includes only public dictionaries (or no dictionaries at all). Also such templates should have subject field filled and all participants of the flow should have specified mailbox adresses in the flow configuration tab. When this is done, click the template menu button in upper right corner of template on template list and click "Get link". Menu with sharing link will open where you can copy this link, generate new one to revoke access by previous link or remove access by link completely. Account on the platform will be created automatically for anyone who will create an envelope using such link.
+
 Additional sharing access configurations
 ========================================
 
 At the bottom of the template tab of envelope menu you can find "Do not send files by email" attribute
 
-.. image:: picTemplateAccess/templateAccess7.png
+.. image:: picTemplateAccess/templateAccess10.png
    :width: 400
    :align: center
    
