@@ -30,21 +30,13 @@ How to share template with mailbox or mailboxes group
 
 .. note:: Search results are displaying in the following order: 1. Groups and 2. Mailboxes. In Search results displays max 10 Groups and 10 Mailboxes. If expected results are not displaying you need to do more precise query.
 
-.. note:: Mailboxes in the search results display with white background and respective icon to indicate if mailbox is related to your account or contact.
-
-.. note:: Groups are displaying with light blue background and respective group icon
-
 .. image:: picTemplateAccess/templateAccess3.png
    :width: 400
    :align: center
 
 4. When mailbox or group is added you'll observe chips list with groups and mailboxes. To save share configuration click "Save" as soon as you add required mailboxes and group.
 
-.. note:: Order of the chips in the Mailboxes and groups input is the following: 1. Groups and 2. Mailboxes
-
-.. note:: Mailboxes chips are displaying with grey background
-
-.. note:: Groups chips are displaying with light blue background
+.. note:: Group chips are listed first (with a blue background), and Mailbox chips go after them (with a grey background).
 
 .. image:: picTemplateAccess/templateAccess4.png
    :width: 400
