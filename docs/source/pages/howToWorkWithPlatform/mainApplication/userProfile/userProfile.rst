@@ -22,11 +22,12 @@ This tab contains general user profile details and info.
 6. Region - specifies regional formats for dates and number, example is shown below the menu
 7. User UUID (can not be changed, only copied)
 8. Email (can not be changed, only copied)
-9. Auto deposit mailbox - specifies which mailbox will be used for incoming envelopes. If disabled - you will have to manually specify mailbox for each incoming envelope
-10. Signature settings - here you can create or update your e-ink signature
-11. Initials settings - here you can create or update your initials
-12. Register personal account
-13. Register company account
+9. Phone number
+10. Auto deposit mailbox - specifies which mailbox will be used for incoming envelopes. If disabled - you will have to manually specify mailbox for each incoming envelope
+11. Signature settings - here you can create or update your e-ink signature
+12. Initials settings - here you can create or update your initials
+13. Register personal account
+14. Register company account
 
 Do not forget to click the "Save changes" button after editing anything on this page.
 
@@ -42,7 +43,8 @@ How to create your signature?
 
 3. Draw your signature in the opened window
 4. Alternatively, text can be used for signature
-5. Click the "Save changes" button on the account setting page
+5. Check the "I agree..." checkbox in the modal window
+6. Click the "Save changes" button on the account setting page
 
 How to create your initials?
 ============================

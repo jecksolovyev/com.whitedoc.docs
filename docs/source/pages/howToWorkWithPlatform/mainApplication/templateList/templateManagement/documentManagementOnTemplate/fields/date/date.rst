@@ -27,8 +27,12 @@ How to add a date field to the document?
 6. Optional - this attribute specifies if this field is mandatory to fill
 7. Time - this attribute specifies if time selector will be added to calendar
 8. Search - this attribute specifies if this field should be eligible for mailbox page search
-9. Min - minimal timestamp accepted by field (no limit is applied if left empty)
-10. Max - maximal timestamp accepted by field (no limit is applied if left empty)
+9. Profile data - this attribute specifies if this field should be filled with user profile data. If you will select any available option in this field, the according user profile data will be automatically filled in this field when the envelope is opened by the user (but it will still be possible to edit it with any allowed custom value)
+
+.. hint:: Please note that if Profile data is selected - Min and Max attributes will be applied to this field automatically according to the selected Profile data value regardless of your input (overwritten) after the template is saved.
+
+10. Min - minimal timestamp accepted by field (no limit is applied if left empty)
+11. Max - maximal timestamp accepted by field (no limit is applied if left empty)
 
 .. note:: Min and max fields only accept integers. They specify boundary dates offset in days. E.g. if min is 0 and max is 1, date interval from today to tomorrow will be available. If min is -1 and max is 0 then range from yesterday to today will be available. If min and max are both same, then only specified day will be available.
 
