@@ -40,8 +40,12 @@ How to add a text field to the document?
 
 .. hint:: Custom option uses ECMAScript (JavaScript) RegEx syntax with some exceptions: lookbehinds and sticky flag are not supported, \p{L} is the only supported Unicode property escape.
 
-10. Min - minimum number of characters required for field (no limit is applied if left empty)
-11. Max - maximum number of characters required for field (standart limit is applied if left empty)
+10. Profile data - this attribute specifies if this field should be filled with user profile data. If you will select any available option in this field, the according user profile data will be automatically filled in this field when the envelope is opened by the user (but it will still be possible to edit it with any allowed custom value)
+
+.. hint:: Please note that if Profile data is selected - Pattern, Min and Max attributes will be applied to this field automatically according to the selected Profile data value regardless of your input (overwritten) after the template is saved.
+
+11. Min - minimum number of characters required for field (no limit is applied if left empty)
+12. Max - maximum number of characters required for field (standart limit is applied if left empty)
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 
