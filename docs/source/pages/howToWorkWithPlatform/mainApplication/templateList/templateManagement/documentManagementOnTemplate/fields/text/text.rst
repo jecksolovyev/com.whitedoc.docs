@@ -42,7 +42,7 @@ How to add a text field to the document?
 
 10. Profile data - this attribute specifies if this field should be filled with user profile data. If you will select any available option in this field, the according user profile data will be automatically filled in this field when the envelope is opened by the user (but it will still be possible to edit it with any allowed custom value)
 
-.. hint:: Please note that if Profile data is selected - Pattern, Min, and Max attributes will be applied to this field automatically according to the selected Profile data value regardless of your input (overwritten) after the template is saved.
+.. hint:: Please note that if Profile data is selected - Pattern, Min, and Max attributes will be applied to this field automatically according to the selected Profile data value if they were not provided manually after the template is saved.
 
 11. Min - minimum number of characters required for field (no limit is applied if left empty)
 12. Max - maximum number of characters required for field (standart limit is applied if left empty)
