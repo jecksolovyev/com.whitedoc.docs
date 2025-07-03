@@ -76,7 +76,7 @@ To copy the mailbox UUID click the copy icon. After successful copying the notif
 
 **How to edit mailbox name visibility**
 
-You can hide visibility of your mailbox for system members.To do this, activate the toggle: "Hide name/aliases from other accounts". When the toggle is active mailbox name or alias can be found only by users who have access to this account.
+You can enable the visibility of your mailbox for system members. To do so, activate the "Allow everyone to find my mailbox by searching for my name and/or aliases" toggle and then click the "Save changes" button. When the toggle is active, the mailbox can be found by all users on the platform by it`s name or aliases.
 
 .. image:: pic_mailboxes/mailboxesHideAliases.png
    :width: 600
