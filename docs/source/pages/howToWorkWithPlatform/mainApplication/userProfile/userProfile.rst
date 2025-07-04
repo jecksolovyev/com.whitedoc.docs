@@ -28,8 +28,73 @@ This tab contains general user profile details and info.
 12. Initials settings - here you can create or update your initials
 13. Register personal account
 14. Register company account
+15. Additional settings - expandable block, which includes additional profile fields which may be used to prefill data on the envelope
 
-Do not forget to click the "Save changes" button after editing anything on this page.
+.. note:: List of additional fields may be different depends on the instance you're working. General additional fields which are available on each instance: Full name, Birthday, Gender, Residence address, Position, Department, Business, Company full name, Company short name, Company address, Company phone, Company email, Website, Manager position, Manager full name, Manager mailbox, Director full name, Director mailbox, HR full name, HR mailbox, Hire date, Contract number, Contract date, ID / Number, Type, Other
+
+**Additional settings fields validations**
+
++---------------------+------------------------------------------------------------------------------------------+
+| Field name          | Field limitations                                                                        |
++=====================+==========================================================================================+
+| Full name           | Text field. Min: 1 and max: 500 symbols                                                  |
++---------------------+------------------------------------------------------------------------------------------+
+| Birthday            | Date field. No limits                                                                    |
++---------------------+------------------------------------------------------------------------------------------+
+| Gender              | Text field. Min: 1 and max: 128 symbols                                                  |
++---------------------+------------------------------------------------------------------------------------------+
+| Residence address   | Text field. Min: 1 and max: 255 symbols                                                  |
++---------------------+------------------------------------------------------------------------------------------+
+| Position            | Text field. Min: 1 and max: 128 symbols                                                  |
++---------------------+------------------------------------------------------------------------------------------+
+| Department          | Text field. Min: 1 and max: 128 symbols                                                  |
++---------------------+------------------------------------------------------------------------------------------+
+| Business            | Text field. Min: 1 and max: 128 symbols                                                  |
++---------------------+------------------------------------------------------------------------------------------+
+| Company full name   | Text field. Min: 1 and max: 500 symbols                                                  |
++---------------------+------------------------------------------------------------------------------------------+
+| Company short name  | Text field. Min: 1 and max: 50 symbols                                                   |
++---------------------+------------------------------------------------------------------------------------------+
+| Company address     | Text field. Min: 1 and max: 255 symbols                                                  |
++---------------------+------------------------------------------------------------------------------------------+
+| Company phone       | Text field. Min: 1 and max: 128 symbols                                                  |
++---------------------+------------------------------------------------------------------------------------------+
+| Company email       | Text field. Min: 6 and max: 255 symbols. Validation pattern:                             |
+|                     | "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"                                      |
++---------------------+------------------------------------------------------------------------------------------+
+| Website             | Text field. Min: 1 and max: 255 symbols                                                  |
++---------------------+------------------------------------------------------------------------------------------+
+| Manager position    | Text field. Min: 1 and max: 128 symbols                                                  |
++---------------------+------------------------------------------------------------------------------------------+
+| Manager full name   | Text field. Min: 1 and max: 500 symbols                                                  |
++---------------------+------------------------------------------------------------------------------------------+
+| Manager mailbox     | Text field. Min: 36 and max: 36 symbols. Validation pattern:                             |
+|                     | "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"          |
++---------------------+------------------------------------------------------------------------------------------+
+| Director full name  | Text field. Min: 1 and max: 500 symbols                                                  |
++---------------------+------------------------------------------------------------------------------------------+
+| Director mailbox    | Text field. Min: 36 and max: 36 symbols. Validation pattern:                             |
+|                     | "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"          |
++---------------------+------------------------------------------------------------------------------------------+
+| HR full name        | Text field. Min: 1 and max: 500 symbols                                                  |
++---------------------+------------------------------------------------------------------------------------------+
+| HR mailbox          | Text field. Min: 36 and max: 36 symbols. Validation pattern:                             |
+|                     | "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"          |
++---------------------+------------------------------------------------------------------------------------------+
+| Hire date           | Date field. No limits                                                                    |
++---------------------+------------------------------------------------------------------------------------------+
+| Contract number     | Text field. Min: 1 and max: 128 symbols                                                  |
++---------------------+------------------------------------------------------------------------------------------+
+| Contract date       | Date field. No limits                                                                    |
++---------------------+------------------------------------------------------------------------------------------+
+| ID / Number         | Text field. Min: 1 and max: 128 symbols                                                  |
++---------------------+------------------------------------------------------------------------------------------+
+| Type                | Text field. Min: 1 and max: 128 symbols                                                  |
++---------------------+------------------------------------------------------------------------------------------+
+| Other               | Text field. Min: 1 and max: 1000 symbols                                                 |
++---------------------+------------------------------------------------------------------------------------------+
+
+.. note:: Do not forget to click the "Save changes" button after editing anything on this page.
 
 How to create your signature?
 =============================
