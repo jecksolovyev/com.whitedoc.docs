@@ -110,7 +110,7 @@ Domains tab
 
 .. note:: This tab is available only in company accounts.
 
-This page allows to manage, verify and activate domains. Domains are necessary for corporate users creation.
+This page allows to manage, verify and activate domains and also for the SSO settings for each domain. Domains are necessary for corporate users creation.
 
 .. image:: pic_accountSettings/domains.png
    :width: 600
@@ -161,6 +161,31 @@ How to delete a domain?
    :align: center
 
 .. _externalLinks:
+
+How to configure SSO per domain
+===============================
+
+For each domain, you can activate an SSO provider so that users within that domain can log in using OAuth-based authentication. This allows users to access the system seamlessly using their existing credentials from the authorized identity provider.
+
+1. Click the settings icon in the domain you want to configure.
+
+.. image:: pic_accountSettings/domainSsoSettings.png
+   :width: 600
+   :align: center
+
+2. In the dropdown menu, select an available SSO provider to connect, if it was previously added on the Integrations tab.
+
+.. image:: pic_accountSettings/domainSsoSettingsManage.png
+   :width: 600
+   :align: center
+
+3. If you select the None option, the SSO authentication method will not be activated.
+
+As soon as you add any SSO provider, the SSO status label will change to active, and a "Deactivate" button will appear. You can deactivate or reactivate SSO access for users simply by clicking the corresponding button.
+
+.. image:: pic_accountSettings/domainSsoStatus.png
+   :width: 600
+   :align: center
 
 ==================
 External links tab
@@ -257,25 +282,51 @@ This tab contains configurations of integration with different external services
 How to add an SSO provider?
 ===========================
 
-SSO authentication methods can be created for the users inside a corporate account. Follow these steps to do so:
+Single Sign-On (SSO) is an authentication method that allows users to log in once and gain access to multiple related systems without needing to enter their credentials repeatedly.
+SSO authentication methods can be created for the users inside a corporate account. 
+Follow these steps to do so:
 
 1. Create a domain and verify it on the platform
 2. Click the "Add configurations" button and select the "SSO providers" option from the menu
-3. Fill in the main fields in the opened window. You can choose the URL or XML Metadata types. When all fields are filled, click the "Add" button
+
+.. image:: pic_accountSettings/ssoProvidersAddConfigurationsButton.png
+   :width: 600
+   :align: center
+
+3. When you open the modal to add an SSO provider, the settings for the SAML protocol will be displayed by default. In this protocol configuration, you can choose to provide either a Metadata URL or upload a Metadata XML file.
+
+- Metadata URL: This is a web address where the identity provider’s metadata is hosted. By providing the URL, your system can automatically fetch and update the configuration details when they change.
+- Metadata XML file: This is a static XML file containing the identity provider’s metadata. Uploading this file allows you to manually configure the connection based on the exact information provided.
 
 .. image:: pic_accountSettings/ssoProvidersAdd.png
    :width: 600
    :align: center
 
-4. Go to the :ref:`domains tab <domains>`. Chose active domain and click the "Manage SSO setting" button near it
+4. If you need to configure SSO using the OAuth protocol, select the corresponding option, and the settings for OAuth will appear.
+Here, by clicking the "Google" or "Azure" buttons, the fields such as Issuer URI, Authorization URL, Token URL, and JWK Set URL will be automatically filled with predefined data. You can also fill in these fields manually if needed.
 
-.. image:: pic_accountSettings/ssoProvidersDomain.png
+.. image:: pic_accountSettings/ssoProvidersAddOauth.png
    :width: 600
    :align: center
 
-5. Select the available SSO provider and confirm your action in the opened window
-6. After SSO is connected to the domain, your corporate users will be able to log in via SSO
-7. Corporate user enters your corporate domain and fills out an authorization page, as a result of which he will be successfully authorized or receive a message that he needs to register via SSO
+3. Fill in all the required fields for the protocol you need and click the "Add" button.
+4. All added SSO providers will be displayed in the corresponding table with the following details: Name, Protocol, Entity ID and Actions.
+5. To edit the details of a specific SSO provider, click the pencil icon, make your changes, and then click the "Edit" button to save them.
+
+.. image:: pic_accountSettings/ssoProvidersEdit.png
+   :width: 600
+   :align: center
+
+6. You can delete an SSO provider by clicking the Delete icon.
+
+.. image:: pic_accountSettings/ssoProvidersDelete.png
+   :width: 600
+   :align: center
+
+
+**To activate an SSO** for the users go to the :ref:`domains tab <domains>`. 
+
+.. note:: Once SSO is connected to a domain, your corporate users can log in using SSO authentication. When a corporate user enters their corporate domain, they will be directed to the SSO authorization page. After submitting their credentials, the user will either be successfully logged in or receive a notification indicating that they need to register through the SSO system. This allows users to sign in easily with their existing corporate login details.
 
 .. _cloudSignature:
 
