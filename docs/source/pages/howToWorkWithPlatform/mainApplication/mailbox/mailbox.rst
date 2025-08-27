@@ -6,17 +6,17 @@ Mailbox page contains envelope list divided by folders according to the envelope
 
 1. Assigning labels to envelopes
 2. :ref:`Sign envelopes <qualifiedElectronicSignature>`
-3. Move enveloeps to trash / restore envelopes from trash *(only on desktop and tablet versions)*
-4. Archive completed envelopes / unarchive envelopes *(only on desktop and tablet versions)*
-5. Add envelopes to chain / remove envelopes from chain *(only on desktop and tablet versions)*
+3. Move enveloeps to trash / restore envelopes from trash *(desktop and tablet versions only)*
+4. Archive completed envelopes / unarchive envelopes *(desktop and tablet versions only)*
+5. Add envelopes to chain / remove envelopes from chain *(desktop and tablet versions only)*
 6. Delegate envelopes
 7. :ref:`Add envelopes for approval <approval>`
 8. Approve envelopes
 9. Reject envelopes
 10. Download envelopes
 11. Share envelopes
-12. Generate report *(only on desktop and tablet versions)*
-13. Resend notifications *(only on desktop and tablet versions)*
+12. Generate report *(desktop and tablet versions only)*
+13. Resend notifications *(desktop and tablet versions only)*
 14. Mark as read
 15. Mark as unread
 
