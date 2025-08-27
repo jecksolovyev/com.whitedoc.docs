@@ -4,36 +4,63 @@ Mailbox page
 
 Mailbox page contains envelope list divided by folders according to the envelopes statuses. It also allows you to apply next mass action to envelopes:
 
-1. Assigning labels to envelopes *(also available in mobile version)*
-2. :ref:`Signing envelopes with QES and Signature <qualifiedElectronicSignature>` 
-3. Envelope deletion and restoring
-4. Envelope archiving and unarchiving
-5. Downloading completed envelopes *(also available in mobile version)*
-6. Sharing envelopes *(also available in mobile version)*
-7. Envelopes chaining and unchaining
-8. Envelopes delegation *(also available in mobile version)*
-9. :ref:`Adding envelopes for approval <approval>` *(also available in mobile version)*
-10. Approving envelopes *(also available in mobile version)*
-11. Rejecting envelopes *(also available in mobile version)*
-12. Envelopes report generation
-13. Envelopes notification resend
+1. Assigning labels to envelopes
+2. :ref:`Sign envelopes <qualifiedElectronicSignature>`
+3. Move enveloeps to trash / restore envelopes from trash *(only on desktop and tablet versions)*
+4. Archive completed envelopes / unarchive envelopes *(only on desktop and tablet versions)*
+5. Add envelopes to chain / remove envelopes from chain *(only on desktop and tablet versions)*
+6. Delegate envelopes
+7. :ref:`Add envelopes for approval <approval>`
+8. Approve envelopes
+9. Reject envelopes
+10. Download envelopes
+11. Share envelopes
+12. Generate report *(only on desktop and tablet versions)*
+13. Resend notifications *(only on desktop and tablet versions)*
+14. Envelopes report generation
+15. Envelopes notification resend
 
 .. image:: pic_mailbox/mailboxPage.png
    :width: 600
    :align: center
 
-.. image:: pic_mailbox/buttons.png
+.. note:: Note for API users: if envelope scope is not defined in envelope search request, only inbox envelopes will be returned.
+
+How to assign labels to envelopes?
+==================================
+
+1. Select the required envelopes
+2. Open the "Add labels to envelopes" menu
+
+.. image:: pic_mailbox/labelButton.png
    :width: 400
    :align: center
 
-.. note:: Note for API users: if envelope scope is not defined in envelope search request, only inbox envelopes will be returned.
+3. From the opened menu select the required labels
+
+.. image:: pic_mailbox/labelMenu.png
+   :width: 400
+   :align: center
+
+4. You can also create a new label by clicking the "New label" button in the menu
+
+.. image:: pic_mailbox/labelModal.png
+   :width: 400
+   :align: center
+
+5. All selected envelopes will be labeled according to your selection after closing the menu
+5. Alternatively, you can select envelopes and assign labels to them in the "Labels" section of the page
+
+.. image:: pic_mailbox/labelSection.png
+   :width: 400
+   :align: center
 
 How to sign envelopes?
 ======================
 
 You can select envelopes and sign them with specific signing method if selected envelopes contain signature fields.
 
-1. Select required envelopes (envelopes in "Waiting for you" status are eligible for signing)
+1. Select the required envelopes (envelopes in "Waiting for you" status are eligible for signing)
 2. Click the "Sign envelopes" button
 
 .. image:: pic_mailbox/signButton.png
@@ -60,39 +87,57 @@ Next errors can occur during the mass signing process:
 3. Envelope contains signature without coordinates (signature the place of which is define by Signer instead of template owner)
 4. Signature is placed in an uncompleted dynamic table (table field the assignee of which has not defined final rows quantity yet)
 
-How to share envelopes?
-=======================
+How to delete and restore envelopes?
+====================================
 
-You can select envelopes and share access to them with other mailboxes or send envelope archive by email.
+1. Select the required envelopes
+2. Click the "To trash" or "Restore envelopes" button
 
-1. Select required envelopes (envelopes in any status are eligible for sharing access with other mailboxes, envelopes in "Completed" status are eligible for sharing the documents archive)
-2. Click the "Share envelopes" button
-
-.. image:: pic_mailbox/shareButton.png
+.. image:: pic_mailbox/deleteButton.png
    :width: 400
    :align: center
 
-3. From the opened menu select a sharing option
-
-.. image:: pic_mailbox/shareMenu.png
+.. image:: pic_mailbox/restoreButton.png
    :width: 400
    :align: center
 
-4. If you have selected "Send to email" option, in the opened window select the type of archive, enter recipient email and confirm your action. Note that you can enter several email addresses by pressing Enter after each one
+3. Confirm the following modal window:
 
-.. image:: pic_mailbox/shareZipModal.png
+.. image:: pic_mailbox/deleteModal.png
    :width: 400
    :align: center
 
-.. note:: Sharing envelope files by email is disabled if more envelopes then shown on one page are selected due to technical constraints.
-
-.. note:: Sharing envelope files by email can be restricted on the envelope or template level. Such envelopes will not be shared when using this option.
-
-5. If you have selected "Share access" option, in the opened window select a mailbox and confirm your action. Note that you can select several mailboxes
-
-.. image:: pic_mailbox/shareAccessModal.png
+.. image:: pic_mailbox/restoreModal.png
    :width: 400
    :align: center
+
+4. All selected envelopes will be moved to trash or restored after this
+
+How to archive and unarchive envelopes?
+=======================================
+
+1. Select the required envelopes
+2. Click the "Archive completed envelopes" or "Unarchive envelopes" button
+
+.. image:: pic_mailbox/archiveButton.png
+   :width: 400
+   :align: center
+
+.. image:: pic_mailbox/unarchiveButton.png
+   :width: 400
+   :align: center
+
+3. You will be presented a archive or unarchive progress modal window after this:
+
+.. image:: pic_mailbox/archiveModal.png
+   :width: 400
+   :align: center
+
+.. image:: pic_mailbox/unarchiveModal.png
+   :width: 400
+   :align: center
+
+4. When it will close, this means that all envelopes were processed
 
 .. _envelopeChain:
 
@@ -101,7 +146,7 @@ How to chain and unchain envelopes?
 
 You can create envelope chains by linking several envelopes or by adding an envelope to an existing chain.
 
-1. Select required envelopes
+1. Select the required envelopes
 2. Click the "Add envelope to chain" button
 
 .. image:: pic_mailbox/chainButton.png
@@ -152,7 +197,7 @@ You can delegate your role in envelopes to other mailbox.
 
 .. note:: If you select more envelopes than displayed on the screen, asynchronous mass action operation will start and you will receive operation start notification in System and on Email, as well as finish operation notification in System and on Email. Finish email notification contains detailed information related processed envelopes: envelope subject, envelope UUID, envelope link, status and error message if exists
 
-1. Select required envelopes (envelopes in "Waiting for you" status are eligible for delegation)
+1. Select the required envelopes (envelopes in "Waiting for you" status are eligible for delegation)
 2. Click the "Delegate envelopes" button
 
 .. image:: pic_mailbox/delegateButton.png
@@ -175,7 +220,7 @@ You can request an approval of envelopes from a mailbox which does not participa
 
 .. note:: If you select more envelopes than displayed on the screen asynchronous mass action operation will start and you will receive operation start notification in System and on Email, as well as operation finish notification in System and on Email. Finish email notification contains detailed information related processed envelopes: envelope subject, envelope UUID, envelope link, status and error message if exists
 
-1. Select required envelopes (envelopes in "Waiting for you" and "Draft" statuses are eligible for adding for approval)
+1. Select the required envelopes (envelopes in "Waiting for you" and "Draft" statuses are eligible for adding for approval)
 2. Click the "Add envelopes for approval" button
 
 .. image:: pic_mailbox/approvalButton.png
@@ -198,7 +243,7 @@ You can complete your active approver role in envelopes.
 
 .. note:: If you select more envelopes than displayed on the screen asynchronous mass action operation will start and you will receive operation start notification in System and on Email, as well as operation finish notification in System and on Email. Finish email notification contains detailed information related processed envelopes: envelope subject, envelope UUID, envelope link, status and error message if exists
 
-1. Select required envelopes (envelopes in "Waiting for you" status with active approver role are eligible for approval)
+1. Select the required envelopes (envelopes in "Waiting for you" status with active approver role are eligible for approval)
 2. Click the "Approve envelopes" button
 
 .. image:: pic_mailbox/approveButton.png
@@ -211,7 +256,7 @@ You can complete your active approver role in envelopes.
    :width: 400
    :align: center
 
-5. After a successful process you will see a modal window with the results
+4. After a successful process you will see a modal window with the results
 
 How to reject envelopes?
 ========================
@@ -220,7 +265,7 @@ You can reject envelopes if they are not completed yet.
 
 .. note:: If you select more envelopes than displayed on the screen asynchronous mass action operation will start and you will receive operation start notification in System and on Email, as well as operation finish notification in System and on Email. Finish email notification contains detailed information related processed envelopes: envelope subject, envelope UUID, envelope link, status and error message if exists
 
-1. Select required envelopes (envelopes in "Waiting for you" and "Pending" statuses are eligible for rejection)
+1. Select the required envelopes (envelopes in "Waiting for you" and "Pending" statuses are eligible for rejection)
 2. Click the "Reject envelopes" button
 
 .. image:: pic_mailbox/rejectButton.png
@@ -236,12 +281,60 @@ You can reject envelopes if they are not completed yet.
 4. Enter a cancellation reason anc click the "Reject" button
 5. After a successful process you will see a modal window with the results
 
+How to download envelopes?
+==========================
+
+1. Select the required envelopes
+2. Open the "Download envelopes" menu
+
+.. image:: pic_mailbox/downloadButtons.png
+   :width: 400
+   :align: center
+
+3. From the opened menu select a download option option
+4. You will be presented a download progress modal window after this:
+
+.. image:: pic_mailbox/downloadModal.png
+   :width: 400
+   :align: center
+
+5. When it will close, this means that all envelopes were processed
+
+How to share envelopes?
+=======================
+
+You can select envelopes and share access to them with other mailboxes or send envelope archive by email.
+
+1. Select the required envelopes (envelopes in any status are eligible for sharing access with other mailboxes, envelopes in "Completed" status are eligible for sharing the documents archive)
+2. Open the "Share envelope" menu
+
+.. image:: pic_mailbox/shareButtons.png
+   :width: 400
+   :align: center
+
+3. From the opened menu select a sharing option
+4. If you have selected "Send to email" option, in the opened window select the type of archive, enter recipient email and confirm your action. Note that you can enter several email addresses by pressing Enter after each one
+
+.. image:: pic_mailbox/shareZipModal.png
+   :width: 400
+   :align: center
+
+.. note:: Sharing envelope files by email is disabled if more envelopes then shown on one page are selected due to technical constraints.
+
+.. note:: Sharing envelope files by email can be restricted on the envelope or template level. Such envelopes will not be shared when using this option.
+
+5. If you have selected "Share access" option, in the opened window select a mailbox and confirm your action. Note that you can select several mailboxes
+
+.. image:: pic_mailbox/shareAccessModal.png
+   :width: 400
+   :align: center
+
 How to generate an envelopes report?
 ====================================
 
 You can generate a .xlsx report by envelopes.
 
-1. Select required envelopes
+1. Select the required envelopes
 2. Click the "Generate report" button
 
 .. image:: pic_mailbox/reportButton.png
@@ -259,3 +352,57 @@ You can generate a .xlsx report by envelopes.
 6. Report data is the second tab of the report. It contains envelope list with details
 
 .. note:: Note for API users: single envelope search request (POST /api/v1/envelope/search) used for mass actions is limited up to 10000 envelope UUIDs and will fail if more UUIDs are sent. Assign label, delete, archive and share mass action requests have a limit of 1000 UUIDs. The rest of mass actions have 10000 UUIDs limit in single request.
+
+How to resend envelope notifications?
+=====================================
+
+1. Select the required envelopes
+2. Click the "Resend notifications" button
+
+.. image:: pic_mailbox/notificationsButton.png
+   :width: 400
+   :align: center
+
+3. Confirm the following modal window:
+
+.. image:: pic_mailbox/notificationsModal.png
+   :width: 400
+   :align: center
+
+4. All selected envelope notifications will be resent to all envelope participants after this
+
+How to mark envelopes as read?
+==============================
+
+1. Select the required envelopes
+2. Click the "Mark as read" button
+
+.. image:: pic_mailbox/readButton.png
+   :width: 400
+   :align: center
+
+3. Confirm the following modal window:
+
+.. image:: pic_mailbox/readModal.png
+   :width: 400
+   :align: center
+
+4. All selected envelopes will be marked as read after this
+
+How to mark envelopes as unread?
+================================
+
+1. Select the required envelopes
+2. Click the "Mark as unread" button
+
+.. image:: pic_mailbox/unreadButton.png
+   :width: 400
+   :align: center
+
+3. Confirm the following modal window:
+
+.. image:: pic_mailbox/unreadModal.png
+   :width: 400
+   :align: center
+
+4. All selected envelopes will be marked as unread after this
