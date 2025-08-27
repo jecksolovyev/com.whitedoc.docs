@@ -49,7 +49,7 @@ How to assign labels to envelopes?
    :align: center
 
 5. All selected envelopes will be labeled according to your selection after closing the menu
-5. Alternatively, you can select envelopes and assign labels to them in the "Labels" section of the page
+6. Alternatively, you can select envelopes and assign labels to them in the "Labels" section of the page
 
 .. image:: pic_mailbox/labelSection.png
    :width: 400
