@@ -24,8 +24,6 @@ Mailbox page contains envelope list divided by folders according to the envelope
    :width: 600
    :align: center
 
-.. note:: Note for API users: if envelope scope is not defined in envelope search request, only inbox envelopes will be returned.
-
 How to assign labels to envelopes?
 ==================================
 
