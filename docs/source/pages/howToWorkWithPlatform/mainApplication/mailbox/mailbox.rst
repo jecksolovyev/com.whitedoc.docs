@@ -17,8 +17,8 @@ Mailbox page contains envelope list divided by folders according to the envelope
 11. Share envelopes
 12. Generate report *(only on desktop and tablet versions)*
 13. Resend notifications *(only on desktop and tablet versions)*
-14. Envelopes report generation
-15. Envelopes notification resend
+14. Mark as read
+15. Mark as unread
 
 .. image:: pic_mailbox/mailboxPage.png
    :width: 600
