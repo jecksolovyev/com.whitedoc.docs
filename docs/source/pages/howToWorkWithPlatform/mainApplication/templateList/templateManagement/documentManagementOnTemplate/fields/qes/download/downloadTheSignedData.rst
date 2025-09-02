@@ -15,7 +15,7 @@ To dowload the documents archive you should do the following:
 If the envelope is completed:
 
 1. Open envelope
-2. Click the respective "Download envelope" button in the header. Here you can choose 3 option, such as dowload the full archive, documents and printable versions or documents only.
+2. Click the respective "Download envelope" button in the header. Here you can choose 3 option, such as download the full archive, documents and printable versions or documents only.
 
 .. image:: pic_download/downloadEnvelope.png
    :width: 600
@@ -31,7 +31,7 @@ As soon as you click the “Download document” button, an archive containing t
 You can also download multiple envelopes in bulk:
 
 1. Click the "Mailbox" button on the left sidebar.
-2. Select the envelopes you want to download (only completed envelopes can be downloaded).
+2. Select the envelopes you want to download.
 3. Click the More options (⋮) menu.
 4. Click the "Download envelopes" button and choose the option you need.
 
