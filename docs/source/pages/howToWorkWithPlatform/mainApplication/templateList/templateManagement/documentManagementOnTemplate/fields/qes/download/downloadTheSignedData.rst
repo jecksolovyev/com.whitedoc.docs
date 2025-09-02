@@ -5,31 +5,57 @@ Download or send to print the signed data
 How to download the signed data?
 ================================
 
-You can download the signature(s) of the document(s) when all participants with role "Signer" completed actions. You're able to download particular document with signatures or whole envelope with all documents inside and all signatures inside. To do this:
+You can download either a single signed document or the full envelope archive (documents + signatures).
 
-1. Check that envelope completed
-2. Open envelope
-3. Click the respective "Download" button in the header, to download the full envelope with all signed documents
+* Full envelope archive or document only archive becomes always available when the envelope is completed - i.e., when all roles have finished their actions.
+* Downloading the full envelope archive or document only archive before completion is available only if enabled in the template settings. If this option is not enabled, the archive can be downloaded only after the envelope is completed, but you can download specific documents.
+
+To dowload the documents archive you should do the following:
+
+If the envelope is completed:
+
+1. Open envelope
+2. Click the respective "Download envelope" button in the header. Here you can choose 3 option, such as dowload the full archive, documents and printable versions or documents only.
 
 .. image:: pic_download/downloadEnvelope.png
    :width: 600
    :align: center
 
-4. Alternatively, click the respective "Download" button ahead document name to download particular document with all signatures
+3. Alternatively, click the respective "Download archive" button ahead document name to see the same options.
+As soon as you click the “Download document” button, an archive containing the document(s) will be downloaded to your device.
 
 .. image:: pic_download/downloadDocument.png
    :width: 600
    :align: center
 
-As soon as you clicked the document download button, archive with the documents will be uploaded. You can also download all envelopes en masse:
+You can also download multiple envelopes in bulk:
 
-1. Press button "Mailbox" on the left sidebar
-2. Choose envelopes which you want to download. You can download only completed envelopes
-3. Press button "Download completed envelopes" for downloading
+1. Click the "Mailbox" button on the left sidebar.
+2. Select the envelopes you want to download (only completed envelopes can be downloaded).
+3. Click the More options (⋮) menu.
+4. Click the "Download envelopes" button and choose the option you need.
 
-.. image:: pic_download/downloadEnvelopeOnListingPage.png
+.. image:: pic_download/downloadEnvelopeOnListingPage1.png
    :width: 400
    :align: center
+
+
+You can download the full envelope archive even when the envelope is not completed (availability depends on the template settings):
+
+1. Open envelope
+2. Click the respective "Download envelope" button in the header. Here you can choose 3 option, such as dowload the full archive, documents and printable versions or documents only.
+
+.. image:: pic_download/downloadEnvelopeBeforeCompletion.png
+   :width: 600
+   :align: center
+
+3. Alternatively, click the respective "Download archive" button ahead document name to see the same options.
+As soon as you click the “Download document” button, an archive containing the document(s) will be downloaded to your device.
+
+.. image:: pic_download/downloadDocumentBeforeCompletion.png
+   :width: 600
+   :align: center
+
 
 What are you downloading?
 =========================

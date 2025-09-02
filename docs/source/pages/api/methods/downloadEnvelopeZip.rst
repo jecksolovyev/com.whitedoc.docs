@@ -8,7 +8,7 @@ Everyone who has access to envelope can download it. You can download a full env
    :widths: 10 90
 
    * - Method
-     - POST
+     - GET
    * - URL
      - ``/api/v1/envelope/{envelopeUuid}/zip``
    * - Authorization * (required)
