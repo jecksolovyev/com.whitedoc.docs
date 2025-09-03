@@ -9,7 +9,7 @@ How to create template?
 
 1. Open template list
 2. Click the "New template" button
-3. Fill in template subject and description in "Template" tab of right side menu
+3. Fill in template subject and description in "Template" tab of right side menu (optional)
 4. Configure processing flow of the template. More info on this topic can be found :ref:`here <processing-flow>`
 5. Fill document with desired content and add new documents if needed
 6. Click the "Save" button to save template
@@ -47,8 +47,12 @@ On template configuration page you can set some template properties, such as tem
 6. Envelope expiry day - allows you to configure expiration period of envelopes created from template. If set on template level, it's impossible to change it on envelope level later
 7. Envelope delegation - allows or denies delegation of the envelope. If set on template level, it's impossible to change it on envelope level later
 8. Envelope sending and sharing - this property allows or denies possibility to attach documents to the envelope completion email notification or possibility to share the envelope. If set on template level, it's impossible to change it on envelope level later
-9. Template cover - preview of the template that will be visible mailboxes which have access to template. Can use custom image or dynamically generate preview of first page of the template
-10. Configure envelope archive files - this feature allows you to configure an envelope archive that can be downloaded upon completion of the envelope. You can read more about this functionality :ref:`here <archiveConfiguration>`
+9. Restrict envelope archive downloading until envelope completion - allows you to enable or disable downloading the full envelope archive or document archives with signatures before completion at any workflow step except Draft.
+10. Template cover - preview of the template that will be visible for mailboxes which have access to template. Can use custom image or dynamically generate preview of first page of the template
+11. These options let you configure the qualified signature:
+Signature container — how the signed content is packaged for download (ASiC-E container or P7S detached file).
+Signature algorithm — which cryptographic scheme is used to create the signature (DSTU 4145 or ECDSA/RSA, as required by the signer’s certificate/provider).
+12. Configure envelope archive files - this feature allows you to configure an envelope archive. You can read more about this functionality :ref:`here <archiveConfiguration>`
 
 .. toctree::
 
