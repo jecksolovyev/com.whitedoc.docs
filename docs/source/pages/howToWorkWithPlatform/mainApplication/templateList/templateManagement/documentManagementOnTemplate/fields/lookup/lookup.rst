@@ -24,16 +24,24 @@ How to add a lookup field to the document?
 3. Name - this is a name of a field
 4. Placeholder - this text will be shown inside the field before it is filled in (can be left empty; field`s name will be used instead)
 5. Optional - this attribute specifies if this field is mandatory to fill
-6. Allow custom values - this attribute specifies if field will allow free text input besides selection from predefined values
+6. Search - this attribute specifies if this field should be eligible for mailbox page search
+7. Document - dropdown selector of a document, where desired parent dictionary is located
+8. Related to - dropdown selector of a desired parent dictionary
+9. Column name - dropdown selector of a desired column in a parent dictionary
+
+This field also includes additional attributes, which you can access by clicking the "Show advanced settings" button.
+
+.. image:: pic_lookup/lookupAdvancedSettings.png
+   :width: 600
+   :align: center
+
+10. Tooltip — enables adding a custom tooltip that will be displayed for not filled fields in the envelope. If left blank, the default tooltip is shown.
+11. Allow custom values - this attribute specifies if field will allow free text input besides selection from predefined values
 
 .. note:: If dictionary has optionality or custom values attributes enabled, same attributes will also be enforced on all related lookups.
 
-7. Search - this attribute specifies if this field should be eligible for mailbox page search
-8. Document - dropdown selector of a document, where desired parent dictionary is located
-9. Related to - dropdown selector of a desired parent dictionary
-10. Column name - dropdown selector of a desired column in a parent dictionary
-
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
+Please note that the “Show advanced settings” option is available only when you add a field. In edit mode, all existing attributes of the field are displayed.
 
 .. image:: pic_lookup/lookupEdit.png
    :width: 600

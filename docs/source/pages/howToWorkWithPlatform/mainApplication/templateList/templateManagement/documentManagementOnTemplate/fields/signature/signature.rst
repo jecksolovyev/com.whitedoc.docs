@@ -26,7 +26,16 @@ How to add a signature field to the document?
 5. Placeholder - this text will be shown inside the field before it is filled in (can be left empty; field`s name will be used instead)
 6. Show signature details - displaying signature details on the envelope. If enabled, there will be the date, mailbox or email address of the signer, signature hash, and 'Signed by [instance name]'. If disabled, only the signature hash and and 'Signed by [instance name]' will be shown
 
+This field also includes additional attributes, which you can access by clicking the "Show advanced settings" button.
+
+.. image:: pic_signature/signatureAdvancedSettings.png
+   :width: 600
+   :align: center
+
+7. Tooltip — enables adding a custom tooltip that will be displayed for active fields in the envelope. If left blank, the default tooltip is shown
+
 When all attributes are set, you can click "Save" button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
+Please note that the “Show advanced settings” option is available only when you add a field. In edit mode, all existing attributes of the field are displayed.
 
 .. image:: pic_signature/signatureEdit.png
    :width: 600
@@ -52,13 +61,22 @@ How to fill a signature field in the envelope?
 
 .. note:: If you have saved e-ink signature in your profile settings page, window will not open and signature will be automatically applied.
 
-4. Draw your signature on the empty area by pressing left side on the mouse and dragging it around. You have to draw at least 0.5 sec to complete validation of the field. Note that you can change color or input text instead of drawing on Text tab
+4. Draw your signature on the empty area by pressing left side on the mouse and dragging it around. You have to draw at least 0.5 sec to complete validation of the field. Note that you can change color or input text instead of drawing on Text tab. 
 
 .. image:: pic_signature/signatureDrawn.png
    :width: 600
    :align: center
 
 5. You can reset drawing area with "Clear" button
+6. A text version of the signature can also be created. To do this, go to the Text tab in the open window.
+
+.. image:: pic_signature/signatureText.png
+   :width: 600
+   :align: center
+
+.. note:: To accept the created signature, you must select the checkbox "I agree that the signature above will be the electronic representation of my signature for all purposes when I (or my agent) use it on envelopes, including legally binding contracts. Your signature will be saved to your user profile after applying". 
+   If you create a new signature that is different from the one previously set in your profile, saving it will also update the signature in your user profile.
+
 6. Click "Sign" to insert your signature to the field (can't be empty) and you will see your signature in the document
 7. Under the signature, you will see its details, depending on whether the "Show signature details" toggle was enabled or not on the template
 
