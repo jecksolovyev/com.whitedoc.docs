@@ -30,7 +30,16 @@ How to add a QES field to the document?
 9. Document (appears if TIN is enabled) - document where TIN field is placed
 10. TIN field (appears if TIN is enabled) - field which will be used for TIN check
 
+This field also includes additional attributes, which you can access by clicking the "Show advanced settings" button.
+
+.. image:: pic_qes/qesAdvancedSettings.png
+   :width: 600
+   :align: center
+
+11. Tooltip — enables adding a custom tooltip that will be displayed for active fields in the envelope. If left blank, the default tooltip is shown
+
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
+Please note that the “Show advanced settings” option is available only when you add a field. In edit mode, all existing attributes of the field are displayed.
 
 .. image:: pic_qes/qesEdit.png
    :width: 600

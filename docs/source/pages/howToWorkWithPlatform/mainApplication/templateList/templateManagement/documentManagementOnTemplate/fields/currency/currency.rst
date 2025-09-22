@@ -26,16 +26,25 @@ How to add a currency field to the document?
 5. Placeholder - this text will be shown inside the field before it is filled in (can be left empty; field`s name will be used instead)
 6. Optional - this attribute specifies if this field is mandatory to fill
 7. Search - this attribute specifies if this field should be eligible for mailbox page search
-8. Adapt to the local format - this attribute specifies if numbers will be formatted according to regional standard
+
+This field also includes additional attributes, which you can access by clicking the "Show advanced settings" button.
+
+.. image:: pic_currency/currencyAdvancedSettings.png
+   :width: 600
+   :align: center
+
+8. Tooltip — enables adding a custom tooltip that will be displayed for active fields in the envelope. If left blank, the default tooltip is shown.
+9. Adapt to the local format - this attribute specifies if numbers will be formatted according to regional standard
 
 .. note:: Numbers in envelope view will be formatted according to standard of a region which is selected on User profile page. You can see formatting example under region selector on that page. Numbers in printable versions of the documents will always be formatted according to platform region standard.
 
-9. Min - minimal value allowed in field (no limit is applied if left empty)
-10. Max - maximal value allowed in field (no limit is applied if left empty)
+10. Min - minimal value allowed in field (no limit is applied if left empty)
+11. Max - maximal value allowed in field (no limit is applied if left empty)
 
 .. warning:: Maximum allowed character count for currency field is 15 (according to `IEEE 754 <https://en.wikipedia.org/wiki/IEEE_754>`_). Please note this includes decimal places. This means that if you insert a value 999999999999999 or more characters, it will be converted to 9999999999999.00.
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
+Please note that the “Show advanced settings” option is available only when you add a field. In edit mode, all existing attributes of the field are displayed.
 
 .. image:: pic_currency/currencyEdit.png
    :width: 600
