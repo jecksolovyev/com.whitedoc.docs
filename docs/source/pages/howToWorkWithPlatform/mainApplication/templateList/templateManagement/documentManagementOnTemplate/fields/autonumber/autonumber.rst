@@ -23,6 +23,7 @@ How to add an autonumber field to the document?
 
 3. Name - this is a name of a field
 4. Prefix - this attribute indicates a string value which will be appended to the number
+5. Search - this attribute specifies if this field should be eligible for mailbox page search
 
 This field also includes additional attributes, which you can access by clicking the "Show advanced settings" button.
 
@@ -30,7 +31,7 @@ This field also includes additional attributes, which you can access by clicking
    :width: 600
    :align: center
 
-5. Tooltip — enables adding a custom tooltip that will be displayed for not filled fields in the envelope. If left blank, the default tooltip is shown.
+6. Tooltip - enables adding a custom tooltip that will be displayed for active fields in the envelope. If left blank, the default tooltip is shown
 
 When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
 Please note that the “Show advanced settings” option is available only when you add a field. In edit mode, all existing attributes of the field are displayed.

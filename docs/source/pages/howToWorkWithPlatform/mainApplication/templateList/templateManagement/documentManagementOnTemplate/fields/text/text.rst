@@ -27,7 +27,7 @@ How to add a text field to the document?
 4. Role name - this is a role which will be assgined to fill this field
 5. Placeholder - this text will be shown inside the field before it is filled in (can be left empty; field`s name will be used instead)
 6. Optional - this attribute specifies if this field is mandatory to fill
-7. Search - this attribute specifies if this field should be eligible for mailbox page 
+7. Search - this attribute specifies if this field should be eligible for mailbox page search
 8. Pattern - this attribute specifies the pattern that will be applied to the field content for validation. You can select one of pattern presets or a custom option to enter your own regular expression
 
 .. hint:: Next pattern presets are available for DocStudio and YourDoc instances: DUNS (Data Universal Numbering System), Email, Canada postal code, US ZIP code, Bank account (IBAN), Credit card number, GTIN (Global trade item number), GLN (Global location number), LEI (Legal Entity Identifier), USA EIN (Employer Identification Number), USA ITIN/SSN (Individual Taxpayer Identification Number/Social Security Number), Canadian BN (Business Number).
@@ -46,7 +46,7 @@ This field also includes additional attributes, which you can access by clicking
    :width: 600
    :align: center
 
-10. Tooltip — enables adding a custom tooltip that will be displayed for active fields in the envelope. If left blank, the default tooltip is shown.
+10. Tooltip - enables adding a custom tooltip that will be displayed for active fields in the envelope. If left blank, the default tooltip is shown
 11. Multiline - this attribute specifies is this text field will be single or multi lined
 
 .. note:: Standart character limit is 1000 for singleline filed and 5000 for multiline field.

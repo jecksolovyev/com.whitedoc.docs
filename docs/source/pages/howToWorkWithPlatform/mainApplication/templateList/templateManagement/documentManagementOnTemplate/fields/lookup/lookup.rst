@@ -35,7 +35,7 @@ This field also includes additional attributes, which you can access by clicking
    :width: 600
    :align: center
 
-10. Tooltip — enables adding a custom tooltip that will be displayed for not filled fields in the envelope. If left blank, the default tooltip is shown.
+10. Tooltip - enables adding a custom tooltip that will be displayed for active fields in the envelope. If left blank, the default tooltip is shown
 11. Allow custom values - this attribute specifies if field will allow free text input besides selection from predefined values
 
 .. note:: If dictionary has optionality or custom values attributes enabled, same attributes will also be enforced on all related lookups.
