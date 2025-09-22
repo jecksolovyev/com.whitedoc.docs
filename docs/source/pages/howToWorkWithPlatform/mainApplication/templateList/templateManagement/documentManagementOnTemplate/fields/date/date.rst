@@ -36,7 +36,7 @@ This field also includes additional attributes, which you can access by clicking
    :width: 600
    :align: center
 
-9. Tooltip — enables adding a custom tooltip that will be displayed for active fields in the envelope. If left blank, the default tooltip is shown.
+9. Tooltip - enables adding a custom tooltip that will be displayed for active fields in the envelope. If left blank, the default tooltip is shown
 10. Time - this attribute specifies if time selector will be added to calendar
 11. Min - minimal timestamp accepted by field (no limit is applied if left empty)
 12. Max - maximal timestamp accepted by field (no limit is applied if left empty)

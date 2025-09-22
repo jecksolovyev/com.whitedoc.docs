@@ -33,7 +33,7 @@ This field also includes additional attributes, which you can access by clicking
    :width: 600
    :align: center
 
-8. Tooltip — enables adding a custom tooltip that will be displayed for active fields in the envelope. If left blank, the default tooltip is shown.
+8. Tooltip - enables adding a custom tooltip that will be displayed for active fields in the envelope. If left blank, the default tooltip is shown
 9. Adapt to the local format - this attribute specifies if numbers will be formatted according to regional standard
 
 .. note:: Numbers in envelope view will be formatted according to standard of a region which is selected on User profile page. You can see formatting example under region selector on that page. Numbers in printable versions of the documents will always be formatted according to platform region standard.

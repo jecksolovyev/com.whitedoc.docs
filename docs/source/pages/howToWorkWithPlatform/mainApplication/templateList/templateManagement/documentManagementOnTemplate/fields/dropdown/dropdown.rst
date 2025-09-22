@@ -35,7 +35,7 @@ This field also includes additional attributes, which you can access by clicking
    :width: 600
    :align: center
 
-10. Tooltip — enables adding a custom tooltip that will be displayed for active fields in the envelope. If left blank, the default tooltip is shown.
+10. Tooltip - enables adding a custom tooltip that will be displayed for active fields in the envelope. If left blank, the default tooltip is shown
 11. Multiselect - this attribute specifies if multiple values can be selected (can not be enabled together with Allow custom value attribute)
 12. Allow custom values - this attribute specifies if field will allow free text input besides selection from predefined values (can not be enabled together with Multiselect attribute)
 

@@ -23,6 +23,15 @@ How to add an autonumber field to the document?
 
 3. Name - this is a name of a field
 4. Prefix - this attribute indicates a string value which will be appended to the number
+5. Search - this attribute specifies if this field should be eligible for mailbox page search
+
+This field also includes additional attributes, which you can access by clicking the "Show advanced settings" button.
+
+.. image:: pic_autonumber/autonumberAdvancedSettings.png
+   :width: 600
+   :align: center
+
+6. Tooltip - enables adding a custom tooltip that will be displayed for active fields in the envelope. If left blank, the default tooltip is shown
 
 This field also includes additional attributes, which you can access by clicking the "Show advanced settings" button.
 
