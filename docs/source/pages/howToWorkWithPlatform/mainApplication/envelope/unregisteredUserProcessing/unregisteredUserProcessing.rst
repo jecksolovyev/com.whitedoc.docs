@@ -20,13 +20,13 @@ How to process a received envelope without registration?
 6. As soon as the role finishes all required actions, the "Send" button will appear. Click it to send the envelope according to the rest of the flow
 7. The "Success page" with an option to authorize on the platform to watch envelopes processing will be displayed as a last step
 
+.. _envelopeInitiation:
+
 ======================================
 Envelope sending without authorization
 ======================================
 
 Envelopes can also be sent without authorization. This is done via an envelope initiation link created by an authorized user.
-
-.. _createInitLink:
 
 How to generate an envelope initiation link?
 ============================================
@@ -163,7 +163,7 @@ How to send an envelope without authorization as a registered user?
 How to add redirect url to shareable link or embed code?
 ========================================================
 
-1. Copy link or embed code (:ref:`Click here to read more about link/code creation<createInitLink>`.)
+1. Copy link or embed code (:ref:`Click here to read more about link/code creation<envelopeInitiation>`.)
 
 2. Modify your link by adding redirectUrl={yourUrl} parameter. In examples below you can see added redirectUrl to both the shareable link and the embed code, f.e.: redirect url to https://www.google.com
 

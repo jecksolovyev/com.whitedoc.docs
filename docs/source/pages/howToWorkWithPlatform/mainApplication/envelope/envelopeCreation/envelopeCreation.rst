@@ -4,9 +4,9 @@ Envelope creation
     
 There are several ways to create an envelope:
 
-1. Create an envelope via Quick send button on the dashboard. More details on this can be found :ref:`here <dashboard>`
+1. By clicking the :ref:`"Upload document" button on the dashboard <dashboard>`
 
-2. By clicking "New envelope" button on the dashboard
+2. By clicking the "New envelope" button on the dashboard
 
 .. image:: picEnvelopeCreation/createFromDashboard.png
    :width: 400
@@ -24,27 +24,33 @@ There are several ways to create an envelope:
    :width: 400
    :align: center
 
-5. By clicking "Send" button in the template editor
+5. By clicking the "Send" button in the template editor
 
 .. image:: picEnvelopeCreation/createFromEditor.png
    :width: 400
    :align: center
 
-6. By cloning existing envelope. Please note that if mailbox has no access to the template of origin or envelope is created via Quick-send, 'Clone' button will not be shown
+6. By cloning an existing envelope (if mailbox has no access to the template of origin or envelope is created via Quick-send, 'Clone' button will not be shown). Envelope draft will be opened
 
 .. image:: picEnvelopeCreation/createFromExisting.png
    :width: 400
    :align: center
 
-7. Envelope draft will be opened
+7. From this page you will have to fill all roles that take part in envelope processing flow (unless they are predifined on the template level). Note that you can enable "I am assignee/approver/signer" attribute to predefine your own mailbox for specified role. After all mandatory fields will be filled you can send envelope to the next participant of the flow
 
 .. image:: picEnvelopeCreation/envelopeFlow.png
    :width: 400
    :align: center
 
-From this page you will have to fill all roles that take part in envelope processing flow (unless they are predifined on the template level). Note that you can enable "I am assignee/approver/signer" attribute to predefine your own mailbox for specified role. After all mandatory fields will be filled you can send envelope to the next participant of the flow.
+8. By following an :ref:`envelope initiation link <envelopeInitiation>`
+
+9. By sending an :ref:`envelope form <envelopeForm>`
+
+10. By using `API <https://docs.docstudio.com/en/latest/pages/api/openApi.html#tag/envelope-controller>`_ to create an envelope
 
 .. note:: You can also save an envelope draft with some values filled in to send it later. You can do so by clicking "Save draft" button (not available for quick-send). After draft is saved, it will be automatically re-saved after any changes are made. Saving process is indicated by save icon near "Save draft" button. Same auto-save feature is also used in envelopes in "Waiting for you" status.
+
+.. _envelopeMetadata:
 
 Envelope metadata
 =================
