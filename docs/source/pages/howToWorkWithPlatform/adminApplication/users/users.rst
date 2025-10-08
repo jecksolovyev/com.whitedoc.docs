@@ -5,7 +5,7 @@ Users
 This page allows to create and manage account users.
 
 .. image:: pic_users/usersPage.png
-   :width: 600
+   :width: 800
    :align: center
 
 Invite a users to the Account/Mailbox by email
@@ -18,7 +18,7 @@ Registered and not registered users can be invited to an Account/Mailbox with sp
 3. Fill the opened invitation form and click the "Invite user" button in the form
 
 .. image:: pic_users/inviteUserModal.png
-   :width: 400
+   :width: 600
    :align: center
 
 4. After this you will be redirected to the user edition page where you can assign account and mailbox permissions which you want to grant for this user
@@ -30,13 +30,13 @@ Grant account permissions
 You can grant a role (permissions preset) to user. To add a role click the "Add role" button. You can assign several roles to a user. System roles will be available by default and custom roles can be created on the roles page of the admin panel.
 
 .. image:: pic_users/accountRoles.png
-   :width: 400
+   :width: 600
    :align: center
 
 It is also possible to grant specific permisisons without using roles. To select a specific permissions click the "Advanced" button. In the opened form you will see a permission search field, permission filters and permissions list. To grant permissions you should select them by a checkboxes near permission names. When all required permission are selected click the "Apply" button in the form.
 
 .. image:: pic_users/accountPermissions.png
-   :width: 400
+   :width: 600
    :align: center
 
 .. note:: :ref:`Account permissions list and description <accountPermissions>`
@@ -47,11 +47,11 @@ Grant mailbox permissions
 You can grant mailbox roles and permissions in a similar manner as account roles and permissions on the mailbox tab. Only difference is that you need to click the required mailbox first, and then selects roles and/or permissions.
 
 .. image:: pic_users/mailboxRoles.png
-   :width: 400
+   :width: 600
    :align: center
 
 .. image:: pic_users/mailboxPermissions.png
-   :width: 400
+   :width: 600
    :align: center
 
 .. note:: :ref:`Mailbox permissions list and description <mailboxPermissions>`
@@ -62,7 +62,7 @@ Registered user invitation
 After an invite is sent, registered user will get an email with a link to the invites tab of user profile page with all invites listed there and options to accept or decline them.
 
 .. image:: pic_users/invitesTab.png
-   :width: 400
+   :width: 600
    :align: center
 
 After user accepted or declined an invitation you will receive a notification email with details.
@@ -95,10 +95,10 @@ As an administrator of an account you can create a corporate user, which is usef
 
 1. Navigate to https://platform_address_here/admin/users
 2. Click the "Create user" button and select "Create user" option from the menu
-3. Fill in all fields on the user creation form. Also you can choose should a personal mailbox be created for this user
+3. Fill in all fields on the user creation form (phone number can be optional based on the instance configuration). Also you can choose should a personal mailbox be created for this user
 
 .. image:: pic_users/createUserModal.png
-   :width: 400
+   :width: 600
    :align: center
 
 4. Click the "Create" button
@@ -106,7 +106,7 @@ As an administrator of an account you can create a corporate user, which is usef
 6. You can also open Settings tab to edit user details, such as name, timezone, phone (if it is enabled for users in instance settings), default mailbox etc.
 
 .. image:: pic_users/settingsTab.png
-   :width: 400
+   :width: 600
    :align: center
 
 .. note:: If you are editing existing users, this tab will be available only for corporate users.
@@ -119,19 +119,19 @@ Mass corporate users creation
 As an administrator of account you also can mass-create corporate users, which is useful for company accounts with a big number of employees. To do so, click the "Create user" button in the page header and select "Create users" option from the menu. A form will appear, allowing you to download the example file for mass user creation. You can open the file using any tool which support .xlsx format. Also, you have to save the file in this particular format, so make sure to not change the file extention after editing.
 
 .. image:: pic_users/createUsersModal.png
-   :width: 400
+   :width: 600
    :align: center
 
 1. First sheet is "Roles". It lists all roles available for the account which can be used on the "Account" and "Mailbox" sheets
 
 .. image:: pic_users/reportRolesTab.png
-   :width: 400
+   :width: 600
    :align: center
 
 2. Second sheet is "Permissions". It lists all permissions which can be used on the "Account" and "Mailbox" sheets
 
 .. image:: pic_users/reportPermissionsTab.png
-   :width: 400
+   :width: 600
    :align: center
 
 3. Third sheet is "Users". Here you should enter users data (first name, last name and email). Also you can choose should a personal mailbox be created for each user individually (Y to create, N or leave empty to not create). Users will be created according to this data
@@ -139,13 +139,13 @@ As an administrator of account you also can mass-create corporate users, which i
 .. warning:: All users in the list should have relations to an active domain(s). If any users without such relation will be added to the list, user creation process will fail.
 
 .. image:: pic_users/reportUsersTab.png
-   :width: 400
+   :width: 600
    :align: center
 
 4. Fourth sheet is "Account". This sheet allows to set account roles and permissions for each user from the list
 
 .. image:: pic_users/reportAccountTab.png
-   :width: 400
+   :width: 600
    :align: center
 
 .. warning:: If any incorrect emails will be added to the sheet, such users will not be created.
@@ -153,7 +153,7 @@ As an administrator of account you also can mass-create corporate users, which i
 5. Fifth and the rest of sheets are "Mailbox" sheets. These sheets allow to set mailbox roles and permissions for each user from the list
 
 .. image:: pic_users/reportMailboxTab.png
-   :width: 400
+   :width: 600
    :align: center
 
 .. warning:: If any incorrect emails will be added to the sheet, such users will not be created.
@@ -166,14 +166,14 @@ How to get authorized as a corporate user
 1. Open "You are registered on the electronic document management platform" email
 
 .. image:: pic_users/corporateUserRegistrationEmail.png
-   :width: 400
+   :width: 600
    :align: center
 
 2. Follow the link to create a password for your user profile
 3. Create a password and confirm it
 
 .. image:: pic_users/createPasswordForm.png
-   :width: 400
+   :width: 600
    :align: center
 
 4. Authorize on platform using credentials above
