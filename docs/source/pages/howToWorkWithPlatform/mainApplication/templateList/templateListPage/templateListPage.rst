@@ -43,7 +43,7 @@ There are two types of template preview available:
    :width: 300
    :align: center
 
-2. First page of the document. A template that contains at least one structured document or a PDF file will display a preview. The system uses the first page of the first structured document or the attached PDF in the template as the preview.
+2. First page of the document. A template that contains at least one structured document or a PDF file will display a preview. The system uses the first page of the first structured document or the attached PDF in the template as the preview
 
 .. image:: pic_templateListPage/previewStructuredDocument.png
    :width: 300
@@ -83,3 +83,80 @@ How to find a template
    :align: center
 
 On template list you can create templates, clone, update and delete existing templates.
+
+Templates view options
+======================
+
+The Templates page supports two view options: Grid and List.
+
+* Grid view is the default on desktop and tablet devices.
+* List view is the default on mobile devices.
+
+To switch between views, click the Grid/List toggle button.
+Once you change the view mode, your preference overrides the default setting and applies across all devices.
+
+* To switch to list view click the icon "List view"
+
+.. image:: pic_templateListPage/toListView.png
+   :width: 400
+   :align: center
+
+* To switch to grid view click the icon "Grid view"
+
+.. image:: pic_templateListPage/toGridView.png
+   :width: 400
+   :align: center
+
+.. note:: Icon changes automatically depends on current view.
+
+Both views provide identical functionality and allow users to manage folders and templates, provided they have the necessary permissions.
+
+Main elements of the Grid view
+``````````````````````````````
+
+.. image:: pic_templateListPage/gridViewElements.png
+   :width: 400
+   :align: center
+
+1. **Folders block** - Represents a folder item in the Templates page. Folders are displayed first in the list. Clicking a folder tile opens the selected folder
+
+  * **Folder icon** - Indicates that the item is a folder (1.1)
+  * **Folder name** - The name of the folder (1.2)
+  * **Folder properties** - Provides actions available for the folder: Move, Rename, and Delete (1.3)
+
+2. **Template block** - Represents an individual template item. Clicking a template preview opens the Envelope Creation page
+
+  * **Template properties** - Contains available actions: Edit, Copy UUID, Add/Remove from Favorites, Clone, Move, Rename, Delete, and Get Link (if configured) (2.1)
+  * **Template preview** - Clicking opens the Envelope Creation page (2.2)
+  * **Add to favorites icon** - Toggles whether the template is added to or removed from Favorites (2.3)
+  * **Template name** - Displays the name of the template (2.4)
+  * **Template creation date** - Shows the date when the template was created (2.5)
+  * **Template access level icon** - Indicates the access level of the template (2.6)
+
+
+Main elements of the List view
+``````````````````````````````
+
+.. image:: pic_templateListPage/listViewElements.png
+   :width: 400
+   :align: center
+
+1. **Folders block** - Represents a folder item in the Templates list. Folders are displayed first. Clicking a folder row opens the selected folder
+
+  * **Folder icon** - Indicates that the item is a folder (1.1)
+  * **Folder name** - The name of the folder (1.2)
+  * **Folder description** - Shows the folder’s description, if provided (1.3)
+  * **Folder creation date** - Shows the date when the folder was created (1.4)
+  * **Folder access level** - Indicates the access level of the folder (1.5)
+  * **Folder properties** - Provides actions available for the folder: Move, Rename, and Delete (1.6)
+
+2. **Template block** - Represents a template item in the Templates list. Clicking a template row opens the Envelope Creation page
+
+  * **Template icon** - Indicates that the item is a template (2.1)
+  * **Template name** - Displays the name of the template (2.2)
+  * **Template description** - Shows the template’s description, if provided (2.3)
+  * **Template creation date** - Shows the date when the template was created (2.4)
+  * **Template access level icon** - Indicates the access level of the template (2.5)
+  * **Template edit icon** - Opens the Template Edit form (2.6)
+  * **Add to favorites icon** - Adds or removes the template from Favorites (2.7)
+  * **Template properties** Contains available actions: Edit, Copy UUID, Add/Remove from Favorites, Clone, Move, Rename, Delete, and Get Link (if configured) (2.8)
