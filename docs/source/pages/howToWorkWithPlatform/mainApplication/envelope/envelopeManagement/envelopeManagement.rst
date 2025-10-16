@@ -149,12 +149,22 @@ You can edit a label (name and color) or delete it through the additional contex
    :width: 400
    :align: center
 
-Additionally, you can filter shown envelopes by adding filters or envelope fields from the "Add filter" menu.
+Additionally, there are additional filters that allow you to search for envelopes by the following parameters: 
+* Archived - display envelopes located in the Archive
+* Create date - search by envelope creation date
+* In trash - display envelopes located in the Trash
+* Expire date - search by envelope completion date
+* Labels - search by all created labels
+* Recipient - search by entering the recipient’s name, mailbox UUID, or email address
+* Scope - search within the Inbox, Outbox, Shared with Me, and Draft categories.
+* Sent date - search by envelope sent date
 
 .. image:: picEnvelopeManagement/filters.png
    :width: 400
    :align: center
    
+To configure or apply additional filters, use the "Add filters" button.
+
 .. note:: Configured filters can be saved by clicking Save filter button.
 
 5. Using the search bar, you can find a specific envelope by subject or mailbox UUID
