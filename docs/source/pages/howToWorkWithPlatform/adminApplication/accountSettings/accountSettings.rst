@@ -76,6 +76,41 @@ How to configure document viewing through the Microsoft Viewer?
 
 If the option is turned off, files will no longer be displayed by MS viewer and will be displayed with the DocStudio engine,  if rendering is possible.
 
+How to hide email from Reply-To on the platform?
+================================================
+
+.. note:: This action allows to show or hide sender’s email address in the “Reply-To” field for envelope-related emails. When enabled, the sender’s email address will be hidden in the “Reply-To” field for envelope-related emails. If disabled, the sender’s email address will appear in the “Reply-To” field
+
+.. image:: pic_accountSettings/hideEmail.png
+   :width: 600
+   :align: center
+
+If option is off, the “Reply-To” header will be added to envelope-related emails that are sent on behalf of users within an account where this option is enabled. “Reply-To” header includes the name of the account and the user email of the sender of the envelope!
+
+**To activate functionality of hide email follow three simple steps**
+
+1. Enable the toggle switch in this section
+2. Toggle switch will be activated
+3. Click the "Save" button to save changes
+
+.. note:: As a result, the “Reply-To” header will not be added to envelope-related emails that are sent on behalf of users within an account where this option is enabled
+
+**Envelope-related emails**
+
+1. Envelope created
+2. Envelope received
+3. Envelope invitation received
+4. Envelope role completed required actions
+5. Envelope is about to expire
+6. Envelope has unfinished role
+7. Envelope received for approval
+8. Envelope get new comment
+9. Envelope added to chain/removed from chain
+10. Envelope Cancelled
+11. Envelope Expired
+12. Envelope Completed
+
+
 How to upload an account and platform images?
 =============================================
 
