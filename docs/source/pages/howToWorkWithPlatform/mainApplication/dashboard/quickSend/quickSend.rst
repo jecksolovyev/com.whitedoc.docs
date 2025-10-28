@@ -99,9 +99,7 @@ Using the advanced settings, it is possible to configure the field more precisel
 
 There are two ways how to enter data into fields:
 
-1. Fill data inside field properties. This option is available for all fields that can be assigned to Sender. To view and edit field properties, click the field — all available attributes for editing will be displayed.
-Please note that the "Show advanced settings" option is available only while no additional attributes have been added to the field.
-Once at least one additional attribute is added — either during creation or later in edit mode — this option will no longer appear, and all available attributes will be displayed for editing instead.
+1. Fill data inside field properties. This option is available for all fields that can be assigned to Sender. To view and edit field properties, click the field — all available attributes for editing will be displayed. Please note that the "Show advanced settings" option is available only while no additional attributes have been added to the field. Once at least one additional attribute is added — either during creation or later in edit mode — this option will no longer appear, and all available attributes will be displayed for editing instead
 2. Draw a signature by clicking the signature field
 3. Fill data by double-clicking the field. This option is available for the following fields: Text, Number, Currency, Date, Choice, Checkbox and QR/barcode (if data code content is selected).
 
