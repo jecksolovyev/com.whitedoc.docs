@@ -43,8 +43,10 @@ This field also includes additional attributes, which you can access by clicking
 
 .. warning:: Maximum allowed character count for currency field is 15 (according to `IEEE 754 <https://en.wikipedia.org/wiki/IEEE_754>`_). Please note this includes decimal places. This means that if you insert a value 999999999999999 or more characters, it will be converted to 9999999999999.00.
 
-When all attributes are set, you can click Save button and field will be added. You can click field to see its properties and update them. Also you can delete the field in same menu.
-Please note that the “Show advanced settings” option is available only when you add a field. In edit mode, all existing attributes of the field are displayed.
+When all attributes are set, you can click the "Save" button and the field will be added. You can click the field to view or update its properties, and also delete it in the same menu.
+
+Please note that the "Show advanced settings" option is available only while no additional attributes have been added to the field.
+Once at least one additional attribute is added — either during creation or later in edit mode — this option will no longer appear, and all available attributes will be displayed for editing instead.
 
 .. image:: pic_currency/currencyEdit.png
    :width: 600
