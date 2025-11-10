@@ -47,3 +47,13 @@ Some date fields may contain a prefillable value which is automatically prepopul
 .. image:: pic_envelopeFields/saveDataModal.png
    :width: 600
    :align: center
+
+The Date field allows the user to select a specific date or time on the envelope.
+The display format of the date and time values depends on the configuration set at the instance level.
+
+.. note:: If the user’s locale is set to English, the time selector uses the 12-hour format with AM/PM indicators. For all other locales, the time selector displays time in the 24-hour format.
+
+Example:
+
+English locale: 02:30 PM
+French locale: 14:30
