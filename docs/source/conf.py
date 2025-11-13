@@ -51,7 +51,7 @@ html_js_files = ['custom.js']
 master_doc = 'index'
 
 # ----- Redoc configuration
-redoc_uri = 'https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js'
+redoc_uri = 'https://cdn.jsdelivr.net/npm/redoc/bundles/redoc.standalone.js'
 redoc = [
     {
         'name': 'DocStudio API',
