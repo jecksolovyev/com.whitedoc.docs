@@ -63,6 +63,8 @@ How to share a template with mailboxes within the account
    :width: 400
    :align: center
 
+.. note:: Templates shared with "My Account" access level will be available for all mailboxes within the account to be viewed and used for envelope creation, but only the user with the access to the mailbox used for the template creation will be able to edit or delete it. If user has access to several mailboxes within the account, including the mailbox that created the template, he will be automatically switched to that mailbox when editing such template.
+
 How to share a template with everyone
 =====================================
 
