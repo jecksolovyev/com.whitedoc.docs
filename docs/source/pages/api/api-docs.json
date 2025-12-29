@@ -1,6 +1,6 @@
 {
   "openapi": "3.1.0",
-  "info": { "title": "DocStudio Api Documentation", "version": "R146.3" },
+  "info": { "title": "DocStudio Api Documentation", "version": "R147.5" },
   "servers": [{ "url": "https://api.docstudio.com", "description": "Generated server url" }],
   "paths": {
     "/api/v1/user/signature": {
@@ -10204,12 +10204,7 @@
         "operationId": "checkEventAbility",
         "parameters": [
           { "name": "accountUuid", "in": "path", "required": true, "schema": { "type": "string", "format": "uuid" } },
-          {
-            "name": "type",
-            "in": "path",
-            "required": true,
-            "schema": { "$ref": "#/components/schemas/BillingEventType" }
-          },
+          { "name": "type", "in": "path", "required": true, "schema": { "type": "string" } },
           {
             "name": "action",
             "in": "path",
@@ -10248,6 +10243,27 @@
           "200": {
             "description": "OK",
             "content": { "application/json": { "schema": { "$ref": "#/components/schemas/BillingHeaderState" } } }
+          }
+        },
+        "security": [{ "bearerAuth": [] }]
+      }
+    },
+    "/api/v1/account/predefined-event-types": {
+      "get": {
+        "tags": ["account-billing-controller"],
+        "operationId": "getEventTypes",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/BillingEventType" },
+                  "uniqueItems": true
+                }
+              }
+            }
           }
         },
         "security": [{ "bearerAuth": [] }]
@@ -12410,6 +12426,118 @@
         },
         "required": ["name", "settings", "template"]
       },
+      "DocIdSignatureNameDTO": {
+        "type": "object",
+        "properties": {
+          "documentId": { "type": "string", "description": "Document ID" },
+          "signatureName": { "type": "string", "description": "Signature field name" }
+        }
+      },
+      "DocumentsForSignRequestDTO": {
+        "type": "object",
+        "properties": {
+          "signingCertificate": {
+            "type": "string",
+            "format": "byte",
+            "description": "Certificate which will be used for signing"
+          },
+          "signerInformation": {
+            "$ref": "#/components/schemas/SignerInformation",
+            "description": "Alternative info about the signer if no certificate"
+          },
+          "signatureAlgorithm": {
+            "type": "string",
+            "description": "Check signature algorithm in advance",
+            "enum": ["DSTU4145", "ECDSA_RSA"]
+          },
+          "tin": { "type": "string", "description": "Check Tax Individual Number in advance" },
+          "documents": { "type": "array", "items": { "$ref": "#/components/schemas/DocIdSignatureNameDTO" } }
+        }
+      },
+      "SignerInformation": {
+        "type": "object",
+        "properties": { "name": { "type": "string" }, "identifier": { "type": "string" } }
+      },
+      "DocumentForSigningDTO": {
+        "type": "object",
+        "properties": {
+          "documentId": { "type": "string", "description": "ID of document" },
+          "xmlName": { "type": "string", "description": "XML file name" },
+          "xmlHash": { "type": "string", "format": "byte", "description": "XML hash for signing" },
+          "binaryFileName": { "type": "string", "description": "Binary file name" },
+          "binaryHash": { "type": "string", "format": "byte", "description": "Binary file hash for signing" },
+          "stampHash": { "type": "string", "format": "byte", "description": "Stamp hash for signing" },
+          "signatureAlgorithm": {
+            "type": "string",
+            "description": "Signature algorithm",
+            "enum": ["DSTU4145", "ECDSA_RSA"]
+          },
+          "signatureContainer": { "type": "string", "description": "Signature container", "enum": ["P7S", "ASICE"] },
+          "signatures": {
+            "type": "array",
+            "description": "Signatures",
+            "items": { "$ref": "#/components/schemas/RequiredSignatureDTO" }
+          },
+          "expectedSignatureContainer": {
+            "type": "string",
+            "description": "Expected signature container for 'sign' endpoint",
+            "enum": ["RAW", "CADES", "XADES"]
+          },
+          "xadesFiles": {
+            "type": "array",
+            "description": "Files to generate XADES",
+            "items": { "$ref": "#/components/schemas/XadesFile" }
+          }
+        }
+      },
+      "FormDocumentsForSign": {
+        "type": "object",
+        "description": "For sign data with envelope id and documents",
+        "properties": {
+          "envelopeId": { "type": "string", "format": "uuid", "description": "Envelope ID" },
+          "documents": {
+            "type": "array",
+            "description": "List of data for signing documents",
+            "items": { "$ref": "#/components/schemas/DocumentForSigningDTO" }
+          }
+        },
+        "required": ["documents", "envelopeId"]
+      },
+      "RequiredSignatureDTO": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "description": "Signature field name" },
+          "stampRequired": { "type": "boolean", "description": "Is stamp required for signature?" },
+          "qualifiedSignatureRequired": { "type": "boolean", "description": "Is qualified signature required?" },
+          "type": { "type": "string", "description": "Signature type", "enum": ["PADES", "P7S", "ASICE"] },
+          "tin": { "type": "string", "description": "Expected Tax Individual Number" }
+        }
+      },
+      "XadesFile": {
+        "type": "object",
+        "properties": {
+          "fileName": { "type": "string" },
+          "mimeType": { "type": "string" },
+          "hash": { "type": "string", "format": "byte" }
+        }
+      },
+      "DocumentFileForSignRequestDTO": {
+        "type": "object",
+        "properties": {
+          "documentId": { "type": "string", "description": "Document ID", "minLength": 1 },
+          "xml": { "type": "boolean", "description": "Is XML?" }
+        },
+        "required": ["documentId"]
+      },
+      "FormForSignFile": {
+        "type": "object",
+        "description": "For sign data with envelope id",
+        "properties": {
+          "envelopeId": { "type": "string", "format": "uuid", "description": "Envelope ID" },
+          "file": { "type": "string", "description": "Base64 encoded data" }
+        },
+        "required": ["envelopeId", "file"]
+      },
       "SendEnvelope": {
         "type": "object",
         "description": "Envelope to fill",
@@ -12429,75 +12557,6 @@
           "resolved": { "type": "boolean", "description": "Is thread resolved?" }
         },
         "required": ["resolved", "threadUuid"]
-      },
-      "DocIdSignatureNameDTO": {
-        "type": "object",
-        "properties": {
-          "documentId": { "type": "string", "description": "Document ID" },
-          "signatureName": { "type": "string", "description": "Signature field name" }
-        }
-      },
-      "DocumentsForSignRequestDTO": {
-        "type": "object",
-        "properties": {
-          "signingCertificate": {
-            "type": "string",
-            "format": "byte",
-            "description": "Certificate which will be used for signing"
-          },
-          "skipBinaryFiles": {
-            "type": "boolean",
-            "description": "Specify if original binary files are needed in response"
-          },
-          "signatureAlgorithm": {
-            "type": "string",
-            "description": "Check signature algorithm in advance",
-            "enum": ["DSTU4145", "ECDSA_RSA"]
-          },
-          "tin": { "type": "string", "description": "Check Tax Individual Number in advance" },
-          "documents": { "type": "array", "items": { "$ref": "#/components/schemas/DocIdSignatureNameDTO" } }
-        }
-      },
-      "DocumentForSigningDTO": {
-        "type": "object",
-        "properties": {
-          "documentId": { "type": "string", "description": "ID of document" },
-          "xmlName": { "type": "string", "description": "XML file name" },
-          "xml": { "type": "string", "description": "XML for signing" },
-          "xmlHash": { "type": "string", "format": "byte", "description": "XML hash for signing" },
-          "binaryFileName": { "type": "string", "description": "Binary file name" },
-          "binaryFile": { "type": "string", "format": "byte", "description": "Binary file for signing" },
-          "binaryHash": { "type": "string", "format": "byte", "description": "Binary file hash for signing" },
-          "stampHash": { "type": "string", "format": "byte", "description": "Stamp hash for signing" },
-          "signatureAlgorithm": {
-            "type": "string",
-            "description": "Signature algorithm",
-            "enum": ["DSTU4145", "ECDSA_RSA"]
-          },
-          "signatureContainer": { "type": "string", "description": "Signature container", "enum": ["P7S", "ASICE"] },
-          "signatures": {
-            "type": "array",
-            "description": "Signatures",
-            "items": { "$ref": "#/components/schemas/RequiredSignatureDTO" }
-          }
-        }
-      },
-      "RequiredSignatureDTO": {
-        "type": "object",
-        "properties": {
-          "name": { "type": "string", "description": "Signature field name" },
-          "stampRequired": { "type": "boolean", "description": "Is stamp required for signature?" },
-          "type": { "type": "string", "description": "Signature type", "enum": ["PADES", "P7S", "ASICE"] },
-          "tin": { "type": "string", "description": "Expected Tax Individual Number" }
-        }
-      },
-      "DocumentFileForSignRequestDTO": {
-        "type": "object",
-        "properties": {
-          "documentId": { "type": "string", "description": "Document ID", "minLength": 1 },
-          "xml": { "type": "boolean", "description": "Is XML?" }
-        },
-        "required": ["documentId"]
       },
       "CommentPostDTO": {
         "type": "object",
@@ -12615,7 +12674,11 @@
             "items": { "description": "Active role name (only when template is selected)" },
             "uniqueItems": true
           },
-          "sender": { "type": "array", "items": { "description": "Envelope sender UUID" }, "uniqueItems": true },
+          "sender": {
+            "type": "array",
+            "items": { "description": "Envelope sender UUID or email" },
+            "uniqueItems": true
+          },
           "recipient": {
             "type": "array",
             "items": { "description": "Envelope recipient UUID or email" },
@@ -14293,6 +14356,10 @@
           "vchasno": {
             "$ref": "#/components/schemas/VchasnoConfigurationProperties",
             "description": "Vchasno integration"
+          },
+          "eidEasy": {
+            "$ref": "#/components/schemas/EidEasyConfigurationProperties",
+            "description": "eID Easy integration"
           }
         }
       },
@@ -14344,6 +14411,25 @@
           "title": { "type": "string" }
         }
       },
+      "EidEasyConfigurationProperties": {
+        "type": "object",
+        "properties": {
+          "clientId": { "type": "string" },
+          "methods": {
+            "type": "array",
+            "description": "Supportes methods",
+            "items": { "$ref": "#/components/schemas/EidEasyMethod" }
+          }
+        }
+      },
+      "EidEasyMethod": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "actionType": { "type": "string" },
+          "batchSize": { "type": "integer", "format": "int32" }
+        }
+      },
       "EinkSignRestriction": {
         "type": "object",
         "properties": {
@@ -14391,6 +14477,7 @@
         "type": "object",
         "properties": {
           "einkFooter": { "type": "string" },
+          "hideUserIdentifier": { "type": "boolean" },
           "field": { "$ref": "#/components/schemas/FieldRestriction" },
           "attachment": { "$ref": "#/components/schemas/AttachmentRestriction" },
           "search": { "$ref": "#/components/schemas/SearchRestriction" },
@@ -14861,7 +14948,7 @@
             "description": "Notification code",
             "enum": [
               1, 101, 102, 103, 104, 105, 106, 107, 108, 109, 201, 202, 203, 301, 302, 303, 304, 305, 306, 307, 308,
-              309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 401, 402, 501, 502, 503
+              309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 401, 402, 501, 502, 503, 504
             ]
           },
           "data": { "description": "Notification data" },
@@ -15574,35 +15661,6 @@
           }
         }
       },
-      "BillingEventType": {
-        "type": "string",
-        "description": "Billing event",
-        "enum": [
-          "new-corp-user",
-          "new-account-invite",
-          "income-envelope",
-          "sent-envelope",
-          "archive-envelope",
-          "unarchive-envelope",
-          "delete-envelope",
-          "restore-envelope",
-          "account-mailbox",
-          "dig-sign-envelope",
-          "account-domain",
-          "integration-rule",
-          "envelope-scenario",
-          "cloud-signature",
-          "envelope-approval",
-          "password-policy",
-          "callback-sent",
-          "create-template",
-          "delete-template",
-          "allow-template",
-          "verify-signature",
-          "envelope-ai-assist",
-          "template-ai-assist"
-        ]
-      },
       "AccountBillingCounterValueDTO": {
         "type": "object",
         "properties": {
@@ -15671,6 +15729,39 @@
           "name": { "type": "string" },
           "entityID": { "type": "string" }
         }
+      },
+      "BillingEventType": {
+        "type": "string",
+        "description": "Billing event",
+        "enum": [
+          "new-corp-user",
+          "new-account-invite",
+          "income-envelope",
+          "sent-envelope",
+          "archive-envelope",
+          "unarchive-envelope",
+          "delete-envelope",
+          "restore-envelope",
+          "account-mailbox",
+          "dig-sign-envelope",
+          "account-domain",
+          "integration-rule",
+          "envelope-scenario",
+          "cloud-signature",
+          "envelope-approval",
+          "password-policy",
+          "callback-sent",
+          "create-template",
+          "delete-template",
+          "allow-template",
+          "verify-signature",
+          "envelope-ai-assist",
+          "template-ai-assist",
+          "diia-multisharing",
+          "diia-sharing",
+          "diia-multisharing-c",
+          "diia-sharing-c"
+        ]
       },
       "MailboxAccountSimpleDTO": {
         "type": "object",
