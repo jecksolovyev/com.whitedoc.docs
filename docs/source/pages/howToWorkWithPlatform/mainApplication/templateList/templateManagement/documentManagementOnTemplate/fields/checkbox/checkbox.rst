@@ -22,7 +22,7 @@ How to add a checkbox field to the document?
    :align: center
 
 3. Name - this is a name of a field
-4. Role name - this is a role which will be assigned to fill this field
+4. Role name - this is a role that will be assigned to fill this field
 5. Search - this attribute specifies if this field should be eligible for mailbox page search
 6. Required - this attribute specifies if this checkbox is mandatory to check
 

@@ -22,7 +22,7 @@ How to add a choice field to the document?
    :align: center
 
 3. Name - this is a name of a value available for selection from a group (Group name)
-4. Role name - this is a role which will be assigned to fill this field
+4. Role name - this is a role that will be assigned to fill this field
 5. Group name - this is a name of a group of values which has some options (Names) available for selection (3 characters min, 40 max)
 6. Search - this attribute specifies if this field should be eligible for mailbox page search
 
