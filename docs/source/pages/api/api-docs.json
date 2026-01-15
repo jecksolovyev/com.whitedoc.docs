@@ -1,6 +1,6 @@
 {
   "openapi": "3.1.0",
-  "info": { "title": "DocStudio Api Documentation", "version": "R147.5" },
+  "info": { "title": "DocStudio Api Documentation", "version": "R148.10" },
   "servers": [{ "url": "https://api.docstudio.com", "description": "Generated server url" }],
   "paths": {
     "/api/v1/user/signature": {
@@ -4050,9 +4050,7 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
-              "schema": { "type": "string", "description": "Base64 encoded signature", "minLength": 1 }
-            }
+            "application/json": { "schema": { "type": "string", "description": "Base64 encoded signature" } }
           },
           "required": true
         },
@@ -9132,7 +9130,7 @@
             "in": "query",
             "description": "Sharing provider name",
             "required": true,
-            "schema": { "type": "string", "minLength": 1 }
+            "schema": { "type": "string" }
           },
           {
             "name": "attachmentUuid",
@@ -10901,7 +10899,7 @@
           },
           "documentSharingProviders": {
             "type": "array",
-            "items": { "description": "Supported Sharing Provider" },
+            "items": { "type": "string", "description": "Supported Sharing Provider" },
             "uniqueItems": true
           }
         }
@@ -11109,8 +11107,7 @@
           "steps": {
             "type": "array",
             "description": "Scenario steps",
-            "items": { "$ref": "#/components/schemas/ScenarioStepDTO" },
-            "minItems": 1
+            "items": { "$ref": "#/components/schemas/ScenarioStepDTO" }
           },
           "addToChain": { "type": "boolean", "description": "Should envelopes be chained?" }
         },
@@ -11129,7 +11126,7 @@
             "$ref": "#/components/schemas/ScenarioStepTemplateInfoDTO",
             "description": "Scenario step destination template info"
           },
-          "xslt": { "type": "string", "description": "Scenario step XSLT map", "minLength": 1 },
+          "xslt": { "type": "string", "description": "Scenario step XSLT map" },
           "condition": { "type": "string", "description": "Scenario condition XSLT map" },
           "sendAfterCreation": { "type": "boolean", "description": "Send envelope right after creation" }
         },
@@ -11331,7 +11328,14 @@
             "format": "uuid",
             "description": "Field value id (for dictionary or attachments)"
           },
-          "rows": { "type": "array", "items": { "description": "Dynamic argument to build the message" } }
+          "rows": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "description": "Dynamic argument to build the message",
+              "items": { "$ref": "#/components/schemas/FormDataField" }
+            }
+          }
         },
         "required": ["name"]
       },
@@ -11391,7 +11395,10 @@
           },
           "anonymous": {
             "type": "array",
-            "items": { "description": "Form anonymous roles, at least one anonymous role is required" },
+            "items": {
+              "type": "string",
+              "description": "Form anonymous roles, at least one anonymous role is required"
+            },
             "maxItems": 2147483647,
             "minItems": 1,
             "uniqueItems": true
@@ -11543,7 +11550,7 @@
         "type": "object",
         "properties": {
           "threadUuid": { "type": "string", "format": "uuid", "description": "Thread UUID to update" },
-          "text": { "type": "string", "description": "Text of the comment", "minLength": 1 },
+          "text": { "type": "string", "description": "Text of the comment" },
           "messageId": { "type": "integer", "format": "int32", "description": "Message ID to update (optional)" }
         },
         "required": ["text", "threadUuid"]
@@ -11592,7 +11599,11 @@
             "description": "Access level ('official' is not allowed here)",
             "enum": ["mailbox", "account", "public", "official", "shared", "public-hidden"]
           },
-          "sharedTo": { "type": "array", "items": { "description": "UUID of mailbox" }, "uniqueItems": true }
+          "sharedTo": {
+            "type": "array",
+            "items": { "type": "string", "format": "uuid", "description": "UUID of mailbox" },
+            "uniqueItems": true
+          }
         },
         "required": ["accessType", "threadUuid"]
       },
@@ -11602,7 +11613,7 @@
         "properties": {
           "uuids": {
             "type": "array",
-            "items": { "description": "UUID of envelope" },
+            "items": { "type": "string", "format": "uuid", "description": "UUID of envelope" },
             "minItems": 1,
             "uniqueItems": true
           },
@@ -11940,7 +11951,7 @@
         "description": "Link info",
         "properties": {
           "name": { "type": "string", "description": "Link name", "maxLength": 255, "minLength": 0 },
-          "url": { "type": "string", "description": "Link url", "minLength": 1 },
+          "url": { "type": "string", "description": "Link url" },
           "access": {
             "type": "string",
             "description": "Link access level, account-wide by default",
@@ -12263,8 +12274,7 @@
           "preferences": {
             "type": "object",
             "additionalProperties": { "type": "array", "items": { "type": "integer", "format": "int32" } },
-            "description": "Preferences map, possible keys (email, web)",
-            "minProperties": 1
+            "description": "Preferences map, possible keys (email, web)"
           },
           "notifyAllUsersAboutEnvelopeChanges": {
             "type": "boolean",
@@ -12309,7 +12319,7 @@
           "labelUuid": { "type": "string", "format": "uuid", "description": "UUID of label to assign" },
           "envelopes": {
             "type": "array",
-            "items": { "description": "Envelope UUID to assign" },
+            "items": { "type": "string", "format": "uuid", "description": "Envelope UUID to assign" },
             "maxItems": 1000,
             "minItems": 1,
             "uniqueItems": true
@@ -12429,9 +12439,10 @@
       "DocIdSignatureNameDTO": {
         "type": "object",
         "properties": {
-          "documentId": { "type": "string", "description": "Document ID" },
-          "signatureName": { "type": "string", "description": "Signature field name" }
-        }
+          "documentId": { "type": "string", "description": "Document ID", "minLength": 1 },
+          "signatureName": { "type": "string", "description": "Signature field name", "minLength": 1 }
+        },
+        "required": ["documentId", "signatureName"]
       },
       "DocumentsForSignRequestDTO": {
         "type": "object",
@@ -12456,7 +12467,8 @@
       },
       "SignerInformation": {
         "type": "object",
-        "properties": { "name": { "type": "string" }, "identifier": { "type": "string" } }
+        "properties": { "name": { "type": "string", "minLength": 1 }, "identifier": { "type": "string" } },
+        "required": ["name"]
       },
       "DocumentForSigningDTO": {
         "type": "object",
@@ -12562,14 +12574,18 @@
         "type": "object",
         "properties": {
           "documentId": { "type": "string", "description": "Document ID to create new comment thread" },
-          "text": { "type": "string", "description": "Text of the message", "minLength": 1 },
+          "text": { "type": "string", "description": "Text of the message" },
           "xpath": { "type": "string", "description": "xPath to find selected area" },
           "accessType": {
             "type": "string",
             "description": "Access level ('official' is not allowed here)",
             "enum": ["mailbox", "account", "public", "official", "shared", "public-hidden"]
           },
-          "sharedTo": { "type": "array", "items": { "description": "UUID of mailbox" }, "uniqueItems": true }
+          "sharedTo": {
+            "type": "array",
+            "items": { "type": "string", "format": "uuid", "description": "UUID of mailbox" },
+            "uniqueItems": true
+          }
         },
         "required": ["accessType", "documentId", "text"]
       },
@@ -12654,9 +12670,29 @@
         "type": "object",
         "description": "Search parameters",
         "properties": {
-          "label": { "type": "array", "items": { "description": "Label UUID or name" }, "uniqueItems": true },
-          "scope": { "type": "array", "items": { "description": "Envelope scope" }, "uniqueItems": true },
-          "status": { "type": "array", "items": { "description": "Envelope status" }, "uniqueItems": true },
+          "label": {
+            "type": "array",
+            "items": { "type": "string", "description": "Label UUID or name" },
+            "uniqueItems": true
+          },
+          "scope": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Envelope scope",
+              "enum": ["inbox", "outbox", "draft", "shared"]
+            },
+            "uniqueItems": true
+          },
+          "status": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Envelope status",
+              "enum": ["DRAFT", "SENT", "WAITING", "COMPLETED", "CANCELLED", "EXPIRED", "ON_APPROVAL"]
+            },
+            "uniqueItems": true
+          },
           "subject": { "type": "string", "description": "Envelope subject" },
           "createDateFrom": { "type": "string", "format": "date-time", "description": "Creation date from" },
           "createDateTo": { "type": "string", "format": "date-time", "description": "Creation date to" },
@@ -12668,20 +12704,24 @@
           "sendDateTo": { "type": "string", "format": "date-time", "description": "Envelope sending date to" },
           "archived": { "type": "boolean", "description": "Archived" },
           "deleted": { "type": "boolean", "description": "Deleted to Recycle Bin" },
-          "template": { "type": "array", "items": { "description": "Template UUID" }, "uniqueItems": true },
+          "template": {
+            "type": "array",
+            "items": { "type": "string", "format": "uuid", "description": "Template UUID" },
+            "uniqueItems": true
+          },
           "activeRole": {
             "type": "array",
-            "items": { "description": "Active role name (only when template is selected)" },
+            "items": { "type": "string", "description": "Active role name (only when template is selected)" },
             "uniqueItems": true
           },
           "sender": {
             "type": "array",
-            "items": { "description": "Envelope sender UUID or email" },
+            "items": { "type": "string", "description": "Envelope sender UUID or email" },
             "uniqueItems": true
           },
           "recipient": {
             "type": "array",
-            "items": { "description": "Envelope recipient UUID or email" },
+            "items": { "type": "string", "description": "Envelope recipient UUID or email" },
             "uniqueItems": true
           },
           "sortField": { "type": "string", "description": "Field for sorting ('createdAt' by default)" },
@@ -12694,7 +12734,11 @@
             },
             "uniqueItems": true
           },
-          "form": { "type": "array", "items": { "description": "Form UUID" }, "uniqueItems": true },
+          "form": {
+            "type": "array",
+            "items": { "type": "string", "format": "uuid", "description": "Form UUID" },
+            "uniqueItems": true
+          },
           "metadata": {
             "type": "object",
             "additionalProperties": { "type": "string" },
@@ -12833,7 +12877,10 @@
           "mailboxName": { "type": "string", "description": "Mailbox name of sender" },
           "total": { "type": "integer", "format": "int32", "description": "Total number of participants" },
           "completed": { "type": "integer", "format": "int32", "description": "Number of participants processed" },
-          "labels": { "type": "array", "items": { "description": "Envelope label UUID" } },
+          "labels": {
+            "type": "array",
+            "items": { "type": "string", "format": "uuid", "description": "Envelope label UUID" }
+          },
           "templateUuid": { "type": "string", "format": "uuid", "description": "Envelope template UUID" },
           "templateVersion": { "type": "string", "format": "uuid", "description": "Envelope template version" },
           "templateName": { "type": "string", "description": "Envelope template name" },
@@ -12977,7 +13024,10 @@
         "type": "object",
         "description": "uuids or search parameters have to specified separately",
         "properties": {
-          "uuids": { "type": "array", "items": { "description": "UUID of envelope" } },
+          "uuids": {
+            "type": "array",
+            "items": { "type": "string", "format": "uuid", "description": "UUID of envelope" }
+          },
           "searchParams": { "$ref": "#/components/schemas/SearchEnvelopesDTO" }
         }
       },
@@ -12985,7 +13035,7 @@
         "type": "object",
         "description": "Send QuickSendDTO in BLOB format with Content-Type: application/json",
         "properties": {
-          "subject": { "type": "string", "description": "Subject of envelope", "minLength": 1 },
+          "subject": { "type": "string", "description": "Subject of envelope" },
           "message": { "type": "string", "description": "Message of envelope" },
           "recipients": { "type": "array", "items": { "$ref": "#/components/schemas/QuickSendRecipientDTO" } }
         },
@@ -13062,7 +13112,7 @@
         "properties": {
           "uuids": {
             "type": "array",
-            "items": { "description": "UUID of envelope" },
+            "items": { "type": "string", "format": "uuid", "description": "UUID of envelope" },
             "minItems": 1,
             "uniqueItems": true
           },
@@ -13149,8 +13199,20 @@
         "type": "object",
         "description": "Search parameters for callback envelopes",
         "properties": {
-          "label": { "type": "array", "items": { "description": "Label UUID or name" }, "uniqueItems": true },
-          "status": { "type": "array", "items": { "description": "Envelope status" }, "uniqueItems": true },
+          "label": {
+            "type": "array",
+            "items": { "type": "string", "description": "Label UUID or name" },
+            "uniqueItems": true
+          },
+          "status": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Envelope status",
+              "enum": ["DRAFT", "SENT", "WAITING", "COMPLETED", "CANCELLED", "EXPIRED", "ON_APPROVAL"]
+            },
+            "uniqueItems": true
+          },
           "subject": { "type": "string", "description": "Envelope subject" },
           "createDateFrom": { "type": "string", "format": "date-time", "description": "Creation date from" },
           "createDateTo": { "type": "string", "format": "date-time", "description": "Creation date to" },
@@ -13160,9 +13222,21 @@
           "expireDateTo": { "type": "string", "format": "date-time", "description": "Expire date to" },
           "sendDateFrom": { "type": "string", "format": "date-time", "description": "Envelope sending date from" },
           "sendDateTo": { "type": "string", "format": "date-time", "description": "Envelope sending date to" },
-          "template": { "type": "array", "items": { "description": "Template UUID" }, "uniqueItems": true },
-          "sender": { "type": "array", "items": { "description": "Envelope sender UUID" }, "uniqueItems": true },
-          "form": { "type": "array", "items": { "description": "Form UUID" }, "uniqueItems": true }
+          "template": {
+            "type": "array",
+            "items": { "type": "string", "format": "uuid", "description": "Template UUID" },
+            "uniqueItems": true
+          },
+          "sender": {
+            "type": "array",
+            "items": { "type": "string", "description": "Envelope sender UUID or email" },
+            "uniqueItems": true
+          },
+          "form": {
+            "type": "array",
+            "items": { "type": "string", "format": "uuid", "description": "Form UUID" },
+            "uniqueItems": true
+          }
         }
       },
       "CreateEnvelopeCallbackDTO": {
@@ -13236,7 +13310,7 @@
         "properties": {
           "uuids": {
             "type": "array",
-            "items": { "description": "UUID of envelope" },
+            "items": { "type": "string", "format": "uuid", "description": "UUID of envelope" },
             "minItems": 1,
             "uniqueItems": true
           }
@@ -13292,7 +13366,10 @@
       "CreateRecordsResponseDTO": {
         "type": "object",
         "properties": {
-          "data": { "type": "array", "items": { "description": "UUID of added record" } },
+          "data": {
+            "type": "array",
+            "items": { "type": "string", "format": "uuid", "description": "UUID of added record" }
+          },
           "totalElements": { "type": "integer", "format": "int64" }
         }
       },
@@ -13302,7 +13379,7 @@
           "columnUuid": { "type": "string", "format": "uuid", "description": "Column UUID" },
           "values": {
             "type": "array",
-            "items": { "description": "Unique value of the column" },
+            "items": { "type": "string", "description": "Unique value of the column" },
             "maxItems": 10000,
             "minItems": 1,
             "uniqueItems": true
@@ -13733,7 +13810,11 @@
         "type": "object",
         "description": "uuids or search parameters have to specified separately",
         "properties": {
-          "uuids": { "type": "array", "items": { "description": "UUID of user" }, "uniqueItems": true },
+          "uuids": {
+            "type": "array",
+            "items": { "type": "string", "format": "uuid", "description": "UUID of user" },
+            "uniqueItems": true
+          },
           "searchParams": { "$ref": "#/components/schemas/UsersSearchFilterDTO" }
         }
       },
@@ -13873,7 +13954,11 @@
         "type": "object",
         "description": "uuids or search parameters have to specified separately",
         "properties": {
-          "uuids": { "type": "array", "items": { "description": "UUID of mailbox" }, "uniqueItems": true },
+          "uuids": {
+            "type": "array",
+            "items": { "type": "string", "format": "uuid", "description": "UUID of mailbox" },
+            "uniqueItems": true
+          },
           "searchParams": { "$ref": "#/components/schemas/MailboxesSearchFilterDTO" }
         }
       },
@@ -14126,7 +14211,7 @@
           },
           "documentSharingProviders": {
             "type": "array",
-            "items": { "description": "Supported Sharing Provider" },
+            "items": { "type": "string", "description": "Supported Sharing Provider" },
             "uniqueItems": true
           },
           "code": { "type": "string", "description": "Invitation code" }
@@ -15131,7 +15216,11 @@
           "sentAt": { "type": "string", "format": "date-time", "description": "Envelope sending date" },
           "labels": {
             "type": "array",
-            "items": { "description": "UUID of label for this envelope for this mailbox" },
+            "items": {
+              "type": "string",
+              "format": "uuid",
+              "description": "UUID of label for this envelope for this mailbox"
+            },
             "uniqueItems": true
           },
           "total": { "type": "integer", "format": "int32", "description": "Total number of participants" },
@@ -15280,7 +15369,11 @@
         "type": "object",
         "description": "Envelope properties distinct with filter",
         "properties": {
-          "labels": { "type": "array", "items": { "description": "Envelope label UUIDs" }, "uniqueItems": true },
+          "labels": {
+            "type": "array",
+            "items": { "type": "string", "format": "uuid", "description": "Envelope label UUIDs" },
+            "uniqueItems": true
+          },
           "status": {
             "type": "string",
             "description": "Envelope status",
@@ -15306,7 +15399,11 @@
             "enum": ["DRAFT", "SENT", "WAITING", "COMPLETED", "CANCELLED", "EXPIRED", "ON_APPROVAL"]
           },
           "subject": { "type": "string", "description": "Subject of the envelope" },
-          "label": { "type": "array", "items": { "description": "Envelope's label UUID" }, "uniqueItems": true },
+          "label": {
+            "type": "array",
+            "items": { "type": "string", "format": "uuid", "description": "Envelope's label UUID" },
+            "uniqueItems": true
+          },
           "receiveDate": {
             "type": "string",
             "format": "date-time",
@@ -15823,7 +15920,7 @@
         "properties": {
           "uuids": {
             "type": "array",
-            "items": { "description": "UUID of envelope" },
+            "items": { "type": "string", "format": "uuid", "description": "UUID of envelope" },
             "minItems": 1,
             "uniqueItems": true
           },

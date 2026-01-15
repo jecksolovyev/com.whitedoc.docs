@@ -22,7 +22,7 @@ How to add a table field to the document?
    :align: center
 
 3. Name - this is a name of a field
-4. Role name - this is a role which will be assgined to fill this field
+4. Role name - this is a role that will be assigned to fill this field
 5. Row numbering - this attribute specifies if number column will be shown in the table
 6. Columns - this attribute specifies number of usable table columns
 
