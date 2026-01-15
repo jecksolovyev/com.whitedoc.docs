@@ -22,7 +22,7 @@ How to add a file field to the document?
    :align: center
 
 3. Name - this is a name of a field
-4. Role name - this is a role which will be assgined to fill this field
+4. Role name - this is a role which will be assigned to fill this field
 5. Placeholder - this text will be shown inside the field before it is filled in (can be left empty; field`s name will be used instead)
 6. Optional - this attribute specifies if this field is mandatory to fill
 7. File extension - this attribute specifies file extensions which will be allowed by field. Next options are available:

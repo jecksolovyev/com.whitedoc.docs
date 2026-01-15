@@ -22,7 +22,7 @@ How to add an initials field to the document?
    :align: center
 
 3. Name - this is a name of a field
-4. Role name - this is a role which will be assgined to fill this field
+4. Role name - this is a role which will be assigned to fill this field
 5. Placeholder - this text will be shown inside the field before it is filled in (can be left empty; field`s name will be used instead)
 
 This field also includes additional attributes, which you can access by clicking the "Show advanced settings" button.

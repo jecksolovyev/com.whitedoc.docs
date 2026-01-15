@@ -22,7 +22,7 @@ How to add a QR/barcode field to the document?
    :align: center
 
 3. Name - this is a name of a field
-4. Role name - this is a role which will be assgined to fill this field
+4. Role name - this is a role which will be assigned to fill this field
 5. Code type - this attributes specifies a type of QR or barcode which will be used
 6. Code content - this attribute specifies if the code will be automatically generated and will contain the URL of the envelope or if it will be possible for envelope processing flow participants to fill the code with custom data
 
