@@ -1,6 +1,6 @@
 {
   "openapi": "3.1.0",
-  "info": { "title": "DocStudio Api Documentation", "version": "R148.10" },
+  "info": { "title": "DocStudio Api Documentation", "version": "R149.3" },
   "servers": [{ "url": "https://api.docstudio.com", "description": "Generated server url" }],
   "paths": {
     "/api/v1/user/signature": {
@@ -9372,6 +9372,43 @@
         "security": [{ "bearerAuth": [] }]
       }
     },
+    "/api/v1/envelope/attachment/archive-info": {
+      "get": {
+        "tags": ["envelope-controller"],
+        "summary": "Get attachment archive info",
+        "operationId": "getArchiveInfo",
+        "parameters": [
+          {
+            "name": "envelopeId",
+            "in": "query",
+            "description": "Envelope UUID",
+            "required": false,
+            "schema": { "type": "string", "format": "uuid" }
+          },
+          {
+            "name": "attachmentId",
+            "in": "query",
+            "description": "Attachment UUID",
+            "required": true,
+            "schema": { "type": "string", "format": "uuid" }
+          },
+          {
+            "name": "Mailbox",
+            "in": "header",
+            "description": "Mailbox context, HTTP Header with current mailbox UUID",
+            "required": true,
+            "schema": { "type": "string", "format": "uuid" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ArchiveAttachmentInfo" } } }
+          }
+        },
+        "security": [{ "bearerAuth": [] }]
+      }
+    },
     "/api/v1/dictionary/{dictionaryUuid}/record/{recordUuid}/column/{columnUuid}": {
       "get": {
         "tags": ["dictionary-controller"],
@@ -11497,11 +11534,10 @@
         "type": "object",
         "properties": {
           "source": { "type": "string", "description": "Signature source type", "enum": ["binary", "text"] },
-          "stamp": { "type": "boolean", "description": "Is stamp signature?" },
           "data": { "type": "string", "format": "byte", "description": "Signature in base64" },
           "certificate": { "type": "string", "format": "byte", "description": "Optional X.509 certificate in base64" }
         },
-        "required": ["data", "source", "stamp"]
+        "required": ["data", "source"]
       },
       "EnvelopeDocumentSignaturesDTO": {
         "type": "object",
@@ -11836,6 +11872,10 @@
             "type": "boolean",
             "description": "Allow envelope attachments public access for MS Office Viewer. Skip property for non-owner users."
           },
+          "aiAssistantRestricted": {
+            "type": "boolean",
+            "description": "Restrict AI Assistant usage for account users. Skip property for non-owner users."
+          },
           "corporateProfileEditRestricted": {
             "type": "boolean",
             "description": "Restrict profile editing for corporate users"
@@ -11887,7 +11927,8 @@
           "hideSenderEmailInNotifications": {
             "type": "boolean",
             "description": "Hide sender's email as reply-to from notifications"
-          }
+          },
+          "aiAssistantRestricted": { "type": "boolean", "description": "Restrict AI Assistant usage for account users" }
         },
         "required": ["name"]
       },
@@ -14870,6 +14911,10 @@
             "type": "boolean",
             "description": "Allow or deny users to manage notifications"
           },
+          "registerCompanyAccountDefault": {
+            "type": "boolean",
+            "description": "Company as default account on registration"
+          },
           "profileFields": { "type": "array", "items": { "$ref": "#/components/schemas/UserField" } }
         }
       },
@@ -15420,6 +15465,30 @@
         },
         "required": ["mailbox", "receiveDate", "sender", "status", "subject", "template", "uuid"]
       },
+      "ArchiveAttachmentInfo": {
+        "type": "object",
+        "description": "Returns the information about the single file from the archive that can be displayed on UI",
+        "properties": {
+          "fileName": { "type": "string" },
+          "mimeType": { "type": "string" },
+          "content": { "type": "string", "format": "byte" },
+          "signers": { "type": "array", "items": { "$ref": "#/components/schemas/ExternalSignerInfo" } },
+          "pdfPageSizes": { "$ref": "#/components/schemas/PdfPageSizes" }
+        }
+      },
+      "ExternalSignerInfo": {
+        "type": "object",
+        "properties": {
+          "organization": { "type": "string" },
+          "position": { "type": "string" },
+          "name": { "type": "string" },
+          "identifier": { "type": "string" },
+          "date": { "type": "string" },
+          "stamp": { "type": "boolean" },
+          "serial": { "type": "string" },
+          "qualified": { "type": "boolean" }
+        }
+      },
       "PageDTODictionaryResponseDTO": {
         "type": "object",
         "properties": {
@@ -15853,7 +15922,9 @@
           "allow-template",
           "verify-signature",
           "envelope-ai-assist",
+          "envelope-ai-assist-c",
           "template-ai-assist",
+          "template-ai-assist-c",
           "diia-multisharing",
           "diia-sharing",
           "diia-multisharing-c",
