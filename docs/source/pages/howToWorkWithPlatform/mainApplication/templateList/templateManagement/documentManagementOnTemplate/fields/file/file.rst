@@ -26,11 +26,12 @@ How to add a file field to the document?
 5. Placeholder - this text will be shown inside the field before it is filled in (can be left empty; field`s name will be used instead)
 6. Optional - this attribute specifies if this field is mandatory to fill
 7. File extension - this attribute specifies file extensions which will be allowed by field. Next options are available:
-   1. All: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .png, .jpg, .jpeg, .tiff, .tif, .zip, .7z, .rar, .asice
-   2. File: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg
-   3. PDF document: .pdf
-   4. Image: .png, .jpg, .jpeg, .tiff, .tif
-   5. Archive: .zip, .7z, .rar, .asice
+
+* All: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xlsb, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .crt, .pem, .der, .cer, .ppt, .pptx, .png, .jpg, .jpeg, .tiff, .tif, .zip, .7z, .rar, .asice
+* File: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xlsb, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .crt, .pem, .der, .cer, .ppt, .pptx
+* Document: .pdf
+* Image: .png, .jpg, .jpeg, .tiff, .tif
+* Archive: .zip, .7z, .rar, .asice
 
 This field also includes additional attributes, which you can access by clicking the "Show advanced settings" button.
 
