@@ -152,11 +152,11 @@ File field may have following attributes:
 
 Supported document types:
 
-1) all: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .png, .jpg, .jpeg, .tiff, .tif, .zip, .7z, .rar
-2) file: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg
-3) document: .pdf
-4) image: .png, .jpg, .jpeg, .tiff, .tif
-5) archive: .zip, .7z, .rar
+* All: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xlsb, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .crt, .pem, .der, .cer, .ppt, .pptx, .png, .jpg, .jpeg, .tiff, .tif, .zip, .7z, .rar, .asice
+* File: .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xlsb, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .crt, .pem, .der, .cer, .ppt, .pptx
+* Document: .pdf
+* Image: .png, .jpg, .jpeg, .tiff, .tif
+* Archive: .zip, .7z, .rar, .asice
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |**Dictionary field**                                                                                                                                                                                          |
