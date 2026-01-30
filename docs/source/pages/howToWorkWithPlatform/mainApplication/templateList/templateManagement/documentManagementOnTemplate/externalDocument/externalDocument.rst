@@ -28,11 +28,11 @@ How to add an external document to a template
 
 3. In the template editor you can edit document properties, such as role, optionality or allowed file extensions:
 
-* All - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xlsb, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .crt, .pem, .der, .cer, .ppt, .pptx, .png, .jpg, .jpeg, .tiff, .tif, .zip, .7z, .rar
+* All - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xlsb, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .crt, .pem, .der, .cer, .ppt, .pptx, .png, .jpg, .jpeg, .tiff, .tif, .zip, .7z, .rar, .asice
 * File - .pdf, .doc, .docx, .xls, .xlsx, .xlsm, .xlsb, .xml, .dbf, .txt, .rtf, .csv, .xps, .eml, .msg, .emlx, .rpmsg, .crt, .pem, .der, .cer, .ppt, .pptx
 * PDF document - .pdf
 * Image - .png, .jpg, .jpeg, .tiff, .tif
-* Archive - .zip, .7z, .rar
+* Archive - .zip, .7z, .rar, .asice
 
 4. You also can add QES and Signature fields to such document
 
