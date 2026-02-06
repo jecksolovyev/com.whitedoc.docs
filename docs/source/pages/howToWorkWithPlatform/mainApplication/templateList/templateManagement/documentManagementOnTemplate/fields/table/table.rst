@@ -34,10 +34,6 @@ To view and edit table properties, right-click the table and select "Edit table"
    :width: 600
    :align: center
 
-.. image:: pic_table/tableEdit.png
-   :width: 600
-   :align: center
-
 Table columns can be renamed and resized, table content alignment options can be accessed from table column header menu. Other dynamic fields (except dynamic table itself) can be added inside the table cells.
 
 .. note:: If you want to hide certain columns of the table in its initial state you can click the according column, enable "Initially hidden" attribute in column properties and click "Save". Note that this is supported only for columns which have optional dynamic fields in them. Columns with static text, non-optional fields or empty cells can not be hidden. On the envelope view user will be able to show such columns from the menu on the right end of the table (only columns which have optional fields assigned for viewing user will be presented). If hidden column fields will not be filled during document processing these columns will be excluded from the final version of the document.
