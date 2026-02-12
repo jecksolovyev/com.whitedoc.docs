@@ -59,8 +59,4 @@ When all attributes are set, you can click the "Save" button and the field will 
 Please note that the "Show advanced settings" option is available only while no additional attributes have been added to the field.
 Once at least one additional attribute is added — either during creation or later in edit mode — this option will no longer appear, and all available attributes will be displayed for editing instead.
 
-.. image:: pic_text/textEdit.png
-   :width: 600
-   :align: center
-
 .. hint:: If this field contains a link in the envelope, it will be rendered a standard link in the browser (blue font with an underline). You can follow this link from the right-click context menu (any role) or directly click it (only if the field is inactive).

@@ -25,7 +25,7 @@ How to add a QES field to the document?
 4. Role name - this is a role that will be assigned to fill this field
 5. Placeholder - this text will be shown inside the field before it is filled in (can be left empty; field`s name will be used instead)
 6. Qualified - this attribute specifies if signature will be qualified
-7. Required stamp - this attribute specifies if stamp will be required for signing
+7. Signature and stamp are required - this attribute specifies if both signature and stamp will be required for signing
 8. TIN (becomes editable if there are other fields in the template) - this attribute restricts signing process for everyone except a person with TIN code specified in field selected below
 9. Document (appears if TIN is enabled) - document where TIN field is placed
 10. TIN field (appears if TIN is enabled) - field which will be used for TIN check
@@ -42,10 +42,6 @@ When all attributes are set, you can click the "Save" button and the field will 
 
 Please note that the "Show advanced settings" option is available only while no additional attributes have been added to the field.
 Once at least one additional attribute is added — either during creation or later in edit mode — this option will no longer appear, and all available attributes will be displayed for editing instead.
-
-.. image:: pic_qes/qesEdit.png
-   :width: 600
-   :align: center
 
 **Content list**
 
