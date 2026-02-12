@@ -55,3 +55,7 @@ When all attributes are set, you can click the "Save" button and the field will 
 
 Please note that the "Show advanced settings" option is available only while no additional attributes have been added to the field.
 Once at least one additional attribute is added — either during creation or later in edit mode — this option will no longer appear, and all available attributes will be displayed for editing instead.
+
+.. image:: pic_number/numberEdit.png
+   :width: 600
+   :align: center

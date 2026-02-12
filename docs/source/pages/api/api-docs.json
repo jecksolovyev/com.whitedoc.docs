@@ -1,6 +1,6 @@
 {
   "openapi": "3.1.0",
-  "info": { "title": "DocStudio Api Documentation", "version": "R150.5" },
+  "info": { "title": "DocStudio Api Documentation", "version": "R149.3" },
   "servers": [{ "url": "https://api.docstudio.com", "description": "Generated server url" }],
   "paths": {
     "/api/v1/user/signature": {
@@ -1230,7 +1230,7 @@
     "/api/v1/envelope": {
       "put": {
         "tags": ["envelope-controller"],
-        "summary": "Update envelope without sending",
+        "summary": "Update draft envelope",
         "operationId": "update_4",
         "parameters": [
           {
@@ -9386,13 +9386,6 @@
             "schema": { "type": "string", "format": "uuid" }
           },
           {
-            "name": "convert2Pdf",
-            "in": "query",
-            "description": "Convert to PDF",
-            "required": false,
-            "schema": { "type": "boolean" }
-          },
-          {
             "name": "attachmentId",
             "in": "query",
             "description": "Attachment UUID",
@@ -14578,8 +14571,7 @@
           "salesSupportEmail": { "type": "string" },
           "helpCenterTitleKey": { "type": "string" },
           "addressTitleKey": { "type": "string" },
-          "contacts": { "type": "object", "additionalProperties": { "type": "array", "items": { "type": "string" } } },
-          "errorRetryDelays": { "type": "array", "items": { "type": "string" } }
+          "contacts": { "type": "object", "additionalProperties": { "type": "array", "items": { "type": "string" } } }
         }
       },
       "EnvTableRestriction": {
@@ -15487,7 +15479,6 @@
       "ExternalSignerInfo": {
         "type": "object",
         "properties": {
-          "id": { "type": "string" },
           "organization": { "type": "string" },
           "position": { "type": "string" },
           "name": { "type": "string" },
@@ -15750,10 +15741,10 @@
         "properties": {
           "id": { "type": "string", "format": "uuid" },
           "name": { "type": "string" },
+          "price": { "type": "integer", "format": "int64" },
           "displayName": { "type": "string" },
           "attributes": { "type": "array", "items": { "$ref": "#/components/schemas/AttributeInfoDTO" } },
-          "counters": { "type": "array", "items": { "$ref": "#/components/schemas/CounterInfoDTO" } },
-          "tariffPrice": { "type": "integer", "format": "int64" }
+          "counters": { "type": "array", "items": { "$ref": "#/components/schemas/CounterInfoDTO" } }
         }
       },
       "ModifierInfoDTO": {
