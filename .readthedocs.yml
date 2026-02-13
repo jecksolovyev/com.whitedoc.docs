@@ -21,7 +21,8 @@ formats:
 build:
   os: ubuntu-lts-latest
   tools:
-    python: '3.12'
+    # Downgraded to 3.11 to support sphinxcontrib-redoc and pkg_resources
+    python: '3.11'
 
 # Python requirements required to build your docs
 python:

@@ -1,4 +1,4 @@
 cloud-sptheme
-setuptools
+setuptools<70.0.0
 sphinx
 sphinxcontrib-redoc
