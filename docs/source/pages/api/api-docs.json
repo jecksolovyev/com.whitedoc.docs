@@ -1,6 +1,6 @@
 {
   "openapi": "3.1.0",
-  "info": { "title": "DocStudio Api Documentation", "version": "R150.5" },
+  "info": { "title": "DocStudio Api Documentation", "version": "R151.3" },
   "servers": [{ "url": "https://api.docstudio.com", "description": "Generated server url" }],
   "paths": {
     "/api/v1/user/signature": {
@@ -13083,9 +13083,15 @@
         "type": "object",
         "description": "Send QuickSendDTO in BLOB format with Content-Type: application/json",
         "properties": {
-          "subject": { "type": "string", "description": "Subject of envelope" },
+          "subject": { "type": "string", "description": "Subject of envelope", "minLength": 1 },
           "message": { "type": "string", "description": "Message of envelope" },
-          "recipients": { "type": "array", "items": { "$ref": "#/components/schemas/QuickSendRecipientDTO" } }
+          "recipients": { "type": "array", "items": { "$ref": "#/components/schemas/QuickSendRecipientDTO" } },
+          "signatureAlgorithm": {
+            "type": "string",
+            "description": "Signature algorithm",
+            "enum": ["DSTU4145", "ECDSA_RSA"]
+          },
+          "signatureContainer": { "type": "string", "description": "Signature container", "enum": ["P7S", "ASICE"] }
         },
         "required": ["subject"]
       },
@@ -13123,8 +13129,14 @@
       "OneTimeSendDTO": {
         "type": "object",
         "properties": {
-          "templateXml": { "type": "string", "minLength": 1 },
-          "envelopeXml": { "type": "string", "minLength": 1 }
+          "templateXml": { "type": "string", "description": "Template XML", "minLength": 1 },
+          "envelopeXml": { "type": "string", "description": "Envelope XML", "minLength": 1 },
+          "signatureAlgorithm": {
+            "type": "string",
+            "description": "Signature algorithm",
+            "enum": ["DSTU4145", "ECDSA_RSA"]
+          },
+          "signatureContainer": { "type": "string", "description": "Signature container", "enum": ["P7S", "ASICE"] }
         },
         "required": ["envelopeXml", "templateXml"]
       },
@@ -14560,7 +14572,8 @@
         "properties": {
           "name": { "type": "string" },
           "actionType": { "type": "string" },
-          "batchSize": { "type": "integer", "format": "int32" }
+          "batchSize": { "type": "integer", "format": "int32" },
+          "type": { "type": "string", "enum": ["in_context", "redirect", "qscd"] }
         }
       },
       "EinkSignRestriction": {
